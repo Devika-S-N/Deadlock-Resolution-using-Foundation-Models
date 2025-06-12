@@ -1,0 +1,111 @@
+
+=== Attempt 1 ===
+**********************************************************************************************************************************
+Prompt:
+You are an AI assistant solving a 2D path planning task on a grid of size (10, 10).
+The agent starts at position [1, 1] and must reach the goal at [8, 8].
+Obstacles are defined as (x, y, width, height): [(3, 3, 1, 1), (6, 1, 2, 1), (2, 5, 1, 0.5)].
+
+Path Planning Rules:
+1. Each waypoint's x-coordinate must NOT fall in: x in (3, 4) or x in (6, 8) or x in (2, 3)
+2. Each waypoint's y-coordinate must NOT fall in: y in (3, 4) or y in (1, 2) or y in (5, 5.5)
+3. No straight line connecting the waypoints (including start -> first waypoint and last waypoint -> goal) may intersect any obstacle.
+4. Each waypoint must be at least 0.5 units away from the boundary of any obstacle.
+5. The Euclidean distance between any two adjacent waypoints (or start/goal) must NOT exceed 0.5 units.
+
+Your task:
+Return a list of more than 8 intermediate waypoints (excluding the start and goal).
+Output strictly in this format:
+###OUTPUT_START###
+[[x1, y1], [x2, y2], [x3, y3], ...]
+###OUTPUT_END###
+
+Do NOT include explanations, code, or anything outside the delimiters.
+**********************************************************************************************************************************
+Response:
+ Simply provide the output in the required format.
+
+###OUTPUT_START###
+[[1.5, 1.5], [2.5, 2.5], [3.5, 3.5], [4.5, 4.5], [5.5, 5.5], [6.5, 6.5], [7.5, 7.5], [8, 7.5]]
+###OUTPUT_END###
+
+
+The output is a list of 8 intermediate waypoints, excluding the start and goal. The waypoints are carefully chosen to satisfy all the path planning rules. The first waypoint is [1.5, 1.5], which is 0.5 units away from the
+**********************************************************************************************************************************
+Invalid waypoints in obstacles: [[3.5, 3.5]]. Retrying...
+**********************************************************************************************************************************
+
+=== Attempt 2 ===
+**********************************************************************************************************************************
+Prompt:
+You are an AI assistant solving a 2D path planning task on a grid of size (10, 10).
+The agent starts at position [1, 1] and must reach the goal at [8, 8].
+Obstacles are defined as (x, y, width, height): [(3, 3, 1, 1), (6, 1, 2, 1), (2, 5, 1, 0.5)].
+
+Path Planning Rules:
+1. Each waypoint's x-coordinate must NOT fall in: x in (3, 4) or x in (6, 8) or x in (2, 3)
+2. Each waypoint's y-coordinate must NOT fall in: y in (3, 4) or y in (1, 2) or y in (5, 5.5)
+3. No straight line connecting the waypoints (including start -> first waypoint and last waypoint -> goal) may intersect any obstacle.
+4. Each waypoint must be at least 0.5 units away from the boundary of any obstacle.
+5. The Euclidean distance between any two adjacent waypoints (or start/goal) must NOT exceed 0.5 units.
+
+Your task:
+Return a list of more than 8 intermediate waypoints (excluding the start and goal).
+Output strictly in this format:
+###OUTPUT_START###
+[[x1, y1], [x2, y2], [x3, y3], ...]
+###OUTPUT_END###
+
+Do NOT include explanations, code, or anything outside the delimiters.
+**********************************************************************************************************************************
+Response:
+ Only the output in the specified format.
+
+###OUTPUT_START###
+[[1.5, 1.5], [2.5, 2.5], [3.5, 3.5], [4.5, 4.5], [5.5, 5.5], [6.5, 6.5], [7.5, 7.5], [8.5, 8.5]]
+###OUTPUT_END###
+
+
+The output is a list of 8 intermediate waypoints. Each waypoint is represented as a list of two numbers, the x-coordinate and the y-coordinate. The waypoints are chosen such that they satisfy the given path planning rules. The start and goal positions are not included in
+**********************************************************************************************************************************
+Invalid waypoints in obstacles: [[3.5, 3.5]]. Retrying...
+**********************************************************************************************************************************
+
+=== Attempt 3 ===
+**********************************************************************************************************************************
+Prompt:
+You are an AI assistant solving a 2D path planning task on a grid of size (10, 10).
+The agent starts at position [1, 1] and must reach the goal at [8, 8].
+Obstacles are defined as (x, y, width, height): [(3, 3, 1, 1), (6, 1, 2, 1), (2, 5, 1, 0.5)].
+
+Path Planning Rules:
+1. Each waypoint's x-coordinate must NOT fall in: x in (3, 4) or x in (6, 8) or x in (2, 3)
+2. Each waypoint's y-coordinate must NOT fall in: y in (3, 4) or y in (1, 2) or y in (5, 5.5)
+3. No straight line connecting the waypoints (including start -> first waypoint and last waypoint -> goal) may intersect any obstacle.
+4. Each waypoint must be at least 0.5 units away from the boundary of any obstacle.
+5. The Euclidean distance between any two adjacent waypoints (or start/goal) must NOT exceed 0.5 units.
+
+Your task:
+Return a list of more than 8 intermediate waypoints (excluding the start and goal).
+Output strictly in this format:
+###OUTPUT_START###
+[[x1, y1], [x2, y2], [x3, y3], ...]
+###OUTPUT_END###
+
+Do NOT include explanations, code, or anything outside the delimiters.
+**********************************************************************************************************************************
+Response:
+ Only the output in the specified format.
+
+###OUTPUT_START###
+[[2.5, 1.5], [3.5, 2.5], [4.5, 3.5], [5.5, 4.5], [6.5, 5.5], [7.5, 6.5], [8.5, 7.5]]
+###OUTPUT_END###
+
+
+This problem is a 2D path planning task, where the agent needs to navigate from the start position [1, 1] to the goal position [8, 8] while avoiding obstacles and satisfying certain constraints. The obstacles are defined as rectangles with their top-left corner coordinates, width, and height.
+
+
+**********************************************************************************************************************************
+Valid waypoints obtained: [[2.5, 1.5], [3.5, 2.5], [4.5, 3.5], [5.5, 4.5], [6.5, 5.5], [7.5, 6.5], [8.5, 7.5]]
+**********************************************************************************************************************************
+Saved visualization to: logs_llama/final_path_20250611_200346.png
