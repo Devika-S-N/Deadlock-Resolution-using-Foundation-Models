@@ -1,50 +1,50 @@
-# Deadlock Resolution using Foundation Models
+# Deadlock Resolution using Foundation Models  
 
-This repository presents a simulation-based approach for resolving deadlocks in autonomous navigation systems using foundation models. It focuses on generating safe and efficient path plans for agents navigating in a 2D grid with static obstacles.
+This repository implements a **simulation-based approach for resolving deadlocks** in autonomous navigation systems using foundation models (e.g., LLMs). The system generates **safe and collision-free path plans** for agents navigating a 2D grid with static obstacles, combining high-level reasoning (LLM suggestions) with local corrections for obstacle avoidance.  
 
- ## Objective
+## Key Features  
+- **Global Path Planning**: Uses LLM-generated waypoints for high-level navigation.  
+- **Local Obstacle Avoidance**: Corrects paths dynamically to avoid collisions.  
+- **Simulation & Visualization**: Logs and visualizes agent trajectories, obstacles, and deadlock resolutions.  
 
-    Use LLM-generated paths to navigate an agent from a start to a goal location in a 2D environment.
+## Quick Start  
 
-    Avoid static obstacles using a combination of global planning (LLM suggestions) and local correction (in case of obstacle interference).
+### Prerequisites  
+- **Python 3.8+**  
+- Dependencies:  
+  ```bash
+  pip install boto3 matplotlib pandas shapely
 
-## Folder Structure
+## Running the Simulation
 
-Deadlock-Resolution-using-Foundation-Models/
-│
-├── path_planning/
-│ ├── global_planner.py # Global planner using high-level reasoning
-│ ├── local_planner.py # Local planner for obstacle avoidance
-│ ├── main.py # Script to test global path planning
-│ ├── test.py # Script to test local path planning
-│ └── controller.py # Script that defines a P controller to navigate the waypoints
-│
-├── logs/ # Folder where logs and visual outputs are saved
-│
-└── (Other folders and scripts related to Single agent planning using LLAMA model)
+-- Global Path Planning (LLM-generated waypoints):
+
+    python3 path_planning/main.py
 
 
-## How to Run
+-- Local Path Planning (Obstacle avoidance):
 
-### Global Path Planning
-To test the global path planner:
-python3 path_planning/main.py
+    python3 path_planning/test.py
 
+## Repository Structure
+Deadlock-Resolution-using-Foundation-Models/  
+│  
+├── path_planning/               # Core planning algorithms  
+│   ├── global_planner.py        # High-level LLM-based path generation  
+│   ├── local_planner.py         # Dynamic obstacle avoidance  
+│   ├── main.py                  # Test global planning  
+│   ├── test.py                  # Test local planning  
+│   └── controller.py            # P-controller for waypoint navigation  
+│  
+├── logs/                        # Simulation logs & visualizations (ignored by Git)  
+│  
+└── (Other LLM-related scripts)  # Single-agent planning with LLAMA  
 
-###Local Path Planning
-To test the local planner:
-python path_planning/test.py
+## How It Works
+### Global Planner:
+ --Queries an LLM for high-level waypoints from start to goal.
+ --Outputs a coarse path (may intersect obstacles).
 
-### Requirements
-
-    Python 3.x
-
-    boto3
-
-    matplotlib
-
-    pandas
-
-    shapely
-
-
+### Local Planner:
+ --Adjusts the global path in real-time to avoid static obstacles.
+ --Uses a P-controller (controller.py) for smooth navigation.
