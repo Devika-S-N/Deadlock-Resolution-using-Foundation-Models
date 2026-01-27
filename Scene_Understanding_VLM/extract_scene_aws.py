@@ -19,7 +19,7 @@ from botocore.exceptions import (
 
 # ------------------ Model IDs ------------------
 MODEL_MAP = {
-    "haiku":  "anthropic.claude-3-haiku-20240307-v1:0",
+    "haiku":  "us.anthropic.claude-haiku-4-5-20251001-v1:0",
     "sonnet": "anthropic.claude-3-5-sonnet-20240620-v1:0",
 }
 

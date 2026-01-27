@@ -24,9 +24,9 @@ IMG_DIR = Path("new_minor_grid_off")
 
 MODELS: List[Tuple[str, str]] = [
     ("aws", "haiku"),
-    ("aws", "sonnet"),
-    ("gpt", "gpt-4o"),
-    ("gpt", "gpt-4o-mini"),
+    # ("aws", "sonnet"),
+    # ("gpt", "gpt-4o"),
+    # ("gpt", "gpt-4o-mini"),
 ]
 
 def _fmt_xy(xy): return f"({float(xy[0]):.2f},{float(xy[1]):.2f})"
