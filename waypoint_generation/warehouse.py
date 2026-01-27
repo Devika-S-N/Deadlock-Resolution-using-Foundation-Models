@@ -37,6 +37,7 @@ def generate_env(
     grow_step=3,
     max_N=60,
     add_workstations=False,
+    difficulty="hard", 
 ):
     """
     Base generator + Workstations.
@@ -106,6 +107,61 @@ def generate_env(
     BLACK = (0, 0, 0)
     GRID = (230, 230, 230)
 
+    def bfs_shortest_path(N_, start, goal, blocked, vwall, hwall):
+        """Return list of (r,c) from start->goal inclusive, or [] if no path."""
+        if blocked[start] or blocked[goal]:
+            return []
+
+        def can_move(a, b):
+            (r1, c1), (r2, c2) = a, b
+            if not (0 <= r2 < N_ and 0 <= c2 < N_):
+                return False
+            if blocked[r2, c2]:
+                return False
+
+            # right
+            if r1 == r2 and c2 == c1 + 1:
+                return not vwall[c1 + 1, r1]
+            # left
+            if r1 == r2 and c2 == c1 - 1:
+                return not vwall[c1, r1]
+            # down
+            if c1 == c2 and r2 == r1 + 1:
+                return not hwall[r1 + 1, c1]
+            # up
+            if c1 == c2 and r2 == r1 - 1:
+                return not hwall[r1, c1]
+            return False
+
+        q = deque([start])
+        parent = {start: None}
+
+        while q:
+            cur = q.popleft()
+            if cur == goal:
+                break
+
+            r, c = cur
+            for dr, dc in [(1,0), (-1,0), (0,1), (0,-1)]:
+                nxt = (r + dr, c + dc)
+                if 0 <= nxt[0] < N_ and 0 <= nxt[1] < N_ and nxt not in parent:
+                    if can_move(cur, nxt):
+                        parent[nxt] = cur
+                        q.append(nxt)
+
+        if goal not in parent:
+            return []
+
+        # reconstruct
+        path = []
+        node = goal
+        while node is not None:
+            path.append(node)
+            node = parent[node]
+        path.reverse()
+        return path
+
+
     # ---------------- one build attempt ----------------
     def build_once(N_, local_seed):
         local_rng = random.Random(local_seed)
@@ -121,6 +177,9 @@ def generate_env(
         room_doors = []
         door_edges = []
 
+
+
+
         def vwall_total():
             return np.logical_or(vwall_room, vwall_ws)
 
@@ -135,6 +194,32 @@ def generate_env(
         def add_hwall_room(row, c0, c1):
             for c in range(c0, c1):
                 hwall_room[row, c] = True
+
+        # ---------------- Difficulty handling ----------------
+        diff = difficulty.lower()
+
+        # EASY MODE: skip rooms entirely, only obstacles
+        if diff == "easy":
+            rooms = []
+            room_doors = []
+            room_interiors = []
+            room_anchors = []
+
+            # no walls except boundary
+            add_hwall_room(0, 0, N_)
+            add_hwall_room(N_, 0, N_)
+            add_vwall_room(0, 0, N_)
+            add_vwall_room(N_, 0, N_)
+
+            # agent / goal placed randomly in free space
+            free_cells = [(r, c) for r in range(1, N_ - 1) for c in range(1, N_ - 1)]
+            agent = local_rng.choice(free_cells)
+            goal = local_rng.choice([p for p in free_cells if p != agent])
+
+            # proceed to obstacle placement section later
+            skip_room_phase = True
+        else:
+            skip_room_phase = False
 
         def room_bbox_cells(r0, c0, h, w, pad=0):
             cells = set()
@@ -167,98 +252,122 @@ def generate_env(
             w = local_rng.randint(min_dim, max_dim)
             return h, w
 
-        # ---- place rooms ----
-        occupied_for_rooms = set()
-        room_pad = 1 if num_rooms <= 4 else 0
+        if not skip_room_phase:
+            # ---- place rooms ----
+            occupied_for_rooms = set()
+            room_pad = 1 if num_rooms <= 4 else 0
 
-        for _ in range(num_rooms):
-            placed = False
-            for _try in range(3500):
-                h, w = pick_room_size()
-                if N_ - h - 1 < 1 or N_ - w - 1 < 1:
-                    continue
+            for _ in range(num_rooms):
+                placed = False
+                for _try in range(3500):
+                    h, w = pick_room_size()
+                    if N_ - h - 1 < 1 or N_ - w - 1 < 1:
+                        continue
 
-                r0 = local_rng.randint(1, N_ - h - 1)
-                c0 = local_rng.randint(1, N_ - w - 1)
+                    r0 = local_rng.randint(1, N_ - h - 1)
+                    c0 = local_rng.randint(1, N_ - w - 1)
 
-                candidate = room_bbox_cells(r0, c0, h, w, pad=room_pad)
-                if candidate & occupied_for_rooms:
-                    continue
+                    candidate = room_bbox_cells(r0, c0, h, w, pad=room_pad)
+                    if candidate & occupied_for_rooms:
+                        continue
 
-                top, bot = r0, r0 + h
-                left, right = c0, c0 + w
+                    top, bot = r0, r0 + h
+                    left, right = c0, c0 + w
 
-                add_hwall_room(top, left, right)
-                add_hwall_room(bot, left, right)
-                add_vwall_room(left, top, bot)
-                add_vwall_room(right, top, bot)
+                    add_hwall_room(top, left, right)
+                    add_hwall_room(bot, left, right)
+                    add_vwall_room(left, top, bot)
+                    add_vwall_room(right, top, bot)
 
-                sides = ["top", "bottom", "left", "right"]
-                local_rng.shuffle(sides)
+                    sides = ["top", "bottom", "left", "right"]
+                    local_rng.shuffle(sides)
 
-                door_ok = False
-                for side in sides:
-                    if side in ["top", "bottom"]:
-                        if (right - left) < 3:
-                            continue
-                        dc = local_rng.randint(left + 1, right - 2)
-                        row = top if side == "top" else bot
+                    door_ok = False
+                    # ---- door selection logic ----
+                    door_count = 1
+                    if diff == "medium":
+                        door_count = local_rng.choice([1, 2])  # 1 or 2 doors
 
-                        outside_cell = (row - 1, dc) if side == "top" else (row, dc)
-                        orr, occc = outside_cell
-                        if not (0 <= orr < N_ and 0 <= occc < N_):
-                            continue
-                        if cell_in_any_room(orr, occc, rooms + [(r0, c0, h, w)]):
-                            continue
+                    door_positions = []
 
-                        room_doors.append(("h", row, dc))
-                        door_ok = True
-                        break
-                    else:
-                        if (bot - top) < 3:
-                            continue
-                        dr = local_rng.randint(top + 1, bot - 2)
-                        col = left if side == "left" else right
+                    for _door_i in range(door_count):
+                        sides = ["top", "bottom", "left", "right"]
+                        local_rng.shuffle(sides)
+                        door_ok = False
 
-                        outside_cell = (dr, col - 1) if side == "left" else (dr, col)
-                        orr, occc = outside_cell
-                        if not (0 <= orr < N_ and 0 <= occc < N_):
-                            continue
-                        if cell_in_any_room(orr, occc, rooms + [(r0, c0, h, w)]):
-                            continue
+                        for side in sides:
+                            if side in ["top", "bottom"]:
+                                if (right - left) < 3:
+                                    continue
+                                dc = local_rng.randint(left + 1, right - 2)
+                                row = top if side == "top" else bot
+                                outside_cell = (row - 1, dc) if side == "top" else (row, dc)
+                                orr, occ = outside_cell
+                                if not (0 <= orr < N_ and 0 <= occ < N_):
+                                    continue
 
-                        room_doors.append(("v", col, dr))
-                        door_ok = True
-                        break
+                                # in HARD we forbid opening into another room
+                                if diff == "hard" and cell_in_any_room(orr, occ, rooms + [(r0, c0, h, w)]):
+                                    continue
 
-                if not door_ok:
+                                door_positions.append(("h", row, dc))
+                                door_ok = True
+                                break
+
+                            else:  # left/right
+                                if (bot - top) < 3:
+                                    continue
+                                dr = local_rng.randint(top + 1, bot - 2)
+                                col = left if side == "left" else right
+                                outside_cell = (dr, col - 1) if side == "left" else (dr, col)
+                                orr, occ = outside_cell
+                                if not (0 <= orr < N_ and 0 <= occ < N_):
+                                    continue
+
+                                if diff == "hard" and cell_in_any_room(orr, occ, rooms + [(r0, c0, h, w)]):
+                                    continue
+
+                                door_positions.append(("v", col, dr))
+                                door_ok = True
+                                break
+
+                        if not door_ok and diff != "easy":
+                            # rollback only if we are in medium/hard
+                            return None
+
+                    # register doors for this room
+                    for dpos in door_positions:
+                        room_doors.append(dpos)
+
+
+                    if not door_ok:
+                        return None
+
+                    rooms.append((r0, c0, h, w))
+                    occupied_for_rooms |= candidate
+                    placed = True
+                    break
+
+                if not placed:
                     return None
 
-                rooms.append((r0, c0, h, w))
-                occupied_for_rooms |= candidate
-                placed = True
-                break
+            # ---- carve doors in room walls ----
+            for kind, a, b in room_doors:
+                if kind == "h":
+                    row, c = a, b
+                    hwall_room[row, c] = False
+                else:
+                    col, r = a, b
+                    vwall_room[col, r] = False
 
-            if not placed:
-                return None
-
-        # ---- carve doors in room walls ----
-        for kind, a, b in room_doors:
-            if kind == "h":
-                row, c = a, b
-                hwall_room[row, c] = False
-            else:
-                col, r = a, b
-                vwall_room[col, r] = False
-
-        # ---- build door_edges ----
-        for kind, a, b in room_doors:
-            if kind == "h":
-                row, c = a, b
-                door_edges.append(((row - 1, c), (row, c)))
-            else:
-                col, r = a, b
-                door_edges.append(((r, col - 1), (r, col)))
+            # ---- build door_edges ----
+            for kind, a, b in room_doors:
+                if kind == "h":
+                    row, c = a, b
+                    door_edges.append(((row - 1, c), (row, c)))
+                else:
+                    col, r = a, b
+                    door_edges.append(((r, col - 1), (r, col)))
 
         # ---- room interiors + anchors ----
         room_interiors = []
@@ -273,22 +382,26 @@ def generate_env(
             room_interiors.append(interior)
             room_anchors.append(local_rng.choice(list(interior)))
 
+    
         # ---- agent + goal ----
-        if num_rooms >= 2:
-            ai = local_rng.randrange(num_rooms)
-            gi = (ai + local_rng.randint(1, num_rooms - 1)) % num_rooms
-            agent = room_anchors[ai]
-            goal = room_anchors[gi]
-        elif num_rooms == 1:
-            interior_list = list(room_interiors[0])
-            if len(interior_list) < 2:
-                return None
-            local_rng.shuffle(interior_list)
-            agent, goal = interior_list[0], interior_list[1]
-        else:
-            all_cells = [(r, c) for r in range(N_) for c in range(N_)]
-            agent = local_rng.choice(all_cells)
-            goal = local_rng.choice([p for p in all_cells if p != agent])
+        if not skip_room_phase:
+            if num_rooms >= 2:
+                ai = local_rng.randrange(num_rooms)
+                gi = (ai + local_rng.randint(1, num_rooms - 1)) % num_rooms
+                agent = room_anchors[ai]
+                goal = room_anchors[gi]
+            elif num_rooms == 1:
+                interior_list = list(room_interiors[0])
+                if len(interior_list) < 2:
+                    return None
+                local_rng.shuffle(interior_list)
+                agent, goal = interior_list[0], interior_list[1]
+            else:
+                all_cells = [(r, c) for r in range(N_) for c in range(N_)]
+                agent = local_rng.choice(all_cells)
+                goal = local_rng.choice([p for p in all_cells if p != agent])
+        # In easy mode, agent and goal were already set above (skip_room_phase=True)
+
 
         # ---- protected (doors + neighbors, agent/goal + neighbors) ----
         protected = set()
@@ -603,34 +716,11 @@ def generate_env(
                 if placed is None:
                     return None
                 obstacles.append(placed)
-
-        # ---- BUILD unified occupancy AFTER obstacles are finalized ----
-        HH, WW = blocked.shape  # (N_, N_)
-        occ = np.zeros((2 * HH + 1, 2 * WW + 1), dtype=np.uint8)
-
-        # obstacle rectangles / blocked cells at cell centers
-        for r in range(HH):
-            for c in range(WW):
-                if blocked[r, c]:
-                    occ[2 * r + 1, 2 * c + 1] = 1
-
-        # vertical walls: vtot[col, r] shape (WW+1, HH)
-        for r in range(HH):
-            for col in range(WW + 1):
-                if vtot[col, r]:
-                    occ[2 * r + 1, 2 * col] = 1
-
-        # horizontal walls: htot[row, c] shape (HH+1, WW)
-        for row in range(HH + 1):
-            for c in range(WW):
-                if htot[row, c]:
-                    occ[2 * row, 2 * c + 1] = 1
-
-        # block outer boundary
-        occ[0, :] = 1
-        occ[-1, :] = 1
-        occ[:, 0] = 1
-        occ[:, -1] = 1
+        # ---- compute BFS shortest path waypoints (agent -> goal) ----
+        bfs_path_rc = bfs_shortest_path(N_, agent, goal, blocked, vtot, htot)
+        if not bfs_path_rc:
+            # should not happen because we enforce reachability, but safe fallback
+            return None
 
         # ---------------- render image ----------------
         margin_left = 55
@@ -748,6 +838,17 @@ def generate_env(
             r, c = rc
             return {"x": int(c + 1), "y": int(N_ - r), "r": int(r), "c": int(c)}
 
+        def to_xy_center(rc):
+            r, c = rc
+            # center of the cell (not on grid lines)
+            return {
+                "x": float(c + 0.5),
+                "y": float((N_ - r) - 0.5),
+                "r": int(r),
+                "c": int(c),
+            }
+
+
         meta = {
             "N": int(N_),
             "seed": int(local_seed),
@@ -760,10 +861,8 @@ def generate_env(
             "doors": [{"kind": k, "a": int(a), "b": int(b)} for (k, a, b) in room_doors],
             "obstacles": [{"r0": int(r0), "c0": int(c0), "h": int(h), "w": int(w)} for (r0, c0, h, w) in obstacles],
             "workstations": [{"id": int(ws["id"]), "center": to_xy(ws["center"]), "arm": int(ws["arm"])} for ws in workstations],
-            "occupancy": occ.tolist(),
-            "occupancy_shape": list(occ.shape),
-            "start_occ": [2 * agent[0] + 1, 2 * agent[1] + 1],
-            "goal_occ": [2 * goal[0] + 1, 2 * goal[1] + 1],
+            "bfs_path_len": int(len(bfs_path_rc)),
+            "bfs_path": [to_xy_center(rc) for rc in bfs_path_rc],
         }
 
         return img, meta
@@ -802,8 +901,12 @@ def main():
     ap.add_argument("--seed", type=int, default=None)
     ap.add_argument("--outdir", type=str, default="logs/warehouse")
     ap.add_argument("--grid", type=int, default=10)
+    ap.add_argument("--difficulty", type=str, default="hard", choices=["easy", "medium", "hard"], help="Environment difficulty level: easy, medium, or hard (default: hard)")
+
     args = ap.parse_args()
     use_ws = args.workstations.strip().lower() in ["y", "yes", "1", "true"]
+    difficulty = args.difficulty.strip().lower()
+
 
     if args.grid >= 16:
         cell_px, wall_px = 40, 8
@@ -831,6 +934,7 @@ def main():
         grow_step=3,
         max_N=60,
         add_workstations=use_ws,
+        difficulty=difficulty, 
     )
 
 

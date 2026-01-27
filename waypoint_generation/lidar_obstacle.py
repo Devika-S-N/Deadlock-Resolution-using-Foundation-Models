@@ -11,7 +11,7 @@ class LidarObstacleDetector:
         occupancy_grid,
         obstacles,
         resolution=0.1,
-        range_limit=0.5,
+        range_limit=2.0,
         angle_increment=np.deg2rad(10),
         logger=None
     ):

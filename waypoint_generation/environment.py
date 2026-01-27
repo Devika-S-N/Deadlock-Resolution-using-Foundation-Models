@@ -124,14 +124,16 @@ class Environment:
       goal (x,y) float
       obstacles: list of polygons, each polygon is list[(x,y),...]
     """
-    def __init__(self, N=10, num_rooms=3, num_obstacles=4, seed=None,
-                 out_dir="logs/warehouse", add_workstations=False):
+    def __init__(self, N=15, num_rooms=5, num_obstacles=10, seed=None,
+                 out_dir="logs/warehouse", add_workstations=False, difficulty = "hard"):
         self.N = int(N)
         self.num_rooms = int(num_rooms)
         self.num_obstacles = int(num_obstacles)
         self.seed = seed
         self.out_dir = out_dir
         self.add_workstations = add_workstations
+        self.difficulty = difficulty
+
 
         # will be filled after generation
         self.grid = None
@@ -148,6 +150,7 @@ class Environment:
             seed=self.seed,
             out_dir=self.out_dir,
             add_workstations=self.add_workstations,
+            difficulty=self.difficulty,
         )
 
         # 2) Load meta
