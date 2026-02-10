@@ -93,7 +93,8 @@ class Memory:
         self._coord_text = None
         self._writer = None
         self._setup_done = False
-
+        self._past_detour_points = []     # yellow
+        self._current_detour_points = []  # black
         self._step = 0
 
         if self.live_viz:
@@ -341,9 +342,18 @@ class Memory:
                                                edgecolors='k', linewidths=0.6, zorder=4, label="Agent")
         self._hits_scatter = self._ax.scatter([], [], s=18, marker='.', c='red',
                                               alpha=1.0, zorder=5, label="LIDAR hits")
-        # Yellow detour waypoints
-        self._detour_scatter = self._ax.scatter([], [], s=8, marker='o', c='black',
-                                                edgecolors='k', linewidths=0.6, zorder=4, label="Detour waypoints")
+        # Past detours (yellow)
+        self._past_detour_scatter = self._ax.scatter(
+            [], [], s=10, marker='o', c='yellow',
+            edgecolors='k', linewidths=0.6, zorder=4, label="Past detours"
+        )
+
+        # Current detours (black)
+        self._current_detour_scatter = self._ax.scatter(
+            [], [], s=10, marker='o', c='black',
+            edgecolors='k', linewidths=0.6, zorder=5, label="Current detours"
+        )
+
         self._detour_points = []  # storage for all detour WPs
 
 
@@ -470,11 +480,16 @@ class Memory:
             c='blue', marker='*', s=160, edgecolors='k', zorder=6, label="Goal"
         )
 
-        # Plot existing detour points (memory)
-        if hasattr(self, "_detour_points") and len(self._detour_points) > 0:
-            detour_arr = np.array(self._detour_points)
-            ax.scatter(detour_arr[:, 0], detour_arr[:, 1],
-                    c='black', s=20, marker='o', label='Previous waypoints')
+        # Past detours (yellow)
+        if self._past_detour_points:
+            arr = np.array(self._past_detour_points)
+            ax.scatter(arr[:, 0], arr[:, 1], c='yellow', s=30, marker='o', label='Past detours')
+
+        # Current detours (black)
+        if self._current_detour_points:
+            arr = np.array(self._current_detour_points)
+            ax.scatter(arr[:, 0], arr[:, 1], c='black', s=30, marker='o', label='Current detours')
+
 
         # ax.legend(loc="upper right")
         ax.legend(
@@ -510,3 +525,29 @@ class Memory:
         if include_points:
             d["points"] = [[float(p[0]), float(p[1])] for p in c["points"]]
         return d
+
+    def archive_current_detours(self):
+        """Move current detours to past (black → yellow)."""
+        if self._current_detour_points:
+            self._past_detour_points.extend(self._current_detour_points)
+            self._current_detour_points = []
+
+        if self.live_viz:
+            self._past_detour_scatter.set_offsets(
+                np.array(self._past_detour_points) if self._past_detour_points else np.empty((0, 2))
+            )
+            self._current_detour_scatter.set_offsets(np.empty((0, 2)))
+            self._fig.canvas.draw_idle()
+            self._fig.canvas.flush_events()
+
+
+    def add_current_detours(self, points):
+        """Add a new detour set (black)."""
+        self._current_detour_points = list(points)
+
+        if self.live_viz:
+            self._current_detour_scatter.set_offsets(
+                np.array(self._current_detour_points)
+            )
+            self._fig.canvas.draw_idle()
+            self._fig.canvas.flush_events()

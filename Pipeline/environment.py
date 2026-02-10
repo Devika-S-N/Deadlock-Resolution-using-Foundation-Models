@@ -2,15 +2,83 @@
 import json
 import numpy as np
 from warehouse import generate_env  # this is your Code-2 file: warehouse.py
+from shapely.geometry import LineString
+
+
+def walls_from_warehouse(vwall, hwall, N):
+    walls = []
+
+    # vertical walls
+    for col in range(N + 1):
+        for r in range(N):
+            if vwall[col][r]:
+                y0 = N - (r + 1)
+                y1 = N - r
+                walls.append(LineString([(col, y0), (col, y1)]))
+
+    # horizontal walls
+    for row in range(N + 1):
+        for c in range(N):
+            if hwall[row][c]:
+                y = N - row
+                walls.append(LineString([(c, y), (c + 1, y)]))
+
+    return walls
+
+import matplotlib.pyplot as plt
+
+def debug_render_environment(obstacles, agent, goal, N, out_path):
+    fig, ax = plt.subplots(figsize=(8,8))
+
+    for obs in obstacles:
+        if hasattr(obs, "xy"):  # LineString
+            x, y = obs.xy
+            ax.plot(x, y, "k", linewidth=2)
+        else:  # polygon
+            xs, ys = zip(*(obs + [obs[0]]))
+            ax.plot(xs, ys, "k", linewidth=2)
+            # Fill obstacle polygons
+            ax.fill(xs, ys, color='gray', alpha=0.5)
+
+    ax.scatter(agent[0], agent[1], c="green", s=150, label="agent", zorder=10, edgecolors='darkgreen', linewidths=2)
+    ax.scatter(goal[0], goal[1], c="blue", s=150, label="goal", zorder=10, edgecolors='darkblue', linewidths=2)
+
+    # Draw ALL integer grid lines
+    for i in range(N + 1):
+        ax.axhline(y=i, color='lightgray', linewidth=0.5, alpha=0.7)
+        ax.axvline(x=i, color='lightgray', linewidth=0.5, alpha=0.7)
+    
+
+
+    ax.set_xlim(0, N)
+    ax.set_ylim(0, N)
+    ax.set_aspect("equal")
+    
+    # Set integer ticks for all values
+    ax.set_xticks(range(N + 1))
+    ax.set_yticks(range(N + 1))
+    ax.grid(True, which='major', color='gray', linewidth=0.8, alpha=0.5)
+    ax.legend()
+    ax.set_xlabel('x', fontsize=12)
+    ax.set_ylabel('y', fontsize=12)
+    ax.set_title(f'Environment Debug (N={N})', fontsize=14)
+
+    plt.savefig(out_path, dpi=150, bbox_inches='tight')
+    plt.close()
 
 
 def _cell_center_xy(r, c, N):
     """
     warehouse uses (r,c) with r=0 at top.
     controller expects (x,y) with y up, origin bottom-left.
+    
+    Grid lines in warehouse are at integer r, c values.
+    Grid line at row r maps to y = N - r (inverted for y-up).
+    Cell (r, c) occupies rows [r, r+1) and cols [c, c+1).
+    So cell center is at (c + 0.5, N - r - 0.5).
     """
-    x = c + 0.5
-    y = (N - 1 - r) + 0.5
+    x = float(c)
+    y = float(N - r) # Equivalent to N - r - 0.5
     return (x, y)
 
 
@@ -18,100 +86,18 @@ def _rect_poly_from_cells(r0, c0, h, w, N):
     """
     Rectangle obstacle in warehouse cell coords -> polygon corners in controller coords.
     Returns points in (x,y), closed not required.
+    The rectangle spans from (c0, r0) to (c0+w, r0+h) in grid coordinates.
     """
-    x0 = c0
-    x1 = c0 + w
+    x0 = float(c0)
+    x1 = float(c0 + w)
     # convert r (top-down) to y (bottom-up)
-    y_top = N - r0
-    y_bot = N - (r0 + h)
+    # r0 is top of rectangle, r0+h is bottom
+    y_top = float(N - r0)
+    y_bot = float(N - (r0 + h))
     return [(x0, y_bot), (x1, y_bot), (x1, y_top), (x0, y_top)]
 
 
-def _thin_rect_from_segment(x0, y0, x1, y1, t=0.06):
-    """
-    Build a thin rectangle polygon around an axis-aligned wall segment.
-    Assumes either horizontal or vertical segment.
-    """
-    if abs(y1 - y0) < 1e-9:  # horizontal
-        y = y0
-        xa, xb = sorted([x0, x1])
-        return [(xa, y - t/2), (xb, y - t/2), (xb, y + t/2), (xa, y + t/2)]
-    else:  # vertical
-        x = x0
-        ya, yb = sorted([y0, y1])
-        return [(x - t/2, ya), (x + t/2, ya), (x + t/2, yb), (x - t/2, yb)]
 
-
-def _room_walls_as_polys(room, doors, N, thickness=0.06):
-    """
-    room: dict with r0,c0,h,w
-    doors: list of dicts {kind, a, b} (same as meta['doors'])
-    Build wall polygons for:
-      - top, bottom, left, right
-    excluding door segments.
-    """
-    r0, c0, h, w = room["r0"], room["c0"], room["h"], room["w"]
-
-    # wall lines in grid coordinates
-    top_row = r0
-    bot_row = r0 + h
-    left_col = c0
-    right_col = c0 + w
-
-    # Convert to world coordinates:
-    # horizontal wall at 'row' is y = N - row, spanning x in [c, c+1]
-    # vertical wall at 'col' is x = col, spanning y in [N-(r+1), N-r]
-    def y_of_row(row): return N - row
-    def x_of_col(col): return col
-
-    # Build door lookup for easy skipping
-    door_h = set()  # (row, c)
-    door_v = set()  # (col, r)
-    for d in doors:
-        if d["kind"] == "h":
-            door_h.add((d["a"], d["b"]))  # (row, c)
-        else:
-            door_v.add((d["a"], d["b"]))  # (col, r)
-
-    polys = []
-
-    # --- top wall segments (row = top_row, c from left_col .. right_col-1) ---
-    row = top_row
-    y = y_of_row(row)
-    for c in range(left_col, right_col):
-        if (row, c) in door_h:
-            continue
-        polys.append(_thin_rect_from_segment(c, y, c + 1, y, t=thickness))
-
-    # --- bottom wall segments (row = bot_row) ---
-    row = bot_row
-    y = y_of_row(row)
-    for c in range(left_col, right_col):
-        if (row, c) in door_h:
-            continue
-        polys.append(_thin_rect_from_segment(c, y, c + 1, y, t=thickness))
-
-    # --- left wall segments (col = left_col, r from top_row .. bot_row-1) ---
-    col = left_col
-    x = x_of_col(col)
-    for r in range(top_row, bot_row):
-        if (col, r) in door_v:
-            continue
-        y0 = N - (r + 1)
-        y1 = N - r
-        polys.append(_thin_rect_from_segment(x, y0, x, y1, t=thickness))
-
-    # --- right wall segments (col = right_col) ---
-    col = right_col
-    x = x_of_col(col)
-    for r in range(top_row, bot_row):
-        if (col, r) in door_v:
-            continue
-        y0 = N - (r + 1)
-        y1 = N - r
-        polys.append(_thin_rect_from_segment(x, y0, x, y1, t=thickness))
-
-    return polys
 
 
 class Environment:
@@ -172,18 +158,18 @@ class Environment:
         for o in meta["obstacles"]:
             obstacles_polys.append(_rect_poly_from_cells(o["r0"], o["c0"], o["h"], o["w"], N))
 
-        # room walls (thin rectangles), respecting doors
-        doors = meta.get("doors", [])
-        for room in meta.get("rooms", []):
-            obstacles_polys.extend(_room_walls_as_polys(room, doors, N, thickness=0.06))
+        # room + boundary walls directly from warehouse grids (NO buffering)
+        vwall = meta["vwall_room"]
+        hwall = meta["hwall_room"]
+        obstacles_polys.extend(walls_from_warehouse(vwall, hwall, N))
 
         # outer boundary as thin walls
-        t = 0.06
+        t = 0.001
         # bottom y=0, top y=N, left x=0, right x=N
-        obstacles_polys.append(_thin_rect_from_segment(0, 0, N, 0, t=t))
-        obstacles_polys.append(_thin_rect_from_segment(0, N, N, N, t=t))
-        obstacles_polys.append(_thin_rect_from_segment(0, 0, 0, N, t=t))
-        obstacles_polys.append(_thin_rect_from_segment(N, 0, N, N, t=t))
+        # obstacles_polys.append(_thin_rect_from_segment(0, 0, N, 0, t=t))
+        # obstacles_polys.append(_thin_rect_from_segment(0, N, N, N, t=t))
+        # obstacles_polys.append(_thin_rect_from_segment(0, 0, 0, N, t=t))
+        # obstacles_polys.append(_thin_rect_from_segment(N, 0, N, N, t=t))
 
         # 5) Grid (N,N): mark obstacle rectangles + any cell touched by a wall polygon
         # Keep it simple: mark obstacle rectangle cells as 1.
@@ -202,6 +188,15 @@ class Environment:
         self.goal_pos = goal_xy
         self.obstacles = obstacles_polys
 
+        debug_render_environment(
+            obstacles_polys,
+            agent_xy,
+            goal_xy,
+            N,
+            out_path=(self.out_dir + "/env_debug_env_py.png" if self.out_dir else "env_debug_env_py.png")
+        )
+
+
         return self.grid, self.agent_pos, self.goal_pos, self.obstacles
 
     def set_agent_and_goal(self, agent_pos, goal_pos):
@@ -211,3 +206,28 @@ class Environment:
     def set_obstacles(self, obstacle_coords):
         # optional, if you still use it somewhere
         self.obstacles = obstacle_coords
+if __name__ == "__main__":
+    print("Running environment.py standalone")
+
+    # SAME parameters as controller
+    N = 15
+    num_rooms = 3
+    num_obstacles = 10
+    difficulty = "medium"
+    different = False
+    fixed_seed = 15 if not different else None
+
+    env = Environment(
+        N=N,
+        num_rooms=num_rooms,
+        num_obstacles=num_obstacles,
+        seed=fixed_seed,
+        out_dir=".",
+        difficulty=difficulty,
+    )
+
+    grid, agent, goal, obs_polys = env.create_environment()
+
+    print("Agent:", agent)
+    print("Goal :", goal)
+    print("Num obstacles:", len(obs_polys))

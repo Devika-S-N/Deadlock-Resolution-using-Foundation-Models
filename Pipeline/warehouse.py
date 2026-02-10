@@ -351,14 +351,24 @@ def generate_env(
                 if not placed:
                     return None
 
-            # ---- carve doors in room walls ----
+            
+            # ---- carve doors in room walls (WIDER DOORS: width = 3) ----
+            DOOR_HALF_WIDTH = 1  # total width = 2*1 + 1 = 3
+
             for kind, a, b in room_doors:
                 if kind == "h":
                     row, c = a, b
-                    hwall_room[row, c] = False
+                    for dc in range(-DOOR_HALF_WIDTH, DOOR_HALF_WIDTH + 1):
+                        cc = c + dc
+                        if 0 <= cc < N_:
+                            hwall_room[row, cc] = False
                 else:
                     col, r = a, b
-                    vwall_room[col, r] = False
+                    for dr in range(-DOOR_HALF_WIDTH, DOOR_HALF_WIDTH + 1):
+                        rr = r + dr
+                        if 0 <= rr < N_:
+                            vwall_room[col, rr] = False
+
 
             # ---- build door_edges ----
             for kind, a, b in room_doors:
@@ -749,14 +759,17 @@ def generate_env(
 
         def draw_axes(d):
             y = margin_top + N_ * cell_px + 10
-            for xline in range(1, N_ + 1):
+
+            # X axis (0-indexed)
+            for xline in range(0, N_):
                 x = gx(xline)
                 d.text((x - 4, y), str(xline), fill=(80, 80, 80), font=font_small)
 
+            # Y axis (1-indexed, top-down corrected)
             x = 10
-            for yline in range(1, N_ + 1):
-                y_pos = gy(N_ - yline)
-                d.text((x, y_pos - 7), str(yline), fill=(80, 80, 80), font=font_small)
+            for yline in range(0, N_):
+                y_pos = gy(N_ - 1 - yline)
+                d.text((x, y_pos - 7), str(yline + 1), fill=(80, 80, 80), font=font_small)
 
             d.text(
                 (margin_left + (N_ * cell_px) // 2 - 10, margin_top + N_ * cell_px + 30),
@@ -770,6 +783,7 @@ def generate_env(
                 fill=(80, 80, 80),
                 font=font,
             )
+
 
         def paint_vwall(d, col, r0, r1, px):
             x = gx(col)
@@ -804,10 +818,11 @@ def generate_env(
             d.rectangle([x0, y0, x1, y1], fill=colour_obstacle)
 
         def circle_in_cell(d, r, c, color):
-            cx = gx(c) + cell_px // 2
-            cy = gy(r) + cell_px // 2
+            cx = gx(c)
+            cy = gy(r)
             rad = int(cell_px * 0.15)
             d.ellipse([cx - rad, cy - rad, cx + rad, cy + rad], fill=color)
+
 
         img, d = make_canvas()
         draw_grid(d)
@@ -863,6 +878,9 @@ def generate_env(
             "workstations": [{"id": int(ws["id"]), "center": to_xy(ws["center"]), "arm": int(ws["arm"])} for ws in workstations],
             "bfs_path_len": int(len(bfs_path_rc)),
             "bfs_path": [to_xy_center(rc) for rc in bfs_path_rc],
+            "vwall_room": vwall_room.astype(int).tolist(),
+            "hwall_room": hwall_room.astype(int).tolist(),
+
         }
 
         return img, meta

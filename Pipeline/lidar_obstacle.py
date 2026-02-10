@@ -2,7 +2,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from shapely.geometry import Polygon
+from shapely.geometry import LineString, Point
 import os
 
 class LidarObstacleDetector:
@@ -22,69 +22,63 @@ class LidarObstacleDetector:
         self.angle_increment = angle_increment
         self.logger = logger  # <-- shared logger from controller
 
-    def ray_intersection(self, ray_start: np.ndarray, ray_end: np.ndarray, polygon: Polygon):
-        x1, y1 = ray_start
-        x2, y2 = ray_end
-        coords = list(polygon.exterior.coords)
-
-        min_alpha = float('inf')
-        intersection = None
-
-        for i in range(len(coords) - 1):
-            x3, y3 = coords[i]
-            x4, y4 = coords[i + 1]
-
-            denom = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4)
-            if abs(denom) < 1e-6:
-                continue
-
-            alpha = ((x1 - x3) * (y3 - y4) - (y1 - y3) * (x3 - x4)) / denom
-            beta = -((x1 - x2) * (y1 - y3) - (y1 - y2) * (x1 - x3)) / denom
-
-            if 0 <= alpha <= 1 and 0 <= beta <= 1:
-                if alpha < min_alpha:
-                    min_alpha = alpha
-                    intersection = np.array([x1 + alpha * (x2 - x1), y1 + alpha * (y2 - y1)])
-
-        # if intersection is not None and self.logger:
-        #     self.logger.log(f"Ray hit at {intersection.tolist()}")
-        return (intersection is not None), intersection
 
     def scan(self, position):
         if self.logger:
-            self.logger.log(f"Starting LIDAR scan at position {position.tolist() if hasattr(position,'tolist') else position}")
+            self.logger.log(
+                f"Starting LIDAR scan at position "
+                f"{position.tolist() if hasattr(position,'tolist') else position}"
+            )
 
         hits = []
+        pos_pt = Point(float(position[0]), float(position[1]))
+
         for angle in np.arange(0, 2 * np.pi, self.angle_increment):
-            x_end = position[0] + self.range_limit * np.cos(angle)
-            y_end = position[1] + self.range_limit * np.sin(angle)
-            ray_end = np.array([x_end, y_end])
+            ray_end = np.array([
+                position[0] + self.range_limit * np.cos(angle),
+                position[1] + self.range_limit * np.sin(angle)
+            ])
+            ray = LineString([pos_pt, (ray_end[0], ray_end[1])])
 
             closest_point = None
-            min_dist = float('inf')
+            min_dist = float("inf")
 
             for obs in self.obstacles:
-                polygon = Polygon(obs)
-                hit, point = self.ray_intersection(position, ray_end, polygon)
-                if hit:
-                    dist = np.linalg.norm(point - position)
-                    if dist < min_dist:
-                        min_dist = dist
-                        closest_point = point
+                if not ray.intersects(obs):
+                    continue
+
+                inter = ray.intersection(obs)
+                if inter.is_empty:
+                    continue
+
+                # Normalize intersection geometry
+                if inter.geom_type == "MultiPoint":
+                    pts = list(inter.geoms)
+                elif inter.geom_type == "Point":
+                    pts = [inter]
+                elif inter.geom_type in ("LineString", "MultiLineString"):
+                    pts = [inter.interpolate(0.0)]
+                else:
+                    continue
+
+                for p in pts:
+                    d = p.distance(pos_pt)
+                    if d < min_dist:
+                        min_dist = d
+                        closest_point = np.array([p.x, p.y])
 
             if closest_point is not None:
                 hits.append((angle, closest_point))
                 if self.logger:
-                    self.logger.log(f"Ray at angle {np.rad2deg(angle):.1f}° hit obstacle at {closest_point.tolist()}")
-            # else:
-            #     hits.append((angle, ray_end, False))
-            #     # optional: log free rays if you want
-            #     # if self.logger:
-            #     #     self.logger.log(f"Ray at angle {np.rad2deg(angle):.1f}° free to {ray_end.tolist()}")
+                    self.logger.log(
+                        f"Ray {np.rad2deg(angle):.1f}° hit at {closest_point.tolist()}"
+                    )
 
         if self.logger:
             self.logger.log("LIDAR scan completed.")
-        return hits # list of (angle, hit_point) — only real hits
+
+        return hits
+
 
     def visualize(self, position, hits, goal):
         fig, ax = plt.subplots(figsize=(6, 6))
