@@ -1,0 +1,6 @@
+[2026-01-27 08:23:02] Environment initialized with agent at (4.5, 10.5) and goal at (9.5, 10.5)
+[2026-01-27 08:23:02] Starting navigation from [4.5, 10.5] to goal at [9.5, 10.5]
+[2026-01-27 08:23:02] Scan step begin at [4.5, 10.5]
+[2026-01-27 08:23:02] Starting LIDAR scan at position [4.5, 10.5]
+[2026-01-27 08:23:02] LIDAR scan completed.
+[2026-01-27 08:23:02] LIDAR red hits (obstacles): []

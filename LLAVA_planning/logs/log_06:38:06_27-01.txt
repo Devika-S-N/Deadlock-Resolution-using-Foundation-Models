@@ -1,0 +1,2305 @@
+[2026-01-27 06:38:06] Environment initialized with agent at (4.5, 2.5) and goal at (10.5, 2.5)
+[2026-01-27 06:38:06] Starting navigation from [4.5, 2.5] to goal at [10.5, 2.5]
+[2026-01-27 06:38:06] Scan step begin at [4.5, 2.5]
+[2026-01-27 06:38:06] Starting LIDAR scan at position [4.5, 2.5]
+[2026-01-27 06:38:06] LIDAR scan completed.
+[2026-01-27 06:38:06] Scan step end: obstacle_detected=False
+[2026-01-27 06:38:06] Scan step begin at [4.6, 2.5]
+[2026-01-27 06:38:06] Starting LIDAR scan at position [4.6, 2.5]
+[2026-01-27 06:38:06] LIDAR scan completed.
+[2026-01-27 06:38:06] Scan step end: obstacle_detected=False
+[2026-01-27 06:38:06] Scan step begin at [4.699999999999999, 2.5]
+[2026-01-27 06:38:06] Starting LIDAR scan at position [4.699999999999999, 2.5]
+[2026-01-27 06:38:06] LIDAR scan completed.
+[2026-01-27 06:38:06] Scan step end: obstacle_detected=False
+[2026-01-27 06:38:06] Scan step begin at [4.799999999999999, 2.5]
+[2026-01-27 06:38:06] Starting LIDAR scan at position [4.799999999999999, 2.5]
+[2026-01-27 06:38:06] LIDAR scan completed.
+[2026-01-27 06:38:06] Scan step end: obstacle_detected=False
+[2026-01-27 06:38:07] Scan step begin at [4.899999999999999, 2.5]
+[2026-01-27 06:38:07] Starting LIDAR scan at position [4.899999999999999, 2.5]
+[2026-01-27 06:38:07] LIDAR scan completed.
+[2026-01-27 06:38:07] Scan step end: obstacle_detected=False
+[2026-01-27 06:38:07] Scan step begin at [4.999999999999998, 2.5]
+[2026-01-27 06:38:07] Starting LIDAR scan at position [4.999999999999998, 2.5]
+[2026-01-27 06:38:07] LIDAR scan completed.
+[2026-01-27 06:38:07] Scan step end: obstacle_detected=False
+[2026-01-27 06:38:07] Scan step begin at [5.099999999999998, 2.5]
+[2026-01-27 06:38:07] Starting LIDAR scan at position [5.099999999999998, 2.5]
+[2026-01-27 06:38:07] LIDAR scan completed.
+[2026-01-27 06:38:07] Scan step end: obstacle_detected=False
+[2026-01-27 06:38:07] Scan step begin at [5.1999999999999975, 2.5]
+[2026-01-27 06:38:07] Starting LIDAR scan at position [5.1999999999999975, 2.5]
+[2026-01-27 06:38:07] LIDAR scan completed.
+[2026-01-27 06:38:07] Scan step end: obstacle_detected=False
+[2026-01-27 06:38:07] Scan step begin at [5.299999999999997, 2.5]
+[2026-01-27 06:38:07] Starting LIDAR scan at position [5.299999999999997, 2.5]
+[2026-01-27 06:38:07] LIDAR scan completed.
+[2026-01-27 06:38:07] Scan step end: obstacle_detected=False
+[2026-01-27 06:38:07] Scan step begin at [5.399999999999997, 2.5]
+[2026-01-27 06:38:07] Starting LIDAR scan at position [5.399999999999997, 2.5]
+[2026-01-27 06:38:07] LIDAR scan completed.
+[2026-01-27 06:38:07] Scan step end: obstacle_detected=False
+[2026-01-27 06:38:08] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] LIDAR scan completed.
+[2026-01-27 06:38:08] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:08] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:08] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] LIDAR scan completed.
+[2026-01-27 06:38:08] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:08] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] LIDAR scan completed.
+[2026-01-27 06:38:08] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:08] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:08] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] LIDAR scan completed.
+[2026-01-27 06:38:08] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:08] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] LIDAR scan completed.
+[2026-01-27 06:38:08] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:08] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:08] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] LIDAR scan completed.
+[2026-01-27 06:38:08] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:08] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:08] LIDAR scan completed.
+[2026-01-27 06:38:08] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:08] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:08] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:08] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] LIDAR scan completed.
+[2026-01-27 06:38:09] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:09] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] LIDAR scan completed.
+[2026-01-27 06:38:09] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:09] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:09] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] LIDAR scan completed.
+[2026-01-27 06:38:09] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:09] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] LIDAR scan completed.
+[2026-01-27 06:38:09] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:09] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:09] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] LIDAR scan completed.
+[2026-01-27 06:38:09] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:09] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] LIDAR scan completed.
+[2026-01-27 06:38:09] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:09] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:09] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] LIDAR scan completed.
+[2026-01-27 06:38:09] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:09] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:09] LIDAR scan completed.
+[2026-01-27 06:38:09] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:09] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:09] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:09] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:09] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] LIDAR scan completed.
+[2026-01-27 06:38:10] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:10] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] LIDAR scan completed.
+[2026-01-27 06:38:10] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:10] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:10] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] LIDAR scan completed.
+[2026-01-27 06:38:10] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:10] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] LIDAR scan completed.
+[2026-01-27 06:38:10] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:10] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:10] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] LIDAR scan completed.
+[2026-01-27 06:38:10] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:10] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] LIDAR scan completed.
+[2026-01-27 06:38:10] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:10] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:10] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] LIDAR scan completed.
+[2026-01-27 06:38:10] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:10] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:10] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:10] LIDAR scan completed.
+[2026-01-27 06:38:10] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:10] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:11] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] LIDAR scan completed.
+[2026-01-27 06:38:11] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:11] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] LIDAR scan completed.
+[2026-01-27 06:38:11] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:11] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:11] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] LIDAR scan completed.
+[2026-01-27 06:38:11] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:11] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] LIDAR scan completed.
+[2026-01-27 06:38:11] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:11] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:11] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] LIDAR scan completed.
+[2026-01-27 06:38:11] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:11] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] LIDAR scan completed.
+[2026-01-27 06:38:11] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:11] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:11] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] LIDAR scan completed.
+[2026-01-27 06:38:11] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:11] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:11] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:11] LIDAR scan completed.
+[2026-01-27 06:38:11] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:12] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:12] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] LIDAR scan completed.
+[2026-01-27 06:38:12] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:12] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] LIDAR scan completed.
+[2026-01-27 06:38:12] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:12] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:12] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] LIDAR scan completed.
+[2026-01-27 06:38:12] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:12] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] LIDAR scan completed.
+[2026-01-27 06:38:12] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:12] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:12] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] LIDAR scan completed.
+[2026-01-27 06:38:12] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:12] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] LIDAR scan completed.
+[2026-01-27 06:38:12] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:12] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:12] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] LIDAR scan completed.
+[2026-01-27 06:38:12] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:12] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:12] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:12] LIDAR scan completed.
+[2026-01-27 06:38:12] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:13] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:13] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] LIDAR scan completed.
+[2026-01-27 06:38:13] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:13] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] LIDAR scan completed.
+[2026-01-27 06:38:13] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:13] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:13] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] LIDAR scan completed.
+[2026-01-27 06:38:13] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:13] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] LIDAR scan completed.
+[2026-01-27 06:38:13] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:13] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:13] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] LIDAR scan completed.
+[2026-01-27 06:38:13] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:13] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] LIDAR scan completed.
+[2026-01-27 06:38:13] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:13] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:13] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] LIDAR scan completed.
+[2026-01-27 06:38:13] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:13] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:13] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:13] LIDAR scan completed.
+[2026-01-27 06:38:13] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:14] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:14] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] LIDAR scan completed.
+[2026-01-27 06:38:14] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:14] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] LIDAR scan completed.
+[2026-01-27 06:38:14] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:14] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:14] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] LIDAR scan completed.
+[2026-01-27 06:38:14] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:14] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] LIDAR scan completed.
+[2026-01-27 06:38:14] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:14] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:14] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] LIDAR scan completed.
+[2026-01-27 06:38:14] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:14] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] LIDAR scan completed.
+[2026-01-27 06:38:14] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:14] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:14] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] LIDAR scan completed.
+[2026-01-27 06:38:14] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:14] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:14] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:14] LIDAR scan completed.
+[2026-01-27 06:38:14] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:15] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:15] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] LIDAR scan completed.
+[2026-01-27 06:38:15] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:15] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] LIDAR scan completed.
+[2026-01-27 06:38:15] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:15] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:15] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] LIDAR scan completed.
+[2026-01-27 06:38:15] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:15] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] LIDAR scan completed.
+[2026-01-27 06:38:15] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:15] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:15] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] LIDAR scan completed.
+[2026-01-27 06:38:15] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:15] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] LIDAR scan completed.
+[2026-01-27 06:38:15] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:15] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:15] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] LIDAR scan completed.
+[2026-01-27 06:38:15] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:15] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:15] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:15] LIDAR scan completed.
+[2026-01-27 06:38:15] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:16] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:16] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] LIDAR scan completed.
+[2026-01-27 06:38:16] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:16] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] LIDAR scan completed.
+[2026-01-27 06:38:16] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:16] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:16] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] LIDAR scan completed.
+[2026-01-27 06:38:16] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:16] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] LIDAR scan completed.
+[2026-01-27 06:38:16] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:16] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:16] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] LIDAR scan completed.
+[2026-01-27 06:38:16] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:16] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] LIDAR scan completed.
+[2026-01-27 06:38:16] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:16] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:16] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] LIDAR scan completed.
+[2026-01-27 06:38:16] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:16] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:16] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:16] LIDAR scan completed.
+[2026-01-27 06:38:16] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:17] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:17] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] LIDAR scan completed.
+[2026-01-27 06:38:17] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:17] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] LIDAR scan completed.
+[2026-01-27 06:38:17] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:17] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:17] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] LIDAR scan completed.
+[2026-01-27 06:38:17] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:17] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] LIDAR scan completed.
+[2026-01-27 06:38:17] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:17] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:17] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] LIDAR scan completed.
+[2026-01-27 06:38:17] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:17] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] LIDAR scan completed.
+[2026-01-27 06:38:17] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:17] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:17] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] LIDAR scan completed.
+[2026-01-27 06:38:17] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:17] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:17] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:17] LIDAR scan completed.
+[2026-01-27 06:38:17] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:18] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:18] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] LIDAR scan completed.
+[2026-01-27 06:38:18] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:18] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] LIDAR scan completed.
+[2026-01-27 06:38:18] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:18] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:18] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] LIDAR scan completed.
+[2026-01-27 06:38:18] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:18] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] LIDAR scan completed.
+[2026-01-27 06:38:18] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:18] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:18] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] LIDAR scan completed.
+[2026-01-27 06:38:18] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:18] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] LIDAR scan completed.
+[2026-01-27 06:38:18] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:18] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:18] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] LIDAR scan completed.
+[2026-01-27 06:38:18] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:18] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:18] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:18] LIDAR scan completed.
+[2026-01-27 06:38:18] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:19] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:19] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] LIDAR scan completed.
+[2026-01-27 06:38:19] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:19] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] LIDAR scan completed.
+[2026-01-27 06:38:19] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:19] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:19] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] LIDAR scan completed.
+[2026-01-27 06:38:19] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:19] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] LIDAR scan completed.
+[2026-01-27 06:38:19] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:19] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:19] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] LIDAR scan completed.
+[2026-01-27 06:38:19] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:19] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] LIDAR scan completed.
+[2026-01-27 06:38:19] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:19] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:19] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] LIDAR scan completed.
+[2026-01-27 06:38:19] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:19] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:19] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:19] LIDAR scan completed.
+[2026-01-27 06:38:19] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:20] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:20] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] LIDAR scan completed.
+[2026-01-27 06:38:20] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:20] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] LIDAR scan completed.
+[2026-01-27 06:38:20] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:20] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:20] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] LIDAR scan completed.
+[2026-01-27 06:38:20] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:20] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] LIDAR scan completed.
+[2026-01-27 06:38:20] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:20] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:20] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] LIDAR scan completed.
+[2026-01-27 06:38:20] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:20] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] LIDAR scan completed.
+[2026-01-27 06:38:20] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:20] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:20] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] LIDAR scan completed.
+[2026-01-27 06:38:20] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:20] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:20] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:20] LIDAR scan completed.
+[2026-01-27 06:38:20] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:21] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:21] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] LIDAR scan completed.
+[2026-01-27 06:38:21] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:21] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] LIDAR scan completed.
+[2026-01-27 06:38:21] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:21] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:21] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] LIDAR scan completed.
+[2026-01-27 06:38:21] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:21] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] LIDAR scan completed.
+[2026-01-27 06:38:21] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:21] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:21] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] LIDAR scan completed.
+[2026-01-27 06:38:21] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:21] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] LIDAR scan completed.
+[2026-01-27 06:38:21] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:21] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:21] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] LIDAR scan completed.
+[2026-01-27 06:38:21] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:21] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:21] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:21] LIDAR scan completed.
+[2026-01-27 06:38:21] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:22] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:22] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] LIDAR scan completed.
+[2026-01-27 06:38:22] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:22] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] LIDAR scan completed.
+[2026-01-27 06:38:22] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:22] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:22] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] LIDAR scan completed.
+[2026-01-27 06:38:22] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:22] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] LIDAR scan completed.
+[2026-01-27 06:38:22] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:22] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:22] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] LIDAR scan completed.
+[2026-01-27 06:38:22] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:22] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] LIDAR scan completed.
+[2026-01-27 06:38:22] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:22] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:22] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] LIDAR scan completed.
+[2026-01-27 06:38:22] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:22] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:22] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:22] LIDAR scan completed.
+[2026-01-27 06:38:22] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:23] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:23] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] LIDAR scan completed.
+[2026-01-27 06:38:23] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:23] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] LIDAR scan completed.
+[2026-01-27 06:38:23] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:23] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:23] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] LIDAR scan completed.
+[2026-01-27 06:38:23] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:23] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] LIDAR scan completed.
+[2026-01-27 06:38:23] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:23] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:23] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] LIDAR scan completed.
+[2026-01-27 06:38:23] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:23] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] LIDAR scan completed.
+[2026-01-27 06:38:23] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:23] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:23] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] LIDAR scan completed.
+[2026-01-27 06:38:23] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:23] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:23] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:23] LIDAR scan completed.
+[2026-01-27 06:38:23] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:24] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:24] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] LIDAR scan completed.
+[2026-01-27 06:38:24] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:24] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] LIDAR scan completed.
+[2026-01-27 06:38:24] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:24] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:24] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] LIDAR scan completed.
+[2026-01-27 06:38:24] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:24] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] LIDAR scan completed.
+[2026-01-27 06:38:24] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:24] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:24] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] LIDAR scan completed.
+[2026-01-27 06:38:24] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:24] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] LIDAR scan completed.
+[2026-01-27 06:38:24] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:24] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:24] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:24] LIDAR scan completed.
+[2026-01-27 06:38:24] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:24] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:24] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:24] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] LIDAR scan completed.
+[2026-01-27 06:38:25] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:25] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:25] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] LIDAR scan completed.
+[2026-01-27 06:38:25] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:25] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] LIDAR scan completed.
+[2026-01-27 06:38:25] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:25] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:25] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] LIDAR scan completed.
+[2026-01-27 06:38:25] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:25] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] LIDAR scan completed.
+[2026-01-27 06:38:25] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:25] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:25] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] LIDAR scan completed.
+[2026-01-27 06:38:25] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:25] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] LIDAR scan completed.
+[2026-01-27 06:38:25] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:25] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:25] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:25] LIDAR scan completed.
+[2026-01-27 06:38:25] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:25] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:25] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:25] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] LIDAR scan completed.
+[2026-01-27 06:38:26] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:26] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:26] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] LIDAR scan completed.
+[2026-01-27 06:38:26] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:26] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] LIDAR scan completed.
+[2026-01-27 06:38:26] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:26] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:26] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] LIDAR scan completed.
+[2026-01-27 06:38:26] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:26] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] LIDAR scan completed.
+[2026-01-27 06:38:26] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:26] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:26] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] LIDAR scan completed.
+[2026-01-27 06:38:26] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:26] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:26] LIDAR scan completed.
+[2026-01-27 06:38:26] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:26] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:26] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:26] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:26] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] LIDAR scan completed.
+[2026-01-27 06:38:27] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:27] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] LIDAR scan completed.
+[2026-01-27 06:38:27] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:27] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:27] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] LIDAR scan completed.
+[2026-01-27 06:38:27] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:27] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] LIDAR scan completed.
+[2026-01-27 06:38:27] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:27] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:27] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] LIDAR scan completed.
+[2026-01-27 06:38:27] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:27] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] LIDAR scan completed.
+[2026-01-27 06:38:27] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:27] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:27] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] LIDAR scan completed.
+[2026-01-27 06:38:27] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:27] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:27] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:27] LIDAR scan completed.
+[2026-01-27 06:38:27] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:28] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:28] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] LIDAR scan completed.
+[2026-01-27 06:38:28] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:28] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] LIDAR scan completed.
+[2026-01-27 06:38:28] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:28] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:28] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] LIDAR scan completed.
+[2026-01-27 06:38:28] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:28] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] LIDAR scan completed.
+[2026-01-27 06:38:28] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:28] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:28] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] LIDAR scan completed.
+[2026-01-27 06:38:28] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:28] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] LIDAR scan completed.
+[2026-01-27 06:38:28] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:28] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:28] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] LIDAR scan completed.
+[2026-01-27 06:38:28] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:28] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:28] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:28] LIDAR scan completed.
+[2026-01-27 06:38:28] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:29] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:29] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] LIDAR scan completed.
+[2026-01-27 06:38:29] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:29] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] LIDAR scan completed.
+[2026-01-27 06:38:29] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:29] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:29] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] LIDAR scan completed.
+[2026-01-27 06:38:29] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:29] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] LIDAR scan completed.
+[2026-01-27 06:38:29] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:29] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:29] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] LIDAR scan completed.
+[2026-01-27 06:38:29] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:29] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] LIDAR scan completed.
+[2026-01-27 06:38:29] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:29] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:29] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] LIDAR scan completed.
+[2026-01-27 06:38:29] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:29] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:29] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:29] LIDAR scan completed.
+[2026-01-27 06:38:29] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:30] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:30] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] LIDAR scan completed.
+[2026-01-27 06:38:30] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:30] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] LIDAR scan completed.
+[2026-01-27 06:38:30] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:30] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:30] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] LIDAR scan completed.
+[2026-01-27 06:38:30] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:30] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] LIDAR scan completed.
+[2026-01-27 06:38:30] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:30] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:30] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] LIDAR scan completed.
+[2026-01-27 06:38:30] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:30] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] LIDAR scan completed.
+[2026-01-27 06:38:30] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:30] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:30] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:30] LIDAR scan completed.
+[2026-01-27 06:38:30] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:30] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:30] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:30] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:31] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:31] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:31] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:31] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:31] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:31] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:31] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:31] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:31] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:31] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:31] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:31] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:31] LIDAR scan completed.
+[2026-01-27 06:38:31] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:31] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:31] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:31] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:31] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:32] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:32] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:32] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:32] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:32] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:32] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:32] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:32] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:32] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:32] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Local A* detour generated 1 waypoints.
+[2026-01-27 06:38:32] Moving to waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Reached waypoint [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Scan step begin at [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.
+[2026-01-27 06:38:32] Scan step end: obstacle_detected=True
+[2026-01-27 06:38:32] Obstacle detected near [5.4999999999999964, 2.5] — querying A* for batch detour waypoints
+[2026-01-27 06:38:32] Starting LIDAR scan at position [5.4999999999999964, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray at angle 0.0° hit obstacle at [5.97, 2.5]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray at angle 10.0° hit obstacle at [5.97, 2.582873680932979]
+[2026-01-27 06:38:32] Ray hit at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] Ray at angle 350.0° hit obstacle at [5.97, 2.417126319067021]
+[2026-01-27 06:38:32] LIDAR scan completed.

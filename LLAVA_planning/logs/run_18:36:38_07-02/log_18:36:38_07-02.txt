@@ -1,0 +1,836 @@
+[2026-02-07 18:36:38] Run directory created at logs/run_18:36:38_07-02
+[2026-02-07 18:36:38] Environment initialized with agent at (10.0, 12.0) and goal at (6.0, 4.0)
+[2026-02-07 18:36:39] Starting navigation from [10.0, 12.0] to goal at [6.0, 4.0]
+[2026-02-07 18:36:39] Scan step begin at [10.0, 12.0]
+[2026-02-07 18:36:39] Starting LIDAR scan at position [10.0, 12.0]
+[2026-02-07 18:36:39] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 18:36:39] Ray at angle 170.0° hit obstacle at [9.03, 12.17103717128721]
+[2026-02-07 18:36:39] Ray at angle 180.0° hit obstacle at [9.03, 12.0]
+[2026-02-07 18:36:39] Ray at angle 190.0° hit obstacle at [9.03, 11.82896282871279]
+[2026-02-07 18:36:39] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 18:36:39] LIDAR scan completed.
+[2026-02-07 18:36:39] LIDAR detected 5 obstacle hits: [[11.0, 12.0], [9.03, 12.171], [9.03, 12.0], [9.03, 11.829], [10.0, 11.0]]
+[2026-02-07 18:36:39] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:39] Obstacle detected near [9.03, 12.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:36:39] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:36:39] Agent position: [10.0, 12.0]
+[2026-02-07 18:36:39] Goal position: [6.0, 4.0]
+[2026-02-07 18:36:39] Starting LIDAR scan at position [10.0, 12.0]
+[2026-02-07 18:36:39] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 18:36:39] Ray at angle 170.0° hit obstacle at [9.03, 12.17103717128721]
+[2026-02-07 18:36:39] Ray at angle 180.0° hit obstacle at [9.03, 12.0]
+[2026-02-07 18:36:39] Ray at angle 190.0° hit obstacle at [9.03, 11.82896282871279]
+[2026-02-07 18:36:39] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 18:36:39] LIDAR scan completed.
+[2026-02-07 18:36:39] LIDAR detected 5 obstacle hits: [[11.0, 12.0], [9.03, 12.171], [9.03, 12.0], [9.03, 11.829], [10.0, 11.0]]
+[2026-02-07 18:36:39] LIDAR hit count: 5
+[2026-02-07 18:36:39] LIDAR hit points: [[11.0, 12.0], [9.03, 12.171], [9.03, 12.0], [9.03, 11.829], [10.0, 11.0]]
+[2026-02-07 18:36:39] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_001.png
+[2026-02-07 18:36:39] Querying VLM model: gpt-4o
+[2026-02-07 18:36:39] Calling VLM for detour (attempt 1)
+[2026-02-07 18:36:42] VLM returned 5 waypoints: [[10.5, 11.5], [10.5, 10.5], [10.0, 9.5], [9.5, 8.5], [9.0, 7.5]]
+[2026-02-07 18:36:42] Accept WP1: [10.5, 11.5]
+[2026-02-07 18:36:42] Reject WP2: inside original obstacle [10.5, 10.5]
+[2026-02-07 18:36:42] Reject WP3: segment [10.5, 11.5] -> [10.0, 9.5] intersects original obstacle interior
+[2026-02-07 18:36:42] Reject WP4: segment [10.5, 11.5] -> [9.5, 8.5] intersects original obstacle interior
+[2026-02-07 18:36:42] Reject WP5: segment [10.5, 11.5] -> [9.0, 7.5] intersects original obstacle interior
+[2026-02-07 18:36:42] Detour validation result: SUCCESS (1 waypoints accepted)
+[2026-02-07 18:36:42] Added 1 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:36:42] ===== DETOUR END =====
+[2026-02-07 18:36:42] Moving to waypoint [10.5, 11.5]
+[2026-02-07 18:36:42] Starting LIDAR scan at position [10.0, 12.0]
+[2026-02-07 18:36:42] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 18:36:42] Ray at angle 170.0° hit obstacle at [9.03, 12.17103717128721]
+[2026-02-07 18:36:42] Ray at angle 180.0° hit obstacle at [9.03, 12.0]
+[2026-02-07 18:36:42] Ray at angle 190.0° hit obstacle at [9.03, 11.82896282871279]
+[2026-02-07 18:36:42] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 18:36:42] LIDAR scan completed.
+[2026-02-07 18:36:42] Scan step begin at [10.05, 11.95]
+[2026-02-07 18:36:42] Starting LIDAR scan at position [10.05, 11.95]
+[2026-02-07 18:36:42] Ray at angle 0.0° hit obstacle at [11.0, 11.95]
+[2026-02-07 18:36:42] Ray at angle 270.0° hit obstacle at [10.05, 11.0]
+[2026-02-07 18:36:42] Ray at angle 280.0° hit obstacle at [10.217510631673042, 11.0]
+[2026-02-07 18:36:42] Ray at angle 350.0° hit obstacle at [11.0, 11.782489368326958]
+[2026-02-07 18:36:42] LIDAR scan completed.
+[2026-02-07 18:36:42] LIDAR detected 4 obstacle hits: [[11.0, 11.95], [10.05, 11.0], [10.218, 11.0], [11.0, 11.782]]
+[2026-02-07 18:36:42] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:43] LIDAR hit detected during waypoint traversal at [10.05, 11.95] — stopping and replanning
+[2026-02-07 18:36:43] Scan step begin at [10.05, 11.95]
+[2026-02-07 18:36:43] Starting LIDAR scan at position [10.05, 11.95]
+[2026-02-07 18:36:43] Ray at angle 0.0° hit obstacle at [11.0, 11.95]
+[2026-02-07 18:36:43] Ray at angle 270.0° hit obstacle at [10.05, 11.0]
+[2026-02-07 18:36:43] Ray at angle 280.0° hit obstacle at [10.217510631673042, 11.0]
+[2026-02-07 18:36:43] Ray at angle 350.0° hit obstacle at [11.0, 11.782489368326958]
+[2026-02-07 18:36:43] LIDAR scan completed.
+[2026-02-07 18:36:43] LIDAR detected 4 obstacle hits: [[11.0, 11.95], [10.05, 11.0], [10.218, 11.0], [11.0, 11.782]]
+[2026-02-07 18:36:43] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:43] Obstacle detected near [11.0, 11.95] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:36:43] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:36:43] Agent position: [10.05, 11.95]
+[2026-02-07 18:36:43] Goal position: [6.0, 4.0]
+[2026-02-07 18:36:43] Starting LIDAR scan at position [10.05, 11.95]
+[2026-02-07 18:36:43] Ray at angle 0.0° hit obstacle at [11.0, 11.95]
+[2026-02-07 18:36:43] Ray at angle 270.0° hit obstacle at [10.05, 11.0]
+[2026-02-07 18:36:43] Ray at angle 280.0° hit obstacle at [10.217510631673042, 11.0]
+[2026-02-07 18:36:43] Ray at angle 350.0° hit obstacle at [11.0, 11.782489368326958]
+[2026-02-07 18:36:43] LIDAR scan completed.
+[2026-02-07 18:36:43] LIDAR detected 4 obstacle hits: [[11.0, 11.95], [10.05, 11.0], [10.218, 11.0], [11.0, 11.782]]
+[2026-02-07 18:36:43] LIDAR hit count: 4
+[2026-02-07 18:36:43] LIDAR hit points: [[11.0, 11.95], [10.05, 11.0], [10.218, 11.0], [11.0, 11.782]]
+[2026-02-07 18:36:43] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_002.png
+[2026-02-07 18:36:43] Querying VLM model: gpt-4o
+[2026-02-07 18:36:43] Calling VLM for detour (attempt 1)
+[2026-02-07 18:36:45] VLM returned 5 waypoints: [[9.5, 12.5], [9.0, 12.0], [8.5, 11.5], [8.0, 11.0], [7.5, 10.5]]
+[2026-02-07 18:36:45] Accept WP1: [9.5, 12.5]
+[2026-02-07 18:36:45] Reject WP2: segment [9.5, 12.5] -> [9.0, 12.0] intersects original obstacle interior
+[2026-02-07 18:36:45] Reject WP3: segment [9.5, 12.5] -> [8.5, 11.5] intersects original obstacle interior
+[2026-02-07 18:36:45] Reject WP4: segment [9.5, 12.5] -> [8.0, 11.0] intersects original obstacle interior
+[2026-02-07 18:36:45] Reject WP5: segment [9.5, 12.5] -> [7.5, 10.5] intersects original obstacle interior
+[2026-02-07 18:36:45] Detour validation result: SUCCESS (1 waypoints accepted)
+[2026-02-07 18:36:45] Added 1 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:36:45] ===== DETOUR END =====
+[2026-02-07 18:36:45] Moving to waypoint [9.5, 12.5]
+[2026-02-07 18:36:45] Starting LIDAR scan at position [10.05, 11.95]
+[2026-02-07 18:36:45] Ray at angle 0.0° hit obstacle at [11.0, 11.95]
+[2026-02-07 18:36:45] Ray at angle 270.0° hit obstacle at [10.05, 11.0]
+[2026-02-07 18:36:45] Ray at angle 280.0° hit obstacle at [10.217510631673042, 11.0]
+[2026-02-07 18:36:45] Ray at angle 350.0° hit obstacle at [11.0, 11.782489368326958]
+[2026-02-07 18:36:45] LIDAR scan completed.
+[2026-02-07 18:36:45] Scan step begin at [10.0, 12.0]
+[2026-02-07 18:36:45] Starting LIDAR scan at position [10.0, 12.0]
+[2026-02-07 18:36:45] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 18:36:45] Ray at angle 170.0° hit obstacle at [9.03, 12.17103717128721]
+[2026-02-07 18:36:45] Ray at angle 180.0° hit obstacle at [9.03, 12.0]
+[2026-02-07 18:36:45] Ray at angle 190.0° hit obstacle at [9.03, 11.82896282871279]
+[2026-02-07 18:36:45] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 18:36:45] LIDAR scan completed.
+[2026-02-07 18:36:45] LIDAR detected 5 obstacle hits: [[11.0, 12.0], [9.03, 12.171], [9.03, 12.0], [9.03, 11.829], [10.0, 11.0]]
+[2026-02-07 18:36:45] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:45] LIDAR hit detected during waypoint traversal at [10.0, 12.0] — stopping and replanning
+[2026-02-07 18:36:45] Scan step begin at [10.0, 12.0]
+[2026-02-07 18:36:45] Starting LIDAR scan at position [10.0, 12.0]
+[2026-02-07 18:36:45] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 18:36:45] Ray at angle 170.0° hit obstacle at [9.03, 12.17103717128721]
+[2026-02-07 18:36:45] Ray at angle 180.0° hit obstacle at [9.03, 12.0]
+[2026-02-07 18:36:45] Ray at angle 190.0° hit obstacle at [9.03, 11.82896282871279]
+[2026-02-07 18:36:45] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 18:36:45] LIDAR scan completed.
+[2026-02-07 18:36:45] LIDAR detected 5 obstacle hits: [[11.0, 12.0], [9.03, 12.171], [9.03, 12.0], [9.03, 11.829], [10.0, 11.0]]
+[2026-02-07 18:36:45] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:46] Obstacle detected near [9.03, 12.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:36:46] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:36:46] Agent position: [10.0, 12.0]
+[2026-02-07 18:36:46] Goal position: [6.0, 4.0]
+[2026-02-07 18:36:46] Starting LIDAR scan at position [10.0, 12.0]
+[2026-02-07 18:36:46] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 18:36:46] Ray at angle 170.0° hit obstacle at [9.03, 12.17103717128721]
+[2026-02-07 18:36:46] Ray at angle 180.0° hit obstacle at [9.03, 12.0]
+[2026-02-07 18:36:46] Ray at angle 190.0° hit obstacle at [9.03, 11.82896282871279]
+[2026-02-07 18:36:46] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 18:36:46] LIDAR scan completed.
+[2026-02-07 18:36:46] LIDAR detected 5 obstacle hits: [[11.0, 12.0], [9.03, 12.171], [9.03, 12.0], [9.03, 11.829], [10.0, 11.0]]
+[2026-02-07 18:36:46] LIDAR hit count: 5
+[2026-02-07 18:36:46] LIDAR hit points: [[11.0, 12.0], [9.03, 12.171], [9.03, 12.0], [9.03, 11.829], [10.0, 11.0]]
+[2026-02-07 18:36:46] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_003.png
+[2026-02-07 18:36:46] Querying VLM model: gpt-4o
+[2026-02-07 18:36:46] Calling VLM for detour (attempt 1)
+[2026-02-07 18:36:48] VLM returned 5 waypoints: [[10.5, 12.5], [10.5, 11.5], [10.5, 11.0], [9.5, 11.0], [9.0, 10.5]]
+[2026-02-07 18:36:48] Accept WP1: [10.5, 12.5]
+[2026-02-07 18:36:48] Accept WP2: [10.5, 11.5]
+[2026-02-07 18:36:48] Accept WP3: [10.5, 11.0]
+[2026-02-07 18:36:48] Accept WP4: [9.5, 11.0]
+[2026-02-07 18:36:48] Reject WP5: inside original obstacle [9.0, 10.5]
+[2026-02-07 18:36:48] Detour validation result: SUCCESS (4 waypoints accepted)
+[2026-02-07 18:36:48] Added 4 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:36:48] ===== DETOUR END =====
+[2026-02-07 18:36:48] Moving to waypoint [10.5, 12.5]
+[2026-02-07 18:36:48] Starting LIDAR scan at position [10.0, 12.0]
+[2026-02-07 18:36:48] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 18:36:48] Ray at angle 170.0° hit obstacle at [9.03, 12.17103717128721]
+[2026-02-07 18:36:48] Ray at angle 180.0° hit obstacle at [9.03, 12.0]
+[2026-02-07 18:36:48] Ray at angle 190.0° hit obstacle at [9.03, 11.82896282871279]
+[2026-02-07 18:36:48] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 18:36:48] LIDAR scan completed.
+[2026-02-07 18:36:48] Scan step begin at [10.05, 12.05]
+[2026-02-07 18:36:48] Starting LIDAR scan at position [10.05, 12.05]
+[2026-02-07 18:36:48] Ray at angle 350.0° hit obstacle at [11.0, 11.88248936832696]
+[2026-02-07 18:36:48] LIDAR scan completed.
+[2026-02-07 18:36:48] LIDAR detected 1 obstacle hits: [[11.0, 11.882]]
+[2026-02-07 18:36:48] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:48] LIDAR hit detected during waypoint traversal at [10.05, 12.05] — stopping and replanning
+[2026-02-07 18:36:48] Moving to waypoint [10.5, 11.5]
+[2026-02-07 18:36:48] Starting LIDAR scan at position [10.05, 12.05]
+[2026-02-07 18:36:48] Ray at angle 350.0° hit obstacle at [11.0, 11.88248936832696]
+[2026-02-07 18:36:48] LIDAR scan completed.
+[2026-02-07 18:36:48] Scan step begin at [10.095, 12.0]
+[2026-02-07 18:36:48] Starting LIDAR scan at position [10.095, 12.0]
+[2026-02-07 18:36:48] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 18:36:48] Ray at angle 270.0° hit obstacle at [10.095, 11.0]
+[2026-02-07 18:36:48] Ray at angle 340.0° hit obstacle at [11.0, 11.670606937989087]
+[2026-02-07 18:36:48] Ray at angle 350.0° hit obstacle at [11.0, 11.84042408245884]
+[2026-02-07 18:36:48] LIDAR scan completed.
+[2026-02-07 18:36:48] LIDAR detected 4 obstacle hits: [[11.0, 12.0], [10.095, 11.0], [11.0, 11.671], [11.0, 11.84]]
+[2026-02-07 18:36:48] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:49] LIDAR hit detected during waypoint traversal at [10.1, 12.0] — stopping and replanning
+[2026-02-07 18:36:49] Moving to waypoint [10.5, 11.0]
+[2026-02-07 18:36:49] Starting LIDAR scan at position [10.095, 12.0]
+[2026-02-07 18:36:49] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 18:36:49] Ray at angle 270.0° hit obstacle at [10.095, 11.0]
+[2026-02-07 18:36:49] Ray at angle 340.0° hit obstacle at [11.0, 11.670606937989087]
+[2026-02-07 18:36:49] Ray at angle 350.0° hit obstacle at [11.0, 11.84042408245884]
+[2026-02-07 18:36:49] LIDAR scan completed.
+[2026-02-07 18:36:49] Scan step begin at [10.1355, 11.95]
+[2026-02-07 18:36:49] Starting LIDAR scan at position [10.1355, 11.95]
+[2026-02-07 18:36:49] Ray at angle 0.0° hit obstacle at [11.0, 11.95]
+[2026-02-07 18:36:49] Ray at angle 270.0° hit obstacle at [10.1355, 11.0]
+[2026-02-07 18:36:49] Ray at angle 280.0° hit obstacle at [10.303010631673041, 11.0]
+[2026-02-07 18:36:49] Ray at angle 330.0° hit obstacle at [11.0, 11.450880692285567]
+[2026-02-07 18:36:49] Ray at angle 340.0° hit obstacle at [11.0, 11.635347732476868]
+[2026-02-07 18:36:49] Ray at angle 350.0° hit obstacle at [11.0, 11.797565325177532]
+[2026-02-07 18:36:49] LIDAR scan completed.
+[2026-02-07 18:36:49] LIDAR detected 6 obstacle hits: [[11.0, 11.95], [10.136, 11.0], [10.303, 11.0], [11.0, 11.451], [11.0, 11.635], [11.0, 11.798]]
+[2026-02-07 18:36:49] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:49] LIDAR hit detected during waypoint traversal at [10.14, 11.95] — stopping and replanning
+[2026-02-07 18:36:49] Moving to waypoint [9.5, 11.0]
+[2026-02-07 18:36:49] Starting LIDAR scan at position [10.1355, 11.95]
+[2026-02-07 18:36:49] Ray at angle 0.0° hit obstacle at [11.0, 11.95]
+[2026-02-07 18:36:49] Ray at angle 270.0° hit obstacle at [10.1355, 11.0]
+[2026-02-07 18:36:49] Ray at angle 280.0° hit obstacle at [10.303010631673041, 11.0]
+[2026-02-07 18:36:49] Ray at angle 330.0° hit obstacle at [11.0, 11.450880692285567]
+[2026-02-07 18:36:49] Ray at angle 340.0° hit obstacle at [11.0, 11.635347732476868]
+[2026-02-07 18:36:49] Ray at angle 350.0° hit obstacle at [11.0, 11.797565325177532]
+[2026-02-07 18:36:49] LIDAR scan completed.
+[2026-02-07 18:36:49] Scan step begin at [10.0855, 11.899999999999999]
+[2026-02-07 18:36:49] Starting LIDAR scan at position [10.0855, 11.899999999999999]
+[2026-02-07 18:36:49] Ray at angle 0.0° hit obstacle at [11.0, 11.899999999999999]
+[2026-02-07 18:36:49] Ray at angle 270.0° hit obstacle at [10.0855, 11.0]
+[2026-02-07 18:36:49] Ray at angle 280.0° hit obstacle at [10.244194282637617, 11.0]
+[2026-02-07 18:36:49] Ray at angle 290.0° hit obstacle at [10.41307321083958, 11.0]
+[2026-02-07 18:36:49] Ray at angle 340.0° hit obstacle at [11.0, 11.567149220763556]
+[2026-02-07 18:36:49] Ray at angle 350.0° hit obstacle at [11.0, 11.738748976142107]
+[2026-02-07 18:36:49] LIDAR scan completed.
+[2026-02-07 18:36:49] LIDAR detected 6 obstacle hits: [[11.0, 11.9], [10.086, 11.0], [10.244, 11.0], [10.413, 11.0], [11.0, 11.567], [11.0, 11.739]]
+[2026-02-07 18:36:49] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:49] LIDAR hit detected during waypoint traversal at [10.09, 11.9] — stopping and replanning
+[2026-02-07 18:36:49] Scan step begin at [10.0855, 11.899999999999999]
+[2026-02-07 18:36:49] Starting LIDAR scan at position [10.0855, 11.899999999999999]
+[2026-02-07 18:36:49] Ray at angle 0.0° hit obstacle at [11.0, 11.899999999999999]
+[2026-02-07 18:36:49] Ray at angle 270.0° hit obstacle at [10.0855, 11.0]
+[2026-02-07 18:36:49] Ray at angle 280.0° hit obstacle at [10.244194282637617, 11.0]
+[2026-02-07 18:36:49] Ray at angle 290.0° hit obstacle at [10.41307321083958, 11.0]
+[2026-02-07 18:36:49] Ray at angle 340.0° hit obstacle at [11.0, 11.567149220763556]
+[2026-02-07 18:36:49] Ray at angle 350.0° hit obstacle at [11.0, 11.738748976142107]
+[2026-02-07 18:36:49] LIDAR scan completed.
+[2026-02-07 18:36:49] LIDAR detected 6 obstacle hits: [[11.0, 11.9], [10.086, 11.0], [10.244, 11.0], [10.413, 11.0], [11.0, 11.567], [11.0, 11.739]]
+[2026-02-07 18:36:49] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:49] Obstacle detected near [10.09, 11.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:36:49] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:36:49] Agent position: [10.0855, 11.899999999999999]
+[2026-02-07 18:36:49] Goal position: [6.0, 4.0]
+[2026-02-07 18:36:49] Starting LIDAR scan at position [10.0855, 11.899999999999999]
+[2026-02-07 18:36:49] Ray at angle 0.0° hit obstacle at [11.0, 11.899999999999999]
+[2026-02-07 18:36:49] Ray at angle 270.0° hit obstacle at [10.0855, 11.0]
+[2026-02-07 18:36:49] Ray at angle 280.0° hit obstacle at [10.244194282637617, 11.0]
+[2026-02-07 18:36:49] Ray at angle 290.0° hit obstacle at [10.41307321083958, 11.0]
+[2026-02-07 18:36:49] Ray at angle 340.0° hit obstacle at [11.0, 11.567149220763556]
+[2026-02-07 18:36:49] Ray at angle 350.0° hit obstacle at [11.0, 11.738748976142107]
+[2026-02-07 18:36:49] LIDAR scan completed.
+[2026-02-07 18:36:49] LIDAR detected 6 obstacle hits: [[11.0, 11.9], [10.086, 11.0], [10.244, 11.0], [10.413, 11.0], [11.0, 11.567], [11.0, 11.739]]
+[2026-02-07 18:36:49] LIDAR hit count: 6
+[2026-02-07 18:36:49] LIDAR hit points: [[11.0, 11.9], [10.086, 11.0], [10.244, 11.0], [10.413, 11.0], [11.0, 11.567], [11.0, 11.739]]
+[2026-02-07 18:36:50] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_004.png
+[2026-02-07 18:36:50] Querying VLM model: gpt-4o
+[2026-02-07 18:36:50] Calling VLM for detour (attempt 1)
+[2026-02-07 18:36:52] VLM returned 5 waypoints: [[10.5, 12.5], [10.5, 11.5], [9.5, 11.5], [9.0, 10.5], [8.5, 9.5]]
+[2026-02-07 18:36:52] Accept WP1: [10.5, 12.5]
+[2026-02-07 18:36:52] Accept WP2: [10.5, 11.5]
+[2026-02-07 18:36:52] Accept WP3: [9.5, 11.5]
+[2026-02-07 18:36:52] Reject WP4: inside original obstacle [9.0, 10.5]
+[2026-02-07 18:36:52] Reject WP5: segment [9.5, 11.5] -> [8.5, 9.5] intersects original obstacle interior
+[2026-02-07 18:36:52] Detour validation result: SUCCESS (3 waypoints accepted)
+[2026-02-07 18:36:52] Added 3 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:36:52] ===== DETOUR END =====
+[2026-02-07 18:36:52] Moving to waypoint [10.5, 12.5]
+[2026-02-07 18:36:52] Starting LIDAR scan at position [10.0855, 11.899999999999999]
+[2026-02-07 18:36:52] Ray at angle 0.0° hit obstacle at [11.0, 11.899999999999999]
+[2026-02-07 18:36:52] Ray at angle 270.0° hit obstacle at [10.0855, 11.0]
+[2026-02-07 18:36:52] Ray at angle 280.0° hit obstacle at [10.244194282637617, 11.0]
+[2026-02-07 18:36:52] Ray at angle 290.0° hit obstacle at [10.41307321083958, 11.0]
+[2026-02-07 18:36:52] Ray at angle 340.0° hit obstacle at [11.0, 11.567149220763556]
+[2026-02-07 18:36:52] Ray at angle 350.0° hit obstacle at [11.0, 11.738748976142107]
+[2026-02-07 18:36:52] LIDAR scan completed.
+[2026-02-07 18:36:52] Scan step begin at [10.126949999999999, 11.95]
+[2026-02-07 18:36:52] Starting LIDAR scan at position [10.126949999999999, 11.95]
+[2026-02-07 18:36:52] Ray at angle 0.0° hit obstacle at [11.0, 11.95]
+[2026-02-07 18:36:52] Ray at angle 270.0° hit obstacle at [10.126949999999999, 11.0]
+[2026-02-07 18:36:52] Ray at angle 280.0° hit obstacle at [10.29446063167304, 11.0]
+[2026-02-07 18:36:52] Ray at angle 340.0° hit obstacle at [11.0, 11.63223578697389]
+[2026-02-07 18:36:52] Ray at angle 350.0° hit obstacle at [11.0, 11.796057729492475]
+[2026-02-07 18:36:52] LIDAR scan completed.
+[2026-02-07 18:36:52] LIDAR detected 5 obstacle hits: [[11.0, 11.95], [10.127, 11.0], [10.294, 11.0], [11.0, 11.632], [11.0, 11.796]]
+[2026-02-07 18:36:52] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:52] LIDAR hit detected during waypoint traversal at [10.13, 11.95] — stopping and replanning
+[2026-02-07 18:36:52] Moving to waypoint [10.5, 11.5]
+[2026-02-07 18:36:52] Starting LIDAR scan at position [10.126949999999999, 11.95]
+[2026-02-07 18:36:52] Ray at angle 0.0° hit obstacle at [11.0, 11.95]
+[2026-02-07 18:36:52] Ray at angle 270.0° hit obstacle at [10.126949999999999, 11.0]
+[2026-02-07 18:36:52] Ray at angle 280.0° hit obstacle at [10.29446063167304, 11.0]
+[2026-02-07 18:36:52] Ray at angle 340.0° hit obstacle at [11.0, 11.63223578697389]
+[2026-02-07 18:36:52] Ray at angle 350.0° hit obstacle at [11.0, 11.796057729492475]
+[2026-02-07 18:36:52] LIDAR scan completed.
+[2026-02-07 18:36:52] Scan step begin at [10.164254999999999, 11.905]
+[2026-02-07 18:36:52] Starting LIDAR scan at position [10.164254999999999, 11.905]
+[2026-02-07 18:36:52] Ray at angle 0.0° hit obstacle at [11.0, 11.905]
+[2026-02-07 18:36:52] Ray at angle 260.0° hit obstacle at [10.00467908245884, 11.0]
+[2026-02-07 18:36:52] Ray at angle 270.0° hit obstacle at [10.164254999999999, 11.0]
+[2026-02-07 18:36:52] Ray at angle 280.0° hit obstacle at [10.323830917541159, 11.0]
+[2026-02-07 18:36:52] Ray at angle 290.0° hit obstacle at [10.49364806201091, 11.0]
+[2026-02-07 18:36:52] Ray at angle 330.0° hit obstacle at [11.0, 11.422482399276115]
+[2026-02-07 18:36:52] Ray at angle 340.0° hit obstacle at [11.0, 11.600813696563192]
+[2026-02-07 18:36:52] Ray at angle 350.0° hit obstacle at [11.0, 11.757635607507803]
+[2026-02-07 18:36:52] LIDAR scan completed.
+[2026-02-07 18:36:52] LIDAR detected 8 obstacle hits: [[11.0, 11.905], [10.005, 11.0], [10.164, 11.0], [10.324, 11.0], [10.494, 11.0], [11.0, 11.422], [11.0, 11.601], [11.0, 11.758]]
+[2026-02-07 18:36:52] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:52] LIDAR hit detected during waypoint traversal at [10.16, 11.9] — stopping and replanning
+[2026-02-07 18:36:52] Moving to waypoint [9.5, 11.5]
+[2026-02-07 18:36:52] Starting LIDAR scan at position [10.164254999999999, 11.905]
+[2026-02-07 18:36:52] Ray at angle 0.0° hit obstacle at [11.0, 11.905]
+[2026-02-07 18:36:52] Ray at angle 260.0° hit obstacle at [10.00467908245884, 11.0]
+[2026-02-07 18:36:52] Ray at angle 270.0° hit obstacle at [10.164254999999999, 11.0]
+[2026-02-07 18:36:52] Ray at angle 280.0° hit obstacle at [10.323830917541159, 11.0]
+[2026-02-07 18:36:52] Ray at angle 290.0° hit obstacle at [10.49364806201091, 11.0]
+[2026-02-07 18:36:52] Ray at angle 330.0° hit obstacle at [11.0, 11.422482399276115]
+[2026-02-07 18:36:52] Ray at angle 340.0° hit obstacle at [11.0, 11.600813696563192]
+[2026-02-07 18:36:52] Ray at angle 350.0° hit obstacle at [11.0, 11.757635607507803]
+[2026-02-07 18:36:52] LIDAR scan completed.
+[2026-02-07 18:36:52] Scan step begin at [10.114254999999998, 11.8645]
+[2026-02-07 18:36:52] Starting LIDAR scan at position [10.114254999999998, 11.8645]
+[2026-02-07 18:36:52] Ray at angle 0.0° hit obstacle at [11.0, 11.8645]
+[2026-02-07 18:36:52] Ray at angle 270.0° hit obstacle at [10.114254999999998, 11.0]
+[2026-02-07 18:36:52] Ray at angle 280.0° hit obstacle at [10.266689674822466, 11.0]
+[2026-02-07 18:36:52] Ray at angle 290.0° hit obstacle at [10.42890726752313, 11.0]
+[2026-02-07 18:36:52] Ray at angle 300.0° hit obstacle at [10.613374307714428, 11.0]
+[2026-02-07 18:36:52] Ray at angle 340.0° hit obstacle at [11.0, 11.542115184849882]
+[2026-02-07 18:36:52] Ray at angle 350.0° hit obstacle at [11.0, 11.70831925847238]
+[2026-02-07 18:36:52] LIDAR scan completed.
+[2026-02-07 18:36:52] LIDAR detected 7 obstacle hits: [[11.0, 11.864], [10.114, 11.0], [10.267, 11.0], [10.429, 11.0], [10.613, 11.0], [11.0, 11.542], [11.0, 11.708]]
+[2026-02-07 18:36:52] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:53] LIDAR hit detected during waypoint traversal at [10.11, 11.86] — stopping and replanning
+[2026-02-07 18:36:53] Scan step begin at [10.114254999999998, 11.8645]
+[2026-02-07 18:36:53] Starting LIDAR scan at position [10.114254999999998, 11.8645]
+[2026-02-07 18:36:53] Ray at angle 0.0° hit obstacle at [11.0, 11.8645]
+[2026-02-07 18:36:53] Ray at angle 270.0° hit obstacle at [10.114254999999998, 11.0]
+[2026-02-07 18:36:53] Ray at angle 280.0° hit obstacle at [10.266689674822466, 11.0]
+[2026-02-07 18:36:53] Ray at angle 290.0° hit obstacle at [10.42890726752313, 11.0]
+[2026-02-07 18:36:53] Ray at angle 300.0° hit obstacle at [10.613374307714428, 11.0]
+[2026-02-07 18:36:53] Ray at angle 340.0° hit obstacle at [11.0, 11.542115184849882]
+[2026-02-07 18:36:53] Ray at angle 350.0° hit obstacle at [11.0, 11.70831925847238]
+[2026-02-07 18:36:53] LIDAR scan completed.
+[2026-02-07 18:36:53] LIDAR detected 7 obstacle hits: [[11.0, 11.864], [10.114, 11.0], [10.267, 11.0], [10.429, 11.0], [10.613, 11.0], [11.0, 11.542], [11.0, 11.708]]
+[2026-02-07 18:36:53] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:53] Obstacle detected near [10.11, 11.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:36:53] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:36:53] Agent position: [10.114254999999998, 11.8645]
+[2026-02-07 18:36:53] Goal position: [6.0, 4.0]
+[2026-02-07 18:36:53] Starting LIDAR scan at position [10.114254999999998, 11.8645]
+[2026-02-07 18:36:53] Ray at angle 0.0° hit obstacle at [11.0, 11.8645]
+[2026-02-07 18:36:53] Ray at angle 270.0° hit obstacle at [10.114254999999998, 11.0]
+[2026-02-07 18:36:53] Ray at angle 280.0° hit obstacle at [10.266689674822466, 11.0]
+[2026-02-07 18:36:53] Ray at angle 290.0° hit obstacle at [10.42890726752313, 11.0]
+[2026-02-07 18:36:53] Ray at angle 300.0° hit obstacle at [10.613374307714428, 11.0]
+[2026-02-07 18:36:53] Ray at angle 340.0° hit obstacle at [11.0, 11.542115184849882]
+[2026-02-07 18:36:53] Ray at angle 350.0° hit obstacle at [11.0, 11.70831925847238]
+[2026-02-07 18:36:53] LIDAR scan completed.
+[2026-02-07 18:36:53] LIDAR detected 7 obstacle hits: [[11.0, 11.864], [10.114, 11.0], [10.267, 11.0], [10.429, 11.0], [10.613, 11.0], [11.0, 11.542], [11.0, 11.708]]
+[2026-02-07 18:36:53] LIDAR hit count: 7
+[2026-02-07 18:36:53] LIDAR hit points: [[11.0, 11.864], [10.114, 11.0], [10.267, 11.0], [10.429, 11.0], [10.613, 11.0], [11.0, 11.542], [11.0, 11.708]]
+[2026-02-07 18:36:53] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_005.png
+[2026-02-07 18:36:53] Querying VLM model: gpt-4o
+[2026-02-07 18:36:53] Calling VLM for detour (attempt 1)
+[2026-02-07 18:36:55] VLM returned 5 waypoints: [[9.5, 12.5], [8.5, 12.0], [8.0, 11.0], [7.5, 10.0], [7.0, 9.0]]
+[2026-02-07 18:36:55] Accept WP1: [9.5, 12.5]
+[2026-02-07 18:36:55] Reject WP2: segment [9.5, 12.5] -> [8.5, 12.0] intersects original obstacle interior
+[2026-02-07 18:36:55] Reject WP3: segment [9.5, 12.5] -> [8.0, 11.0] intersects original obstacle interior
+[2026-02-07 18:36:55] Reject WP4: segment [9.5, 12.5] -> [7.5, 10.0] intersects original obstacle interior
+[2026-02-07 18:36:55] Reject WP5: segment [9.5, 12.5] -> [7.0, 9.0] intersects original obstacle interior
+[2026-02-07 18:36:55] Detour validation result: SUCCESS (1 waypoints accepted)
+[2026-02-07 18:36:55] Added 1 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:36:55] ===== DETOUR END =====
+[2026-02-07 18:36:55] Moving to waypoint [9.5, 12.5]
+[2026-02-07 18:36:55] Starting LIDAR scan at position [10.114254999999998, 11.8645]
+[2026-02-07 18:36:55] Ray at angle 0.0° hit obstacle at [11.0, 11.8645]
+[2026-02-07 18:36:55] Ray at angle 270.0° hit obstacle at [10.114254999999998, 11.0]
+[2026-02-07 18:36:55] Ray at angle 280.0° hit obstacle at [10.266689674822466, 11.0]
+[2026-02-07 18:36:55] Ray at angle 290.0° hit obstacle at [10.42890726752313, 11.0]
+[2026-02-07 18:36:55] Ray at angle 300.0° hit obstacle at [10.613374307714428, 11.0]
+[2026-02-07 18:36:55] Ray at angle 340.0° hit obstacle at [11.0, 11.542115184849882]
+[2026-02-07 18:36:55] Ray at angle 350.0° hit obstacle at [11.0, 11.70831925847238]
+[2026-02-07 18:36:55] LIDAR scan completed.
+[2026-02-07 18:36:55] Scan step begin at [10.064254999999998, 11.9145]
+[2026-02-07 18:36:55] Starting LIDAR scan at position [10.064254999999998, 11.9145]
+[2026-02-07 18:36:55] Ray at angle 0.0° hit obstacle at [11.0, 11.9145]
+[2026-02-07 18:36:55] Ray at angle 270.0° hit obstacle at [10.064254999999998, 11.0]
+[2026-02-07 18:36:55] Ray at angle 280.0° hit obstacle at [10.22550602385789, 11.0]
+[2026-02-07 18:36:55] Ray at angle 290.0° hit obstacle at [10.397105779236439, 11.0]
+[2026-02-07 18:36:55] Ray at angle 340.0° hit obstacle at [11.0, 11.573916673136571]
+[2026-02-07 18:36:55] Ray at angle 350.0° hit obstacle at [11.0, 11.749502909436957]
+[2026-02-07 18:36:55] LIDAR scan completed.
+[2026-02-07 18:36:55] LIDAR detected 6 obstacle hits: [[11.0, 11.914], [10.064, 11.0], [10.226, 11.0], [10.397, 11.0], [11.0, 11.574], [11.0, 11.75]]
+[2026-02-07 18:36:55] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:55] LIDAR hit detected during waypoint traversal at [10.06, 11.91] — stopping and replanning
+[2026-02-07 18:36:55] Scan step begin at [10.064254999999998, 11.9145]
+[2026-02-07 18:36:55] Starting LIDAR scan at position [10.064254999999998, 11.9145]
+[2026-02-07 18:36:55] Ray at angle 0.0° hit obstacle at [11.0, 11.9145]
+[2026-02-07 18:36:55] Ray at angle 270.0° hit obstacle at [10.064254999999998, 11.0]
+[2026-02-07 18:36:55] Ray at angle 280.0° hit obstacle at [10.22550602385789, 11.0]
+[2026-02-07 18:36:55] Ray at angle 290.0° hit obstacle at [10.397105779236439, 11.0]
+[2026-02-07 18:36:55] Ray at angle 340.0° hit obstacle at [11.0, 11.573916673136571]
+[2026-02-07 18:36:55] Ray at angle 350.0° hit obstacle at [11.0, 11.749502909436957]
+[2026-02-07 18:36:55] LIDAR scan completed.
+[2026-02-07 18:36:55] LIDAR detected 6 obstacle hits: [[11.0, 11.914], [10.064, 11.0], [10.226, 11.0], [10.397, 11.0], [11.0, 11.574], [11.0, 11.75]]
+[2026-02-07 18:36:55] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:55] Obstacle detected near [10.06, 11.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:36:55] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:36:55] Agent position: [10.064254999999998, 11.9145]
+[2026-02-07 18:36:55] Goal position: [6.0, 4.0]
+[2026-02-07 18:36:55] Starting LIDAR scan at position [10.064254999999998, 11.9145]
+[2026-02-07 18:36:55] Ray at angle 0.0° hit obstacle at [11.0, 11.9145]
+[2026-02-07 18:36:56] Ray at angle 270.0° hit obstacle at [10.064254999999998, 11.0]
+[2026-02-07 18:36:56] Ray at angle 280.0° hit obstacle at [10.22550602385789, 11.0]
+[2026-02-07 18:36:56] Ray at angle 290.0° hit obstacle at [10.397105779236439, 11.0]
+[2026-02-07 18:36:56] Ray at angle 340.0° hit obstacle at [11.0, 11.573916673136571]
+[2026-02-07 18:36:56] Ray at angle 350.0° hit obstacle at [11.0, 11.749502909436957]
+[2026-02-07 18:36:56] LIDAR scan completed.
+[2026-02-07 18:36:56] LIDAR detected 6 obstacle hits: [[11.0, 11.914], [10.064, 11.0], [10.226, 11.0], [10.397, 11.0], [11.0, 11.574], [11.0, 11.75]]
+[2026-02-07 18:36:56] LIDAR hit count: 6
+[2026-02-07 18:36:56] LIDAR hit points: [[11.0, 11.914], [10.064, 11.0], [10.226, 11.0], [10.397, 11.0], [11.0, 11.574], [11.0, 11.75]]
+[2026-02-07 18:36:56] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_006.png
+[2026-02-07 18:36:56] Querying VLM model: gpt-4o
+[2026-02-07 18:36:56] Calling VLM for detour (attempt 1)
+[2026-02-07 18:36:58] VLM returned 5 waypoints: [[10.5, 12.5], [11.5, 12.5], [11.5, 11.5], [11.5, 10.5], [10.5, 10.0]]
+[2026-02-07 18:36:58] Accept WP1: [10.5, 12.5]
+[2026-02-07 18:36:58] Accept WP2: [11.5, 12.5]
+[2026-02-07 18:36:58] Reject WP3: inside original obstacle [11.5, 11.5]
+[2026-02-07 18:36:58] Reject WP4: inside original obstacle [11.5, 10.5]
+[2026-02-07 18:36:58] Reject WP5: segment [11.5, 12.5] -> [10.5, 10.0] intersects original obstacle interior
+[2026-02-07 18:36:58] Detour validation result: SUCCESS (2 waypoints accepted)
+[2026-02-07 18:36:58] Added 2 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:36:58] ===== DETOUR END =====
+[2026-02-07 18:36:58] Moving to waypoint [10.5, 12.5]
+[2026-02-07 18:36:58] Starting LIDAR scan at position [10.064254999999998, 11.9145]
+[2026-02-07 18:36:58] Ray at angle 0.0° hit obstacle at [11.0, 11.9145]
+[2026-02-07 18:36:58] Ray at angle 270.0° hit obstacle at [10.064254999999998, 11.0]
+[2026-02-07 18:36:58] Ray at angle 280.0° hit obstacle at [10.22550602385789, 11.0]
+[2026-02-07 18:36:58] Ray at angle 290.0° hit obstacle at [10.397105779236439, 11.0]
+[2026-02-07 18:36:58] Ray at angle 340.0° hit obstacle at [11.0, 11.573916673136571]
+[2026-02-07 18:36:58] Ray at angle 350.0° hit obstacle at [11.0, 11.749502909436957]
+[2026-02-07 18:36:58] LIDAR scan completed.
+[2026-02-07 18:36:58] Scan step begin at [10.107829499999998, 11.964500000000001]
+[2026-02-07 18:36:58] Starting LIDAR scan at position [10.107829499999998, 11.964500000000001]
+[2026-02-07 18:36:58] Ray at angle 0.0° hit obstacle at [11.0, 11.964500000000001]
+[2026-02-07 18:36:58] Ray at angle 270.0° hit obstacle at [10.107829499999998, 11.0]
+[2026-02-07 18:36:58] Ray at angle 280.0° hit obstacle at [10.277896872893312, 11.0]
+[2026-02-07 18:36:58] Ray at angle 340.0° hit obstacle at [11.0, 11.639776494109604]
+[2026-02-07 18:36:58] Ray at angle 350.0° hit obstacle at [11.0, 11.807186269457839]
+[2026-02-07 18:36:58] LIDAR scan completed.
+[2026-02-07 18:36:58] LIDAR detected 5 obstacle hits: [[11.0, 11.965], [10.108, 11.0], [10.278, 11.0], [11.0, 11.64], [11.0, 11.807]]
+[2026-02-07 18:36:58] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:58] LIDAR hit detected during waypoint traversal at [10.11, 11.96] — stopping and replanning
+[2026-02-07 18:36:58] Moving to waypoint [11.5, 12.5]
+[2026-02-07 18:36:58] Starting LIDAR scan at position [10.107829499999998, 11.964500000000001]
+[2026-02-07 18:36:58] Ray at angle 0.0° hit obstacle at [11.0, 11.964500000000001]
+[2026-02-07 18:36:58] Ray at angle 270.0° hit obstacle at [10.107829499999998, 11.0]
+[2026-02-07 18:36:58] Ray at angle 280.0° hit obstacle at [10.277896872893312, 11.0]
+[2026-02-07 18:36:58] Ray at angle 340.0° hit obstacle at [11.0, 11.639776494109604]
+[2026-02-07 18:36:58] Ray at angle 350.0° hit obstacle at [11.0, 11.807186269457839]
+[2026-02-07 18:36:58] LIDAR scan completed.
+[2026-02-07 18:36:58] Scan step begin at [10.157829499999998, 12.014500000000002]
+[2026-02-07 18:36:58] Starting LIDAR scan at position [10.157829499999998, 12.014500000000002]
+[2026-02-07 18:36:59] Ray at angle 330.0° hit obstacle at [11.0, 11.528272635121438]
+[2026-02-07 18:36:59] Ray at angle 340.0° hit obstacle at [11.0, 11.707975005822917]
+[2026-02-07 18:36:59] Ray at angle 350.0° hit obstacle at [11.0, 11.866002618493264]
+[2026-02-07 18:36:59] LIDAR scan completed.
+[2026-02-07 18:36:59] LIDAR detected 3 obstacle hits: [[11.0, 11.528], [11.0, 11.708], [11.0, 11.866]]
+[2026-02-07 18:36:59] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:59] LIDAR hit detected during waypoint traversal at [10.16, 12.01] — stopping and replanning
+[2026-02-07 18:36:59] Scan step begin at [10.157829499999998, 12.014500000000002]
+[2026-02-07 18:36:59] Starting LIDAR scan at position [10.157829499999998, 12.014500000000002]
+[2026-02-07 18:36:59] Ray at angle 330.0° hit obstacle at [11.0, 11.528272635121438]
+[2026-02-07 18:36:59] Ray at angle 340.0° hit obstacle at [11.0, 11.707975005822917]
+[2026-02-07 18:36:59] Ray at angle 350.0° hit obstacle at [11.0, 11.866002618493264]
+[2026-02-07 18:36:59] LIDAR scan completed.
+[2026-02-07 18:36:59] LIDAR detected 3 obstacle hits: [[11.0, 11.528], [11.0, 11.708], [11.0, 11.866]]
+[2026-02-07 18:36:59] Scan step end: obstacle_detected=True
+[2026-02-07 18:36:59] Obstacle detected near [11.0, 11.87] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:36:59] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:36:59] Agent position: [10.157829499999998, 12.014500000000002]
+[2026-02-07 18:36:59] Goal position: [6.0, 4.0]
+[2026-02-07 18:36:59] Starting LIDAR scan at position [10.157829499999998, 12.014500000000002]
+[2026-02-07 18:36:59] Ray at angle 330.0° hit obstacle at [11.0, 11.528272635121438]
+[2026-02-07 18:36:59] Ray at angle 340.0° hit obstacle at [11.0, 11.707975005822917]
+[2026-02-07 18:36:59] Ray at angle 350.0° hit obstacle at [11.0, 11.866002618493264]
+[2026-02-07 18:36:59] LIDAR scan completed.
+[2026-02-07 18:36:59] LIDAR detected 3 obstacle hits: [[11.0, 11.528], [11.0, 11.708], [11.0, 11.866]]
+[2026-02-07 18:36:59] LIDAR hit count: 3
+[2026-02-07 18:36:59] LIDAR hit points: [[11.0, 11.528], [11.0, 11.708], [11.0, 11.866]]
+[2026-02-07 18:36:59] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_007.png
+[2026-02-07 18:36:59] Querying VLM model: gpt-4o
+[2026-02-07 18:36:59] Calling VLM for detour (attempt 1)
+[2026-02-07 18:37:01] VLM returned 5 waypoints: [[9.5, 12.5], [9.0, 11.5], [8.5, 11.0], [8.0, 10.0], [7.5, 8.5]]
+[2026-02-07 18:37:01] Accept WP1: [9.5, 12.5]
+[2026-02-07 18:37:01] Reject WP2: inside original obstacle [9.0, 11.5]
+[2026-02-07 18:37:01] Reject WP3: segment [9.5, 12.5] -> [8.5, 11.0] intersects original obstacle interior
+[2026-02-07 18:37:01] Reject WP4: segment [9.5, 12.5] -> [8.0, 10.0] intersects original obstacle interior
+[2026-02-07 18:37:01] Reject WP5: segment [9.5, 12.5] -> [7.5, 8.5] intersects original obstacle interior
+[2026-02-07 18:37:01] Detour validation result: SUCCESS (1 waypoints accepted)
+[2026-02-07 18:37:01] Added 1 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:37:01] ===== DETOUR END =====
+[2026-02-07 18:37:01] Moving to waypoint [9.5, 12.5]
+[2026-02-07 18:37:01] Starting LIDAR scan at position [10.157829499999998, 12.014500000000002]
+[2026-02-07 18:37:01] Ray at angle 330.0° hit obstacle at [11.0, 11.528272635121438]
+[2026-02-07 18:37:01] Ray at angle 340.0° hit obstacle at [11.0, 11.707975005822917]
+[2026-02-07 18:37:01] Ray at angle 350.0° hit obstacle at [11.0, 11.866002618493264]
+[2026-02-07 18:37:01] LIDAR scan completed.
+[2026-02-07 18:37:01] Scan step begin at [10.107829499999998, 12.063050000000002]
+[2026-02-07 18:37:01] Starting LIDAR scan at position [10.107829499999998, 12.063050000000002]
+[2026-02-07 18:37:01] Ray at angle 340.0° hit obstacle at [11.0, 11.738326494109605]
+[2026-02-07 18:37:01] Ray at angle 350.0° hit obstacle at [11.0, 11.90573626945784]
+[2026-02-07 18:37:01] LIDAR scan completed.
+[2026-02-07 18:37:01] LIDAR detected 2 obstacle hits: [[11.0, 11.738], [11.0, 11.906]]
+[2026-02-07 18:37:01] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:01] LIDAR hit detected during waypoint traversal at [10.11, 12.06] — stopping and replanning
+[2026-02-07 18:37:01] Scan step begin at [10.107829499999998, 12.063050000000002]
+[2026-02-07 18:37:01] Starting LIDAR scan at position [10.107829499999998, 12.063050000000002]
+[2026-02-07 18:37:02] Ray at angle 340.0° hit obstacle at [11.0, 11.738326494109605]
+[2026-02-07 18:37:02] Ray at angle 350.0° hit obstacle at [11.0, 11.90573626945784]
+[2026-02-07 18:37:02] LIDAR scan completed.
+[2026-02-07 18:37:02] LIDAR detected 2 obstacle hits: [[11.0, 11.738], [11.0, 11.906]]
+[2026-02-07 18:37:02] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:02] Obstacle detected near [11.0, 11.91] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:37:02] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:37:02] Agent position: [10.107829499999998, 12.063050000000002]
+[2026-02-07 18:37:02] Goal position: [6.0, 4.0]
+[2026-02-07 18:37:02] Starting LIDAR scan at position [10.107829499999998, 12.063050000000002]
+[2026-02-07 18:37:02] Ray at angle 340.0° hit obstacle at [11.0, 11.738326494109605]
+[2026-02-07 18:37:02] Ray at angle 350.0° hit obstacle at [11.0, 11.90573626945784]
+[2026-02-07 18:37:02] LIDAR scan completed.
+[2026-02-07 18:37:02] LIDAR detected 2 obstacle hits: [[11.0, 11.738], [11.0, 11.906]]
+[2026-02-07 18:37:02] LIDAR hit count: 2
+[2026-02-07 18:37:02] LIDAR hit points: [[11.0, 11.738], [11.0, 11.906]]
+[2026-02-07 18:37:02] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_008.png
+[2026-02-07 18:37:02] Querying VLM model: gpt-4o
+[2026-02-07 18:37:02] Calling VLM for detour (attempt 1)
+[2026-02-07 18:37:04] VLM returned 5 waypoints: [[10.0, 12.5], [9.5, 12.0], [9.0, 11.5], [8.5, 11.0], [8.0, 10.5]]
+[2026-02-07 18:37:04] Accept WP1: [10.0, 12.5]
+[2026-02-07 18:37:04] Accept WP2: [9.5, 12.0]
+[2026-02-07 18:37:04] Reject WP3: inside original obstacle [9.0, 11.5]
+[2026-02-07 18:37:04] Reject WP4: segment [9.5, 12.0] -> [8.5, 11.0] intersects original obstacle interior
+[2026-02-07 18:37:04] Reject WP5: segment [9.5, 12.0] -> [8.0, 10.5] intersects original obstacle interior
+[2026-02-07 18:37:04] Detour validation result: SUCCESS (2 waypoints accepted)
+[2026-02-07 18:37:04] Added 2 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:37:04] ===== DETOUR END =====
+[2026-02-07 18:37:04] Moving to waypoint [10.0, 12.5]
+[2026-02-07 18:37:04] Starting LIDAR scan at position [10.107829499999998, 12.063050000000002]
+[2026-02-07 18:37:04] Ray at angle 340.0° hit obstacle at [11.0, 11.738326494109605]
+[2026-02-07 18:37:04] Ray at angle 350.0° hit obstacle at [11.0, 11.90573626945784]
+[2026-02-07 18:37:04] LIDAR scan completed.
+[2026-02-07 18:37:04] Scan step begin at [10.097046549999998, 12.106745000000002]
+[2026-02-07 18:37:04] Starting LIDAR scan at position [10.097046549999998, 12.106745000000002]
+[2026-02-07 18:37:04] Ray at angle 340.0° hit obstacle at [11.0, 11.778096821272026]
+[2026-02-07 18:37:04] Ray at angle 350.0° hit obstacle at [11.0, 11.947529944441209]
+[2026-02-07 18:37:04] LIDAR scan completed.
+[2026-02-07 18:37:04] LIDAR detected 2 obstacle hits: [[11.0, 11.778], [11.0, 11.948]]
+[2026-02-07 18:37:04] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:04] LIDAR hit detected during waypoint traversal at [10.1, 12.11] — stopping and replanning
+[2026-02-07 18:37:04] Moving to waypoint [9.5, 12.0]
+[2026-02-07 18:37:04] Starting LIDAR scan at position [10.097046549999998, 12.106745000000002]
+[2026-02-07 18:37:04] Ray at angle 340.0° hit obstacle at [11.0, 11.778096821272026]
+[2026-02-07 18:37:04] Ray at angle 350.0° hit obstacle at [11.0, 11.947529944441209]
+[2026-02-07 18:37:04] LIDAR scan completed.
+[2026-02-07 18:37:04] Scan step begin at [10.047046549999997, 12.096070500000002]
+[2026-02-07 18:37:04] Starting LIDAR scan at position [10.047046549999997, 12.096070500000002]
+[2026-02-07 18:37:05] Ray at angle 350.0° hit obstacle at [11.0, 11.928039095405786]
+[2026-02-07 18:37:05] LIDAR scan completed.
+[2026-02-07 18:37:05] LIDAR detected 1 obstacle hits: [[11.0, 11.928]]
+[2026-02-07 18:37:05] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:05] LIDAR hit detected during waypoint traversal at [10.05, 12.1] — stopping and replanning
+[2026-02-07 18:37:05] Scan step begin at [10.047046549999997, 12.096070500000002]
+[2026-02-07 18:37:05] Starting LIDAR scan at position [10.047046549999997, 12.096070500000002]
+[2026-02-07 18:37:05] Ray at angle 350.0° hit obstacle at [11.0, 11.928039095405786]
+[2026-02-07 18:37:05] LIDAR scan completed.
+[2026-02-07 18:37:05] LIDAR detected 1 obstacle hits: [[11.0, 11.928]]
+[2026-02-07 18:37:05] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:05] Obstacle detected near [11.0, 11.93] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:37:05] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:37:05] Agent position: [10.047046549999997, 12.096070500000002]
+[2026-02-07 18:37:05] Goal position: [6.0, 4.0]
+[2026-02-07 18:37:05] Starting LIDAR scan at position [10.047046549999997, 12.096070500000002]
+[2026-02-07 18:37:05] Ray at angle 350.0° hit obstacle at [11.0, 11.928039095405786]
+[2026-02-07 18:37:05] LIDAR scan completed.
+[2026-02-07 18:37:05] LIDAR detected 1 obstacle hits: [[11.0, 11.928]]
+[2026-02-07 18:37:05] LIDAR hit count: 1
+[2026-02-07 18:37:05] LIDAR hit points: [[11.0, 11.928]]
+[2026-02-07 18:37:05] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_009.png
+[2026-02-07 18:37:05] Querying VLM model: gpt-4o
+[2026-02-07 18:37:05] Calling VLM for detour (attempt 1)
+[2026-02-07 18:37:07] VLM returned 5 waypoints: [[9.5, 12.5], [9.0, 13.0], [8.5, 12.5], [8.0, 12.0], [7.5, 11.5]]
+[2026-02-07 18:37:07] Accept WP1: [9.5, 12.5]
+[2026-02-07 18:37:07] Reject WP2: segment [9.5, 12.5] -> [9.0, 13.0] intersects original obstacle interior
+[2026-02-07 18:37:07] Reject WP3: segment [9.5, 12.5] -> [8.5, 12.5] intersects original obstacle interior
+[2026-02-07 18:37:07] Reject WP4: segment [9.5, 12.5] -> [8.0, 12.0] intersects original obstacle interior
+[2026-02-07 18:37:07] Reject WP5: segment [9.5, 12.5] -> [7.5, 11.5] intersects original obstacle interior
+[2026-02-07 18:37:07] Detour validation result: SUCCESS (1 waypoints accepted)
+[2026-02-07 18:37:07] Added 1 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:37:07] ===== DETOUR END =====
+[2026-02-07 18:37:07] Moving to waypoint [9.5, 12.5]
+[2026-02-07 18:37:07] Starting LIDAR scan at position [10.047046549999997, 12.096070500000002]
+[2026-02-07 18:37:07] Ray at angle 350.0° hit obstacle at [11.0, 11.928039095405786]
+[2026-02-07 18:37:07] LIDAR scan completed.
+[2026-02-07 18:37:07] Scan step begin at [9.997046549999997, 12.13646345]
+[2026-02-07 18:37:07] Starting LIDAR scan at position [9.997046549999997, 12.13646345]
+[2026-02-07 18:37:07] Ray at angle 170.0° hit obstacle at [9.03, 12.306979848366037]
+[2026-02-07 18:37:07] Ray at angle 180.0° hit obstacle at [9.03, 12.13646345]
+[2026-02-07 18:37:07] Ray at angle 190.0° hit obstacle at [9.03, 11.965947051633965]
+[2026-02-07 18:37:07] LIDAR scan completed.
+[2026-02-07 18:37:07] LIDAR detected 3 obstacle hits: [[9.03, 12.307], [9.03, 12.136], [9.03, 11.966]]
+[2026-02-07 18:37:07] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:07] LIDAR hit detected during waypoint traversal at [10.0, 12.14] — stopping and replanning
+[2026-02-07 18:37:07] Scan step begin at [9.997046549999997, 12.13646345]
+[2026-02-07 18:37:07] Starting LIDAR scan at position [9.997046549999997, 12.13646345]
+[2026-02-07 18:37:07] Ray at angle 170.0° hit obstacle at [9.03, 12.306979848366037]
+[2026-02-07 18:37:07] Ray at angle 180.0° hit obstacle at [9.03, 12.13646345]
+[2026-02-07 18:37:07] Ray at angle 190.0° hit obstacle at [9.03, 11.965947051633965]
+[2026-02-07 18:37:07] LIDAR scan completed.
+[2026-02-07 18:37:07] LIDAR detected 3 obstacle hits: [[9.03, 12.307], [9.03, 12.136], [9.03, 11.966]]
+[2026-02-07 18:37:07] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:08] Obstacle detected near [9.03, 12.14] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:37:08] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:37:08] Agent position: [9.997046549999997, 12.13646345]
+[2026-02-07 18:37:08] Goal position: [6.0, 4.0]
+[2026-02-07 18:37:08] Starting LIDAR scan at position [9.997046549999997, 12.13646345]
+[2026-02-07 18:37:08] Ray at angle 170.0° hit obstacle at [9.03, 12.306979848366037]
+[2026-02-07 18:37:08] Ray at angle 180.0° hit obstacle at [9.03, 12.13646345]
+[2026-02-07 18:37:08] Ray at angle 190.0° hit obstacle at [9.03, 11.965947051633965]
+[2026-02-07 18:37:08] LIDAR scan completed.
+[2026-02-07 18:37:08] LIDAR detected 3 obstacle hits: [[9.03, 12.307], [9.03, 12.136], [9.03, 11.966]]
+[2026-02-07 18:37:08] LIDAR hit count: 3
+[2026-02-07 18:37:08] LIDAR hit points: [[9.03, 12.307], [9.03, 12.136], [9.03, 11.966]]
+[2026-02-07 18:37:08] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_010.png
+[2026-02-07 18:37:08] Querying VLM model: gpt-4o
+[2026-02-07 18:37:08] Calling VLM for detour (attempt 1)
+[2026-02-07 18:37:10] VLM returned 6 waypoints: [[10.5, 12.5], [11.0, 11.5], [10.5, 10.5], [10.0, 9.5], [9.5, 8.5], [9.0, 7.5]]
+[2026-02-07 18:37:10] Accept WP1: [10.5, 12.5]
+[2026-02-07 18:37:10] Accept WP2: [11.0, 11.5]
+[2026-02-07 18:37:10] Reject WP3: inside original obstacle [10.5, 10.5]
+[2026-02-07 18:37:10] Reject WP4: segment [11.0, 11.5] -> [10.0, 9.5] intersects original obstacle interior
+[2026-02-07 18:37:10] Reject WP5: segment [11.0, 11.5] -> [9.5, 8.5] intersects original obstacle interior
+[2026-02-07 18:37:10] Reject WP6: segment [11.0, 11.5] -> [9.0, 7.5] intersects original obstacle interior
+[2026-02-07 18:37:10] Detour validation result: SUCCESS (2 waypoints accepted)
+[2026-02-07 18:37:10] Added 2 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:37:10] ===== DETOUR END =====
+[2026-02-07 18:37:10] Moving to waypoint [10.5, 12.5]
+[2026-02-07 18:37:10] Starting LIDAR scan at position [9.997046549999997, 12.13646345]
+[2026-02-07 18:37:10] Ray at angle 170.0° hit obstacle at [9.03, 12.306979848366037]
+[2026-02-07 18:37:10] Ray at angle 180.0° hit obstacle at [9.03, 12.13646345]
+[2026-02-07 18:37:10] Ray at angle 190.0° hit obstacle at [9.03, 11.965947051633965]
+[2026-02-07 18:37:11] LIDAR scan completed.
+[2026-02-07 18:37:11] Scan step begin at [10.047046549999997, 12.172817105]
+[2026-02-07 18:37:11] Starting LIDAR scan at position [10.047046549999997, 12.172817105]
+[2026-02-07 18:37:11] Ray at angle 350.0° hit obstacle at [11.027141055705464, 12.0]
+[2026-02-07 18:37:11] LIDAR scan completed.
+[2026-02-07 18:37:11] LIDAR detected 1 obstacle hits: [[11.027, 12.0]]
+[2026-02-07 18:37:11] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:11] LIDAR hit detected during waypoint traversal at [10.05, 12.17] — stopping and replanning
+[2026-02-07 18:37:11] Moving to waypoint [11.0, 11.5]
+[2026-02-07 18:37:11] Starting LIDAR scan at position [10.047046549999997, 12.172817105]
+[2026-02-07 18:37:11] Ray at angle 350.0° hit obstacle at [11.027141055705464, 12.0]
+[2026-02-07 18:37:11] LIDAR scan completed.
+[2026-02-07 18:37:11] Scan step begin at [10.097046549999998, 12.122817105]
+[2026-02-07 18:37:11] Starting LIDAR scan at position [10.097046549999998, 12.122817105]
+[2026-02-07 18:37:11] Ray at angle 340.0° hit obstacle at [11.0, 11.794168926272022]
+[2026-02-07 18:37:11] Ray at angle 350.0° hit obstacle at [11.0, 11.963602049441207]
+[2026-02-07 18:37:11] LIDAR scan completed.
+[2026-02-07 18:37:11] LIDAR detected 2 obstacle hits: [[11.0, 11.794], [11.0, 11.964]]
+[2026-02-07 18:37:11] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:11] LIDAR hit detected during waypoint traversal at [10.1, 12.12] — stopping and replanning
+[2026-02-07 18:37:11] Scan step begin at [10.097046549999998, 12.122817105]
+[2026-02-07 18:37:11] Starting LIDAR scan at position [10.097046549999998, 12.122817105]
+[2026-02-07 18:37:11] Ray at angle 340.0° hit obstacle at [11.0, 11.794168926272022]
+[2026-02-07 18:37:11] Ray at angle 350.0° hit obstacle at [11.0, 11.963602049441207]
+[2026-02-07 18:37:11] LIDAR scan completed.
+[2026-02-07 18:37:11] LIDAR detected 2 obstacle hits: [[11.0, 11.794], [11.0, 11.964]]
+[2026-02-07 18:37:11] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:11] Obstacle detected near [11.0, 11.96] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:37:11] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:37:11] Agent position: [10.097046549999998, 12.122817105]
+[2026-02-07 18:37:11] Goal position: [6.0, 4.0]
+[2026-02-07 18:37:11] Starting LIDAR scan at position [10.097046549999998, 12.122817105]
+[2026-02-07 18:37:11] Ray at angle 340.0° hit obstacle at [11.0, 11.794168926272022]
+[2026-02-07 18:37:11] Ray at angle 350.0° hit obstacle at [11.0, 11.963602049441207]
+[2026-02-07 18:37:11] LIDAR scan completed.
+[2026-02-07 18:37:11] LIDAR detected 2 obstacle hits: [[11.0, 11.794], [11.0, 11.964]]
+[2026-02-07 18:37:11] LIDAR hit count: 2
+[2026-02-07 18:37:11] LIDAR hit points: [[11.0, 11.794], [11.0, 11.964]]
+[2026-02-07 18:37:12] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_011.png
+[2026-02-07 18:37:12] Querying VLM model: gpt-4o
+[2026-02-07 18:37:12] Calling VLM for detour (attempt 1)
+[2026-02-07 18:37:13] VLM returned 5 waypoints: [[10.5, 12.5], [10.5, 11.5], [9.5, 11.5], [9.0, 10.5], [8.0, 9.5]]
+[2026-02-07 18:37:14] Accept WP1: [10.5, 12.5]
+[2026-02-07 18:37:14] Accept WP2: [10.5, 11.5]
+[2026-02-07 18:37:14] Accept WP3: [9.5, 11.5]
+[2026-02-07 18:37:14] Reject WP4: inside original obstacle [9.0, 10.5]
+[2026-02-07 18:37:14] Reject WP5: segment [9.5, 11.5] -> [8.0, 9.5] intersects original obstacle interior
+[2026-02-07 18:37:14] Detour validation result: SUCCESS (3 waypoints accepted)
+[2026-02-07 18:37:14] Added 3 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:37:14] ===== DETOUR END =====
+[2026-02-07 18:37:14] Moving to waypoint [10.5, 12.5]
+[2026-02-07 18:37:14] Starting LIDAR scan at position [10.097046549999998, 12.122817105]
+[2026-02-07 18:37:14] Ray at angle 340.0° hit obstacle at [11.0, 11.794168926272022]
+[2026-02-07 18:37:14] Ray at angle 350.0° hit obstacle at [11.0, 11.963602049441207]
+[2026-02-07 18:37:14] LIDAR scan completed.
+[2026-02-07 18:37:14] Scan step begin at [10.137341894999999, 12.1605353945]
+[2026-02-07 18:37:14] Starting LIDAR scan at position [10.137341894999999, 12.1605353945]
+[2026-02-07 18:37:14] Ray at angle 330.0° hit obstacle at [11.0, 11.662479505359636]
+[2026-02-07 18:37:14] Ray at angle 340.0° hit obstacle at [11.0, 11.846553521931511]
+[2026-02-07 18:37:14] Ray at angle 350.0° hit obstacle at [11.047783359233007, 12.0]
+[2026-02-07 18:37:14] LIDAR scan completed.
+[2026-02-07 18:37:14] LIDAR detected 3 obstacle hits: [[11.0, 11.662], [11.0, 11.847], [11.048, 12.0]]
+[2026-02-07 18:37:14] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:14] LIDAR hit detected during waypoint traversal at [10.14, 12.16] — stopping and replanning
+[2026-02-07 18:37:14] Moving to waypoint [10.5, 11.5]
+[2026-02-07 18:37:14] Starting LIDAR scan at position [10.137341894999999, 12.1605353945]
+[2026-02-07 18:37:14] Ray at angle 330.0° hit obstacle at [11.0, 11.662479505359636]
+[2026-02-07 18:37:14] Ray at angle 340.0° hit obstacle at [11.0, 11.846553521931511]
+[2026-02-07 18:37:14] Ray at angle 350.0° hit obstacle at [11.047783359233007, 12.0]
+[2026-02-07 18:37:14] LIDAR scan completed.
+[2026-02-07 18:37:14] Scan step begin at [10.173607705499998, 12.1105353945]
+[2026-02-07 18:37:14] Starting LIDAR scan at position [10.173607705499998, 12.1105353945]
+[2026-02-07 18:37:14] Ray at angle 330.0° hit obstacle at [11.0, 11.633417580814191]
+[2026-02-07 18:37:14] Ray at angle 340.0° hit obstacle at [11.0, 11.809753197475048]
+[2026-02-07 18:37:14] Ray at angle 350.0° hit obstacle at [11.0, 11.964820136330074]
+[2026-02-07 18:37:14] LIDAR scan completed.
+[2026-02-07 18:37:14] LIDAR detected 3 obstacle hits: [[11.0, 11.633], [11.0, 11.81], [11.0, 11.965]]
+[2026-02-07 18:37:14] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:14] LIDAR hit detected during waypoint traversal at [10.17, 12.11] — stopping and replanning
+[2026-02-07 18:37:14] Moving to waypoint [9.5, 11.5]
+[2026-02-07 18:37:14] Starting LIDAR scan at position [10.173607705499998, 12.1105353945]
+[2026-02-07 18:37:14] Ray at angle 330.0° hit obstacle at [11.0, 11.633417580814191]
+[2026-02-07 18:37:14] Ray at angle 340.0° hit obstacle at [11.0, 11.809753197475048]
+[2026-02-07 18:37:14] Ray at angle 350.0° hit obstacle at [11.0, 11.964820136330074]
+[2026-02-07 18:37:14] LIDAR scan completed.
+[2026-02-07 18:37:14] Scan step begin at [10.123607705499998, 12.060535394499999]
+[2026-02-07 18:37:14] Starting LIDAR scan at position [10.123607705499998, 12.060535394499999]
+[2026-02-07 18:37:14] Ray at angle 340.0° hit obstacle at [11.0, 11.741554685761738]
+[2026-02-07 18:37:14] Ray at angle 350.0° hit obstacle at [11.0, 11.90600378729465]
+[2026-02-07 18:37:14] LIDAR scan completed.
+[2026-02-07 18:37:14] LIDAR detected 2 obstacle hits: [[11.0, 11.742], [11.0, 11.906]]
+[2026-02-07 18:37:14] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:14] LIDAR hit detected during waypoint traversal at [10.12, 12.06] — stopping and replanning
+[2026-02-07 18:37:14] Scan step begin at [10.123607705499998, 12.060535394499999]
+[2026-02-07 18:37:14] Starting LIDAR scan at position [10.123607705499998, 12.060535394499999]
+[2026-02-07 18:37:14] Ray at angle 340.0° hit obstacle at [11.0, 11.741554685761738]
+[2026-02-07 18:37:14] Ray at angle 350.0° hit obstacle at [11.0, 11.90600378729465]
+[2026-02-07 18:37:14] LIDAR scan completed.
+[2026-02-07 18:37:14] LIDAR detected 2 obstacle hits: [[11.0, 11.742], [11.0, 11.906]]
+[2026-02-07 18:37:14] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:15] Obstacle detected near [11.0, 11.91] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:37:15] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:37:15] Agent position: [10.123607705499998, 12.060535394499999]
+[2026-02-07 18:37:15] Goal position: [6.0, 4.0]
+[2026-02-07 18:37:15] Starting LIDAR scan at position [10.123607705499998, 12.060535394499999]
+[2026-02-07 18:37:15] Ray at angle 340.0° hit obstacle at [11.0, 11.741554685761738]
+[2026-02-07 18:37:15] Ray at angle 350.0° hit obstacle at [11.0, 11.90600378729465]
+[2026-02-07 18:37:15] LIDAR scan completed.
+[2026-02-07 18:37:15] LIDAR detected 2 obstacle hits: [[11.0, 11.742], [11.0, 11.906]]
+[2026-02-07 18:37:15] LIDAR hit count: 2
+[2026-02-07 18:37:15] LIDAR hit points: [[11.0, 11.742], [11.0, 11.906]]
+[2026-02-07 18:37:15] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_012.png
+[2026-02-07 18:37:15] Querying VLM model: gpt-4o
+[2026-02-07 18:37:15] Calling VLM for detour (attempt 1)
+[2026-02-07 18:37:17] VLM returned 5 waypoints: [[10.0, 12.5], [9.5, 12.0], [9.0, 11.5], [8.5, 11.0], [8.0, 10.5]]
+[2026-02-07 18:37:17] Accept WP1: [10.0, 12.5]
+[2026-02-07 18:37:17] Accept WP2: [9.5, 12.0]
+[2026-02-07 18:37:17] Reject WP3: inside original obstacle [9.0, 11.5]
+[2026-02-07 18:37:17] Reject WP4: segment [9.5, 12.0] -> [8.5, 11.0] intersects original obstacle interior
+[2026-02-07 18:37:17] Reject WP5: segment [9.5, 12.0] -> [8.0, 10.5] intersects original obstacle interior
+[2026-02-07 18:37:17] Detour validation result: SUCCESS (2 waypoints accepted)
+[2026-02-07 18:37:17] Added 2 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:37:17] ===== DETOUR END =====
+[2026-02-07 18:37:17] Moving to waypoint [10.0, 12.5]
+[2026-02-07 18:37:17] Starting LIDAR scan at position [10.123607705499998, 12.060535394499999]
+[2026-02-07 18:37:17] Ray at angle 340.0° hit obstacle at [11.0, 11.741554685761738]
+[2026-02-07 18:37:17] Ray at angle 350.0° hit obstacle at [11.0, 11.90600378729465]
+[2026-02-07 18:37:17] LIDAR scan completed.
+[2026-02-07 18:37:17] Scan step begin at [10.111246934949998, 12.104481855049999]
+[2026-02-07 18:37:17] Starting LIDAR scan at position [10.111246934949998, 12.104481855049999]
+[2026-02-07 18:37:17] Ray at angle 340.0° hit obstacle at [11.0, 11.781002193758944]
+[2026-02-07 18:37:17] Ray at angle 350.0° hit obstacle at [11.0, 11.947770710494337]
+[2026-02-07 18:37:17] LIDAR scan completed.
+[2026-02-07 18:37:17] LIDAR detected 2 obstacle hits: [[11.0, 11.781], [11.0, 11.948]]
+[2026-02-07 18:37:17] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:17] LIDAR hit detected during waypoint traversal at [10.11, 12.1] — stopping and replanning
+[2026-02-07 18:37:17] Moving to waypoint [9.5, 12.0]
+[2026-02-07 18:37:17] Starting LIDAR scan at position [10.111246934949998, 12.104481855049999]
+[2026-02-07 18:37:17] Ray at angle 340.0° hit obstacle at [11.0, 11.781002193758944]
+[2026-02-07 18:37:17] Ray at angle 350.0° hit obstacle at [11.0, 11.947770710494337]
+[2026-02-07 18:37:17] LIDAR scan completed.
+[2026-02-07 18:37:17] Scan step begin at [10.061246934949997, 12.094033669544999]
+[2026-02-07 18:37:17] Starting LIDAR scan at position [10.061246934949997, 12.094033669544999]
+[2026-02-07 18:37:17] Ray at angle 340.0° hit obstacle at [11.0, 11.752355496540632]
+[2026-02-07 18:37:17] Ray at angle 350.0° hit obstacle at [11.0, 11.928506175953915]
+[2026-02-07 18:37:17] LIDAR scan completed.
+[2026-02-07 18:37:17] LIDAR detected 2 obstacle hits: [[11.0, 11.752], [11.0, 11.929]]
+[2026-02-07 18:37:17] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:18] LIDAR hit detected during waypoint traversal at [10.06, 12.09] — stopping and replanning
+[2026-02-07 18:37:18] Scan step begin at [10.061246934949997, 12.094033669544999]
+[2026-02-07 18:37:18] Starting LIDAR scan at position [10.061246934949997, 12.094033669544999]
+[2026-02-07 18:37:18] Ray at angle 340.0° hit obstacle at [11.0, 11.752355496540632]
+[2026-02-07 18:37:18] Ray at angle 350.0° hit obstacle at [11.0, 11.928506175953915]
+[2026-02-07 18:37:18] LIDAR scan completed.
+[2026-02-07 18:37:18] LIDAR detected 2 obstacle hits: [[11.0, 11.752], [11.0, 11.929]]
+[2026-02-07 18:37:18] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:18] Obstacle detected near [11.0, 11.93] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 18:37:18] ===== DETOUR TRIGGERED =====
+[2026-02-07 18:37:18] Agent position: [10.061246934949997, 12.094033669544999]
+[2026-02-07 18:37:18] Goal position: [6.0, 4.0]
+[2026-02-07 18:37:18] Starting LIDAR scan at position [10.061246934949997, 12.094033669544999]
+[2026-02-07 18:37:18] Ray at angle 340.0° hit obstacle at [11.0, 11.752355496540632]
+[2026-02-07 18:37:18] Ray at angle 350.0° hit obstacle at [11.0, 11.928506175953915]
+[2026-02-07 18:37:18] LIDAR scan completed.
+[2026-02-07 18:37:18] LIDAR detected 2 obstacle hits: [[11.0, 11.752], [11.0, 11.929]]
+[2026-02-07 18:37:18] LIDAR hit count: 2
+[2026-02-07 18:37:18] LIDAR hit points: [[11.0, 11.752], [11.0, 11.929]]
+[2026-02-07 18:37:18] VLM snapshot saved at: logs/run_18:36:38_07-02/vlm_snapshot_18:36:38_07-02_013.png
+[2026-02-07 18:37:18] Querying VLM model: gpt-4o
+[2026-02-07 18:37:18] Calling VLM for detour (attempt 1)
+[2026-02-07 18:37:20] VLM returned 5 waypoints: [[9.5, 11.5], [9.0, 11.0], [8.5, 10.5], [8.0, 10.0], [7.5, 9.5]]
+[2026-02-07 18:37:20] Accept WP1: [9.5, 11.5]
+[2026-02-07 18:37:20] Reject WP2: segment [9.5, 11.5] -> [9.0, 11.0] intersects original obstacle interior
+[2026-02-07 18:37:20] Reject WP3: segment [9.5, 11.5] -> [8.5, 10.5] intersects original obstacle interior
+[2026-02-07 18:37:20] Reject WP4: segment [9.5, 11.5] -> [8.0, 10.0] intersects original obstacle interior
+[2026-02-07 18:37:20] Reject WP5: segment [9.5, 11.5] -> [7.5, 9.5] intersects original obstacle interior
+[2026-02-07 18:37:20] Detour validation result: SUCCESS (1 waypoints accepted)
+[2026-02-07 18:37:20] Added 1 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 18:37:20] ===== DETOUR END =====
+[2026-02-07 18:37:20] Moving to waypoint [9.5, 11.5]
+[2026-02-07 18:37:20] Starting LIDAR scan at position [10.061246934949997, 12.094033669544999]
+[2026-02-07 18:37:20] Ray at angle 340.0° hit obstacle at [11.0, 11.752355496540632]
+[2026-02-07 18:37:20] Ray at angle 350.0° hit obstacle at [11.0, 11.928506175953915]
+[2026-02-07 18:37:20] LIDAR scan completed.
+[2026-02-07 18:37:20] Scan step begin at [10.011246934949996, 12.044033669544998]
+[2026-02-07 18:37:20] Starting LIDAR scan at position [10.011246934949996, 12.044033669544998]
+[2026-02-07 18:37:21] Ray at angle 170.0° hit obstacle at [9.03, 12.217053978914166]
+[2026-02-07 18:37:21] Ray at angle 180.0° hit obstacle at [9.03, 12.044033669544998]
+[2026-02-07 18:37:21] Ray at angle 190.0° hit obstacle at [9.03, 11.87101336017583]
+[2026-02-07 18:37:21] LIDAR scan completed.
+[2026-02-07 18:37:21] LIDAR detected 3 obstacle hits: [[9.03, 12.217], [9.03, 12.044], [9.03, 11.871]]
+[2026-02-07 18:37:21] Scan step end: obstacle_detected=True
+[2026-02-07 18:37:21] LIDAR hit detected during waypoint traversal at [10.01, 12.04] — stopping and replanning
+[2026-02-07 18:37:21] Scan step begin at [10.011246934949996, 12.044033669544998]
+[2026-02-07 18:37:21] Starting LIDAR scan at position [10.011246934949996, 12.044033669544998]
+[2026-02-07 18:37:21] Ray at angle 170.0° hit obstacle at [9.03, 12.217053978914166]
+[2026-02-07 18:37:21] Ray at angle 180.0° hit obstacle at [9.03, 12.044033669544998]
+[2026-02-07 18:37:21] Ray at angle 190.0° hit obstacle at [9.03, 11.87101336017583]
+[2026-02-07 18:37:21] LIDAR scan completed.
+[2026-02-07 18:37:21] LIDAR detected 3 obstacle hits: [[9.03, 12.217], [9.03, 12.044], [9.03, 11.871]]
+[2026-02-07 18:37:21] Scan step end: obstacle_detected=True

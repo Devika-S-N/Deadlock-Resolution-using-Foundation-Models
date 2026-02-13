@@ -1,0 +1,14 @@
+[2026-02-07 18:30:33] Run directory created at logs/run_18:30:33_07-02
+[2026-02-07 18:30:33] Environment initialized with agent at (10.0, 12.0) and goal at (6.0, 4.0)
+[2026-02-07 18:30:33] Starting navigation from [10.0, 12.0] to goal at [6.0, 4.0]
+[2026-02-07 18:30:33] Scan step begin at [10.0, 12.0]
+[2026-02-07 18:30:33] Starting LIDAR scan at position [10.0, 12.0]
+[2026-02-07 18:30:33] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 18:30:33] Ray at angle 170.0° hit obstacle at [9.03, 12.17103717128721]
+[2026-02-07 18:30:33] Ray at angle 180.0° hit obstacle at [9.03, 12.0]
+[2026-02-07 18:30:33] Ray at angle 190.0° hit obstacle at [9.03, 11.82896282871279]
+[2026-02-07 18:30:33] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 18:30:33] LIDAR scan completed.
+[2026-02-07 18:30:33] LIDAR detected 5 obstacle hits: [[11.0, 12.0], [9.03, 12.171], [9.03, 12.0], [9.03, 11.829], [10.0, 11.0]]
+[2026-02-07 18:30:33] Scan step end: obstacle_detected=True
+[2026-02-07 18:30:33] Obstacle detected near [9.03, 12.0] (from LIDAR hits) — querying for batch detour waypoints

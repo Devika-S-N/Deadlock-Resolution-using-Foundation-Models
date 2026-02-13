@@ -1,0 +1,36 @@
+[2026-01-30 20:40:16] Run directory created at logs/run_20:40:16_30-01
+[2026-01-30 20:40:16] Environment initialized with agent at (11.5, 11.5) and goal at (5.5, 2.5)
+[2026-01-30 20:40:16] Starting navigation from [11.5, 11.5] to goal at [5.5, 2.5]
+[2026-01-30 20:40:16] Scan step begin at [11.5, 11.5]
+[2026-01-30 20:40:16] Starting LIDAR scan at position [11.5, 11.5]
+[2026-01-30 20:40:16] Ray hit at [10.63397459621556, 11.0]
+[2026-01-30 20:40:16] Ray at angle 210.0° hit obstacle at [10.63397459621556, 11.0]
+[2026-01-30 20:40:16] Ray hit at [10.904123203702895, 11.0]
+[2026-01-30 20:40:16] Ray at angle 220.0° hit obstacle at [10.904123203702895, 11.0]
+[2026-01-30 20:40:16] Ray hit at [11.0, 10.904123203702895]
+[2026-01-30 20:40:16] Ray at angle 230.0° hit obstacle at [11.0, 10.904123203702895]
+[2026-01-30 20:40:16] Ray hit at [11.0, 10.633974596215563]
+[2026-01-30 20:40:16] Ray at angle 240.0° hit obstacle at [11.0, 10.633974596215563]
+[2026-01-30 20:40:16] LIDAR scan completed.
+[2026-01-30 20:40:16] LIDAR detected 4 obstacle hits: [[10.634, 11.0], [10.904, 11.0], [11.0, 10.904], [11.0, 10.634]]
+[2026-01-30 20:40:16] Scan step end: obstacle_detected=True
+[2026-01-30 20:40:16] Obstacle detected near [10.9, 11.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-01-30 20:40:16] ===== DETOUR TRIGGERED =====
+[2026-01-30 20:40:16] Agent position: [11.5, 11.5]
+[2026-01-30 20:40:16] Goal position: [5.5, 2.5]
+[2026-01-30 20:40:16] Starting LIDAR scan at position [11.5, 11.5]
+[2026-01-30 20:40:16] Ray hit at [10.63397459621556, 11.0]
+[2026-01-30 20:40:16] Ray at angle 210.0° hit obstacle at [10.63397459621556, 11.0]
+[2026-01-30 20:40:16] Ray hit at [10.904123203702895, 11.0]
+[2026-01-30 20:40:16] Ray at angle 220.0° hit obstacle at [10.904123203702895, 11.0]
+[2026-01-30 20:40:16] Ray hit at [11.0, 10.904123203702895]
+[2026-01-30 20:40:16] Ray at angle 230.0° hit obstacle at [11.0, 10.904123203702895]
+[2026-01-30 20:40:16] Ray hit at [11.0, 10.633974596215563]
+[2026-01-30 20:40:16] Ray at angle 240.0° hit obstacle at [11.0, 10.633974596215563]
+[2026-01-30 20:40:16] LIDAR scan completed.
+[2026-01-30 20:40:16] LIDAR detected 4 obstacle hits: [[10.634, 11.0], [10.904, 11.0], [11.0, 10.904], [11.0, 10.634]]
+[2026-01-30 20:40:16] LIDAR hit count: 4
+[2026-01-30 20:40:16] LIDAR hit points: [[10.634, 11.0], [10.904, 11.0], [11.0, 10.904], [11.0, 10.634]]
+[2026-01-30 20:40:17] VLM snapshot saved at: logs/run_20:40:16_30-01/vlm_snapshot_20:40:16_30-01_001.png
+[2026-01-30 20:40:17] Querying VLM model: gpt-4o
+[2026-01-30 20:40:17] Calling VLM for detour (attempt 1)

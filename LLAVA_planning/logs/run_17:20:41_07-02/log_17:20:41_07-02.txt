@@ -1,0 +1,1825 @@
+[2026-02-07 17:20:41] Run directory created at logs/run_17:20:41_07-02
+[2026-02-07 17:20:41] Environment initialized with agent at (10.0, 12.0) and goal at (6.0, 4.0)
+[2026-02-07 17:20:41] Starting navigation from [10.0, 12.0] to goal at [6.0, 4.0]
+[2026-02-07 17:20:41] Scan step begin at [10.0, 12.0]
+[2026-02-07 17:20:41] Starting LIDAR scan at position [10.0, 12.0]
+[2026-02-07 17:20:41] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 17:20:41] Ray at angle 170.0° hit obstacle at [9.03, 12.17103717128721]
+[2026-02-07 17:20:41] Ray at angle 180.0° hit obstacle at [9.03, 12.0]
+[2026-02-07 17:20:41] Ray at angle 190.0° hit obstacle at [9.03, 11.82896282871279]
+[2026-02-07 17:20:41] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 17:20:41] LIDAR scan completed.
+[2026-02-07 17:20:41] LIDAR detected 5 obstacle hits: [[11.0, 12.0], [9.03, 12.171], [9.03, 12.0], [9.03, 11.829], [10.0, 11.0]]
+[2026-02-07 17:20:41] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:41] Obstacle detected near [9.03, 12.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-07 17:20:41] ===== DETOUR TRIGGERED =====
+[2026-02-07 17:20:41] Agent position: [10.0, 12.0]
+[2026-02-07 17:20:41] Goal position: [6.0, 4.0]
+[2026-02-07 17:20:41] Starting LIDAR scan at position [10.0, 12.0]
+[2026-02-07 17:20:41] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 17:20:41] Ray at angle 170.0° hit obstacle at [9.03, 12.17103717128721]
+[2026-02-07 17:20:41] Ray at angle 180.0° hit obstacle at [9.03, 12.0]
+[2026-02-07 17:20:41] Ray at angle 190.0° hit obstacle at [9.03, 11.82896282871279]
+[2026-02-07 17:20:41] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 17:20:41] LIDAR scan completed.
+[2026-02-07 17:20:41] LIDAR detected 5 obstacle hits: [[11.0, 12.0], [9.03, 12.171], [9.03, 12.0], [9.03, 11.829], [10.0, 11.0]]
+[2026-02-07 17:20:41] LIDAR hit count: 5
+[2026-02-07 17:20:41] LIDAR hit points: [[11.0, 12.0], [9.03, 12.171], [9.03, 12.0], [9.03, 11.829], [10.0, 11.0]]
+[2026-02-07 17:20:42] VLM snapshot saved at: logs/run_17:20:41_07-02/vlm_snapshot_17:20:41_07-02_001.png
+[2026-02-07 17:20:42] Querying VLM model: gpt-4o
+[2026-02-07 17:20:42] Calling VLM for detour (attempt 1)
+[2026-02-07 17:20:44] VLM returned 6 waypoints: [[10.0, 13.0], [10.0, 14.0], [9.0, 14.0], [8.0, 14.0], [7.0, 14.0], [6.0, 14.0]]
+[2026-02-07 17:20:44] Accept WP1: [10.0, 13.0]
+[2026-02-07 17:20:44] Accept WP2: [10.0, 14.0]
+[2026-02-07 17:20:44] Reject WP3: segment [10.0, 14.0] -> [9.0, 14.0] intersects original obstacle interior
+[2026-02-07 17:20:44] Reject WP4: segment [10.0, 14.0] -> [8.0, 14.0] intersects original obstacle interior
+[2026-02-07 17:20:44] Reject WP5: segment [10.0, 14.0] -> [7.0, 14.0] intersects original obstacle interior
+[2026-02-07 17:20:44] Reject WP6: segment [10.0, 14.0] -> [6.0, 14.0] intersects original obstacle interior
+[2026-02-07 17:20:44] Detour validation result: SUCCESS (2 waypoints accepted)
+[2026-02-07 17:20:44] Added 2 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 17:20:44] ===== DETOUR END =====
+[2026-02-07 17:20:44] Moving to waypoint [10.0, 13.0]
+[2026-02-07 17:20:44] Starting LIDAR scan at position [10.0, 12.0]
+[2026-02-07 17:20:44] Ray at angle 0.0° hit obstacle at [11.0, 12.0]
+[2026-02-07 17:20:44] Ray at angle 170.0° hit obstacle at [9.03, 12.17103717128721]
+[2026-02-07 17:20:44] Ray at angle 180.0° hit obstacle at [9.03, 12.0]
+[2026-02-07 17:20:44] Ray at angle 190.0° hit obstacle at [9.03, 11.82896282871279]
+[2026-02-07 17:20:44] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 17:20:44] LIDAR scan completed.
+[2026-02-07 17:20:44] Scan step begin at [10.0, 12.05]
+[2026-02-07 17:20:44] Starting LIDAR scan at position [10.0, 12.05]
+[2026-02-07 17:20:44] Ray at angle 170.0° hit obstacle at [9.03, 12.221037171287211]
+[2026-02-07 17:20:44] Ray at angle 180.0° hit obstacle at [9.03, 12.05]
+[2026-02-07 17:20:44] Ray at angle 190.0° hit obstacle at [9.03, 11.87896282871279]
+[2026-02-07 17:20:44] LIDAR scan completed.
+[2026-02-07 17:20:44] LIDAR detected 3 obstacle hits: [[9.03, 12.221], [9.03, 12.05], [9.03, 11.879]]
+[2026-02-07 17:20:44] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:44] Starting LIDAR scan at position [10.0, 12.05]
+[2026-02-07 17:20:44] Ray at angle 170.0° hit obstacle at [9.03, 12.221037171287211]
+[2026-02-07 17:20:44] Ray at angle 180.0° hit obstacle at [9.03, 12.05]
+[2026-02-07 17:20:44] Ray at angle 190.0° hit obstacle at [9.03, 11.87896282871279]
+[2026-02-07 17:20:44] LIDAR scan completed.
+[2026-02-07 17:20:44] Scan step begin at [10.0, 12.100000000000001]
+[2026-02-07 17:20:44] Starting LIDAR scan at position [10.0, 12.100000000000001]
+[2026-02-07 17:20:44] Ray at angle 170.0° hit obstacle at [9.03, 12.271037171287212]
+[2026-02-07 17:20:44] Ray at angle 180.0° hit obstacle at [9.03, 12.100000000000001]
+[2026-02-07 17:20:44] Ray at angle 190.0° hit obstacle at [9.03, 11.928962828712791]
+[2026-02-07 17:20:44] LIDAR scan completed.
+[2026-02-07 17:20:44] LIDAR detected 3 obstacle hits: [[9.03, 12.271], [9.03, 12.1], [9.03, 11.929]]
+[2026-02-07 17:20:44] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:44] Starting LIDAR scan at position [10.0, 12.100000000000001]
+[2026-02-07 17:20:44] Ray at angle 170.0° hit obstacle at [9.03, 12.271037171287212]
+[2026-02-07 17:20:44] Ray at angle 180.0° hit obstacle at [9.03, 12.100000000000001]
+[2026-02-07 17:20:44] Ray at angle 190.0° hit obstacle at [9.03, 11.928962828712791]
+[2026-02-07 17:20:44] LIDAR scan completed.
+[2026-02-07 17:20:44] Scan step begin at [10.0, 12.150000000000002]
+[2026-02-07 17:20:44] Starting LIDAR scan at position [10.0, 12.150000000000002]
+[2026-02-07 17:20:44] Ray at angle 170.0° hit obstacle at [9.03, 12.321037171287212]
+[2026-02-07 17:20:44] Ray at angle 180.0° hit obstacle at [9.03, 12.150000000000002]
+[2026-02-07 17:20:44] Ray at angle 190.0° hit obstacle at [9.03, 11.978962828712792]
+[2026-02-07 17:20:44] LIDAR scan completed.
+[2026-02-07 17:20:44] LIDAR detected 3 obstacle hits: [[9.03, 12.321], [9.03, 12.15], [9.03, 11.979]]
+[2026-02-07 17:20:44] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:45] Starting LIDAR scan at position [10.0, 12.150000000000002]
+[2026-02-07 17:20:45] Ray at angle 170.0° hit obstacle at [9.03, 12.321037171287212]
+[2026-02-07 17:20:45] Ray at angle 180.0° hit obstacle at [9.03, 12.150000000000002]
+[2026-02-07 17:20:45] Ray at angle 190.0° hit obstacle at [9.03, 11.978962828712792]
+[2026-02-07 17:20:45] LIDAR scan completed.
+[2026-02-07 17:20:45] Scan step begin at [10.0, 12.200000000000003]
+[2026-02-07 17:20:45] Starting LIDAR scan at position [10.0, 12.200000000000003]
+[2026-02-07 17:20:45] Ray at angle 170.0° hit obstacle at [9.03, 12.371037171287213]
+[2026-02-07 17:20:45] Ray at angle 180.0° hit obstacle at [9.03, 12.200000000000003]
+[2026-02-07 17:20:45] Ray at angle 190.0° hit obstacle at [9.03, 12.028962828712793]
+[2026-02-07 17:20:45] LIDAR scan completed.
+[2026-02-07 17:20:45] LIDAR detected 3 obstacle hits: [[9.03, 12.371], [9.03, 12.2], [9.03, 12.029]]
+[2026-02-07 17:20:45] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:45] Starting LIDAR scan at position [10.0, 12.200000000000003]
+[2026-02-07 17:20:45] Ray at angle 170.0° hit obstacle at [9.03, 12.371037171287213]
+[2026-02-07 17:20:45] Ray at angle 180.0° hit obstacle at [9.03, 12.200000000000003]
+[2026-02-07 17:20:45] Ray at angle 190.0° hit obstacle at [9.03, 12.028962828712793]
+[2026-02-07 17:20:45] LIDAR scan completed.
+[2026-02-07 17:20:45] Scan step begin at [10.0, 12.250000000000004]
+[2026-02-07 17:20:45] Starting LIDAR scan at position [10.0, 12.250000000000004]
+[2026-02-07 17:20:45] Ray at angle 170.0° hit obstacle at [9.03, 12.421037171287214]
+[2026-02-07 17:20:45] Ray at angle 180.0° hit obstacle at [9.03, 12.250000000000004]
+[2026-02-07 17:20:45] Ray at angle 190.0° hit obstacle at [9.03, 12.078962828712793]
+[2026-02-07 17:20:45] LIDAR scan completed.
+[2026-02-07 17:20:45] LIDAR detected 3 obstacle hits: [[9.03, 12.421], [9.03, 12.25], [9.03, 12.079]]
+[2026-02-07 17:20:45] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:45] Starting LIDAR scan at position [10.0, 12.250000000000004]
+[2026-02-07 17:20:45] Ray at angle 170.0° hit obstacle at [9.03, 12.421037171287214]
+[2026-02-07 17:20:45] Ray at angle 180.0° hit obstacle at [9.03, 12.250000000000004]
+[2026-02-07 17:20:45] Ray at angle 190.0° hit obstacle at [9.03, 12.078962828712793]
+[2026-02-07 17:20:45] LIDAR scan completed.
+[2026-02-07 17:20:45] Scan step begin at [10.0, 12.300000000000004]
+[2026-02-07 17:20:45] Starting LIDAR scan at position [10.0, 12.300000000000004]
+[2026-02-07 17:20:45] Ray at angle 170.0° hit obstacle at [9.03, 12.471037171287215]
+[2026-02-07 17:20:45] Ray at angle 180.0° hit obstacle at [9.03, 12.300000000000004]
+[2026-02-07 17:20:45] Ray at angle 190.0° hit obstacle at [9.03, 12.128962828712794]
+[2026-02-07 17:20:45] LIDAR scan completed.
+[2026-02-07 17:20:45] LIDAR detected 3 obstacle hits: [[9.03, 12.471], [9.03, 12.3], [9.03, 12.129]]
+[2026-02-07 17:20:45] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:45] Starting LIDAR scan at position [10.0, 12.300000000000004]
+[2026-02-07 17:20:45] Ray at angle 170.0° hit obstacle at [9.03, 12.471037171287215]
+[2026-02-07 17:20:45] Ray at angle 180.0° hit obstacle at [9.03, 12.300000000000004]
+[2026-02-07 17:20:45] Ray at angle 190.0° hit obstacle at [9.03, 12.128962828712794]
+[2026-02-07 17:20:45] LIDAR scan completed.
+[2026-02-07 17:20:45] Scan step begin at [10.0, 12.350000000000005]
+[2026-02-07 17:20:45] Starting LIDAR scan at position [10.0, 12.350000000000005]
+[2026-02-07 17:20:45] Ray at angle 170.0° hit obstacle at [9.03, 12.521037171287215]
+[2026-02-07 17:20:45] Ray at angle 180.0° hit obstacle at [9.03, 12.350000000000005]
+[2026-02-07 17:20:45] Ray at angle 190.0° hit obstacle at [9.03, 12.178962828712795]
+[2026-02-07 17:20:45] LIDAR scan completed.
+[2026-02-07 17:20:45] LIDAR detected 3 obstacle hits: [[9.03, 12.521], [9.03, 12.35], [9.03, 12.179]]
+[2026-02-07 17:20:45] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:46] Starting LIDAR scan at position [10.0, 12.350000000000005]
+[2026-02-07 17:20:46] Ray at angle 170.0° hit obstacle at [9.03, 12.521037171287215]
+[2026-02-07 17:20:46] Ray at angle 180.0° hit obstacle at [9.03, 12.350000000000005]
+[2026-02-07 17:20:46] Ray at angle 190.0° hit obstacle at [9.03, 12.178962828712795]
+[2026-02-07 17:20:46] LIDAR scan completed.
+[2026-02-07 17:20:46] Scan step begin at [10.0, 12.400000000000006]
+[2026-02-07 17:20:46] Starting LIDAR scan at position [10.0, 12.400000000000006]
+[2026-02-07 17:20:46] Ray at angle 170.0° hit obstacle at [9.03, 12.571037171287216]
+[2026-02-07 17:20:46] Ray at angle 180.0° hit obstacle at [9.03, 12.400000000000006]
+[2026-02-07 17:20:46] Ray at angle 190.0° hit obstacle at [9.03, 12.228962828712795]
+[2026-02-07 17:20:46] LIDAR scan completed.
+[2026-02-07 17:20:46] LIDAR detected 3 obstacle hits: [[9.03, 12.571], [9.03, 12.4], [9.03, 12.229]]
+[2026-02-07 17:20:46] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:46] Starting LIDAR scan at position [10.0, 12.400000000000006]
+[2026-02-07 17:20:46] Ray at angle 170.0° hit obstacle at [9.03, 12.571037171287216]
+[2026-02-07 17:20:46] Ray at angle 180.0° hit obstacle at [9.03, 12.400000000000006]
+[2026-02-07 17:20:46] Ray at angle 190.0° hit obstacle at [9.03, 12.228962828712795]
+[2026-02-07 17:20:46] LIDAR scan completed.
+[2026-02-07 17:20:46] Scan step begin at [10.0, 12.450000000000006]
+[2026-02-07 17:20:46] Starting LIDAR scan at position [10.0, 12.450000000000006]
+[2026-02-07 17:20:46] Ray at angle 170.0° hit obstacle at [9.03, 12.621037171287217]
+[2026-02-07 17:20:46] Ray at angle 180.0° hit obstacle at [9.03, 12.450000000000006]
+[2026-02-07 17:20:46] Ray at angle 190.0° hit obstacle at [9.03, 12.278962828712796]
+[2026-02-07 17:20:46] LIDAR scan completed.
+[2026-02-07 17:20:46] LIDAR detected 3 obstacle hits: [[9.03, 12.621], [9.03, 12.45], [9.03, 12.279]]
+[2026-02-07 17:20:46] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:46] Starting LIDAR scan at position [10.0, 12.450000000000006]
+[2026-02-07 17:20:46] Ray at angle 170.0° hit obstacle at [9.03, 12.621037171287217]
+[2026-02-07 17:20:46] Ray at angle 180.0° hit obstacle at [9.03, 12.450000000000006]
+[2026-02-07 17:20:46] Ray at angle 190.0° hit obstacle at [9.03, 12.278962828712796]
+[2026-02-07 17:20:46] LIDAR scan completed.
+[2026-02-07 17:20:46] Scan step begin at [10.0, 12.500000000000007]
+[2026-02-07 17:20:46] Starting LIDAR scan at position [10.0, 12.500000000000007]
+[2026-02-07 17:20:46] Ray at angle 170.0° hit obstacle at [9.03, 12.671037171287217]
+[2026-02-07 17:20:46] Ray at angle 180.0° hit obstacle at [9.03, 12.500000000000007]
+[2026-02-07 17:20:46] Ray at angle 190.0° hit obstacle at [9.03, 12.328962828712797]
+[2026-02-07 17:20:46] LIDAR scan completed.
+[2026-02-07 17:20:46] LIDAR detected 3 obstacle hits: [[9.03, 12.671], [9.03, 12.5], [9.03, 12.329]]
+[2026-02-07 17:20:46] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:46] Starting LIDAR scan at position [10.0, 12.500000000000007]
+[2026-02-07 17:20:46] Ray at angle 170.0° hit obstacle at [9.03, 12.671037171287217]
+[2026-02-07 17:20:46] Ray at angle 180.0° hit obstacle at [9.03, 12.500000000000007]
+[2026-02-07 17:20:46] Ray at angle 190.0° hit obstacle at [9.03, 12.328962828712797]
+[2026-02-07 17:20:46] LIDAR scan completed.
+[2026-02-07 17:20:46] Scan step begin at [10.0, 12.550000000000006]
+[2026-02-07 17:20:46] Starting LIDAR scan at position [10.0, 12.550000000000006]
+[2026-02-07 17:20:46] Ray at angle 170.0° hit obstacle at [9.03, 12.721037171287216]
+[2026-02-07 17:20:46] Ray at angle 180.0° hit obstacle at [9.03, 12.550000000000006]
+[2026-02-07 17:20:46] Ray at angle 190.0° hit obstacle at [9.03, 12.378962828712796]
+[2026-02-07 17:20:46] LIDAR scan completed.
+[2026-02-07 17:20:46] LIDAR detected 3 obstacle hits: [[9.03, 12.721], [9.03, 12.55], [9.03, 12.379]]
+[2026-02-07 17:20:46] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:47] Starting LIDAR scan at position [10.0, 12.550000000000006]
+[2026-02-07 17:20:47] Ray at angle 170.0° hit obstacle at [9.03, 12.721037171287216]
+[2026-02-07 17:20:47] Ray at angle 180.0° hit obstacle at [9.03, 12.550000000000006]
+[2026-02-07 17:20:47] Ray at angle 190.0° hit obstacle at [9.03, 12.378962828712796]
+[2026-02-07 17:20:47] LIDAR scan completed.
+[2026-02-07 17:20:47] Scan step begin at [10.0, 12.595000000000006]
+[2026-02-07 17:20:47] Starting LIDAR scan at position [10.0, 12.595000000000006]
+[2026-02-07 17:20:47] Ray at angle 170.0° hit obstacle at [9.03, 12.766037171287216]
+[2026-02-07 17:20:47] Ray at angle 180.0° hit obstacle at [9.03, 12.595000000000006]
+[2026-02-07 17:20:47] Ray at angle 190.0° hit obstacle at [9.03, 12.423962828712796]
+[2026-02-07 17:20:47] LIDAR scan completed.
+[2026-02-07 17:20:47] LIDAR detected 3 obstacle hits: [[9.03, 12.766], [9.03, 12.595], [9.03, 12.424]]
+[2026-02-07 17:20:47] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:47] Starting LIDAR scan at position [10.0, 12.595000000000006]
+[2026-02-07 17:20:47] Ray at angle 170.0° hit obstacle at [9.03, 12.766037171287216]
+[2026-02-07 17:20:47] Ray at angle 180.0° hit obstacle at [9.03, 12.595000000000006]
+[2026-02-07 17:20:47] Ray at angle 190.0° hit obstacle at [9.03, 12.423962828712796]
+[2026-02-07 17:20:47] LIDAR scan completed.
+[2026-02-07 17:20:47] Scan step begin at [10.0, 12.635500000000006]
+[2026-02-07 17:20:47] Starting LIDAR scan at position [10.0, 12.635500000000006]
+[2026-02-07 17:20:47] Ray at angle 170.0° hit obstacle at [9.03, 12.806537171287216]
+[2026-02-07 17:20:47] Ray at angle 180.0° hit obstacle at [9.03, 12.635500000000006]
+[2026-02-07 17:20:47] Ray at angle 190.0° hit obstacle at [9.03, 12.464462828712795]
+[2026-02-07 17:20:47] LIDAR scan completed.
+[2026-02-07 17:20:47] LIDAR detected 3 obstacle hits: [[9.03, 12.807], [9.03, 12.636], [9.03, 12.464]]
+[2026-02-07 17:20:47] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:47] Starting LIDAR scan at position [10.0, 12.635500000000006]
+[2026-02-07 17:20:47] Ray at angle 170.0° hit obstacle at [9.03, 12.806537171287216]
+[2026-02-07 17:20:47] Ray at angle 180.0° hit obstacle at [9.03, 12.635500000000006]
+[2026-02-07 17:20:47] Ray at angle 190.0° hit obstacle at [9.03, 12.464462828712795]
+[2026-02-07 17:20:47] LIDAR scan completed.
+[2026-02-07 17:20:47] Scan step begin at [10.0, 12.671950000000006]
+[2026-02-07 17:20:47] Starting LIDAR scan at position [10.0, 12.671950000000006]
+[2026-02-07 17:20:47] Ray at angle 170.0° hit obstacle at [9.03, 12.842987171287216]
+[2026-02-07 17:20:47] Ray at angle 180.0° hit obstacle at [9.03, 12.671950000000006]
+[2026-02-07 17:20:47] Ray at angle 190.0° hit obstacle at [9.03, 12.500912828712796]
+[2026-02-07 17:20:47] LIDAR scan completed.
+[2026-02-07 17:20:47] LIDAR detected 3 obstacle hits: [[9.03, 12.843], [9.03, 12.672], [9.03, 12.501]]
+[2026-02-07 17:20:47] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:47] Starting LIDAR scan at position [10.0, 12.671950000000006]
+[2026-02-07 17:20:47] Ray at angle 170.0° hit obstacle at [9.03, 12.842987171287216]
+[2026-02-07 17:20:47] Ray at angle 180.0° hit obstacle at [9.03, 12.671950000000006]
+[2026-02-07 17:20:47] Ray at angle 190.0° hit obstacle at [9.03, 12.500912828712796]
+[2026-02-07 17:20:47] LIDAR scan completed.
+[2026-02-07 17:20:47] Scan step begin at [10.0, 12.704755000000006]
+[2026-02-07 17:20:47] Starting LIDAR scan at position [10.0, 12.704755000000006]
+[2026-02-07 17:20:47] Ray at angle 170.0° hit obstacle at [9.03, 12.875792171287216]
+[2026-02-07 17:20:47] Ray at angle 180.0° hit obstacle at [9.03, 12.704755000000006]
+[2026-02-07 17:20:47] Ray at angle 190.0° hit obstacle at [9.03, 12.533717828712795]
+[2026-02-07 17:20:47] LIDAR scan completed.
+[2026-02-07 17:20:47] LIDAR detected 3 obstacle hits: [[9.03, 12.876], [9.03, 12.705], [9.03, 12.534]]
+[2026-02-07 17:20:47] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:48] Starting LIDAR scan at position [10.0, 12.704755000000006]
+[2026-02-07 17:20:48] Ray at angle 170.0° hit obstacle at [9.03, 12.875792171287216]
+[2026-02-07 17:20:48] Ray at angle 180.0° hit obstacle at [9.03, 12.704755000000006]
+[2026-02-07 17:20:48] Ray at angle 190.0° hit obstacle at [9.03, 12.533717828712795]
+[2026-02-07 17:20:48] LIDAR scan completed.
+[2026-02-07 17:20:48] Scan step begin at [10.0, 12.734279500000005]
+[2026-02-07 17:20:48] Starting LIDAR scan at position [10.0, 12.734279500000005]
+[2026-02-07 17:20:48] Ray at angle 170.0° hit obstacle at [9.03, 12.905316671287215]
+[2026-02-07 17:20:48] Ray at angle 180.0° hit obstacle at [9.03, 12.734279500000005]
+[2026-02-07 17:20:48] Ray at angle 190.0° hit obstacle at [9.03, 12.563242328712795]
+[2026-02-07 17:20:48] LIDAR scan completed.
+[2026-02-07 17:20:48] LIDAR detected 3 obstacle hits: [[9.03, 12.905], [9.03, 12.734], [9.03, 12.563]]
+[2026-02-07 17:20:48] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:48] Starting LIDAR scan at position [10.0, 12.734279500000005]
+[2026-02-07 17:20:48] Ray at angle 170.0° hit obstacle at [9.03, 12.905316671287215]
+[2026-02-07 17:20:48] Ray at angle 180.0° hit obstacle at [9.03, 12.734279500000005]
+[2026-02-07 17:20:48] Ray at angle 190.0° hit obstacle at [9.03, 12.563242328712795]
+[2026-02-07 17:20:48] LIDAR scan completed.
+[2026-02-07 17:20:48] Scan step begin at [10.0, 12.760851550000005]
+[2026-02-07 17:20:48] Starting LIDAR scan at position [10.0, 12.760851550000005]
+[2026-02-07 17:20:48] Ray at angle 170.0° hit obstacle at [9.03, 12.931888721287216]
+[2026-02-07 17:20:48] Ray at angle 180.0° hit obstacle at [9.03, 12.760851550000005]
+[2026-02-07 17:20:48] Ray at angle 190.0° hit obstacle at [9.03, 12.589814378712795]
+[2026-02-07 17:20:48] LIDAR scan completed.
+[2026-02-07 17:20:48] LIDAR detected 3 obstacle hits: [[9.03, 12.932], [9.03, 12.761], [9.03, 12.59]]
+[2026-02-07 17:20:48] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:48] Starting LIDAR scan at position [10.0, 12.760851550000005]
+[2026-02-07 17:20:48] Ray at angle 170.0° hit obstacle at [9.03, 12.931888721287216]
+[2026-02-07 17:20:48] Ray at angle 180.0° hit obstacle at [9.03, 12.760851550000005]
+[2026-02-07 17:20:48] Ray at angle 190.0° hit obstacle at [9.03, 12.589814378712795]
+[2026-02-07 17:20:48] LIDAR scan completed.
+[2026-02-07 17:20:48] Scan step begin at [10.0, 12.784766395000005]
+[2026-02-07 17:20:48] Starting LIDAR scan at position [10.0, 12.784766395000005]
+[2026-02-07 17:20:48] Ray at angle 170.0° hit obstacle at [9.03, 12.955803566287216]
+[2026-02-07 17:20:48] Ray at angle 180.0° hit obstacle at [9.03, 12.784766395000005]
+[2026-02-07 17:20:48] Ray at angle 190.0° hit obstacle at [9.03, 12.613729223712795]
+[2026-02-07 17:20:48] LIDAR scan completed.
+[2026-02-07 17:20:48] LIDAR detected 3 obstacle hits: [[9.03, 12.956], [9.03, 12.785], [9.03, 12.614]]
+[2026-02-07 17:20:48] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:48] Starting LIDAR scan at position [10.0, 12.784766395000005]
+[2026-02-07 17:20:48] Ray at angle 170.0° hit obstacle at [9.03, 12.955803566287216]
+[2026-02-07 17:20:48] Ray at angle 180.0° hit obstacle at [9.03, 12.784766395000005]
+[2026-02-07 17:20:48] Ray at angle 190.0° hit obstacle at [9.03, 12.613729223712795]
+[2026-02-07 17:20:48] LIDAR scan completed.
+[2026-02-07 17:20:48] Scan step begin at [10.0, 12.806289755500005]
+[2026-02-07 17:20:48] Starting LIDAR scan at position [10.0, 12.806289755500005]
+[2026-02-07 17:20:48] Ray at angle 170.0° hit obstacle at [9.03, 12.977326926787216]
+[2026-02-07 17:20:48] Ray at angle 180.0° hit obstacle at [9.03, 12.806289755500005]
+[2026-02-07 17:20:48] Ray at angle 190.0° hit obstacle at [9.03, 12.635252584212795]
+[2026-02-07 17:20:48] LIDAR scan completed.
+[2026-02-07 17:20:48] LIDAR detected 3 obstacle hits: [[9.03, 12.977], [9.03, 12.806], [9.03, 12.635]]
+[2026-02-07 17:20:48] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:49] Starting LIDAR scan at position [10.0, 12.806289755500005]
+[2026-02-07 17:20:49] Ray at angle 170.0° hit obstacle at [9.03, 12.977326926787216]
+[2026-02-07 17:20:49] Ray at angle 180.0° hit obstacle at [9.03, 12.806289755500005]
+[2026-02-07 17:20:49] Ray at angle 190.0° hit obstacle at [9.03, 12.635252584212795]
+[2026-02-07 17:20:49] LIDAR scan completed.
+[2026-02-07 17:20:49] Scan step begin at [10.0, 12.825660779950004]
+[2026-02-07 17:20:49] Starting LIDAR scan at position [10.0, 12.825660779950004]
+[2026-02-07 17:20:49] Ray at angle 170.0° hit obstacle at [9.03, 12.996697951237214]
+[2026-02-07 17:20:49] Ray at angle 180.0° hit obstacle at [9.03, 12.825660779950004]
+[2026-02-07 17:20:49] Ray at angle 190.0° hit obstacle at [9.03, 12.654623608662794]
+[2026-02-07 17:20:49] LIDAR scan completed.
+[2026-02-07 17:20:49] LIDAR detected 3 obstacle hits: [[9.03, 12.997], [9.03, 12.826], [9.03, 12.655]]
+[2026-02-07 17:20:49] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:49] Starting LIDAR scan at position [10.0, 12.825660779950004]
+[2026-02-07 17:20:49] Ray at angle 170.0° hit obstacle at [9.03, 12.996697951237214]
+[2026-02-07 17:20:49] Ray at angle 180.0° hit obstacle at [9.03, 12.825660779950004]
+[2026-02-07 17:20:49] Ray at angle 190.0° hit obstacle at [9.03, 12.654623608662794]
+[2026-02-07 17:20:49] LIDAR scan completed.
+[2026-02-07 17:20:49] Scan step begin at [10.0, 12.843094701955003]
+[2026-02-07 17:20:49] Starting LIDAR scan at position [10.0, 12.843094701955003]
+[2026-02-07 17:20:49] Ray at angle 170.0° hit obstacle at [9.03, 13.014131873242214]
+[2026-02-07 17:20:49] Ray at angle 180.0° hit obstacle at [9.03, 12.843094701955003]
+[2026-02-07 17:20:49] Ray at angle 190.0° hit obstacle at [9.03, 12.672057530667793]
+[2026-02-07 17:20:49] LIDAR scan completed.
+[2026-02-07 17:20:49] LIDAR detected 3 obstacle hits: [[9.03, 13.014], [9.03, 12.843], [9.03, 12.672]]
+[2026-02-07 17:20:49] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:49] Starting LIDAR scan at position [10.0, 12.843094701955003]
+[2026-02-07 17:20:49] Ray at angle 170.0° hit obstacle at [9.03, 13.014131873242214]
+[2026-02-07 17:20:49] Ray at angle 180.0° hit obstacle at [9.03, 12.843094701955003]
+[2026-02-07 17:20:49] Ray at angle 190.0° hit obstacle at [9.03, 12.672057530667793]
+[2026-02-07 17:20:49] LIDAR scan completed.
+[2026-02-07 17:20:49] Scan step begin at [10.0, 12.858785231759503]
+[2026-02-07 17:20:49] Starting LIDAR scan at position [10.0, 12.858785231759503]
+[2026-02-07 17:20:49] Ray at angle 170.0° hit obstacle at [9.03, 13.029822403046714]
+[2026-02-07 17:20:49] Ray at angle 180.0° hit obstacle at [9.03, 12.858785231759503]
+[2026-02-07 17:20:49] Ray at angle 190.0° hit obstacle at [9.03, 12.687748060472293]
+[2026-02-07 17:20:49] LIDAR scan completed.
+[2026-02-07 17:20:49] LIDAR detected 3 obstacle hits: [[9.03, 13.03], [9.03, 12.859], [9.03, 12.688]]
+[2026-02-07 17:20:49] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:49] Starting LIDAR scan at position [10.0, 12.858785231759503]
+[2026-02-07 17:20:49] Ray at angle 170.0° hit obstacle at [9.03, 13.029822403046714]
+[2026-02-07 17:20:49] Ray at angle 180.0° hit obstacle at [9.03, 12.858785231759503]
+[2026-02-07 17:20:49] Ray at angle 190.0° hit obstacle at [9.03, 12.687748060472293]
+[2026-02-07 17:20:49] LIDAR scan completed.
+[2026-02-07 17:20:49] Scan step begin at [10.0, 12.872906708583553]
+[2026-02-07 17:20:49] Starting LIDAR scan at position [10.0, 12.872906708583553]
+[2026-02-07 17:20:49] Ray at angle 170.0° hit obstacle at [9.03, 13.043943879870763]
+[2026-02-07 17:20:49] Ray at angle 180.0° hit obstacle at [9.03, 12.872906708583553]
+[2026-02-07 17:20:49] Ray at angle 190.0° hit obstacle at [9.03, 12.701869537296343]
+[2026-02-07 17:20:49] LIDAR scan completed.
+[2026-02-07 17:20:49] LIDAR detected 3 obstacle hits: [[9.03, 13.044], [9.03, 12.873], [9.03, 12.702]]
+[2026-02-07 17:20:49] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:50] Starting LIDAR scan at position [10.0, 12.872906708583553]
+[2026-02-07 17:20:50] Ray at angle 170.0° hit obstacle at [9.03, 13.043943879870763]
+[2026-02-07 17:20:50] Ray at angle 180.0° hit obstacle at [9.03, 12.872906708583553]
+[2026-02-07 17:20:50] Ray at angle 190.0° hit obstacle at [9.03, 12.701869537296343]
+[2026-02-07 17:20:50] LIDAR scan completed.
+[2026-02-07 17:20:50] Scan step begin at [10.0, 12.885616037725198]
+[2026-02-07 17:20:50] Starting LIDAR scan at position [10.0, 12.885616037725198]
+[2026-02-07 17:20:50] Ray at angle 170.0° hit obstacle at [9.03, 13.056653209012408]
+[2026-02-07 17:20:50] Ray at angle 180.0° hit obstacle at [9.03, 12.885616037725198]
+[2026-02-07 17:20:50] Ray at angle 190.0° hit obstacle at [9.03, 12.714578866437988]
+[2026-02-07 17:20:50] LIDAR scan completed.
+[2026-02-07 17:20:50] LIDAR detected 3 obstacle hits: [[9.03, 13.057], [9.03, 12.886], [9.03, 12.715]]
+[2026-02-07 17:20:50] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:50] Starting LIDAR scan at position [10.0, 12.885616037725198]
+[2026-02-07 17:20:50] Ray at angle 170.0° hit obstacle at [9.03, 13.056653209012408]
+[2026-02-07 17:20:50] Ray at angle 180.0° hit obstacle at [9.03, 12.885616037725198]
+[2026-02-07 17:20:50] Ray at angle 190.0° hit obstacle at [9.03, 12.714578866437988]
+[2026-02-07 17:20:50] LIDAR scan completed.
+[2026-02-07 17:20:50] Scan step begin at [10.0, 12.897054433952679]
+[2026-02-07 17:20:50] Starting LIDAR scan at position [10.0, 12.897054433952679]
+[2026-02-07 17:20:50] Ray at angle 170.0° hit obstacle at [9.03, 13.06809160523989]
+[2026-02-07 17:20:50] Ray at angle 180.0° hit obstacle at [9.03, 12.897054433952679]
+[2026-02-07 17:20:50] Ray at angle 190.0° hit obstacle at [9.03, 12.726017262665469]
+[2026-02-07 17:20:50] LIDAR scan completed.
+[2026-02-07 17:20:50] LIDAR detected 3 obstacle hits: [[9.03, 13.068], [9.03, 12.897], [9.03, 12.726]]
+[2026-02-07 17:20:50] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:50] Starting LIDAR scan at position [10.0, 12.897054433952679]
+[2026-02-07 17:20:50] Ray at angle 170.0° hit obstacle at [9.03, 13.06809160523989]
+[2026-02-07 17:20:50] Ray at angle 180.0° hit obstacle at [9.03, 12.897054433952679]
+[2026-02-07 17:20:50] Ray at angle 190.0° hit obstacle at [9.03, 12.726017262665469]
+[2026-02-07 17:20:50] LIDAR scan completed.
+[2026-02-07 17:20:50] Scan step begin at [10.0, 12.907348990557411]
+[2026-02-07 17:20:50] Starting LIDAR scan at position [10.0, 12.907348990557411]
+[2026-02-07 17:20:50] Ray at angle 170.0° hit obstacle at [9.03, 13.078386161844621]
+[2026-02-07 17:20:50] Ray at angle 180.0° hit obstacle at [9.03, 12.907348990557411]
+[2026-02-07 17:20:50] Ray at angle 190.0° hit obstacle at [9.03, 12.7363118192702]
+[2026-02-07 17:20:50] LIDAR scan completed.
+[2026-02-07 17:20:50] LIDAR detected 3 obstacle hits: [[9.03, 13.078], [9.03, 12.907], [9.03, 12.736]]
+[2026-02-07 17:20:50] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:50] Reached waypoint [10.0, 13.0]
+[2026-02-07 17:20:50] Moving to waypoint [10.0, 14.0]
+[2026-02-07 17:20:50] Starting LIDAR scan at position [10.0, 12.907348990557411]
+[2026-02-07 17:20:50] Ray at angle 170.0° hit obstacle at [9.03, 13.078386161844621]
+[2026-02-07 17:20:50] Ray at angle 180.0° hit obstacle at [9.03, 12.907348990557411]
+[2026-02-07 17:20:50] Ray at angle 190.0° hit obstacle at [9.03, 12.7363118192702]
+[2026-02-07 17:20:50] LIDAR scan completed.
+[2026-02-07 17:20:50] Scan step begin at [10.0, 12.957348990557412]
+[2026-02-07 17:20:50] Starting LIDAR scan at position [10.0, 12.957348990557412]
+[2026-02-07 17:20:50] Ray at angle 170.0° hit obstacle at [9.03, 13.128386161844622]
+[2026-02-07 17:20:50] Ray at angle 180.0° hit obstacle at [9.03, 12.957348990557412]
+[2026-02-07 17:20:50] Ray at angle 190.0° hit obstacle at [9.03, 12.786311819270201]
+[2026-02-07 17:20:50] LIDAR scan completed.
+[2026-02-07 17:20:50] LIDAR detected 3 obstacle hits: [[9.03, 13.128], [9.03, 12.957], [9.03, 12.786]]
+[2026-02-07 17:20:50] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:51] Starting LIDAR scan at position [10.0, 12.957348990557412]
+[2026-02-07 17:20:51] Ray at angle 170.0° hit obstacle at [9.03, 13.128386161844622]
+[2026-02-07 17:20:51] Ray at angle 180.0° hit obstacle at [9.03, 12.957348990557412]
+[2026-02-07 17:20:51] Ray at angle 190.0° hit obstacle at [9.03, 12.786311819270201]
+[2026-02-07 17:20:51] LIDAR scan completed.
+[2026-02-07 17:20:51] Scan step begin at [10.0, 13.007348990557412]
+[2026-02-07 17:20:51] Starting LIDAR scan at position [10.0, 13.007348990557412]
+[2026-02-07 17:20:51] Ray at angle 90.0° hit obstacle at [10.0, 13.97]
+[2026-02-07 17:20:51] Ray at angle 100.0° hit obstacle at [9.830258654029032, 13.97]
+[2026-02-07 17:20:51] Ray at angle 170.0° hit obstacle at [9.03, 13.178386161844623]
+[2026-02-07 17:20:51] Ray at angle 180.0° hit obstacle at [9.03, 13.007348990557412]
+[2026-02-07 17:20:51] Ray at angle 190.0° hit obstacle at [9.03, 12.836311819270202]
+[2026-02-07 17:20:51] LIDAR scan completed.
+[2026-02-07 17:20:51] LIDAR detected 5 obstacle hits: [[10.0, 13.97], [9.83, 13.97], [9.03, 13.178], [9.03, 13.007], [9.03, 12.836]]
+[2026-02-07 17:20:51] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:51] Starting LIDAR scan at position [10.0, 13.007348990557412]
+[2026-02-07 17:20:51] Ray at angle 90.0° hit obstacle at [10.0, 13.97]
+[2026-02-07 17:20:51] Ray at angle 100.0° hit obstacle at [9.830258654029032, 13.97]
+[2026-02-07 17:20:51] Ray at angle 170.0° hit obstacle at [9.03, 13.178386161844623]
+[2026-02-07 17:20:51] Ray at angle 180.0° hit obstacle at [9.03, 13.007348990557412]
+[2026-02-07 17:20:51] Ray at angle 190.0° hit obstacle at [9.03, 12.836311819270202]
+[2026-02-07 17:20:51] LIDAR scan completed.
+[2026-02-07 17:20:51] Waypoint [10. 14.] is blocked by new obstacle.
+[2026-02-07 17:20:51] Waypoint [10. 14.] became blocked by new obstacle during approach. Replanning.
+[2026-02-07 17:20:51] ===== DETOUR TRIGGERED =====
+[2026-02-07 17:20:51] Agent position: [10.0, 13.007348990557412]
+[2026-02-07 17:20:51] Goal position: [6.0, 4.0]
+[2026-02-07 17:20:51] Starting LIDAR scan at position [10.0, 13.007348990557412]
+[2026-02-07 17:20:51] Ray at angle 90.0° hit obstacle at [10.0, 13.97]
+[2026-02-07 17:20:51] Ray at angle 100.0° hit obstacle at [9.830258654029032, 13.97]
+[2026-02-07 17:20:51] Ray at angle 170.0° hit obstacle at [9.03, 13.178386161844623]
+[2026-02-07 17:20:51] Ray at angle 180.0° hit obstacle at [9.03, 13.007348990557412]
+[2026-02-07 17:20:51] Ray at angle 190.0° hit obstacle at [9.03, 12.836311819270202]
+[2026-02-07 17:20:51] LIDAR scan completed.
+[2026-02-07 17:20:51] LIDAR detected 5 obstacle hits: [[10.0, 13.97], [9.83, 13.97], [9.03, 13.178], [9.03, 13.007], [9.03, 12.836]]
+[2026-02-07 17:20:51] LIDAR hit count: 5
+[2026-02-07 17:20:51] LIDAR hit points: [[10.0, 13.97], [9.83, 13.97], [9.03, 13.178], [9.03, 13.007], [9.03, 12.836]]
+[2026-02-07 17:20:51] VLM snapshot saved at: logs/run_17:20:41_07-02/vlm_snapshot_17:20:41_07-02_002.png
+[2026-02-07 17:20:51] Querying VLM model: gpt-4o
+[2026-02-07 17:20:51] Calling VLM for detour (attempt 1)
+[2026-02-07 17:20:54] VLM returned 6 waypoints: [[10.0, 12.0], [10.0, 11.0], [10.0, 10.0], [10.0, 9.0], [10.0, 8.0], [10.0, 7.0]]
+[2026-02-07 17:20:54] Accept WP1: [10.0, 12.0]
+[2026-02-07 17:20:54] Accept WP2: [10.0, 11.0]
+[2026-02-07 17:20:54] Accept WP3: [10.0, 10.0]
+[2026-02-07 17:20:54] Accept WP4: [10.0, 9.0]
+[2026-02-07 17:20:54] Accept WP5: [10.0, 8.0]
+[2026-02-07 17:20:54] Accept WP6: [10.0, 7.0]
+[2026-02-07 17:20:54] Detour validation result: SUCCESS (6 waypoints accepted)
+[2026-02-07 17:20:54] Added 6 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 17:20:54] ===== DETOUR END =====
+[2026-02-07 17:20:54] Moving to waypoint [10.0, 12.0]
+[2026-02-07 17:20:54] Starting LIDAR scan at position [10.0, 13.007348990557412]
+[2026-02-07 17:20:54] Ray at angle 90.0° hit obstacle at [10.0, 13.97]
+[2026-02-07 17:20:54] Ray at angle 100.0° hit obstacle at [9.830258654029032, 13.97]
+[2026-02-07 17:20:54] Ray at angle 170.0° hit obstacle at [9.03, 13.178386161844623]
+[2026-02-07 17:20:54] Ray at angle 180.0° hit obstacle at [9.03, 13.007348990557412]
+[2026-02-07 17:20:54] Ray at angle 190.0° hit obstacle at [9.03, 12.836311819270202]
+[2026-02-07 17:20:54] LIDAR scan completed.
+[2026-02-07 17:20:54] Scan step begin at [10.0, 12.957348990557412]
+[2026-02-07 17:20:54] Starting LIDAR scan at position [10.0, 12.957348990557412]
+[2026-02-07 17:20:54] Ray at angle 170.0° hit obstacle at [9.03, 13.128386161844622]
+[2026-02-07 17:20:54] Ray at angle 180.0° hit obstacle at [9.03, 12.957348990557412]
+[2026-02-07 17:20:54] Ray at angle 190.0° hit obstacle at [9.03, 12.786311819270201]
+[2026-02-07 17:20:54] LIDAR scan completed.
+[2026-02-07 17:20:54] LIDAR detected 3 obstacle hits: [[9.03, 13.128], [9.03, 12.957], [9.03, 12.786]]
+[2026-02-07 17:20:54] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:54] Starting LIDAR scan at position [10.0, 12.957348990557412]
+[2026-02-07 17:20:54] Ray at angle 170.0° hit obstacle at [9.03, 13.128386161844622]
+[2026-02-07 17:20:54] Ray at angle 180.0° hit obstacle at [9.03, 12.957348990557412]
+[2026-02-07 17:20:54] Ray at angle 190.0° hit obstacle at [9.03, 12.786311819270201]
+[2026-02-07 17:20:54] LIDAR scan completed.
+[2026-02-07 17:20:54] Scan step begin at [10.0, 12.907348990557411]
+[2026-02-07 17:20:54] Starting LIDAR scan at position [10.0, 12.907348990557411]
+[2026-02-07 17:20:55] Ray at angle 170.0° hit obstacle at [9.03, 13.078386161844621]
+[2026-02-07 17:20:55] Ray at angle 180.0° hit obstacle at [9.03, 12.907348990557411]
+[2026-02-07 17:20:55] Ray at angle 190.0° hit obstacle at [9.03, 12.7363118192702]
+[2026-02-07 17:20:55] LIDAR scan completed.
+[2026-02-07 17:20:55] LIDAR detected 3 obstacle hits: [[9.03, 13.078], [9.03, 12.907], [9.03, 12.736]]
+[2026-02-07 17:20:55] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:55] Starting LIDAR scan at position [10.0, 12.907348990557411]
+[2026-02-07 17:20:55] Ray at angle 170.0° hit obstacle at [9.03, 13.078386161844621]
+[2026-02-07 17:20:55] Ray at angle 180.0° hit obstacle at [9.03, 12.907348990557411]
+[2026-02-07 17:20:55] Ray at angle 190.0° hit obstacle at [9.03, 12.7363118192702]
+[2026-02-07 17:20:55] LIDAR scan completed.
+[2026-02-07 17:20:55] Scan step begin at [10.0, 12.85734899055741]
+[2026-02-07 17:20:55] Starting LIDAR scan at position [10.0, 12.85734899055741]
+[2026-02-07 17:20:55] Ray at angle 170.0° hit obstacle at [9.03, 13.02838616184462]
+[2026-02-07 17:20:55] Ray at angle 180.0° hit obstacle at [9.03, 12.85734899055741]
+[2026-02-07 17:20:55] Ray at angle 190.0° hit obstacle at [9.03, 12.6863118192702]
+[2026-02-07 17:20:55] LIDAR scan completed.
+[2026-02-07 17:20:55] LIDAR detected 3 obstacle hits: [[9.03, 13.028], [9.03, 12.857], [9.03, 12.686]]
+[2026-02-07 17:20:55] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:55] Starting LIDAR scan at position [10.0, 12.85734899055741]
+[2026-02-07 17:20:55] Ray at angle 170.0° hit obstacle at [9.03, 13.02838616184462]
+[2026-02-07 17:20:55] Ray at angle 180.0° hit obstacle at [9.03, 12.85734899055741]
+[2026-02-07 17:20:55] Ray at angle 190.0° hit obstacle at [9.03, 12.6863118192702]
+[2026-02-07 17:20:55] LIDAR scan completed.
+[2026-02-07 17:20:55] Scan step begin at [10.0, 12.80734899055741]
+[2026-02-07 17:20:55] Starting LIDAR scan at position [10.0, 12.80734899055741]
+[2026-02-07 17:20:55] Ray at angle 170.0° hit obstacle at [9.03, 12.97838616184462]
+[2026-02-07 17:20:55] Ray at angle 180.0° hit obstacle at [9.03, 12.80734899055741]
+[2026-02-07 17:20:55] Ray at angle 190.0° hit obstacle at [9.03, 12.6363118192702]
+[2026-02-07 17:20:55] LIDAR scan completed.
+[2026-02-07 17:20:55] LIDAR detected 3 obstacle hits: [[9.03, 12.978], [9.03, 12.807], [9.03, 12.636]]
+[2026-02-07 17:20:55] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:55] Starting LIDAR scan at position [10.0, 12.80734899055741]
+[2026-02-07 17:20:55] Ray at angle 170.0° hit obstacle at [9.03, 12.97838616184462]
+[2026-02-07 17:20:55] Ray at angle 180.0° hit obstacle at [9.03, 12.80734899055741]
+[2026-02-07 17:20:55] Ray at angle 190.0° hit obstacle at [9.03, 12.6363118192702]
+[2026-02-07 17:20:55] LIDAR scan completed.
+[2026-02-07 17:20:55] Scan step begin at [10.0, 12.757348990557409]
+[2026-02-07 17:20:55] Starting LIDAR scan at position [10.0, 12.757348990557409]
+[2026-02-07 17:20:55] Ray at angle 170.0° hit obstacle at [9.03, 12.92838616184462]
+[2026-02-07 17:20:55] Ray at angle 180.0° hit obstacle at [9.03, 12.757348990557409]
+[2026-02-07 17:20:55] Ray at angle 190.0° hit obstacle at [9.03, 12.586311819270199]
+[2026-02-07 17:20:55] LIDAR scan completed.
+[2026-02-07 17:20:55] LIDAR detected 3 obstacle hits: [[9.03, 12.928], [9.03, 12.757], [9.03, 12.586]]
+[2026-02-07 17:20:55] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:55] Starting LIDAR scan at position [10.0, 12.757348990557409]
+[2026-02-07 17:20:55] Ray at angle 170.0° hit obstacle at [9.03, 12.92838616184462]
+[2026-02-07 17:20:55] Ray at angle 180.0° hit obstacle at [9.03, 12.757348990557409]
+[2026-02-07 17:20:56] Ray at angle 190.0° hit obstacle at [9.03, 12.586311819270199]
+[2026-02-07 17:20:56] LIDAR scan completed.
+[2026-02-07 17:20:56] Scan step begin at [10.0, 12.707348990557408]
+[2026-02-07 17:20:56] Starting LIDAR scan at position [10.0, 12.707348990557408]
+[2026-02-07 17:20:56] Ray at angle 170.0° hit obstacle at [9.03, 12.878386161844618]
+[2026-02-07 17:20:56] Ray at angle 180.0° hit obstacle at [9.03, 12.707348990557408]
+[2026-02-07 17:20:56] Ray at angle 190.0° hit obstacle at [9.03, 12.536311819270198]
+[2026-02-07 17:20:56] LIDAR scan completed.
+[2026-02-07 17:20:56] LIDAR detected 3 obstacle hits: [[9.03, 12.878], [9.03, 12.707], [9.03, 12.536]]
+[2026-02-07 17:20:56] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:56] Starting LIDAR scan at position [10.0, 12.707348990557408]
+[2026-02-07 17:20:56] Ray at angle 170.0° hit obstacle at [9.03, 12.878386161844618]
+[2026-02-07 17:20:56] Ray at angle 180.0° hit obstacle at [9.03, 12.707348990557408]
+[2026-02-07 17:20:56] Ray at angle 190.0° hit obstacle at [9.03, 12.536311819270198]
+[2026-02-07 17:20:56] LIDAR scan completed.
+[2026-02-07 17:20:56] Scan step begin at [10.0, 12.657348990557407]
+[2026-02-07 17:20:56] Starting LIDAR scan at position [10.0, 12.657348990557407]
+[2026-02-07 17:20:56] Ray at angle 170.0° hit obstacle at [9.03, 12.828386161844618]
+[2026-02-07 17:20:56] Ray at angle 180.0° hit obstacle at [9.03, 12.657348990557407]
+[2026-02-07 17:20:56] Ray at angle 190.0° hit obstacle at [9.03, 12.486311819270197]
+[2026-02-07 17:20:56] LIDAR scan completed.
+[2026-02-07 17:20:56] LIDAR detected 3 obstacle hits: [[9.03, 12.828], [9.03, 12.657], [9.03, 12.486]]
+[2026-02-07 17:20:56] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:56] Starting LIDAR scan at position [10.0, 12.657348990557407]
+[2026-02-07 17:20:56] Ray at angle 170.0° hit obstacle at [9.03, 12.828386161844618]
+[2026-02-07 17:20:56] Ray at angle 180.0° hit obstacle at [9.03, 12.657348990557407]
+[2026-02-07 17:20:56] Ray at angle 190.0° hit obstacle at [9.03, 12.486311819270197]
+[2026-02-07 17:20:56] LIDAR scan completed.
+[2026-02-07 17:20:56] Scan step begin at [10.0, 12.607348990557407]
+[2026-02-07 17:20:56] Starting LIDAR scan at position [10.0, 12.607348990557407]
+[2026-02-07 17:20:56] Ray at angle 170.0° hit obstacle at [9.03, 12.778386161844617]
+[2026-02-07 17:20:56] Ray at angle 180.0° hit obstacle at [9.03, 12.607348990557407]
+[2026-02-07 17:20:56] Ray at angle 190.0° hit obstacle at [9.03, 12.436311819270196]
+[2026-02-07 17:20:56] LIDAR scan completed.
+[2026-02-07 17:20:56] LIDAR detected 3 obstacle hits: [[9.03, 12.778], [9.03, 12.607], [9.03, 12.436]]
+[2026-02-07 17:20:56] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:56] Starting LIDAR scan at position [10.0, 12.607348990557407]
+[2026-02-07 17:20:56] Ray at angle 170.0° hit obstacle at [9.03, 12.778386161844617]
+[2026-02-07 17:20:56] Ray at angle 180.0° hit obstacle at [9.03, 12.607348990557407]
+[2026-02-07 17:20:56] Ray at angle 190.0° hit obstacle at [9.03, 12.436311819270196]
+[2026-02-07 17:20:56] LIDAR scan completed.
+[2026-02-07 17:20:56] Scan step begin at [10.0, 12.557348990557406]
+[2026-02-07 17:20:56] Starting LIDAR scan at position [10.0, 12.557348990557406]
+[2026-02-07 17:20:56] Ray at angle 170.0° hit obstacle at [9.03, 12.728386161844616]
+[2026-02-07 17:20:56] Ray at angle 180.0° hit obstacle at [9.03, 12.557348990557406]
+[2026-02-07 17:20:56] Ray at angle 190.0° hit obstacle at [9.03, 12.386311819270196]
+[2026-02-07 17:20:56] LIDAR scan completed.
+[2026-02-07 17:20:56] LIDAR detected 3 obstacle hits: [[9.03, 12.728], [9.03, 12.557], [9.03, 12.386]]
+[2026-02-07 17:20:56] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:56] Starting LIDAR scan at position [10.0, 12.557348990557406]
+[2026-02-07 17:20:57] Ray at angle 170.0° hit obstacle at [9.03, 12.728386161844616]
+[2026-02-07 17:20:57] Ray at angle 180.0° hit obstacle at [9.03, 12.557348990557406]
+[2026-02-07 17:20:57] Ray at angle 190.0° hit obstacle at [9.03, 12.386311819270196]
+[2026-02-07 17:20:57] LIDAR scan completed.
+[2026-02-07 17:20:57] Scan step begin at [10.0, 12.507348990557405]
+[2026-02-07 17:20:57] Starting LIDAR scan at position [10.0, 12.507348990557405]
+[2026-02-07 17:20:57] Ray at angle 170.0° hit obstacle at [9.03, 12.678386161844616]
+[2026-02-07 17:20:57] Ray at angle 180.0° hit obstacle at [9.03, 12.507348990557405]
+[2026-02-07 17:20:57] Ray at angle 190.0° hit obstacle at [9.03, 12.336311819270195]
+[2026-02-07 17:20:57] LIDAR scan completed.
+[2026-02-07 17:20:57] LIDAR detected 3 obstacle hits: [[9.03, 12.678], [9.03, 12.507], [9.03, 12.336]]
+[2026-02-07 17:20:57] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:57] Starting LIDAR scan at position [10.0, 12.507348990557405]
+[2026-02-07 17:20:57] Ray at angle 170.0° hit obstacle at [9.03, 12.678386161844616]
+[2026-02-07 17:20:57] Ray at angle 180.0° hit obstacle at [9.03, 12.507348990557405]
+[2026-02-07 17:20:57] Ray at angle 190.0° hit obstacle at [9.03, 12.336311819270195]
+[2026-02-07 17:20:57] LIDAR scan completed.
+[2026-02-07 17:20:57] Scan step begin at [10.0, 12.457348990557405]
+[2026-02-07 17:20:57] Starting LIDAR scan at position [10.0, 12.457348990557405]
+[2026-02-07 17:20:57] Ray at angle 170.0° hit obstacle at [9.03, 12.628386161844615]
+[2026-02-07 17:20:57] Ray at angle 180.0° hit obstacle at [9.03, 12.457348990557405]
+[2026-02-07 17:20:57] Ray at angle 190.0° hit obstacle at [9.03, 12.286311819270194]
+[2026-02-07 17:20:57] LIDAR scan completed.
+[2026-02-07 17:20:57] LIDAR detected 3 obstacle hits: [[9.03, 12.628], [9.03, 12.457], [9.03, 12.286]]
+[2026-02-07 17:20:57] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:57] Starting LIDAR scan at position [10.0, 12.457348990557405]
+[2026-02-07 17:20:57] Ray at angle 170.0° hit obstacle at [9.03, 12.628386161844615]
+[2026-02-07 17:20:57] Ray at angle 180.0° hit obstacle at [9.03, 12.457348990557405]
+[2026-02-07 17:20:57] Ray at angle 190.0° hit obstacle at [9.03, 12.286311819270194]
+[2026-02-07 17:20:57] LIDAR scan completed.
+[2026-02-07 17:20:57] Scan step begin at [10.0, 12.411614091501665]
+[2026-02-07 17:20:57] Starting LIDAR scan at position [10.0, 12.411614091501665]
+[2026-02-07 17:20:57] Ray at angle 170.0° hit obstacle at [9.03, 12.582651262788875]
+[2026-02-07 17:20:57] Ray at angle 180.0° hit obstacle at [9.03, 12.411614091501665]
+[2026-02-07 17:20:57] Ray at angle 190.0° hit obstacle at [9.03, 12.240576920214455]
+[2026-02-07 17:20:57] LIDAR scan completed.
+[2026-02-07 17:20:57] LIDAR detected 3 obstacle hits: [[9.03, 12.583], [9.03, 12.412], [9.03, 12.241]]
+[2026-02-07 17:20:57] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:57] Starting LIDAR scan at position [10.0, 12.411614091501665]
+[2026-02-07 17:20:57] Ray at angle 170.0° hit obstacle at [9.03, 12.582651262788875]
+[2026-02-07 17:20:57] Ray at angle 180.0° hit obstacle at [9.03, 12.411614091501665]
+[2026-02-07 17:20:57] Ray at angle 190.0° hit obstacle at [9.03, 12.240576920214455]
+[2026-02-07 17:20:57] LIDAR scan completed.
+[2026-02-07 17:20:57] Scan step begin at [10.0, 12.370452682351498]
+[2026-02-07 17:20:57] Starting LIDAR scan at position [10.0, 12.370452682351498]
+[2026-02-07 17:20:57] Ray at angle 170.0° hit obstacle at [9.03, 12.541489853638708]
+[2026-02-07 17:20:57] Ray at angle 180.0° hit obstacle at [9.03, 12.370452682351498]
+[2026-02-07 17:20:57] Ray at angle 190.0° hit obstacle at [9.03, 12.199415511064288]
+[2026-02-07 17:20:57] LIDAR scan completed.
+[2026-02-07 17:20:57] LIDAR detected 3 obstacle hits: [[9.03, 12.541], [9.03, 12.37], [9.03, 12.199]]
+[2026-02-07 17:20:57] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:57] Starting LIDAR scan at position [10.0, 12.370452682351498]
+[2026-02-07 17:20:58] Ray at angle 170.0° hit obstacle at [9.03, 12.541489853638708]
+[2026-02-07 17:20:58] Ray at angle 180.0° hit obstacle at [9.03, 12.370452682351498]
+[2026-02-07 17:20:58] Ray at angle 190.0° hit obstacle at [9.03, 12.199415511064288]
+[2026-02-07 17:20:58] LIDAR scan completed.
+[2026-02-07 17:20:58] Scan step begin at [10.0, 12.333407414116348]
+[2026-02-07 17:20:58] Starting LIDAR scan at position [10.0, 12.333407414116348]
+[2026-02-07 17:20:58] Ray at angle 170.0° hit obstacle at [9.03, 12.504444585403558]
+[2026-02-07 17:20:58] Ray at angle 180.0° hit obstacle at [9.03, 12.333407414116348]
+[2026-02-07 17:20:58] Ray at angle 190.0° hit obstacle at [9.03, 12.162370242829137]
+[2026-02-07 17:20:58] LIDAR scan completed.
+[2026-02-07 17:20:58] LIDAR detected 3 obstacle hits: [[9.03, 12.504], [9.03, 12.333], [9.03, 12.162]]
+[2026-02-07 17:20:58] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:58] Starting LIDAR scan at position [10.0, 12.333407414116348]
+[2026-02-07 17:20:58] Ray at angle 170.0° hit obstacle at [9.03, 12.504444585403558]
+[2026-02-07 17:20:58] Ray at angle 180.0° hit obstacle at [9.03, 12.333407414116348]
+[2026-02-07 17:20:58] Ray at angle 190.0° hit obstacle at [9.03, 12.162370242829137]
+[2026-02-07 17:20:58] LIDAR scan completed.
+[2026-02-07 17:20:58] Scan step begin at [10.0, 12.300066672704713]
+[2026-02-07 17:20:58] Starting LIDAR scan at position [10.0, 12.300066672704713]
+[2026-02-07 17:20:58] Ray at angle 170.0° hit obstacle at [9.03, 12.471103843991923]
+[2026-02-07 17:20:58] Ray at angle 180.0° hit obstacle at [9.03, 12.300066672704713]
+[2026-02-07 17:20:58] Ray at angle 190.0° hit obstacle at [9.03, 12.129029501417502]
+[2026-02-07 17:20:58] LIDAR scan completed.
+[2026-02-07 17:20:58] LIDAR detected 3 obstacle hits: [[9.03, 12.471], [9.03, 12.3], [9.03, 12.129]]
+[2026-02-07 17:20:58] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:58] Starting LIDAR scan at position [10.0, 12.300066672704713]
+[2026-02-07 17:20:58] Ray at angle 170.0° hit obstacle at [9.03, 12.471103843991923]
+[2026-02-07 17:20:58] Ray at angle 180.0° hit obstacle at [9.03, 12.300066672704713]
+[2026-02-07 17:20:58] Ray at angle 190.0° hit obstacle at [9.03, 12.129029501417502]
+[2026-02-07 17:20:58] LIDAR scan completed.
+[2026-02-07 17:20:58] Scan step begin at [10.0, 12.27006000543424]
+[2026-02-07 17:20:58] Starting LIDAR scan at position [10.0, 12.27006000543424]
+[2026-02-07 17:20:58] Ray at angle 170.0° hit obstacle at [9.03, 12.44109717672145]
+[2026-02-07 17:20:58] Ray at angle 180.0° hit obstacle at [9.03, 12.27006000543424]
+[2026-02-07 17:20:58] Ray at angle 190.0° hit obstacle at [9.03, 12.09902283414703]
+[2026-02-07 17:20:58] LIDAR scan completed.
+[2026-02-07 17:20:58] LIDAR detected 3 obstacle hits: [[9.03, 12.441], [9.03, 12.27], [9.03, 12.099]]
+[2026-02-07 17:20:58] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:58] Starting LIDAR scan at position [10.0, 12.27006000543424]
+[2026-02-07 17:20:58] Ray at angle 170.0° hit obstacle at [9.03, 12.44109717672145]
+[2026-02-07 17:20:58] Ray at angle 180.0° hit obstacle at [9.03, 12.27006000543424]
+[2026-02-07 17:20:58] Ray at angle 190.0° hit obstacle at [9.03, 12.09902283414703]
+[2026-02-07 17:20:58] LIDAR scan completed.
+[2026-02-07 17:20:58] Scan step begin at [10.0, 12.243054004890816]
+[2026-02-07 17:20:58] Starting LIDAR scan at position [10.0, 12.243054004890816]
+[2026-02-07 17:20:58] Ray at angle 170.0° hit obstacle at [9.03, 12.414091176178026]
+[2026-02-07 17:20:58] Ray at angle 180.0° hit obstacle at [9.03, 12.243054004890816]
+[2026-02-07 17:20:58] Ray at angle 190.0° hit obstacle at [9.03, 12.072016833603605]
+[2026-02-07 17:20:58] LIDAR scan completed.
+[2026-02-07 17:20:58] LIDAR detected 3 obstacle hits: [[9.03, 12.414], [9.03, 12.243], [9.03, 12.072]]
+[2026-02-07 17:20:58] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:59] Starting LIDAR scan at position [10.0, 12.243054004890816]
+[2026-02-07 17:20:59] Ray at angle 170.0° hit obstacle at [9.03, 12.414091176178026]
+[2026-02-07 17:20:59] Ray at angle 180.0° hit obstacle at [9.03, 12.243054004890816]
+[2026-02-07 17:20:59] Ray at angle 190.0° hit obstacle at [9.03, 12.072016833603605]
+[2026-02-07 17:20:59] LIDAR scan completed.
+[2026-02-07 17:20:59] Scan step begin at [10.0, 12.218748604401734]
+[2026-02-07 17:20:59] Starting LIDAR scan at position [10.0, 12.218748604401734]
+[2026-02-07 17:20:59] Ray at angle 170.0° hit obstacle at [9.03, 12.389785775688944]
+[2026-02-07 17:20:59] Ray at angle 180.0° hit obstacle at [9.03, 12.218748604401734]
+[2026-02-07 17:20:59] Ray at angle 190.0° hit obstacle at [9.03, 12.047711433114523]
+[2026-02-07 17:20:59] LIDAR scan completed.
+[2026-02-07 17:20:59] LIDAR detected 3 obstacle hits: [[9.03, 12.39], [9.03, 12.219], [9.03, 12.048]]
+[2026-02-07 17:20:59] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:59] Starting LIDAR scan at position [10.0, 12.218748604401734]
+[2026-02-07 17:20:59] Ray at angle 170.0° hit obstacle at [9.03, 12.389785775688944]
+[2026-02-07 17:20:59] Ray at angle 180.0° hit obstacle at [9.03, 12.218748604401734]
+[2026-02-07 17:20:59] Ray at angle 190.0° hit obstacle at [9.03, 12.047711433114523]
+[2026-02-07 17:20:59] LIDAR scan completed.
+[2026-02-07 17:20:59] Scan step begin at [10.0, 12.19687374396156]
+[2026-02-07 17:20:59] Starting LIDAR scan at position [10.0, 12.19687374396156]
+[2026-02-07 17:20:59] Ray at angle 170.0° hit obstacle at [9.03, 12.367910915248771]
+[2026-02-07 17:20:59] Ray at angle 180.0° hit obstacle at [9.03, 12.19687374396156]
+[2026-02-07 17:20:59] Ray at angle 190.0° hit obstacle at [9.03, 12.02583657267435]
+[2026-02-07 17:20:59] LIDAR scan completed.
+[2026-02-07 17:20:59] LIDAR detected 3 obstacle hits: [[9.03, 12.368], [9.03, 12.197], [9.03, 12.026]]
+[2026-02-07 17:20:59] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:59] Starting LIDAR scan at position [10.0, 12.19687374396156]
+[2026-02-07 17:20:59] Ray at angle 170.0° hit obstacle at [9.03, 12.367910915248771]
+[2026-02-07 17:20:59] Ray at angle 180.0° hit obstacle at [9.03, 12.19687374396156]
+[2026-02-07 17:20:59] Ray at angle 190.0° hit obstacle at [9.03, 12.02583657267435]
+[2026-02-07 17:20:59] LIDAR scan completed.
+[2026-02-07 17:20:59] Scan step begin at [10.0, 12.177186369565405]
+[2026-02-07 17:20:59] Starting LIDAR scan at position [10.0, 12.177186369565405]
+[2026-02-07 17:20:59] Ray at angle 170.0° hit obstacle at [9.03, 12.348223540852615]
+[2026-02-07 17:20:59] Ray at angle 180.0° hit obstacle at [9.03, 12.177186369565405]
+[2026-02-07 17:20:59] Ray at angle 190.0° hit obstacle at [9.03, 12.006149198278194]
+[2026-02-07 17:20:59] LIDAR scan completed.
+[2026-02-07 17:20:59] LIDAR detected 3 obstacle hits: [[9.03, 12.348], [9.03, 12.177], [9.03, 12.006]]
+[2026-02-07 17:20:59] Scan step end: obstacle_detected=True
+[2026-02-07 17:20:59] Starting LIDAR scan at position [10.0, 12.177186369565405]
+[2026-02-07 17:20:59] Ray at angle 170.0° hit obstacle at [9.03, 12.348223540852615]
+[2026-02-07 17:20:59] Ray at angle 180.0° hit obstacle at [9.03, 12.177186369565405]
+[2026-02-07 17:20:59] Ray at angle 190.0° hit obstacle at [9.03, 12.006149198278194]
+[2026-02-07 17:20:59] LIDAR scan completed.
+[2026-02-07 17:20:59] Scan step begin at [10.0, 12.159467732608864]
+[2026-02-07 17:20:59] Starting LIDAR scan at position [10.0, 12.159467732608864]
+[2026-02-07 17:20:59] Ray at angle 170.0° hit obstacle at [9.03, 12.330504903896074]
+[2026-02-07 17:20:59] Ray at angle 180.0° hit obstacle at [9.03, 12.159467732608864]
+[2026-02-07 17:20:59] Ray at angle 190.0° hit obstacle at [9.03, 11.988430561321653]
+[2026-02-07 17:20:59] LIDAR scan completed.
+[2026-02-07 17:20:59] LIDAR detected 3 obstacle hits: [[9.03, 12.331], [9.03, 12.159], [9.03, 11.988]]
+[2026-02-07 17:20:59] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:00] Starting LIDAR scan at position [10.0, 12.159467732608864]
+[2026-02-07 17:21:00] Ray at angle 170.0° hit obstacle at [9.03, 12.330504903896074]
+[2026-02-07 17:21:00] Ray at angle 180.0° hit obstacle at [9.03, 12.159467732608864]
+[2026-02-07 17:21:00] Ray at angle 190.0° hit obstacle at [9.03, 11.988430561321653]
+[2026-02-07 17:21:00] LIDAR scan completed.
+[2026-02-07 17:21:00] Scan step begin at [10.0, 12.143520959347978]
+[2026-02-07 17:21:00] Starting LIDAR scan at position [10.0, 12.143520959347978]
+[2026-02-07 17:21:00] Ray at angle 170.0° hit obstacle at [9.03, 12.314558130635188]
+[2026-02-07 17:21:00] Ray at angle 180.0° hit obstacle at [9.03, 12.143520959347978]
+[2026-02-07 17:21:00] Ray at angle 190.0° hit obstacle at [9.03, 11.972483788060767]
+[2026-02-07 17:21:00] LIDAR scan completed.
+[2026-02-07 17:21:00] LIDAR detected 3 obstacle hits: [[9.03, 12.315], [9.03, 12.144], [9.03, 11.972]]
+[2026-02-07 17:21:00] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:00] Starting LIDAR scan at position [10.0, 12.143520959347978]
+[2026-02-07 17:21:00] Ray at angle 170.0° hit obstacle at [9.03, 12.314558130635188]
+[2026-02-07 17:21:00] Ray at angle 180.0° hit obstacle at [9.03, 12.143520959347978]
+[2026-02-07 17:21:00] Ray at angle 190.0° hit obstacle at [9.03, 11.972483788060767]
+[2026-02-07 17:21:00] LIDAR scan completed.
+[2026-02-07 17:21:00] Scan step begin at [10.0, 12.12916886341318]
+[2026-02-07 17:21:00] Starting LIDAR scan at position [10.0, 12.12916886341318]
+[2026-02-07 17:21:00] Ray at angle 170.0° hit obstacle at [9.03, 12.30020603470039]
+[2026-02-07 17:21:00] Ray at angle 180.0° hit obstacle at [9.03, 12.12916886341318]
+[2026-02-07 17:21:00] Ray at angle 190.0° hit obstacle at [9.03, 11.958131692125969]
+[2026-02-07 17:21:00] LIDAR scan completed.
+[2026-02-07 17:21:00] LIDAR detected 3 obstacle hits: [[9.03, 12.3], [9.03, 12.129], [9.03, 11.958]]
+[2026-02-07 17:21:00] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:00] Starting LIDAR scan at position [10.0, 12.12916886341318]
+[2026-02-07 17:21:00] Ray at angle 170.0° hit obstacle at [9.03, 12.30020603470039]
+[2026-02-07 17:21:00] Ray at angle 180.0° hit obstacle at [9.03, 12.12916886341318]
+[2026-02-07 17:21:00] Ray at angle 190.0° hit obstacle at [9.03, 11.958131692125969]
+[2026-02-07 17:21:00] LIDAR scan completed.
+[2026-02-07 17:21:00] Scan step begin at [10.0, 12.116251977071862]
+[2026-02-07 17:21:00] Starting LIDAR scan at position [10.0, 12.116251977071862]
+[2026-02-07 17:21:00] Ray at angle 170.0° hit obstacle at [9.03, 12.287289148359072]
+[2026-02-07 17:21:00] Ray at angle 180.0° hit obstacle at [9.03, 12.116251977071862]
+[2026-02-07 17:21:00] Ray at angle 190.0° hit obstacle at [9.03, 11.945214805784651]
+[2026-02-07 17:21:00] LIDAR scan completed.
+[2026-02-07 17:21:00] LIDAR detected 3 obstacle hits: [[9.03, 12.287], [9.03, 12.116], [9.03, 11.945]]
+[2026-02-07 17:21:00] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:00] Starting LIDAR scan at position [10.0, 12.116251977071862]
+[2026-02-07 17:21:00] Ray at angle 170.0° hit obstacle at [9.03, 12.287289148359072]
+[2026-02-07 17:21:00] Ray at angle 180.0° hit obstacle at [9.03, 12.116251977071862]
+[2026-02-07 17:21:00] Ray at angle 190.0° hit obstacle at [9.03, 11.945214805784651]
+[2026-02-07 17:21:00] LIDAR scan completed.
+[2026-02-07 17:21:00] Scan step begin at [10.0, 12.104626779364676]
+[2026-02-07 17:21:00] Starting LIDAR scan at position [10.0, 12.104626779364676]
+[2026-02-07 17:21:00] Ray at angle 170.0° hit obstacle at [9.03, 12.275663950651886]
+[2026-02-07 17:21:00] Ray at angle 180.0° hit obstacle at [9.03, 12.104626779364676]
+[2026-02-07 17:21:00] Ray at angle 190.0° hit obstacle at [9.03, 11.933589608077465]
+[2026-02-07 17:21:00] LIDAR scan completed.
+[2026-02-07 17:21:00] LIDAR detected 3 obstacle hits: [[9.03, 12.276], [9.03, 12.105], [9.03, 11.934]]
+[2026-02-07 17:21:00] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:01] Starting LIDAR scan at position [10.0, 12.104626779364676]
+[2026-02-07 17:21:01] Ray at angle 170.0° hit obstacle at [9.03, 12.275663950651886]
+[2026-02-07 17:21:01] Ray at angle 180.0° hit obstacle at [9.03, 12.104626779364676]
+[2026-02-07 17:21:01] Ray at angle 190.0° hit obstacle at [9.03, 11.933589608077465]
+[2026-02-07 17:21:01] LIDAR scan completed.
+[2026-02-07 17:21:01] Scan step begin at [10.0, 12.094164101428207]
+[2026-02-07 17:21:01] Starting LIDAR scan at position [10.0, 12.094164101428207]
+[2026-02-07 17:21:01] Ray at angle 170.0° hit obstacle at [9.03, 12.265201272715418]
+[2026-02-07 17:21:01] Ray at angle 180.0° hit obstacle at [9.03, 12.094164101428207]
+[2026-02-07 17:21:01] Ray at angle 190.0° hit obstacle at [9.03, 11.923126930140997]
+[2026-02-07 17:21:01] LIDAR scan completed.
+[2026-02-07 17:21:01] LIDAR detected 3 obstacle hits: [[9.03, 12.265], [9.03, 12.094], [9.03, 11.923]]
+[2026-02-07 17:21:01] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:01] Reached waypoint [10.0, 12.0]
+[2026-02-07 17:21:01] Moving to waypoint [10.0, 11.0]
+[2026-02-07 17:21:01] Starting LIDAR scan at position [10.0, 12.094164101428207]
+[2026-02-07 17:21:01] Ray at angle 170.0° hit obstacle at [9.03, 12.265201272715418]
+[2026-02-07 17:21:01] Ray at angle 180.0° hit obstacle at [9.03, 12.094164101428207]
+[2026-02-07 17:21:01] Ray at angle 190.0° hit obstacle at [9.03, 11.923126930140997]
+[2026-02-07 17:21:01] LIDAR scan completed.
+[2026-02-07 17:21:01] Scan step begin at [10.0, 12.044164101428207]
+[2026-02-07 17:21:01] Starting LIDAR scan at position [10.0, 12.044164101428207]
+[2026-02-07 17:21:01] Ray at angle 170.0° hit obstacle at [9.03, 12.215201272715417]
+[2026-02-07 17:21:01] Ray at angle 180.0° hit obstacle at [9.03, 12.044164101428207]
+[2026-02-07 17:21:01] Ray at angle 190.0° hit obstacle at [9.03, 11.873126930140996]
+[2026-02-07 17:21:01] LIDAR scan completed.
+[2026-02-07 17:21:01] LIDAR detected 3 obstacle hits: [[9.03, 12.215], [9.03, 12.044], [9.03, 11.873]]
+[2026-02-07 17:21:01] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:01] Starting LIDAR scan at position [10.0, 12.044164101428207]
+[2026-02-07 17:21:01] Ray at angle 170.0° hit obstacle at [9.03, 12.215201272715417]
+[2026-02-07 17:21:01] Ray at angle 180.0° hit obstacle at [9.03, 12.044164101428207]
+[2026-02-07 17:21:01] Ray at angle 190.0° hit obstacle at [9.03, 11.873126930140996]
+[2026-02-07 17:21:01] LIDAR scan completed.
+[2026-02-07 17:21:01] Scan step begin at [10.0, 11.994164101428206]
+[2026-02-07 17:21:01] Starting LIDAR scan at position [10.0, 11.994164101428206]
+[2026-02-07 17:21:01] Ray at angle 0.0° hit obstacle at [11.0, 11.994164101428206]
+[2026-02-07 17:21:01] Ray at angle 170.0° hit obstacle at [9.03, 12.165201272715416]
+[2026-02-07 17:21:01] Ray at angle 180.0° hit obstacle at [9.03, 11.994164101428206]
+[2026-02-07 17:21:01] Ray at angle 190.0° hit obstacle at [9.03, 11.823126930140996]
+[2026-02-07 17:21:01] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 17:21:01] LIDAR scan completed.
+[2026-02-07 17:21:01] LIDAR detected 5 obstacle hits: [[11.0, 11.994], [9.03, 12.165], [9.03, 11.994], [9.03, 11.823], [10.0, 11.0]]
+[2026-02-07 17:21:01] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:01] Starting LIDAR scan at position [10.0, 11.994164101428206]
+[2026-02-07 17:21:01] Ray at angle 0.0° hit obstacle at [11.0, 11.994164101428206]
+[2026-02-07 17:21:01] Ray at angle 170.0° hit obstacle at [9.03, 12.165201272715416]
+[2026-02-07 17:21:01] Ray at angle 180.0° hit obstacle at [9.03, 11.994164101428206]
+[2026-02-07 17:21:01] Ray at angle 190.0° hit obstacle at [9.03, 11.823126930140996]
+[2026-02-07 17:21:01] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 17:21:01] LIDAR scan completed.
+[2026-02-07 17:21:01] Waypoint [10. 11.] is blocked by new obstacle.
+[2026-02-07 17:21:01] Waypoint [10. 11.] became blocked by new obstacle during approach. Replanning.
+[2026-02-07 17:21:01] ===== DETOUR TRIGGERED =====
+[2026-02-07 17:21:01] Agent position: [10.0, 11.994164101428206]
+[2026-02-07 17:21:01] Goal position: [6.0, 4.0]
+[2026-02-07 17:21:01] Starting LIDAR scan at position [10.0, 11.994164101428206]
+[2026-02-07 17:21:01] Ray at angle 0.0° hit obstacle at [11.0, 11.994164101428206]
+[2026-02-07 17:21:01] Ray at angle 170.0° hit obstacle at [9.03, 12.165201272715416]
+[2026-02-07 17:21:01] Ray at angle 180.0° hit obstacle at [9.03, 11.994164101428206]
+[2026-02-07 17:21:01] Ray at angle 190.0° hit obstacle at [9.03, 11.823126930140996]
+[2026-02-07 17:21:01] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 17:21:01] LIDAR scan completed.
+[2026-02-07 17:21:01] LIDAR detected 5 obstacle hits: [[11.0, 11.994], [9.03, 12.165], [9.03, 11.994], [9.03, 11.823], [10.0, 11.0]]
+[2026-02-07 17:21:01] LIDAR hit count: 5
+[2026-02-07 17:21:01] LIDAR hit points: [[11.0, 11.994], [9.03, 12.165], [9.03, 11.994], [9.03, 11.823], [10.0, 11.0]]
+[2026-02-07 17:21:02] VLM snapshot saved at: logs/run_17:20:41_07-02/vlm_snapshot_17:20:41_07-02_003.png
+[2026-02-07 17:21:02] Querying VLM model: gpt-4o
+[2026-02-07 17:21:02] Calling VLM for detour (attempt 1)
+[2026-02-07 17:21:05] VLM returned 6 waypoints: [[10.0, 12.0], [10.0, 13.0], [10.0, 14.0], [9.0, 14.0], [8.0, 14.0], [7.0, 14.0]]
+[2026-02-07 17:21:05] Accept WP1: [10.0, 12.0]
+[2026-02-07 17:21:05] Accept WP2: [10.0, 13.0]
+[2026-02-07 17:21:05] Accept WP3: [10.0, 14.0]
+[2026-02-07 17:21:05] Reject WP4: segment [10.0, 14.0] -> [9.0, 14.0] intersects original obstacle interior
+[2026-02-07 17:21:05] Reject WP5: segment [10.0, 14.0] -> [8.0, 14.0] intersects original obstacle interior
+[2026-02-07 17:21:05] Reject WP6: segment [10.0, 14.0] -> [7.0, 14.0] intersects original obstacle interior
+[2026-02-07 17:21:05] Detour validation result: SUCCESS (3 waypoints accepted)
+[2026-02-07 17:21:05] Added 3 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 17:21:05] ===== DETOUR END =====
+[2026-02-07 17:21:05] Moving to waypoint [10.0, 12.0]
+[2026-02-07 17:21:05] Reached waypoint [10.0, 12.0]
+[2026-02-07 17:21:05] Moving to waypoint [10.0, 13.0]
+[2026-02-07 17:21:05] Starting LIDAR scan at position [10.0, 11.994164101428206]
+[2026-02-07 17:21:05] Ray at angle 0.0° hit obstacle at [11.0, 11.994164101428206]
+[2026-02-07 17:21:05] Ray at angle 170.0° hit obstacle at [9.03, 12.165201272715416]
+[2026-02-07 17:21:05] Ray at angle 180.0° hit obstacle at [9.03, 11.994164101428206]
+[2026-02-07 17:21:05] Ray at angle 190.0° hit obstacle at [9.03, 11.823126930140996]
+[2026-02-07 17:21:05] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 17:21:05] LIDAR scan completed.
+[2026-02-07 17:21:05] Scan step begin at [10.0, 12.044164101428207]
+[2026-02-07 17:21:05] Starting LIDAR scan at position [10.0, 12.044164101428207]
+[2026-02-07 17:21:05] Ray at angle 170.0° hit obstacle at [9.03, 12.215201272715417]
+[2026-02-07 17:21:05] Ray at angle 180.0° hit obstacle at [9.03, 12.044164101428207]
+[2026-02-07 17:21:05] Ray at angle 190.0° hit obstacle at [9.03, 11.873126930140996]
+[2026-02-07 17:21:05] LIDAR scan completed.
+[2026-02-07 17:21:05] LIDAR detected 3 obstacle hits: [[9.03, 12.215], [9.03, 12.044], [9.03, 11.873]]
+[2026-02-07 17:21:05] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:05] Starting LIDAR scan at position [10.0, 12.044164101428207]
+[2026-02-07 17:21:05] Ray at angle 170.0° hit obstacle at [9.03, 12.215201272715417]
+[2026-02-07 17:21:05] Ray at angle 180.0° hit obstacle at [9.03, 12.044164101428207]
+[2026-02-07 17:21:05] Ray at angle 190.0° hit obstacle at [9.03, 11.873126930140996]
+[2026-02-07 17:21:05] LIDAR scan completed.
+[2026-02-07 17:21:05] Scan step begin at [10.0, 12.094164101428207]
+[2026-02-07 17:21:05] Starting LIDAR scan at position [10.0, 12.094164101428207]
+[2026-02-07 17:21:05] Ray at angle 170.0° hit obstacle at [9.03, 12.265201272715418]
+[2026-02-07 17:21:05] Ray at angle 180.0° hit obstacle at [9.03, 12.094164101428207]
+[2026-02-07 17:21:05] Ray at angle 190.0° hit obstacle at [9.03, 11.923126930140997]
+[2026-02-07 17:21:05] LIDAR scan completed.
+[2026-02-07 17:21:05] LIDAR detected 3 obstacle hits: [[9.03, 12.265], [9.03, 12.094], [9.03, 11.923]]
+[2026-02-07 17:21:05] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:05] Starting LIDAR scan at position [10.0, 12.094164101428207]
+[2026-02-07 17:21:05] Ray at angle 170.0° hit obstacle at [9.03, 12.265201272715418]
+[2026-02-07 17:21:05] Ray at angle 180.0° hit obstacle at [9.03, 12.094164101428207]
+[2026-02-07 17:21:05] Ray at angle 190.0° hit obstacle at [9.03, 11.923126930140997]
+[2026-02-07 17:21:05] LIDAR scan completed.
+[2026-02-07 17:21:05] Scan step begin at [10.0, 12.144164101428208]
+[2026-02-07 17:21:05] Starting LIDAR scan at position [10.0, 12.144164101428208]
+[2026-02-07 17:21:05] Ray at angle 170.0° hit obstacle at [9.03, 12.315201272715418]
+[2026-02-07 17:21:05] Ray at angle 180.0° hit obstacle at [9.03, 12.144164101428208]
+[2026-02-07 17:21:05] Ray at angle 190.0° hit obstacle at [9.03, 11.973126930140998]
+[2026-02-07 17:21:05] LIDAR scan completed.
+[2026-02-07 17:21:05] LIDAR detected 3 obstacle hits: [[9.03, 12.315], [9.03, 12.144], [9.03, 11.973]]
+[2026-02-07 17:21:05] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:06] Starting LIDAR scan at position [10.0, 12.144164101428208]
+[2026-02-07 17:21:06] Ray at angle 170.0° hit obstacle at [9.03, 12.315201272715418]
+[2026-02-07 17:21:06] Ray at angle 180.0° hit obstacle at [9.03, 12.144164101428208]
+[2026-02-07 17:21:06] Ray at angle 190.0° hit obstacle at [9.03, 11.973126930140998]
+[2026-02-07 17:21:06] LIDAR scan completed.
+[2026-02-07 17:21:06] Scan step begin at [10.0, 12.194164101428209]
+[2026-02-07 17:21:06] Starting LIDAR scan at position [10.0, 12.194164101428209]
+[2026-02-07 17:21:06] Ray at angle 170.0° hit obstacle at [9.03, 12.365201272715419]
+[2026-02-07 17:21:06] Ray at angle 180.0° hit obstacle at [9.03, 12.194164101428209]
+[2026-02-07 17:21:06] Ray at angle 190.0° hit obstacle at [9.03, 12.023126930140998]
+[2026-02-07 17:21:06] LIDAR scan completed.
+[2026-02-07 17:21:06] LIDAR detected 3 obstacle hits: [[9.03, 12.365], [9.03, 12.194], [9.03, 12.023]]
+[2026-02-07 17:21:06] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:06] Starting LIDAR scan at position [10.0, 12.194164101428209]
+[2026-02-07 17:21:06] Ray at angle 170.0° hit obstacle at [9.03, 12.365201272715419]
+[2026-02-07 17:21:06] Ray at angle 180.0° hit obstacle at [9.03, 12.194164101428209]
+[2026-02-07 17:21:06] Ray at angle 190.0° hit obstacle at [9.03, 12.023126930140998]
+[2026-02-07 17:21:06] LIDAR scan completed.
+[2026-02-07 17:21:06] Scan step begin at [10.0, 12.24416410142821]
+[2026-02-07 17:21:06] Starting LIDAR scan at position [10.0, 12.24416410142821]
+[2026-02-07 17:21:06] Ray at angle 170.0° hit obstacle at [9.03, 12.41520127271542]
+[2026-02-07 17:21:06] Ray at angle 180.0° hit obstacle at [9.03, 12.24416410142821]
+[2026-02-07 17:21:06] Ray at angle 190.0° hit obstacle at [9.03, 12.073126930141]
+[2026-02-07 17:21:06] LIDAR scan completed.
+[2026-02-07 17:21:06] LIDAR detected 3 obstacle hits: [[9.03, 12.415], [9.03, 12.244], [9.03, 12.073]]
+[2026-02-07 17:21:06] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:06] Starting LIDAR scan at position [10.0, 12.24416410142821]
+[2026-02-07 17:21:06] Ray at angle 170.0° hit obstacle at [9.03, 12.41520127271542]
+[2026-02-07 17:21:06] Ray at angle 180.0° hit obstacle at [9.03, 12.24416410142821]
+[2026-02-07 17:21:06] Ray at angle 190.0° hit obstacle at [9.03, 12.073126930141]
+[2026-02-07 17:21:06] LIDAR scan completed.
+[2026-02-07 17:21:06] Scan step begin at [10.0, 12.29416410142821]
+[2026-02-07 17:21:06] Starting LIDAR scan at position [10.0, 12.29416410142821]
+[2026-02-07 17:21:06] Ray at angle 170.0° hit obstacle at [9.03, 12.46520127271542]
+[2026-02-07 17:21:06] Ray at angle 180.0° hit obstacle at [9.03, 12.29416410142821]
+[2026-02-07 17:21:06] Ray at angle 190.0° hit obstacle at [9.03, 12.123126930141]
+[2026-02-07 17:21:06] LIDAR scan completed.
+[2026-02-07 17:21:06] LIDAR detected 3 obstacle hits: [[9.03, 12.465], [9.03, 12.294], [9.03, 12.123]]
+[2026-02-07 17:21:06] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:06] Starting LIDAR scan at position [10.0, 12.29416410142821]
+[2026-02-07 17:21:06] Ray at angle 170.0° hit obstacle at [9.03, 12.46520127271542]
+[2026-02-07 17:21:06] Ray at angle 180.0° hit obstacle at [9.03, 12.29416410142821]
+[2026-02-07 17:21:06] Ray at angle 190.0° hit obstacle at [9.03, 12.123126930141]
+[2026-02-07 17:21:06] LIDAR scan completed.
+[2026-02-07 17:21:06] Scan step begin at [10.0, 12.34416410142821]
+[2026-02-07 17:21:06] Starting LIDAR scan at position [10.0, 12.34416410142821]
+[2026-02-07 17:21:06] Ray at angle 170.0° hit obstacle at [9.03, 12.515201272715421]
+[2026-02-07 17:21:06] Ray at angle 180.0° hit obstacle at [9.03, 12.34416410142821]
+[2026-02-07 17:21:06] Ray at angle 190.0° hit obstacle at [9.03, 12.173126930141]
+[2026-02-07 17:21:06] LIDAR scan completed.
+[2026-02-07 17:21:06] LIDAR detected 3 obstacle hits: [[9.03, 12.515], [9.03, 12.344], [9.03, 12.173]]
+[2026-02-07 17:21:06] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:07] Starting LIDAR scan at position [10.0, 12.34416410142821]
+[2026-02-07 17:21:07] Ray at angle 170.0° hit obstacle at [9.03, 12.515201272715421]
+[2026-02-07 17:21:07] Ray at angle 180.0° hit obstacle at [9.03, 12.34416410142821]
+[2026-02-07 17:21:07] Ray at angle 190.0° hit obstacle at [9.03, 12.173126930141]
+[2026-02-07 17:21:07] LIDAR scan completed.
+[2026-02-07 17:21:07] Scan step begin at [10.0, 12.394164101428212]
+[2026-02-07 17:21:07] Starting LIDAR scan at position [10.0, 12.394164101428212]
+[2026-02-07 17:21:07] Ray at angle 170.0° hit obstacle at [9.03, 12.565201272715422]
+[2026-02-07 17:21:07] Ray at angle 180.0° hit obstacle at [9.03, 12.394164101428212]
+[2026-02-07 17:21:07] Ray at angle 190.0° hit obstacle at [9.03, 12.223126930141001]
+[2026-02-07 17:21:07] LIDAR scan completed.
+[2026-02-07 17:21:07] LIDAR detected 3 obstacle hits: [[9.03, 12.565], [9.03, 12.394], [9.03, 12.223]]
+[2026-02-07 17:21:07] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:07] Starting LIDAR scan at position [10.0, 12.394164101428212]
+[2026-02-07 17:21:07] Ray at angle 170.0° hit obstacle at [9.03, 12.565201272715422]
+[2026-02-07 17:21:07] Ray at angle 180.0° hit obstacle at [9.03, 12.394164101428212]
+[2026-02-07 17:21:07] Ray at angle 190.0° hit obstacle at [9.03, 12.223126930141001]
+[2026-02-07 17:21:07] LIDAR scan completed.
+[2026-02-07 17:21:07] Scan step begin at [10.0, 12.444164101428212]
+[2026-02-07 17:21:07] Starting LIDAR scan at position [10.0, 12.444164101428212]
+[2026-02-07 17:21:07] Ray at angle 170.0° hit obstacle at [9.03, 12.615201272715423]
+[2026-02-07 17:21:07] Ray at angle 180.0° hit obstacle at [9.03, 12.444164101428212]
+[2026-02-07 17:21:07] Ray at angle 190.0° hit obstacle at [9.03, 12.273126930141002]
+[2026-02-07 17:21:07] LIDAR scan completed.
+[2026-02-07 17:21:07] LIDAR detected 3 obstacle hits: [[9.03, 12.615], [9.03, 12.444], [9.03, 12.273]]
+[2026-02-07 17:21:07] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:07] Starting LIDAR scan at position [10.0, 12.444164101428212]
+[2026-02-07 17:21:07] Ray at angle 170.0° hit obstacle at [9.03, 12.615201272715423]
+[2026-02-07 17:21:07] Ray at angle 180.0° hit obstacle at [9.03, 12.444164101428212]
+[2026-02-07 17:21:07] Ray at angle 190.0° hit obstacle at [9.03, 12.273126930141002]
+[2026-02-07 17:21:07] LIDAR scan completed.
+[2026-02-07 17:21:07] Scan step begin at [10.0, 12.494164101428213]
+[2026-02-07 17:21:07] Starting LIDAR scan at position [10.0, 12.494164101428213]
+[2026-02-07 17:21:07] Ray at angle 170.0° hit obstacle at [9.03, 12.665201272715423]
+[2026-02-07 17:21:07] Ray at angle 180.0° hit obstacle at [9.03, 12.494164101428213]
+[2026-02-07 17:21:07] Ray at angle 190.0° hit obstacle at [9.03, 12.323126930141003]
+[2026-02-07 17:21:07] LIDAR scan completed.
+[2026-02-07 17:21:07] LIDAR detected 3 obstacle hits: [[9.03, 12.665], [9.03, 12.494], [9.03, 12.323]]
+[2026-02-07 17:21:07] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:07] Starting LIDAR scan at position [10.0, 12.494164101428213]
+[2026-02-07 17:21:07] Ray at angle 170.0° hit obstacle at [9.03, 12.665201272715423]
+[2026-02-07 17:21:07] Ray at angle 180.0° hit obstacle at [9.03, 12.494164101428213]
+[2026-02-07 17:21:07] Ray at angle 190.0° hit obstacle at [9.03, 12.323126930141003]
+[2026-02-07 17:21:07] LIDAR scan completed.
+[2026-02-07 17:21:07] Scan step begin at [10.0, 12.544164101428214]
+[2026-02-07 17:21:07] Starting LIDAR scan at position [10.0, 12.544164101428214]
+[2026-02-07 17:21:07] Ray at angle 170.0° hit obstacle at [9.03, 12.715201272715424]
+[2026-02-07 17:21:07] Ray at angle 180.0° hit obstacle at [9.03, 12.544164101428214]
+[2026-02-07 17:21:07] Ray at angle 190.0° hit obstacle at [9.03, 12.373126930141003]
+[2026-02-07 17:21:07] LIDAR scan completed.
+[2026-02-07 17:21:07] LIDAR detected 3 obstacle hits: [[9.03, 12.715], [9.03, 12.544], [9.03, 12.373]]
+[2026-02-07 17:21:07] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:08] Starting LIDAR scan at position [10.0, 12.544164101428214]
+[2026-02-07 17:21:08] Ray at angle 170.0° hit obstacle at [9.03, 12.715201272715424]
+[2026-02-07 17:21:08] Ray at angle 180.0° hit obstacle at [9.03, 12.544164101428214]
+[2026-02-07 17:21:08] Ray at angle 190.0° hit obstacle at [9.03, 12.373126930141003]
+[2026-02-07 17:21:08] LIDAR scan completed.
+[2026-02-07 17:21:08] Scan step begin at [10.0, 12.589747691285393]
+[2026-02-07 17:21:08] Starting LIDAR scan at position [10.0, 12.589747691285393]
+[2026-02-07 17:21:08] Ray at angle 170.0° hit obstacle at [9.03, 12.760784862572603]
+[2026-02-07 17:21:08] Ray at angle 180.0° hit obstacle at [9.03, 12.589747691285393]
+[2026-02-07 17:21:08] Ray at angle 190.0° hit obstacle at [9.03, 12.418710519998182]
+[2026-02-07 17:21:08] LIDAR scan completed.
+[2026-02-07 17:21:08] LIDAR detected 3 obstacle hits: [[9.03, 12.761], [9.03, 12.59], [9.03, 12.419]]
+[2026-02-07 17:21:08] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:08] Starting LIDAR scan at position [10.0, 12.589747691285393]
+[2026-02-07 17:21:08] Ray at angle 170.0° hit obstacle at [9.03, 12.760784862572603]
+[2026-02-07 17:21:08] Ray at angle 180.0° hit obstacle at [9.03, 12.589747691285393]
+[2026-02-07 17:21:08] Ray at angle 190.0° hit obstacle at [9.03, 12.418710519998182]
+[2026-02-07 17:21:08] LIDAR scan completed.
+[2026-02-07 17:21:08] Scan step begin at [10.0, 12.630772922156853]
+[2026-02-07 17:21:08] Starting LIDAR scan at position [10.0, 12.630772922156853]
+[2026-02-07 17:21:08] Ray at angle 170.0° hit obstacle at [9.03, 12.801810093444063]
+[2026-02-07 17:21:08] Ray at angle 180.0° hit obstacle at [9.03, 12.630772922156853]
+[2026-02-07 17:21:08] Ray at angle 190.0° hit obstacle at [9.03, 12.459735750869642]
+[2026-02-07 17:21:08] LIDAR scan completed.
+[2026-02-07 17:21:08] LIDAR detected 3 obstacle hits: [[9.03, 12.802], [9.03, 12.631], [9.03, 12.46]]
+[2026-02-07 17:21:08] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:08] Starting LIDAR scan at position [10.0, 12.630772922156853]
+[2026-02-07 17:21:08] Ray at angle 170.0° hit obstacle at [9.03, 12.801810093444063]
+[2026-02-07 17:21:08] Ray at angle 180.0° hit obstacle at [9.03, 12.630772922156853]
+[2026-02-07 17:21:08] Ray at angle 190.0° hit obstacle at [9.03, 12.459735750869642]
+[2026-02-07 17:21:08] LIDAR scan completed.
+[2026-02-07 17:21:08] Scan step begin at [10.0, 12.667695629941168]
+[2026-02-07 17:21:08] Starting LIDAR scan at position [10.0, 12.667695629941168]
+[2026-02-07 17:21:08] Ray at angle 170.0° hit obstacle at [9.03, 12.838732801228378]
+[2026-02-07 17:21:08] Ray at angle 180.0° hit obstacle at [9.03, 12.667695629941168]
+[2026-02-07 17:21:08] Ray at angle 190.0° hit obstacle at [9.03, 12.496658458653958]
+[2026-02-07 17:21:08] LIDAR scan completed.
+[2026-02-07 17:21:08] LIDAR detected 3 obstacle hits: [[9.03, 12.839], [9.03, 12.668], [9.03, 12.497]]
+[2026-02-07 17:21:08] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:08] Starting LIDAR scan at position [10.0, 12.667695629941168]
+[2026-02-07 17:21:08] Ray at angle 170.0° hit obstacle at [9.03, 12.838732801228378]
+[2026-02-07 17:21:08] Ray at angle 180.0° hit obstacle at [9.03, 12.667695629941168]
+[2026-02-07 17:21:08] Ray at angle 190.0° hit obstacle at [9.03, 12.496658458653958]
+[2026-02-07 17:21:08] LIDAR scan completed.
+[2026-02-07 17:21:08] Scan step begin at [10.0, 12.700926066947051]
+[2026-02-07 17:21:08] Starting LIDAR scan at position [10.0, 12.700926066947051]
+[2026-02-07 17:21:08] Ray at angle 170.0° hit obstacle at [9.03, 12.871963238234262]
+[2026-02-07 17:21:08] Ray at angle 180.0° hit obstacle at [9.03, 12.700926066947051]
+[2026-02-07 17:21:08] Ray at angle 190.0° hit obstacle at [9.03, 12.529888895659841]
+[2026-02-07 17:21:08] LIDAR scan completed.
+[2026-02-07 17:21:08] LIDAR detected 3 obstacle hits: [[9.03, 12.872], [9.03, 12.701], [9.03, 12.53]]
+[2026-02-07 17:21:08] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:09] Starting LIDAR scan at position [10.0, 12.700926066947051]
+[2026-02-07 17:21:09] Ray at angle 170.0° hit obstacle at [9.03, 12.871963238234262]
+[2026-02-07 17:21:09] Ray at angle 180.0° hit obstacle at [9.03, 12.700926066947051]
+[2026-02-07 17:21:09] Ray at angle 190.0° hit obstacle at [9.03, 12.529888895659841]
+[2026-02-07 17:21:09] LIDAR scan completed.
+[2026-02-07 17:21:09] Scan step begin at [10.0, 12.730833460252347]
+[2026-02-07 17:21:09] Starting LIDAR scan at position [10.0, 12.730833460252347]
+[2026-02-07 17:21:09] Ray at angle 170.0° hit obstacle at [9.03, 12.901870631539557]
+[2026-02-07 17:21:09] Ray at angle 180.0° hit obstacle at [9.03, 12.730833460252347]
+[2026-02-07 17:21:09] Ray at angle 190.0° hit obstacle at [9.03, 12.559796288965137]
+[2026-02-07 17:21:09] LIDAR scan completed.
+[2026-02-07 17:21:09] LIDAR detected 3 obstacle hits: [[9.03, 12.902], [9.03, 12.731], [9.03, 12.56]]
+[2026-02-07 17:21:09] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:09] Starting LIDAR scan at position [10.0, 12.730833460252347]
+[2026-02-07 17:21:09] Ray at angle 170.0° hit obstacle at [9.03, 12.901870631539557]
+[2026-02-07 17:21:09] Ray at angle 180.0° hit obstacle at [9.03, 12.730833460252347]
+[2026-02-07 17:21:09] Ray at angle 190.0° hit obstacle at [9.03, 12.559796288965137]
+[2026-02-07 17:21:09] LIDAR scan completed.
+[2026-02-07 17:21:09] Scan step begin at [10.0, 12.757750114227113]
+[2026-02-07 17:21:09] Starting LIDAR scan at position [10.0, 12.757750114227113]
+[2026-02-07 17:21:09] Ray at angle 170.0° hit obstacle at [9.03, 12.928787285514323]
+[2026-02-07 17:21:09] Ray at angle 180.0° hit obstacle at [9.03, 12.757750114227113]
+[2026-02-07 17:21:09] Ray at angle 190.0° hit obstacle at [9.03, 12.586712942939903]
+[2026-02-07 17:21:09] LIDAR scan completed.
+[2026-02-07 17:21:09] LIDAR detected 3 obstacle hits: [[9.03, 12.929], [9.03, 12.758], [9.03, 12.587]]
+[2026-02-07 17:21:09] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:09] Starting LIDAR scan at position [10.0, 12.757750114227113]
+[2026-02-07 17:21:09] Ray at angle 170.0° hit obstacle at [9.03, 12.928787285514323]
+[2026-02-07 17:21:09] Ray at angle 180.0° hit obstacle at [9.03, 12.757750114227113]
+[2026-02-07 17:21:09] Ray at angle 190.0° hit obstacle at [9.03, 12.586712942939903]
+[2026-02-07 17:21:09] LIDAR scan completed.
+[2026-02-07 17:21:09] Scan step begin at [10.0, 12.781975102804402]
+[2026-02-07 17:21:09] Starting LIDAR scan at position [10.0, 12.781975102804402]
+[2026-02-07 17:21:09] Ray at angle 170.0° hit obstacle at [9.03, 12.953012274091613]
+[2026-02-07 17:21:09] Ray at angle 180.0° hit obstacle at [9.03, 12.781975102804402]
+[2026-02-07 17:21:09] Ray at angle 190.0° hit obstacle at [9.03, 12.610937931517192]
+[2026-02-07 17:21:09] LIDAR scan completed.
+[2026-02-07 17:21:09] LIDAR detected 3 obstacle hits: [[9.03, 12.953], [9.03, 12.782], [9.03, 12.611]]
+[2026-02-07 17:21:09] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:09] Starting LIDAR scan at position [10.0, 12.781975102804402]
+[2026-02-07 17:21:09] Ray at angle 170.0° hit obstacle at [9.03, 12.953012274091613]
+[2026-02-07 17:21:09] Ray at angle 180.0° hit obstacle at [9.03, 12.781975102804402]
+[2026-02-07 17:21:09] Ray at angle 190.0° hit obstacle at [9.03, 12.610937931517192]
+[2026-02-07 17:21:09] LIDAR scan completed.
+[2026-02-07 17:21:09] Scan step begin at [10.0, 12.803777592523963]
+[2026-02-07 17:21:09] Starting LIDAR scan at position [10.0, 12.803777592523963]
+[2026-02-07 17:21:09] Ray at angle 170.0° hit obstacle at [9.03, 12.974814763811173]
+[2026-02-07 17:21:09] Ray at angle 180.0° hit obstacle at [9.03, 12.803777592523963]
+[2026-02-07 17:21:09] Ray at angle 190.0° hit obstacle at [9.03, 12.632740421236752]
+[2026-02-07 17:21:09] LIDAR scan completed.
+[2026-02-07 17:21:09] LIDAR detected 3 obstacle hits: [[9.03, 12.975], [9.03, 12.804], [9.03, 12.633]]
+[2026-02-07 17:21:09] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:10] Starting LIDAR scan at position [10.0, 12.803777592523963]
+[2026-02-07 17:21:10] Ray at angle 170.0° hit obstacle at [9.03, 12.974814763811173]
+[2026-02-07 17:21:10] Ray at angle 180.0° hit obstacle at [9.03, 12.803777592523963]
+[2026-02-07 17:21:10] Ray at angle 190.0° hit obstacle at [9.03, 12.632740421236752]
+[2026-02-07 17:21:10] LIDAR scan completed.
+[2026-02-07 17:21:10] Scan step begin at [10.0, 12.823399833271566]
+[2026-02-07 17:21:10] Starting LIDAR scan at position [10.0, 12.823399833271566]
+[2026-02-07 17:21:10] Ray at angle 170.0° hit obstacle at [9.03, 12.994437004558776]
+[2026-02-07 17:21:10] Ray at angle 180.0° hit obstacle at [9.03, 12.823399833271566]
+[2026-02-07 17:21:10] Ray at angle 190.0° hit obstacle at [9.03, 12.652362661984355]
+[2026-02-07 17:21:10] LIDAR scan completed.
+[2026-02-07 17:21:10] LIDAR detected 3 obstacle hits: [[9.03, 12.994], [9.03, 12.823], [9.03, 12.652]]
+[2026-02-07 17:21:10] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:10] Starting LIDAR scan at position [10.0, 12.823399833271566]
+[2026-02-07 17:21:10] Ray at angle 170.0° hit obstacle at [9.03, 12.994437004558776]
+[2026-02-07 17:21:10] Ray at angle 180.0° hit obstacle at [9.03, 12.823399833271566]
+[2026-02-07 17:21:10] Ray at angle 190.0° hit obstacle at [9.03, 12.652362661984355]
+[2026-02-07 17:21:10] LIDAR scan completed.
+[2026-02-07 17:21:10] Scan step begin at [10.0, 12.84105984994441]
+[2026-02-07 17:21:10] Starting LIDAR scan at position [10.0, 12.84105984994441]
+[2026-02-07 17:21:10] Ray at angle 170.0° hit obstacle at [9.03, 13.01209702123162]
+[2026-02-07 17:21:10] Ray at angle 180.0° hit obstacle at [9.03, 12.84105984994441]
+[2026-02-07 17:21:10] Ray at angle 190.0° hit obstacle at [9.03, 12.6700226786572]
+[2026-02-07 17:21:10] LIDAR scan completed.
+[2026-02-07 17:21:10] LIDAR detected 3 obstacle hits: [[9.03, 13.012], [9.03, 12.841], [9.03, 12.67]]
+[2026-02-07 17:21:10] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:10] Starting LIDAR scan at position [10.0, 12.84105984994441]
+[2026-02-07 17:21:10] Ray at angle 170.0° hit obstacle at [9.03, 13.01209702123162]
+[2026-02-07 17:21:10] Ray at angle 180.0° hit obstacle at [9.03, 12.84105984994441]
+[2026-02-07 17:21:10] Ray at angle 190.0° hit obstacle at [9.03, 12.6700226786572]
+[2026-02-07 17:21:10] LIDAR scan completed.
+[2026-02-07 17:21:10] Scan step begin at [10.0, 12.856953864949968]
+[2026-02-07 17:21:10] Starting LIDAR scan at position [10.0, 12.856953864949968]
+[2026-02-07 17:21:10] Ray at angle 170.0° hit obstacle at [9.03, 13.027991036237179]
+[2026-02-07 17:21:10] Ray at angle 180.0° hit obstacle at [9.03, 12.856953864949968]
+[2026-02-07 17:21:10] Ray at angle 190.0° hit obstacle at [9.03, 12.685916693662758]
+[2026-02-07 17:21:10] LIDAR scan completed.
+[2026-02-07 17:21:10] LIDAR detected 3 obstacle hits: [[9.03, 13.028], [9.03, 12.857], [9.03, 12.686]]
+[2026-02-07 17:21:10] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:10] Starting LIDAR scan at position [10.0, 12.856953864949968]
+[2026-02-07 17:21:10] Ray at angle 170.0° hit obstacle at [9.03, 13.027991036237179]
+[2026-02-07 17:21:10] Ray at angle 180.0° hit obstacle at [9.03, 12.856953864949968]
+[2026-02-07 17:21:10] Ray at angle 190.0° hit obstacle at [9.03, 12.685916693662758]
+[2026-02-07 17:21:10] LIDAR scan completed.
+[2026-02-07 17:21:10] Scan step begin at [10.0, 12.87125847845497]
+[2026-02-07 17:21:10] Starting LIDAR scan at position [10.0, 12.87125847845497]
+[2026-02-07 17:21:11] Ray at angle 170.0° hit obstacle at [9.03, 13.042295649742181]
+[2026-02-07 17:21:11] Ray at angle 180.0° hit obstacle at [9.03, 12.87125847845497]
+[2026-02-07 17:21:11] Ray at angle 190.0° hit obstacle at [9.03, 12.70022130716776]
+[2026-02-07 17:21:11] LIDAR scan completed.
+[2026-02-07 17:21:11] LIDAR detected 3 obstacle hits: [[9.03, 13.042], [9.03, 12.871], [9.03, 12.7]]
+[2026-02-07 17:21:11] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:11] Starting LIDAR scan at position [10.0, 12.87125847845497]
+[2026-02-07 17:21:11] Ray at angle 170.0° hit obstacle at [9.03, 13.042295649742181]
+[2026-02-07 17:21:11] Ray at angle 180.0° hit obstacle at [9.03, 12.87125847845497]
+[2026-02-07 17:21:11] Ray at angle 190.0° hit obstacle at [9.03, 12.70022130716776]
+[2026-02-07 17:21:11] LIDAR scan completed.
+[2026-02-07 17:21:11] Scan step begin at [10.0, 12.884132630609473]
+[2026-02-07 17:21:11] Starting LIDAR scan at position [10.0, 12.884132630609473]
+[2026-02-07 17:21:11] Ray at angle 170.0° hit obstacle at [9.03, 13.055169801896684]
+[2026-02-07 17:21:11] Ray at angle 180.0° hit obstacle at [9.03, 12.884132630609473]
+[2026-02-07 17:21:11] Ray at angle 190.0° hit obstacle at [9.03, 12.713095459322263]
+[2026-02-07 17:21:11] LIDAR scan completed.
+[2026-02-07 17:21:11] LIDAR detected 3 obstacle hits: [[9.03, 13.055], [9.03, 12.884], [9.03, 12.713]]
+[2026-02-07 17:21:11] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:11] Starting LIDAR scan at position [10.0, 12.884132630609473]
+[2026-02-07 17:21:11] Ray at angle 170.0° hit obstacle at [9.03, 13.055169801896684]
+[2026-02-07 17:21:11] Ray at angle 180.0° hit obstacle at [9.03, 12.884132630609473]
+[2026-02-07 17:21:11] Ray at angle 190.0° hit obstacle at [9.03, 12.713095459322263]
+[2026-02-07 17:21:11] LIDAR scan completed.
+[2026-02-07 17:21:11] Scan step begin at [10.0, 12.895719367548526]
+[2026-02-07 17:21:11] Starting LIDAR scan at position [10.0, 12.895719367548526]
+[2026-02-07 17:21:11] Ray at angle 170.0° hit obstacle at [9.03, 13.066756538835737]
+[2026-02-07 17:21:11] Ray at angle 180.0° hit obstacle at [9.03, 12.895719367548526]
+[2026-02-07 17:21:11] Ray at angle 190.0° hit obstacle at [9.03, 12.724682196261316]
+[2026-02-07 17:21:11] LIDAR scan completed.
+[2026-02-07 17:21:11] LIDAR detected 3 obstacle hits: [[9.03, 13.067], [9.03, 12.896], [9.03, 12.725]]
+[2026-02-07 17:21:11] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:11] Starting LIDAR scan at position [10.0, 12.895719367548526]
+[2026-02-07 17:21:11] Ray at angle 170.0° hit obstacle at [9.03, 13.066756538835737]
+[2026-02-07 17:21:11] Ray at angle 180.0° hit obstacle at [9.03, 12.895719367548526]
+[2026-02-07 17:21:11] Ray at angle 190.0° hit obstacle at [9.03, 12.724682196261316]
+[2026-02-07 17:21:11] LIDAR scan completed.
+[2026-02-07 17:21:11] Scan step begin at [10.0, 12.906147430793673]
+[2026-02-07 17:21:11] Starting LIDAR scan at position [10.0, 12.906147430793673]
+[2026-02-07 17:21:11] Ray at angle 170.0° hit obstacle at [9.03, 13.077184602080884]
+[2026-02-07 17:21:11] Ray at angle 180.0° hit obstacle at [9.03, 12.906147430793673]
+[2026-02-07 17:21:11] Ray at angle 190.0° hit obstacle at [9.03, 12.735110259506463]
+[2026-02-07 17:21:11] LIDAR scan completed.
+[2026-02-07 17:21:11] LIDAR detected 3 obstacle hits: [[9.03, 13.077], [9.03, 12.906], [9.03, 12.735]]
+[2026-02-07 17:21:11] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:11] Reached waypoint [10.0, 13.0]
+[2026-02-07 17:21:11] Moving to waypoint [10.0, 14.0]
+[2026-02-07 17:21:11] Starting LIDAR scan at position [10.0, 12.906147430793673]
+[2026-02-07 17:21:11] Ray at angle 170.0° hit obstacle at [9.03, 13.077184602080884]
+[2026-02-07 17:21:11] Ray at angle 180.0° hit obstacle at [9.03, 12.906147430793673]
+[2026-02-07 17:21:11] Ray at angle 190.0° hit obstacle at [9.03, 12.735110259506463]
+[2026-02-07 17:21:11] LIDAR scan completed.
+[2026-02-07 17:21:12] Scan step begin at [10.0, 12.956147430793674]
+[2026-02-07 17:21:12] Starting LIDAR scan at position [10.0, 12.956147430793674]
+[2026-02-07 17:21:12] Ray at angle 170.0° hit obstacle at [9.03, 13.127184602080884]
+[2026-02-07 17:21:12] Ray at angle 180.0° hit obstacle at [9.03, 12.956147430793674]
+[2026-02-07 17:21:12] Ray at angle 190.0° hit obstacle at [9.03, 12.785110259506464]
+[2026-02-07 17:21:12] LIDAR scan completed.
+[2026-02-07 17:21:12] LIDAR detected 3 obstacle hits: [[9.03, 13.127], [9.03, 12.956], [9.03, 12.785]]
+[2026-02-07 17:21:12] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:12] Starting LIDAR scan at position [10.0, 12.956147430793674]
+[2026-02-07 17:21:12] Ray at angle 170.0° hit obstacle at [9.03, 13.127184602080884]
+[2026-02-07 17:21:12] Ray at angle 180.0° hit obstacle at [9.03, 12.956147430793674]
+[2026-02-07 17:21:12] Ray at angle 190.0° hit obstacle at [9.03, 12.785110259506464]
+[2026-02-07 17:21:12] LIDAR scan completed.
+[2026-02-07 17:21:12] Scan step begin at [10.0, 13.006147430793675]
+[2026-02-07 17:21:12] Starting LIDAR scan at position [10.0, 13.006147430793675]
+[2026-02-07 17:21:12] Ray at angle 90.0° hit obstacle at [10.0, 13.97]
+[2026-02-07 17:21:12] Ray at angle 100.0° hit obstacle at [9.830046786623752, 13.97]
+[2026-02-07 17:21:12] Ray at angle 170.0° hit obstacle at [9.03, 13.177184602080885]
+[2026-02-07 17:21:12] Ray at angle 180.0° hit obstacle at [9.03, 13.006147430793675]
+[2026-02-07 17:21:12] Ray at angle 190.0° hit obstacle at [9.03, 12.835110259506465]
+[2026-02-07 17:21:12] LIDAR scan completed.
+[2026-02-07 17:21:12] LIDAR detected 5 obstacle hits: [[10.0, 13.97], [9.83, 13.97], [9.03, 13.177], [9.03, 13.006], [9.03, 12.835]]
+[2026-02-07 17:21:12] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:12] Starting LIDAR scan at position [10.0, 13.006147430793675]
+[2026-02-07 17:21:12] Ray at angle 90.0° hit obstacle at [10.0, 13.97]
+[2026-02-07 17:21:12] Ray at angle 100.0° hit obstacle at [9.830046786623752, 13.97]
+[2026-02-07 17:21:12] Ray at angle 170.0° hit obstacle at [9.03, 13.177184602080885]
+[2026-02-07 17:21:12] Ray at angle 180.0° hit obstacle at [9.03, 13.006147430793675]
+[2026-02-07 17:21:12] Ray at angle 190.0° hit obstacle at [9.03, 12.835110259506465]
+[2026-02-07 17:21:12] LIDAR scan completed.
+[2026-02-07 17:21:12] Waypoint [10. 14.] is blocked by new obstacle.
+[2026-02-07 17:21:12] Waypoint [10. 14.] became blocked by new obstacle during approach. Replanning.
+[2026-02-07 17:21:12] ===== DETOUR TRIGGERED =====
+[2026-02-07 17:21:12] Agent position: [10.0, 13.006147430793675]
+[2026-02-07 17:21:12] Goal position: [6.0, 4.0]
+[2026-02-07 17:21:12] Starting LIDAR scan at position [10.0, 13.006147430793675]
+[2026-02-07 17:21:12] Ray at angle 90.0° hit obstacle at [10.0, 13.97]
+[2026-02-07 17:21:12] Ray at angle 100.0° hit obstacle at [9.830046786623752, 13.97]
+[2026-02-07 17:21:12] Ray at angle 170.0° hit obstacle at [9.03, 13.177184602080885]
+[2026-02-07 17:21:12] Ray at angle 180.0° hit obstacle at [9.03, 13.006147430793675]
+[2026-02-07 17:21:12] Ray at angle 190.0° hit obstacle at [9.03, 12.835110259506465]
+[2026-02-07 17:21:12] LIDAR scan completed.
+[2026-02-07 17:21:12] LIDAR detected 5 obstacle hits: [[10.0, 13.97], [9.83, 13.97], [9.03, 13.177], [9.03, 13.006], [9.03, 12.835]]
+[2026-02-07 17:21:12] LIDAR hit count: 5
+[2026-02-07 17:21:12] LIDAR hit points: [[10.0, 13.97], [9.83, 13.97], [9.03, 13.177], [9.03, 13.006], [9.03, 12.835]]
+[2026-02-07 17:21:12] VLM snapshot saved at: logs/run_17:20:41_07-02/vlm_snapshot_17:20:41_07-02_004.png
+[2026-02-07 17:21:12] Querying VLM model: gpt-4o
+[2026-02-07 17:21:12] Calling VLM for detour (attempt 1)
+[2026-02-07 17:21:15] VLM returned 6 waypoints: [[10.0, 12.0], [10.0, 11.0], [10.0, 10.0], [10.0, 9.0], [10.0, 8.0], [10.0, 7.0]]
+[2026-02-07 17:21:15] Accept WP1: [10.0, 12.0]
+[2026-02-07 17:21:15] Accept WP2: [10.0, 11.0]
+[2026-02-07 17:21:15] Accept WP3: [10.0, 10.0]
+[2026-02-07 17:21:15] Accept WP4: [10.0, 9.0]
+[2026-02-07 17:21:15] Accept WP5: [10.0, 8.0]
+[2026-02-07 17:21:15] Accept WP6: [10.0, 7.0]
+[2026-02-07 17:21:15] Detour validation result: SUCCESS (6 waypoints accepted)
+[2026-02-07 17:21:15] Added 6 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 17:21:15] ===== DETOUR END =====
+[2026-02-07 17:21:15] Moving to waypoint [10.0, 12.0]
+[2026-02-07 17:21:15] Starting LIDAR scan at position [10.0, 13.006147430793675]
+[2026-02-07 17:21:15] Ray at angle 90.0° hit obstacle at [10.0, 13.97]
+[2026-02-07 17:21:15] Ray at angle 100.0° hit obstacle at [9.830046786623752, 13.97]
+[2026-02-07 17:21:15] Ray at angle 170.0° hit obstacle at [9.03, 13.177184602080885]
+[2026-02-07 17:21:15] Ray at angle 180.0° hit obstacle at [9.03, 13.006147430793675]
+[2026-02-07 17:21:15] Ray at angle 190.0° hit obstacle at [9.03, 12.835110259506465]
+[2026-02-07 17:21:15] LIDAR scan completed.
+[2026-02-07 17:21:15] Scan step begin at [10.0, 12.956147430793674]
+[2026-02-07 17:21:15] Starting LIDAR scan at position [10.0, 12.956147430793674]
+[2026-02-07 17:21:15] Ray at angle 170.0° hit obstacle at [9.03, 13.127184602080884]
+[2026-02-07 17:21:15] Ray at angle 180.0° hit obstacle at [9.03, 12.956147430793674]
+[2026-02-07 17:21:15] Ray at angle 190.0° hit obstacle at [9.03, 12.785110259506464]
+[2026-02-07 17:21:15] LIDAR scan completed.
+[2026-02-07 17:21:15] LIDAR detected 3 obstacle hits: [[9.03, 13.127], [9.03, 12.956], [9.03, 12.785]]
+[2026-02-07 17:21:15] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:15] Starting LIDAR scan at position [10.0, 12.956147430793674]
+[2026-02-07 17:21:15] Ray at angle 170.0° hit obstacle at [9.03, 13.127184602080884]
+[2026-02-07 17:21:15] Ray at angle 180.0° hit obstacle at [9.03, 12.956147430793674]
+[2026-02-07 17:21:15] Ray at angle 190.0° hit obstacle at [9.03, 12.785110259506464]
+[2026-02-07 17:21:15] LIDAR scan completed.
+[2026-02-07 17:21:15] Scan step begin at [10.0, 12.906147430793673]
+[2026-02-07 17:21:15] Starting LIDAR scan at position [10.0, 12.906147430793673]
+[2026-02-07 17:21:15] Ray at angle 170.0° hit obstacle at [9.03, 13.077184602080884]
+[2026-02-07 17:21:15] Ray at angle 180.0° hit obstacle at [9.03, 12.906147430793673]
+[2026-02-07 17:21:15] Ray at angle 190.0° hit obstacle at [9.03, 12.735110259506463]
+[2026-02-07 17:21:15] LIDAR scan completed.
+[2026-02-07 17:21:15] LIDAR detected 3 obstacle hits: [[9.03, 13.077], [9.03, 12.906], [9.03, 12.735]]
+[2026-02-07 17:21:15] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:15] Starting LIDAR scan at position [10.0, 12.906147430793673]
+[2026-02-07 17:21:16] Ray at angle 170.0° hit obstacle at [9.03, 13.077184602080884]
+[2026-02-07 17:21:16] Ray at angle 180.0° hit obstacle at [9.03, 12.906147430793673]
+[2026-02-07 17:21:16] Ray at angle 190.0° hit obstacle at [9.03, 12.735110259506463]
+[2026-02-07 17:21:16] LIDAR scan completed.
+[2026-02-07 17:21:16] Scan step begin at [10.0, 12.856147430793673]
+[2026-02-07 17:21:16] Starting LIDAR scan at position [10.0, 12.856147430793673]
+[2026-02-07 17:21:16] Ray at angle 170.0° hit obstacle at [9.03, 13.027184602080883]
+[2026-02-07 17:21:16] Ray at angle 180.0° hit obstacle at [9.03, 12.856147430793673]
+[2026-02-07 17:21:16] Ray at angle 190.0° hit obstacle at [9.03, 12.685110259506462]
+[2026-02-07 17:21:16] LIDAR scan completed.
+[2026-02-07 17:21:16] LIDAR detected 3 obstacle hits: [[9.03, 13.027], [9.03, 12.856], [9.03, 12.685]]
+[2026-02-07 17:21:16] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:16] Starting LIDAR scan at position [10.0, 12.856147430793673]
+[2026-02-07 17:21:16] Ray at angle 170.0° hit obstacle at [9.03, 13.027184602080883]
+[2026-02-07 17:21:16] Ray at angle 180.0° hit obstacle at [9.03, 12.856147430793673]
+[2026-02-07 17:21:16] Ray at angle 190.0° hit obstacle at [9.03, 12.685110259506462]
+[2026-02-07 17:21:16] LIDAR scan completed.
+[2026-02-07 17:21:16] Scan step begin at [10.0, 12.806147430793672]
+[2026-02-07 17:21:16] Starting LIDAR scan at position [10.0, 12.806147430793672]
+[2026-02-07 17:21:16] Ray at angle 170.0° hit obstacle at [9.03, 12.977184602080882]
+[2026-02-07 17:21:16] Ray at angle 180.0° hit obstacle at [9.03, 12.806147430793672]
+[2026-02-07 17:21:16] Ray at angle 190.0° hit obstacle at [9.03, 12.635110259506462]
+[2026-02-07 17:21:16] LIDAR scan completed.
+[2026-02-07 17:21:16] LIDAR detected 3 obstacle hits: [[9.03, 12.977], [9.03, 12.806], [9.03, 12.635]]
+[2026-02-07 17:21:16] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:16] Starting LIDAR scan at position [10.0, 12.806147430793672]
+[2026-02-07 17:21:16] Ray at angle 170.0° hit obstacle at [9.03, 12.977184602080882]
+[2026-02-07 17:21:16] Ray at angle 180.0° hit obstacle at [9.03, 12.806147430793672]
+[2026-02-07 17:21:16] Ray at angle 190.0° hit obstacle at [9.03, 12.635110259506462]
+[2026-02-07 17:21:16] LIDAR scan completed.
+[2026-02-07 17:21:16] Scan step begin at [10.0, 12.756147430793671]
+[2026-02-07 17:21:16] Starting LIDAR scan at position [10.0, 12.756147430793671]
+[2026-02-07 17:21:16] Ray at angle 170.0° hit obstacle at [9.03, 12.927184602080882]
+[2026-02-07 17:21:16] Ray at angle 180.0° hit obstacle at [9.03, 12.756147430793671]
+[2026-02-07 17:21:16] Ray at angle 190.0° hit obstacle at [9.03, 12.585110259506461]
+[2026-02-07 17:21:16] LIDAR scan completed.
+[2026-02-07 17:21:16] LIDAR detected 3 obstacle hits: [[9.03, 12.927], [9.03, 12.756], [9.03, 12.585]]
+[2026-02-07 17:21:16] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:16] Starting LIDAR scan at position [10.0, 12.756147430793671]
+[2026-02-07 17:21:16] Ray at angle 170.0° hit obstacle at [9.03, 12.927184602080882]
+[2026-02-07 17:21:16] Ray at angle 180.0° hit obstacle at [9.03, 12.756147430793671]
+[2026-02-07 17:21:16] Ray at angle 190.0° hit obstacle at [9.03, 12.585110259506461]
+[2026-02-07 17:21:16] LIDAR scan completed.
+[2026-02-07 17:21:16] Scan step begin at [10.0, 12.70614743079367]
+[2026-02-07 17:21:16] Starting LIDAR scan at position [10.0, 12.70614743079367]
+[2026-02-07 17:21:16] Ray at angle 170.0° hit obstacle at [9.03, 12.877184602080881]
+[2026-02-07 17:21:16] Ray at angle 180.0° hit obstacle at [9.03, 12.70614743079367]
+[2026-02-07 17:21:16] Ray at angle 190.0° hit obstacle at [9.03, 12.53511025950646]
+[2026-02-07 17:21:16] LIDAR scan completed.
+[2026-02-07 17:21:16] LIDAR detected 3 obstacle hits: [[9.03, 12.877], [9.03, 12.706], [9.03, 12.535]]
+[2026-02-07 17:21:16] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:16] Starting LIDAR scan at position [10.0, 12.70614743079367]
+[2026-02-07 17:21:17] Ray at angle 170.0° hit obstacle at [9.03, 12.877184602080881]
+[2026-02-07 17:21:17] Ray at angle 180.0° hit obstacle at [9.03, 12.70614743079367]
+[2026-02-07 17:21:17] Ray at angle 190.0° hit obstacle at [9.03, 12.53511025950646]
+[2026-02-07 17:21:17] LIDAR scan completed.
+[2026-02-07 17:21:17] Scan step begin at [10.0, 12.65614743079367]
+[2026-02-07 17:21:17] Starting LIDAR scan at position [10.0, 12.65614743079367]
+[2026-02-07 17:21:17] Ray at angle 170.0° hit obstacle at [9.03, 12.82718460208088]
+[2026-02-07 17:21:17] Ray at angle 180.0° hit obstacle at [9.03, 12.65614743079367]
+[2026-02-07 17:21:17] Ray at angle 190.0° hit obstacle at [9.03, 12.48511025950646]
+[2026-02-07 17:21:17] LIDAR scan completed.
+[2026-02-07 17:21:17] LIDAR detected 3 obstacle hits: [[9.03, 12.827], [9.03, 12.656], [9.03, 12.485]]
+[2026-02-07 17:21:17] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:17] Starting LIDAR scan at position [10.0, 12.65614743079367]
+[2026-02-07 17:21:17] Ray at angle 170.0° hit obstacle at [9.03, 12.82718460208088]
+[2026-02-07 17:21:17] Ray at angle 180.0° hit obstacle at [9.03, 12.65614743079367]
+[2026-02-07 17:21:17] Ray at angle 190.0° hit obstacle at [9.03, 12.48511025950646]
+[2026-02-07 17:21:17] LIDAR scan completed.
+[2026-02-07 17:21:17] Scan step begin at [10.0, 12.60614743079367]
+[2026-02-07 17:21:17] Starting LIDAR scan at position [10.0, 12.60614743079367]
+[2026-02-07 17:21:17] Ray at angle 170.0° hit obstacle at [9.03, 12.77718460208088]
+[2026-02-07 17:21:17] Ray at angle 180.0° hit obstacle at [9.03, 12.60614743079367]
+[2026-02-07 17:21:17] Ray at angle 190.0° hit obstacle at [9.03, 12.435110259506459]
+[2026-02-07 17:21:17] LIDAR scan completed.
+[2026-02-07 17:21:17] LIDAR detected 3 obstacle hits: [[9.03, 12.777], [9.03, 12.606], [9.03, 12.435]]
+[2026-02-07 17:21:17] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:17] Starting LIDAR scan at position [10.0, 12.60614743079367]
+[2026-02-07 17:21:17] Ray at angle 170.0° hit obstacle at [9.03, 12.77718460208088]
+[2026-02-07 17:21:17] Ray at angle 180.0° hit obstacle at [9.03, 12.60614743079367]
+[2026-02-07 17:21:17] Ray at angle 190.0° hit obstacle at [9.03, 12.435110259506459]
+[2026-02-07 17:21:17] LIDAR scan completed.
+[2026-02-07 17:21:17] Scan step begin at [10.0, 12.556147430793668]
+[2026-02-07 17:21:17] Starting LIDAR scan at position [10.0, 12.556147430793668]
+[2026-02-07 17:21:17] Ray at angle 170.0° hit obstacle at [9.03, 12.727184602080879]
+[2026-02-07 17:21:17] Ray at angle 180.0° hit obstacle at [9.03, 12.556147430793668]
+[2026-02-07 17:21:17] Ray at angle 190.0° hit obstacle at [9.03, 12.385110259506458]
+[2026-02-07 17:21:17] LIDAR scan completed.
+[2026-02-07 17:21:17] LIDAR detected 3 obstacle hits: [[9.03, 12.727], [9.03, 12.556], [9.03, 12.385]]
+[2026-02-07 17:21:17] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:17] Starting LIDAR scan at position [10.0, 12.556147430793668]
+[2026-02-07 17:21:17] Ray at angle 170.0° hit obstacle at [9.03, 12.727184602080879]
+[2026-02-07 17:21:17] Ray at angle 180.0° hit obstacle at [9.03, 12.556147430793668]
+[2026-02-07 17:21:17] Ray at angle 190.0° hit obstacle at [9.03, 12.385110259506458]
+[2026-02-07 17:21:17] LIDAR scan completed.
+[2026-02-07 17:21:17] Scan step begin at [10.0, 12.506147430793668]
+[2026-02-07 17:21:17] Starting LIDAR scan at position [10.0, 12.506147430793668]
+[2026-02-07 17:21:17] Ray at angle 170.0° hit obstacle at [9.03, 12.677184602080878]
+[2026-02-07 17:21:17] Ray at angle 180.0° hit obstacle at [9.03, 12.506147430793668]
+[2026-02-07 17:21:17] Ray at angle 190.0° hit obstacle at [9.03, 12.335110259506457]
+[2026-02-07 17:21:17] LIDAR scan completed.
+[2026-02-07 17:21:17] LIDAR detected 3 obstacle hits: [[9.03, 12.677], [9.03, 12.506], [9.03, 12.335]]
+[2026-02-07 17:21:17] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:18] Starting LIDAR scan at position [10.0, 12.506147430793668]
+[2026-02-07 17:21:18] Ray at angle 170.0° hit obstacle at [9.03, 12.677184602080878]
+[2026-02-07 17:21:18] Ray at angle 180.0° hit obstacle at [9.03, 12.506147430793668]
+[2026-02-07 17:21:18] Ray at angle 190.0° hit obstacle at [9.03, 12.335110259506457]
+[2026-02-07 17:21:18] LIDAR scan completed.
+[2026-02-07 17:21:18] Scan step begin at [10.0, 12.456147430793667]
+[2026-02-07 17:21:18] Starting LIDAR scan at position [10.0, 12.456147430793667]
+[2026-02-07 17:21:18] Ray at angle 170.0° hit obstacle at [9.03, 12.627184602080877]
+[2026-02-07 17:21:18] Ray at angle 180.0° hit obstacle at [9.03, 12.456147430793667]
+[2026-02-07 17:21:18] Ray at angle 190.0° hit obstacle at [9.03, 12.285110259506457]
+[2026-02-07 17:21:18] LIDAR scan completed.
+[2026-02-07 17:21:18] LIDAR detected 3 obstacle hits: [[9.03, 12.627], [9.03, 12.456], [9.03, 12.285]]
+[2026-02-07 17:21:18] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:18] Starting LIDAR scan at position [10.0, 12.456147430793667]
+[2026-02-07 17:21:18] Ray at angle 170.0° hit obstacle at [9.03, 12.627184602080877]
+[2026-02-07 17:21:18] Ray at angle 180.0° hit obstacle at [9.03, 12.456147430793667]
+[2026-02-07 17:21:18] Ray at angle 190.0° hit obstacle at [9.03, 12.285110259506457]
+[2026-02-07 17:21:18] LIDAR scan completed.
+[2026-02-07 17:21:18] Scan step begin at [10.0, 12.4105326877143]
+[2026-02-07 17:21:18] Starting LIDAR scan at position [10.0, 12.4105326877143]
+[2026-02-07 17:21:18] Ray at angle 170.0° hit obstacle at [9.03, 12.58156985900151]
+[2026-02-07 17:21:18] Ray at angle 180.0° hit obstacle at [9.03, 12.4105326877143]
+[2026-02-07 17:21:18] Ray at angle 190.0° hit obstacle at [9.03, 12.23949551642709]
+[2026-02-07 17:21:18] LIDAR scan completed.
+[2026-02-07 17:21:18] LIDAR detected 3 obstacle hits: [[9.03, 12.582], [9.03, 12.411], [9.03, 12.239]]
+[2026-02-07 17:21:18] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:18] Starting LIDAR scan at position [10.0, 12.4105326877143]
+[2026-02-07 17:21:18] Ray at angle 170.0° hit obstacle at [9.03, 12.58156985900151]
+[2026-02-07 17:21:18] Ray at angle 180.0° hit obstacle at [9.03, 12.4105326877143]
+[2026-02-07 17:21:18] Ray at angle 190.0° hit obstacle at [9.03, 12.23949551642709]
+[2026-02-07 17:21:18] LIDAR scan completed.
+[2026-02-07 17:21:18] Scan step begin at [10.0, 12.36947941894287]
+[2026-02-07 17:21:18] Starting LIDAR scan at position [10.0, 12.36947941894287]
+[2026-02-07 17:21:18] Ray at angle 170.0° hit obstacle at [9.03, 12.54051659023008]
+[2026-02-07 17:21:18] Ray at angle 180.0° hit obstacle at [9.03, 12.36947941894287]
+[2026-02-07 17:21:18] Ray at angle 190.0° hit obstacle at [9.03, 12.19844224765566]
+[2026-02-07 17:21:18] LIDAR scan completed.
+[2026-02-07 17:21:18] LIDAR detected 3 obstacle hits: [[9.03, 12.541], [9.03, 12.369], [9.03, 12.198]]
+[2026-02-07 17:21:18] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:18] Starting LIDAR scan at position [10.0, 12.36947941894287]
+[2026-02-07 17:21:18] Ray at angle 170.0° hit obstacle at [9.03, 12.54051659023008]
+[2026-02-07 17:21:18] Ray at angle 180.0° hit obstacle at [9.03, 12.36947941894287]
+[2026-02-07 17:21:18] Ray at angle 190.0° hit obstacle at [9.03, 12.19844224765566]
+[2026-02-07 17:21:18] LIDAR scan completed.
+[2026-02-07 17:21:18] Scan step begin at [10.0, 12.332531477048583]
+[2026-02-07 17:21:18] Starting LIDAR scan at position [10.0, 12.332531477048583]
+[2026-02-07 17:21:18] Ray at angle 170.0° hit obstacle at [9.03, 12.503568648335794]
+[2026-02-07 17:21:18] Ray at angle 180.0° hit obstacle at [9.03, 12.332531477048583]
+[2026-02-07 17:21:18] Ray at angle 190.0° hit obstacle at [9.03, 12.161494305761373]
+[2026-02-07 17:21:18] LIDAR scan completed.
+[2026-02-07 17:21:18] LIDAR detected 3 obstacle hits: [[9.03, 12.504], [9.03, 12.333], [9.03, 12.161]]
+[2026-02-07 17:21:18] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:19] Starting LIDAR scan at position [10.0, 12.332531477048583]
+[2026-02-07 17:21:19] Ray at angle 170.0° hit obstacle at [9.03, 12.503568648335794]
+[2026-02-07 17:21:19] Ray at angle 180.0° hit obstacle at [9.03, 12.332531477048583]
+[2026-02-07 17:21:19] Ray at angle 190.0° hit obstacle at [9.03, 12.161494305761373]
+[2026-02-07 17:21:19] LIDAR scan completed.
+[2026-02-07 17:21:19] Scan step begin at [10.0, 12.299278329343725]
+[2026-02-07 17:21:19] Starting LIDAR scan at position [10.0, 12.299278329343725]
+[2026-02-07 17:21:19] Ray at angle 170.0° hit obstacle at [9.03, 12.470315500630935]
+[2026-02-07 17:21:19] Ray at angle 180.0° hit obstacle at [9.03, 12.299278329343725]
+[2026-02-07 17:21:19] Ray at angle 190.0° hit obstacle at [9.03, 12.128241158056515]
+[2026-02-07 17:21:19] LIDAR scan completed.
+[2026-02-07 17:21:19] LIDAR detected 3 obstacle hits: [[9.03, 12.47], [9.03, 12.299], [9.03, 12.128]]
+[2026-02-07 17:21:19] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:19] Starting LIDAR scan at position [10.0, 12.299278329343725]
+[2026-02-07 17:21:19] Ray at angle 170.0° hit obstacle at [9.03, 12.470315500630935]
+[2026-02-07 17:21:19] Ray at angle 180.0° hit obstacle at [9.03, 12.299278329343725]
+[2026-02-07 17:21:19] Ray at angle 190.0° hit obstacle at [9.03, 12.128241158056515]
+[2026-02-07 17:21:19] LIDAR scan completed.
+[2026-02-07 17:21:19] Scan step begin at [10.0, 12.269350496409352]
+[2026-02-07 17:21:19] Starting LIDAR scan at position [10.0, 12.269350496409352]
+[2026-02-07 17:21:19] Ray at angle 170.0° hit obstacle at [9.03, 12.440387667696562]
+[2026-02-07 17:21:19] Ray at angle 180.0° hit obstacle at [9.03, 12.269350496409352]
+[2026-02-07 17:21:19] Ray at angle 190.0° hit obstacle at [9.03, 12.098313325122142]
+[2026-02-07 17:21:19] LIDAR scan completed.
+[2026-02-07 17:21:19] LIDAR detected 3 obstacle hits: [[9.03, 12.44], [9.03, 12.269], [9.03, 12.098]]
+[2026-02-07 17:21:19] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:19] Starting LIDAR scan at position [10.0, 12.269350496409352]
+[2026-02-07 17:21:19] Ray at angle 170.0° hit obstacle at [9.03, 12.440387667696562]
+[2026-02-07 17:21:19] Ray at angle 180.0° hit obstacle at [9.03, 12.269350496409352]
+[2026-02-07 17:21:19] Ray at angle 190.0° hit obstacle at [9.03, 12.098313325122142]
+[2026-02-07 17:21:19] LIDAR scan completed.
+[2026-02-07 17:21:19] Scan step begin at [10.0, 12.242415446768417]
+[2026-02-07 17:21:19] Starting LIDAR scan at position [10.0, 12.242415446768417]
+[2026-02-07 17:21:19] Ray at angle 170.0° hit obstacle at [9.03, 12.413452618055627]
+[2026-02-07 17:21:19] Ray at angle 180.0° hit obstacle at [9.03, 12.242415446768417]
+[2026-02-07 17:21:19] Ray at angle 190.0° hit obstacle at [9.03, 12.071378275481207]
+[2026-02-07 17:21:19] LIDAR scan completed.
+[2026-02-07 17:21:19] LIDAR detected 3 obstacle hits: [[9.03, 12.413], [9.03, 12.242], [9.03, 12.071]]
+[2026-02-07 17:21:19] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:19] Starting LIDAR scan at position [10.0, 12.242415446768417]
+[2026-02-07 17:21:19] Ray at angle 170.0° hit obstacle at [9.03, 12.413452618055627]
+[2026-02-07 17:21:19] Ray at angle 180.0° hit obstacle at [9.03, 12.242415446768417]
+[2026-02-07 17:21:19] Ray at angle 190.0° hit obstacle at [9.03, 12.071378275481207]
+[2026-02-07 17:21:19] LIDAR scan completed.
+[2026-02-07 17:21:19] Scan step begin at [10.0, 12.218173902091575]
+[2026-02-07 17:21:19] Starting LIDAR scan at position [10.0, 12.218173902091575]
+[2026-02-07 17:21:19] Ray at angle 170.0° hit obstacle at [9.03, 12.389211073378785]
+[2026-02-07 17:21:19] Ray at angle 180.0° hit obstacle at [9.03, 12.218173902091575]
+[2026-02-07 17:21:19] Ray at angle 190.0° hit obstacle at [9.03, 12.047136730804365]
+[2026-02-07 17:21:19] LIDAR scan completed.
+[2026-02-07 17:21:19] LIDAR detected 3 obstacle hits: [[9.03, 12.389], [9.03, 12.218], [9.03, 12.047]]
+[2026-02-07 17:21:19] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:20] Starting LIDAR scan at position [10.0, 12.218173902091575]
+[2026-02-07 17:21:20] Ray at angle 170.0° hit obstacle at [9.03, 12.389211073378785]
+[2026-02-07 17:21:20] Ray at angle 180.0° hit obstacle at [9.03, 12.218173902091575]
+[2026-02-07 17:21:20] Ray at angle 190.0° hit obstacle at [9.03, 12.047136730804365]
+[2026-02-07 17:21:20] LIDAR scan completed.
+[2026-02-07 17:21:20] Scan step begin at [10.0, 12.196356511882417]
+[2026-02-07 17:21:20] Starting LIDAR scan at position [10.0, 12.196356511882417]
+[2026-02-07 17:21:20] Ray at angle 170.0° hit obstacle at [9.03, 12.367393683169627]
+[2026-02-07 17:21:20] Ray at angle 180.0° hit obstacle at [9.03, 12.196356511882417]
+[2026-02-07 17:21:20] Ray at angle 190.0° hit obstacle at [9.03, 12.025319340595207]
+[2026-02-07 17:21:20] LIDAR scan completed.
+[2026-02-07 17:21:20] LIDAR detected 3 obstacle hits: [[9.03, 12.367], [9.03, 12.196], [9.03, 12.025]]
+[2026-02-07 17:21:20] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:20] Starting LIDAR scan at position [10.0, 12.196356511882417]
+[2026-02-07 17:21:20] Ray at angle 170.0° hit obstacle at [9.03, 12.367393683169627]
+[2026-02-07 17:21:20] Ray at angle 180.0° hit obstacle at [9.03, 12.196356511882417]
+[2026-02-07 17:21:20] Ray at angle 190.0° hit obstacle at [9.03, 12.025319340595207]
+[2026-02-07 17:21:20] LIDAR scan completed.
+[2026-02-07 17:21:20] Scan step begin at [10.0, 12.176720860694175]
+[2026-02-07 17:21:20] Starting LIDAR scan at position [10.0, 12.176720860694175]
+[2026-02-07 17:21:20] Ray at angle 170.0° hit obstacle at [9.03, 12.347758031981385]
+[2026-02-07 17:21:20] Ray at angle 180.0° hit obstacle at [9.03, 12.176720860694175]
+[2026-02-07 17:21:20] Ray at angle 190.0° hit obstacle at [9.03, 12.005683689406965]
+[2026-02-07 17:21:20] LIDAR scan completed.
+[2026-02-07 17:21:20] LIDAR detected 3 obstacle hits: [[9.03, 12.348], [9.03, 12.177], [9.03, 12.006]]
+[2026-02-07 17:21:20] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:20] Starting LIDAR scan at position [10.0, 12.176720860694175]
+[2026-02-07 17:21:20] Ray at angle 170.0° hit obstacle at [9.03, 12.347758031981385]
+[2026-02-07 17:21:20] Ray at angle 180.0° hit obstacle at [9.03, 12.176720860694175]
+[2026-02-07 17:21:20] Ray at angle 190.0° hit obstacle at [9.03, 12.005683689406965]
+[2026-02-07 17:21:20] LIDAR scan completed.
+[2026-02-07 17:21:20] Scan step begin at [10.0, 12.159048774624758]
+[2026-02-07 17:21:20] Starting LIDAR scan at position [10.0, 12.159048774624758]
+[2026-02-07 17:21:20] Ray at angle 170.0° hit obstacle at [9.03, 12.330085945911968]
+[2026-02-07 17:21:20] Ray at angle 180.0° hit obstacle at [9.03, 12.159048774624758]
+[2026-02-07 17:21:20] Ray at angle 190.0° hit obstacle at [9.03, 11.988011603337547]
+[2026-02-07 17:21:20] LIDAR scan completed.
+[2026-02-07 17:21:20] LIDAR detected 3 obstacle hits: [[9.03, 12.33], [9.03, 12.159], [9.03, 11.988]]
+[2026-02-07 17:21:20] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:20] Starting LIDAR scan at position [10.0, 12.159048774624758]
+[2026-02-07 17:21:20] Ray at angle 170.0° hit obstacle at [9.03, 12.330085945911968]
+[2026-02-07 17:21:20] Ray at angle 180.0° hit obstacle at [9.03, 12.159048774624758]
+[2026-02-07 17:21:20] Ray at angle 190.0° hit obstacle at [9.03, 11.988011603337547]
+[2026-02-07 17:21:20] LIDAR scan completed.
+[2026-02-07 17:21:20] Scan step begin at [10.0, 12.143143897162282]
+[2026-02-07 17:21:20] Starting LIDAR scan at position [10.0, 12.143143897162282]
+[2026-02-07 17:21:20] Ray at angle 170.0° hit obstacle at [9.03, 12.314181068449493]
+[2026-02-07 17:21:20] Ray at angle 180.0° hit obstacle at [9.03, 12.143143897162282]
+[2026-02-07 17:21:20] Ray at angle 190.0° hit obstacle at [9.03, 11.972106725875072]
+[2026-02-07 17:21:20] LIDAR scan completed.
+[2026-02-07 17:21:20] LIDAR detected 3 obstacle hits: [[9.03, 12.314], [9.03, 12.143], [9.03, 11.972]]
+[2026-02-07 17:21:20] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:21] Starting LIDAR scan at position [10.0, 12.143143897162282]
+[2026-02-07 17:21:21] Ray at angle 170.0° hit obstacle at [9.03, 12.314181068449493]
+[2026-02-07 17:21:21] Ray at angle 180.0° hit obstacle at [9.03, 12.143143897162282]
+[2026-02-07 17:21:21] Ray at angle 190.0° hit obstacle at [9.03, 11.972106725875072]
+[2026-02-07 17:21:21] LIDAR scan completed.
+[2026-02-07 17:21:21] Scan step begin at [10.0, 12.128829507446055]
+[2026-02-07 17:21:21] Starting LIDAR scan at position [10.0, 12.128829507446055]
+[2026-02-07 17:21:21] Ray at angle 170.0° hit obstacle at [9.03, 12.299866678733265]
+[2026-02-07 17:21:21] Ray at angle 180.0° hit obstacle at [9.03, 12.128829507446055]
+[2026-02-07 17:21:21] Ray at angle 190.0° hit obstacle at [9.03, 11.957792336158844]
+[2026-02-07 17:21:21] LIDAR scan completed.
+[2026-02-07 17:21:21] LIDAR detected 3 obstacle hits: [[9.03, 12.3], [9.03, 12.129], [9.03, 11.958]]
+[2026-02-07 17:21:21] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:21] Starting LIDAR scan at position [10.0, 12.128829507446055]
+[2026-02-07 17:21:21] Ray at angle 170.0° hit obstacle at [9.03, 12.299866678733265]
+[2026-02-07 17:21:21] Ray at angle 180.0° hit obstacle at [9.03, 12.128829507446055]
+[2026-02-07 17:21:21] Ray at angle 190.0° hit obstacle at [9.03, 11.957792336158844]
+[2026-02-07 17:21:21] LIDAR scan completed.
+[2026-02-07 17:21:21] Scan step begin at [10.0, 12.115946556701449]
+[2026-02-07 17:21:21] Starting LIDAR scan at position [10.0, 12.115946556701449]
+[2026-02-07 17:21:21] Ray at angle 170.0° hit obstacle at [9.03, 12.286983727988659]
+[2026-02-07 17:21:21] Ray at angle 180.0° hit obstacle at [9.03, 12.115946556701449]
+[2026-02-07 17:21:21] Ray at angle 190.0° hit obstacle at [9.03, 11.944909385414238]
+[2026-02-07 17:21:21] LIDAR scan completed.
+[2026-02-07 17:21:21] LIDAR detected 3 obstacle hits: [[9.03, 12.287], [9.03, 12.116], [9.03, 11.945]]
+[2026-02-07 17:21:21] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:21] Starting LIDAR scan at position [10.0, 12.115946556701449]
+[2026-02-07 17:21:21] Ray at angle 170.0° hit obstacle at [9.03, 12.286983727988659]
+[2026-02-07 17:21:21] Ray at angle 180.0° hit obstacle at [9.03, 12.115946556701449]
+[2026-02-07 17:21:21] Ray at angle 190.0° hit obstacle at [9.03, 11.944909385414238]
+[2026-02-07 17:21:21] LIDAR scan completed.
+[2026-02-07 17:21:21] Scan step begin at [10.0, 12.104351901031304]
+[2026-02-07 17:21:21] Starting LIDAR scan at position [10.0, 12.104351901031304]
+[2026-02-07 17:21:21] Ray at angle 170.0° hit obstacle at [9.03, 12.275389072318514]
+[2026-02-07 17:21:21] Ray at angle 180.0° hit obstacle at [9.03, 12.104351901031304]
+[2026-02-07 17:21:21] Ray at angle 190.0° hit obstacle at [9.03, 11.933314729744094]
+[2026-02-07 17:21:21] LIDAR scan completed.
+[2026-02-07 17:21:21] LIDAR detected 3 obstacle hits: [[9.03, 12.275], [9.03, 12.104], [9.03, 11.933]]
+[2026-02-07 17:21:21] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:21] Starting LIDAR scan at position [10.0, 12.104351901031304]
+[2026-02-07 17:21:21] Ray at angle 170.0° hit obstacle at [9.03, 12.275389072318514]
+[2026-02-07 17:21:21] Ray at angle 180.0° hit obstacle at [9.03, 12.104351901031304]
+[2026-02-07 17:21:21] Ray at angle 190.0° hit obstacle at [9.03, 11.933314729744094]
+[2026-02-07 17:21:21] LIDAR scan completed.
+[2026-02-07 17:21:21] Scan step begin at [10.0, 12.093916710928173]
+[2026-02-07 17:21:21] Starting LIDAR scan at position [10.0, 12.093916710928173]
+[2026-02-07 17:21:21] Ray at angle 170.0° hit obstacle at [9.03, 12.264953882215384]
+[2026-02-07 17:21:21] Ray at angle 180.0° hit obstacle at [9.03, 12.093916710928173]
+[2026-02-07 17:21:21] Ray at angle 190.0° hit obstacle at [9.03, 11.922879539640963]
+[2026-02-07 17:21:22] LIDAR scan completed.
+[2026-02-07 17:21:22] LIDAR detected 3 obstacle hits: [[9.03, 12.265], [9.03, 12.094], [9.03, 11.923]]
+[2026-02-07 17:21:22] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:22] Reached waypoint [10.0, 12.0]
+[2026-02-07 17:21:22] Moving to waypoint [10.0, 11.0]
+[2026-02-07 17:21:22] Starting LIDAR scan at position [10.0, 12.093916710928173]
+[2026-02-07 17:21:22] Ray at angle 170.0° hit obstacle at [9.03, 12.264953882215384]
+[2026-02-07 17:21:22] Ray at angle 180.0° hit obstacle at [9.03, 12.093916710928173]
+[2026-02-07 17:21:22] Ray at angle 190.0° hit obstacle at [9.03, 11.922879539640963]
+[2026-02-07 17:21:22] LIDAR scan completed.
+[2026-02-07 17:21:22] Scan step begin at [10.0, 12.043916710928173]
+[2026-02-07 17:21:22] Starting LIDAR scan at position [10.0, 12.043916710928173]
+[2026-02-07 17:21:22] Ray at angle 170.0° hit obstacle at [9.03, 12.214953882215383]
+[2026-02-07 17:21:22] Ray at angle 180.0° hit obstacle at [9.03, 12.043916710928173]
+[2026-02-07 17:21:22] Ray at angle 190.0° hit obstacle at [9.03, 11.872879539640962]
+[2026-02-07 17:21:22] LIDAR scan completed.
+[2026-02-07 17:21:22] LIDAR detected 3 obstacle hits: [[9.03, 12.215], [9.03, 12.044], [9.03, 11.873]]
+[2026-02-07 17:21:22] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:22] Starting LIDAR scan at position [10.0, 12.043916710928173]
+[2026-02-07 17:21:22] Ray at angle 170.0° hit obstacle at [9.03, 12.214953882215383]
+[2026-02-07 17:21:22] Ray at angle 180.0° hit obstacle at [9.03, 12.043916710928173]
+[2026-02-07 17:21:22] Ray at angle 190.0° hit obstacle at [9.03, 11.872879539640962]
+[2026-02-07 17:21:22] LIDAR scan completed.
+[2026-02-07 17:21:22] Scan step begin at [10.0, 11.993916710928172]
+[2026-02-07 17:21:22] Starting LIDAR scan at position [10.0, 11.993916710928172]
+[2026-02-07 17:21:22] Ray at angle 0.0° hit obstacle at [11.0, 11.993916710928172]
+[2026-02-07 17:21:22] Ray at angle 170.0° hit obstacle at [9.03, 12.164953882215382]
+[2026-02-07 17:21:22] Ray at angle 180.0° hit obstacle at [9.03, 11.993916710928172]
+[2026-02-07 17:21:22] Ray at angle 190.0° hit obstacle at [9.03, 11.822879539640962]
+[2026-02-07 17:21:22] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 17:21:22] LIDAR scan completed.
+[2026-02-07 17:21:22] LIDAR detected 5 obstacle hits: [[11.0, 11.994], [9.03, 12.165], [9.03, 11.994], [9.03, 11.823], [10.0, 11.0]]
+[2026-02-07 17:21:22] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:22] Starting LIDAR scan at position [10.0, 11.993916710928172]
+[2026-02-07 17:21:22] Ray at angle 0.0° hit obstacle at [11.0, 11.993916710928172]
+[2026-02-07 17:21:22] Ray at angle 170.0° hit obstacle at [9.03, 12.164953882215382]
+[2026-02-07 17:21:22] Ray at angle 180.0° hit obstacle at [9.03, 11.993916710928172]
+[2026-02-07 17:21:22] Ray at angle 190.0° hit obstacle at [9.03, 11.822879539640962]
+[2026-02-07 17:21:22] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 17:21:22] LIDAR scan completed.
+[2026-02-07 17:21:22] Waypoint [10. 11.] is blocked by new obstacle.
+[2026-02-07 17:21:22] Waypoint [10. 11.] became blocked by new obstacle during approach. Replanning.
+[2026-02-07 17:21:22] ===== DETOUR TRIGGERED =====
+[2026-02-07 17:21:22] Agent position: [10.0, 11.993916710928172]
+[2026-02-07 17:21:22] Goal position: [6.0, 4.0]
+[2026-02-07 17:21:22] Starting LIDAR scan at position [10.0, 11.993916710928172]
+[2026-02-07 17:21:22] Ray at angle 0.0° hit obstacle at [11.0, 11.993916710928172]
+[2026-02-07 17:21:22] Ray at angle 170.0° hit obstacle at [9.03, 12.164953882215382]
+[2026-02-07 17:21:22] Ray at angle 180.0° hit obstacle at [9.03, 11.993916710928172]
+[2026-02-07 17:21:22] Ray at angle 190.0° hit obstacle at [9.03, 11.822879539640962]
+[2026-02-07 17:21:22] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 17:21:22] LIDAR scan completed.
+[2026-02-07 17:21:22] LIDAR detected 5 obstacle hits: [[11.0, 11.994], [9.03, 12.165], [9.03, 11.994], [9.03, 11.823], [10.0, 11.0]]
+[2026-02-07 17:21:22] LIDAR hit count: 5
+[2026-02-07 17:21:22] LIDAR hit points: [[11.0, 11.994], [9.03, 12.165], [9.03, 11.994], [9.03, 11.823], [10.0, 11.0]]
+[2026-02-07 17:21:23] VLM snapshot saved at: logs/run_17:20:41_07-02/vlm_snapshot_17:20:41_07-02_005.png
+[2026-02-07 17:21:23] Querying VLM model: gpt-4o
+[2026-02-07 17:21:23] Calling VLM for detour (attempt 1)
+[2026-02-07 17:21:25] VLM returned 6 waypoints: [[10.0, 13.0], [10.0, 14.0], [10.0, 15.0], [9.0, 15.0], [8.0, 15.0], [7.0, 15.0]]
+[2026-02-07 17:21:25] Accept WP1: [10.0, 13.0]
+[2026-02-07 17:21:25] Accept WP2: [10.0, 14.0]
+[2026-02-07 17:21:25] Reject WP3: inside original obstacle [10.0, 15.0]
+[2026-02-07 17:21:25] Reject WP4: inside original obstacle [9.0, 15.0]
+[2026-02-07 17:21:25] Reject WP5: inside original obstacle [8.0, 15.0]
+[2026-02-07 17:21:25] Reject WP6: inside original obstacle [7.0, 15.0]
+[2026-02-07 17:21:25] Detour validation result: SUCCESS (2 waypoints accepted)
+[2026-02-07 17:21:26] Added 2 detour waypoints to live heatmap (yellow markers).
+[2026-02-07 17:21:26] ===== DETOUR END =====
+[2026-02-07 17:21:26] Moving to waypoint [10.0, 13.0]
+[2026-02-07 17:21:26] Starting LIDAR scan at position [10.0, 11.993916710928172]
+[2026-02-07 17:21:26] Ray at angle 0.0° hit obstacle at [11.0, 11.993916710928172]
+[2026-02-07 17:21:26] Ray at angle 170.0° hit obstacle at [9.03, 12.164953882215382]
+[2026-02-07 17:21:26] Ray at angle 180.0° hit obstacle at [9.03, 11.993916710928172]
+[2026-02-07 17:21:26] Ray at angle 190.0° hit obstacle at [9.03, 11.822879539640962]
+[2026-02-07 17:21:26] Ray at angle 270.0° hit obstacle at [10.0, 11.0]
+[2026-02-07 17:21:26] LIDAR scan completed.
+[2026-02-07 17:21:26] Scan step begin at [10.0, 12.043916710928173]
+[2026-02-07 17:21:26] Starting LIDAR scan at position [10.0, 12.043916710928173]
+[2026-02-07 17:21:26] Ray at angle 170.0° hit obstacle at [9.03, 12.214953882215383]
+[2026-02-07 17:21:26] Ray at angle 180.0° hit obstacle at [9.03, 12.043916710928173]
+[2026-02-07 17:21:26] Ray at angle 190.0° hit obstacle at [9.03, 11.872879539640962]
+[2026-02-07 17:21:26] LIDAR scan completed.
+[2026-02-07 17:21:26] LIDAR detected 3 obstacle hits: [[9.03, 12.215], [9.03, 12.044], [9.03, 11.873]]
+[2026-02-07 17:21:26] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:26] Starting LIDAR scan at position [10.0, 12.043916710928173]
+[2026-02-07 17:21:26] Ray at angle 170.0° hit obstacle at [9.03, 12.214953882215383]
+[2026-02-07 17:21:26] Ray at angle 180.0° hit obstacle at [9.03, 12.043916710928173]
+[2026-02-07 17:21:26] Ray at angle 190.0° hit obstacle at [9.03, 11.872879539640962]
+[2026-02-07 17:21:26] LIDAR scan completed.
+[2026-02-07 17:21:26] Scan step begin at [10.0, 12.093916710928173]
+[2026-02-07 17:21:26] Starting LIDAR scan at position [10.0, 12.093916710928173]
+[2026-02-07 17:21:26] Ray at angle 170.0° hit obstacle at [9.03, 12.264953882215384]
+[2026-02-07 17:21:26] Ray at angle 180.0° hit obstacle at [9.03, 12.093916710928173]
+[2026-02-07 17:21:26] Ray at angle 190.0° hit obstacle at [9.03, 11.922879539640963]
+[2026-02-07 17:21:26] LIDAR scan completed.
+[2026-02-07 17:21:26] LIDAR detected 3 obstacle hits: [[9.03, 12.265], [9.03, 12.094], [9.03, 11.923]]
+[2026-02-07 17:21:26] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:26] Starting LIDAR scan at position [10.0, 12.093916710928173]
+[2026-02-07 17:21:26] Ray at angle 170.0° hit obstacle at [9.03, 12.264953882215384]
+[2026-02-07 17:21:26] Ray at angle 180.0° hit obstacle at [9.03, 12.093916710928173]
+[2026-02-07 17:21:26] Ray at angle 190.0° hit obstacle at [9.03, 11.922879539640963]
+[2026-02-07 17:21:26] LIDAR scan completed.
+[2026-02-07 17:21:26] Scan step begin at [10.0, 12.143916710928174]
+[2026-02-07 17:21:26] Starting LIDAR scan at position [10.0, 12.143916710928174]
+[2026-02-07 17:21:26] Ray at angle 170.0° hit obstacle at [9.03, 12.314953882215384]
+[2026-02-07 17:21:26] Ray at angle 180.0° hit obstacle at [9.03, 12.143916710928174]
+[2026-02-07 17:21:26] Ray at angle 190.0° hit obstacle at [9.03, 11.972879539640964]
+[2026-02-07 17:21:26] LIDAR scan completed.
+[2026-02-07 17:21:26] LIDAR detected 3 obstacle hits: [[9.03, 12.315], [9.03, 12.144], [9.03, 11.973]]
+[2026-02-07 17:21:26] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:26] Starting LIDAR scan at position [10.0, 12.143916710928174]
+[2026-02-07 17:21:26] Ray at angle 170.0° hit obstacle at [9.03, 12.314953882215384]
+[2026-02-07 17:21:26] Ray at angle 180.0° hit obstacle at [9.03, 12.143916710928174]
+[2026-02-07 17:21:26] Ray at angle 190.0° hit obstacle at [9.03, 11.972879539640964]
+[2026-02-07 17:21:26] LIDAR scan completed.
+[2026-02-07 17:21:26] Scan step begin at [10.0, 12.193916710928175]
+[2026-02-07 17:21:26] Starting LIDAR scan at position [10.0, 12.193916710928175]
+[2026-02-07 17:21:26] Ray at angle 170.0° hit obstacle at [9.03, 12.364953882215385]
+[2026-02-07 17:21:26] Ray at angle 180.0° hit obstacle at [9.03, 12.193916710928175]
+[2026-02-07 17:21:26] Ray at angle 190.0° hit obstacle at [9.03, 12.022879539640964]
+[2026-02-07 17:21:26] LIDAR scan completed.
+[2026-02-07 17:21:26] LIDAR detected 3 obstacle hits: [[9.03, 12.365], [9.03, 12.194], [9.03, 12.023]]
+[2026-02-07 17:21:26] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:27] Starting LIDAR scan at position [10.0, 12.193916710928175]
+[2026-02-07 17:21:27] Ray at angle 170.0° hit obstacle at [9.03, 12.364953882215385]
+[2026-02-07 17:21:27] Ray at angle 180.0° hit obstacle at [9.03, 12.193916710928175]
+[2026-02-07 17:21:27] Ray at angle 190.0° hit obstacle at [9.03, 12.022879539640964]
+[2026-02-07 17:21:27] LIDAR scan completed.
+[2026-02-07 17:21:27] Scan step begin at [10.0, 12.243916710928175]
+[2026-02-07 17:21:27] Starting LIDAR scan at position [10.0, 12.243916710928175]
+[2026-02-07 17:21:27] Ray at angle 170.0° hit obstacle at [9.03, 12.414953882215386]
+[2026-02-07 17:21:27] Ray at angle 180.0° hit obstacle at [9.03, 12.243916710928175]
+[2026-02-07 17:21:27] Ray at angle 190.0° hit obstacle at [9.03, 12.072879539640965]
+[2026-02-07 17:21:27] LIDAR scan completed.
+[2026-02-07 17:21:27] LIDAR detected 3 obstacle hits: [[9.03, 12.415], [9.03, 12.244], [9.03, 12.073]]
+[2026-02-07 17:21:27] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:27] Starting LIDAR scan at position [10.0, 12.243916710928175]
+[2026-02-07 17:21:27] Ray at angle 170.0° hit obstacle at [9.03, 12.414953882215386]
+[2026-02-07 17:21:27] Ray at angle 180.0° hit obstacle at [9.03, 12.243916710928175]
+[2026-02-07 17:21:27] Ray at angle 190.0° hit obstacle at [9.03, 12.072879539640965]
+[2026-02-07 17:21:27] LIDAR scan completed.
+[2026-02-07 17:21:27] Scan step begin at [10.0, 12.293916710928176]
+[2026-02-07 17:21:27] Starting LIDAR scan at position [10.0, 12.293916710928176]
+[2026-02-07 17:21:27] Ray at angle 170.0° hit obstacle at [9.03, 12.464953882215386]
+[2026-02-07 17:21:27] Ray at angle 180.0° hit obstacle at [9.03, 12.293916710928176]
+[2026-02-07 17:21:27] Ray at angle 190.0° hit obstacle at [9.03, 12.122879539640966]
+[2026-02-07 17:21:27] LIDAR scan completed.
+[2026-02-07 17:21:27] LIDAR detected 3 obstacle hits: [[9.03, 12.465], [9.03, 12.294], [9.03, 12.123]]
+[2026-02-07 17:21:27] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:27] Starting LIDAR scan at position [10.0, 12.293916710928176]
+[2026-02-07 17:21:27] Ray at angle 170.0° hit obstacle at [9.03, 12.464953882215386]
+[2026-02-07 17:21:27] Ray at angle 180.0° hit obstacle at [9.03, 12.293916710928176]
+[2026-02-07 17:21:27] Ray at angle 190.0° hit obstacle at [9.03, 12.122879539640966]
+[2026-02-07 17:21:27] LIDAR scan completed.
+[2026-02-07 17:21:27] Scan step begin at [10.0, 12.343916710928177]
+[2026-02-07 17:21:27] Starting LIDAR scan at position [10.0, 12.343916710928177]
+[2026-02-07 17:21:27] Ray at angle 170.0° hit obstacle at [9.03, 12.514953882215387]
+[2026-02-07 17:21:27] Ray at angle 180.0° hit obstacle at [9.03, 12.343916710928177]
+[2026-02-07 17:21:27] Ray at angle 190.0° hit obstacle at [9.03, 12.172879539640967]
+[2026-02-07 17:21:27] LIDAR scan completed.
+[2026-02-07 17:21:27] LIDAR detected 3 obstacle hits: [[9.03, 12.515], [9.03, 12.344], [9.03, 12.173]]
+[2026-02-07 17:21:27] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:27] Starting LIDAR scan at position [10.0, 12.343916710928177]
+[2026-02-07 17:21:27] Ray at angle 170.0° hit obstacle at [9.03, 12.514953882215387]
+[2026-02-07 17:21:27] Ray at angle 180.0° hit obstacle at [9.03, 12.343916710928177]
+[2026-02-07 17:21:27] Ray at angle 190.0° hit obstacle at [9.03, 12.172879539640967]
+[2026-02-07 17:21:27] LIDAR scan completed.
+[2026-02-07 17:21:27] Scan step begin at [10.0, 12.393916710928178]
+[2026-02-07 17:21:27] Starting LIDAR scan at position [10.0, 12.393916710928178]
+[2026-02-07 17:21:27] Ray at angle 170.0° hit obstacle at [9.03, 12.564953882215388]
+[2026-02-07 17:21:27] Ray at angle 180.0° hit obstacle at [9.03, 12.393916710928178]
+[2026-02-07 17:21:27] Ray at angle 190.0° hit obstacle at [9.03, 12.222879539640967]
+[2026-02-07 17:21:28] LIDAR scan completed.
+[2026-02-07 17:21:28] LIDAR detected 3 obstacle hits: [[9.03, 12.565], [9.03, 12.394], [9.03, 12.223]]
+[2026-02-07 17:21:28] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:28] Starting LIDAR scan at position [10.0, 12.393916710928178]
+[2026-02-07 17:21:28] Ray at angle 170.0° hit obstacle at [9.03, 12.564953882215388]
+[2026-02-07 17:21:28] Ray at angle 180.0° hit obstacle at [9.03, 12.393916710928178]
+[2026-02-07 17:21:28] Ray at angle 190.0° hit obstacle at [9.03, 12.222879539640967]
+[2026-02-07 17:21:28] LIDAR scan completed.
+[2026-02-07 17:21:28] Scan step begin at [10.0, 12.443916710928178]
+[2026-02-07 17:21:28] Starting LIDAR scan at position [10.0, 12.443916710928178]
+[2026-02-07 17:21:28] Ray at angle 170.0° hit obstacle at [9.03, 12.614953882215389]
+[2026-02-07 17:21:28] Ray at angle 180.0° hit obstacle at [9.03, 12.443916710928178]
+[2026-02-07 17:21:28] Ray at angle 190.0° hit obstacle at [9.03, 12.272879539640968]
+[2026-02-07 17:21:28] LIDAR scan completed.
+[2026-02-07 17:21:28] LIDAR detected 3 obstacle hits: [[9.03, 12.615], [9.03, 12.444], [9.03, 12.273]]
+[2026-02-07 17:21:28] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:28] Starting LIDAR scan at position [10.0, 12.443916710928178]
+[2026-02-07 17:21:28] Ray at angle 170.0° hit obstacle at [9.03, 12.614953882215389]
+[2026-02-07 17:21:28] Ray at angle 180.0° hit obstacle at [9.03, 12.443916710928178]
+[2026-02-07 17:21:28] Ray at angle 190.0° hit obstacle at [9.03, 12.272879539640968]
+[2026-02-07 17:21:28] LIDAR scan completed.
+[2026-02-07 17:21:28] Scan step begin at [10.0, 12.493916710928179]
+[2026-02-07 17:21:28] Starting LIDAR scan at position [10.0, 12.493916710928179]
+[2026-02-07 17:21:28] Ray at angle 170.0° hit obstacle at [9.03, 12.66495388221539]
+[2026-02-07 17:21:28] Ray at angle 180.0° hit obstacle at [9.03, 12.493916710928179]
+[2026-02-07 17:21:28] Ray at angle 190.0° hit obstacle at [9.03, 12.322879539640969]
+[2026-02-07 17:21:28] LIDAR scan completed.
+[2026-02-07 17:21:28] LIDAR detected 3 obstacle hits: [[9.03, 12.665], [9.03, 12.494], [9.03, 12.323]]
+[2026-02-07 17:21:28] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:28] Starting LIDAR scan at position [10.0, 12.493916710928179]
+[2026-02-07 17:21:28] Ray at angle 170.0° hit obstacle at [9.03, 12.66495388221539]
+[2026-02-07 17:21:28] Ray at angle 180.0° hit obstacle at [9.03, 12.493916710928179]
+[2026-02-07 17:21:28] Ray at angle 190.0° hit obstacle at [9.03, 12.322879539640969]
+[2026-02-07 17:21:28] LIDAR scan completed.
+[2026-02-07 17:21:28] Scan step begin at [10.0, 12.54391671092818]
+[2026-02-07 17:21:28] Starting LIDAR scan at position [10.0, 12.54391671092818]
+[2026-02-07 17:21:28] Ray at angle 170.0° hit obstacle at [9.03, 12.71495388221539]
+[2026-02-07 17:21:28] Ray at angle 180.0° hit obstacle at [9.03, 12.54391671092818]
+[2026-02-07 17:21:28] Ray at angle 190.0° hit obstacle at [9.03, 12.37287953964097]
+[2026-02-07 17:21:28] LIDAR scan completed.
+[2026-02-07 17:21:28] LIDAR detected 3 obstacle hits: [[9.03, 12.715], [9.03, 12.544], [9.03, 12.373]]
+[2026-02-07 17:21:28] Scan step end: obstacle_detected=True
+[2026-02-07 17:21:28] Starting LIDAR scan at position [10.0, 12.54391671092818]
+[2026-02-07 17:21:28] Ray at angle 170.0° hit obstacle at [9.03, 12.71495388221539]
+[2026-02-07 17:21:28] Ray at angle 180.0° hit obstacle at [9.03, 12.54391671092818]
+[2026-02-07 17:21:28] Ray at angle 190.0° hit obstacle at [9.03, 12.37287953964097]
+[2026-02-07 17:21:29] LIDAR scan completed.
+[2026-02-07 17:21:29] Scan step begin at [10.0, 12.589525039835362]
+[2026-02-07 17:21:29] Starting LIDAR scan at position [10.0, 12.589525039835362]
+[2026-02-07 17:21:29] Ray at angle 170.0° hit obstacle at [9.03, 12.760562211122572]
+[2026-02-07 17:21:29] Ray at angle 180.0° hit obstacle at [9.03, 12.589525039835362]
+[2026-02-07 17:21:29] Ray at angle 190.0° hit obstacle at [9.03, 12.418487868548151]
+[2026-02-07 17:21:29] LIDAR scan completed.
+[2026-02-07 17:21:29] LIDAR detected 3 obstacle hits: [[9.03, 12.761], [9.03, 12.59], [9.03, 12.418]]
+[2026-02-07 17:21:29] Scan step end: obstacle_detected=True

@@ -1,0 +1,67 @@
+[2026-01-30 14:26:52] Run directory created at logs/run_14:26:52_30-01
+[2026-01-30 14:26:52] Environment initialized with agent at (11.5, 10.5) and goal at (11.5, 7.5)
+[2026-01-30 14:26:52] Starting navigation from [11.5, 10.5] to goal at [11.5, 7.5]
+[2026-01-30 14:26:52] Scan step begin at [11.5, 10.5]
+[2026-01-30 14:26:52] Starting LIDAR scan at position [11.5, 10.5]
+[2026-01-30 14:26:53] LIDAR scan completed.
+[2026-01-30 14:26:53] LIDAR detected 0 obstacle hits: []
+[2026-01-30 14:26:53] Scan step end: obstacle_detected=False
+[2026-01-30 14:26:53] Scan step begin at [11.5, 10.4]
+[2026-01-30 14:26:53] Starting LIDAR scan at position [11.5, 10.4]
+[2026-01-30 14:26:53] LIDAR scan completed.
+[2026-01-30 14:26:53] LIDAR detected 0 obstacle hits: []
+[2026-01-30 14:26:53] Scan step end: obstacle_detected=False
+[2026-01-30 14:26:53] Scan step begin at [11.5, 10.3]
+[2026-01-30 14:26:53] Starting LIDAR scan at position [11.5, 10.3]
+[2026-01-30 14:26:53] LIDAR scan completed.
+[2026-01-30 14:26:53] LIDAR detected 0 obstacle hits: []
+[2026-01-30 14:26:53] Scan step end: obstacle_detected=False
+[2026-01-30 14:26:53] Scan step begin at [11.5, 10.200000000000001]
+[2026-01-30 14:26:53] Starting LIDAR scan at position [11.5, 10.200000000000001]
+[2026-01-30 14:26:53] LIDAR scan completed.
+[2026-01-30 14:26:53] LIDAR detected 0 obstacle hits: []
+[2026-01-30 14:26:53] Scan step end: obstacle_detected=False
+[2026-01-30 14:26:53] Scan step begin at [11.5, 10.100000000000001]
+[2026-01-30 14:26:53] Starting LIDAR scan at position [11.5, 10.100000000000001]
+[2026-01-30 14:26:53] LIDAR scan completed.
+[2026-01-30 14:26:53] LIDAR detected 0 obstacle hits: []
+[2026-01-30 14:26:53] Scan step end: obstacle_detected=False
+[2026-01-30 14:26:53] Scan step begin at [11.5, 10.000000000000002]
+[2026-01-30 14:26:53] Starting LIDAR scan at position [11.5, 10.000000000000002]
+[2026-01-30 14:26:54] LIDAR scan completed.
+[2026-01-30 14:26:54] LIDAR detected 0 obstacle hits: []
+[2026-01-30 14:26:54] Scan step end: obstacle_detected=False
+[2026-01-30 14:26:54] Scan step begin at [11.5, 9.900000000000002]
+[2026-01-30 14:26:54] Starting LIDAR scan at position [11.5, 9.900000000000002]
+[2026-01-30 14:26:54] LIDAR scan completed.
+[2026-01-30 14:26:54] LIDAR detected 0 obstacle hits: []
+[2026-01-30 14:26:54] Scan step end: obstacle_detected=False
+[2026-01-30 14:26:54] Scan step begin at [11.5, 9.800000000000002]
+[2026-01-30 14:26:54] Starting LIDAR scan at position [11.5, 9.800000000000002]
+[2026-01-30 14:26:54] LIDAR scan completed.
+[2026-01-30 14:26:54] LIDAR detected 0 obstacle hits: []
+[2026-01-30 14:26:54] Scan step end: obstacle_detected=False
+[2026-01-30 14:26:54] Scan step begin at [11.5, 9.700000000000003]
+[2026-01-30 14:26:54] Starting LIDAR scan at position [11.5, 9.700000000000003]
+[2026-01-30 14:26:54] LIDAR scan completed.
+[2026-01-30 14:26:54] LIDAR detected 0 obstacle hits: []
+[2026-01-30 14:26:54] Scan step end: obstacle_detected=False
+[2026-01-30 14:26:54] Scan step begin at [11.5, 9.600000000000003]
+[2026-01-30 14:26:54] Starting LIDAR scan at position [11.5, 9.600000000000003]
+[2026-01-30 14:26:54] LIDAR scan completed.
+[2026-01-30 14:26:54] LIDAR detected 0 obstacle hits: []
+[2026-01-30 14:26:54] Scan step end: obstacle_detected=False
+[2026-01-30 14:26:54] Scan step begin at [11.5, 9.500000000000004]
+[2026-01-30 14:26:54] Starting LIDAR scan at position [11.5, 9.500000000000004]
+[2026-01-30 14:26:55] Ray hit at [11.417126319067021, 9.03]
+[2026-01-30 14:26:55] Ray hit at [11.417126319067021, 9.03]
+[2026-01-30 14:26:55] Ray at angle 260.0° hit obstacle at [11.417126319067021, 9.03]
+[2026-01-30 14:26:55] Ray hit at [11.5, 9.03]
+[2026-01-30 14:26:55] Ray hit at [11.5, 9.03]
+[2026-01-30 14:26:55] Ray at angle 270.0° hit obstacle at [11.5, 9.03]
+[2026-01-30 14:26:55] Ray hit at [11.582873680932979, 9.03]
+[2026-01-30 14:26:55] Ray hit at [11.582873680932979, 9.03]
+[2026-01-30 14:26:55] Ray at angle 280.0° hit obstacle at [11.582873680932979, 9.03]
+[2026-01-30 14:26:55] LIDAR scan completed.
+[2026-01-30 14:26:55] LIDAR detected 3 obstacle hits: [[11.417, 9.03], [11.5, 9.03], [11.583, 9.03]]
+[2026-01-30 14:26:55] Scan step end: obstacle_detected=True

@@ -1,0 +1,386 @@
+[2026-02-12 17:39:38] Run directory created at logs/run_17:39:38_12-02
+[2026-02-12 17:39:39] Environment initialized with agent at (3.0, 4.0) and goal at (11.0, 4.0)
+[2026-02-12 17:39:39] Starting navigation from [3.0, 4.0] to goal at [11.0, 4.0]
+[2026-02-12 17:39:39] Scan step begin at [3.0, 4.0]
+[2026-02-12 17:39:39] Starting LIDAR scan at position [3.0, 4.0]
+[2026-02-12 17:39:39] Ray 90.0° hit at [3.0, 5.0]
+[2026-02-12 17:39:39] Ray 270.0° hit at [3.0, 3.0]
+[2026-02-12 17:39:39] LIDAR scan completed.
+[2026-02-12 17:39:39] LIDAR detected 2 obstacle hits: [[3.0, 5.0], [3.0, 3.0]]
+[2026-02-12 17:39:39] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:39] Obstacle detected near [3.0, 5.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-12 17:39:39] ===== DETOUR TRIGGERED =====
+[2026-02-12 17:39:39] Agent position: [3.0, 4.0]
+[2026-02-12 17:39:39] Goal position: [11.0, 4.0]
+[2026-02-12 17:39:39] Starting LIDAR scan at position [3.0, 4.0]
+[2026-02-12 17:39:39] Ray 90.0° hit at [3.0, 5.0]
+[2026-02-12 17:39:39] Ray 270.0° hit at [3.0, 3.0]
+[2026-02-12 17:39:39] LIDAR scan completed.
+[2026-02-12 17:39:39] LIDAR detected 2 obstacle hits: [[3.0, 5.0], [3.0, 3.0]]
+[2026-02-12 17:39:39] LIDAR hit count: 2
+[2026-02-12 17:39:39] LIDAR hit points: [[3.0, 5.0], [3.0, 3.0]]
+[2026-02-12 17:39:39] Total yellow waypoints in history: 0
+[2026-02-12 17:39:39] Accumulated LIDAR hits: 2
+[2026-02-12 17:39:39] Snapshot saved at: logs/run_17:39:38_12-02/vlm_snapshot_17:39:38_12-02_001.png
+[2026-02-12 17:39:39] Using Local A* planner for detour
+[2026-02-12 17:39:39] Calling VLM for detour (attempt 1)
+[2026-02-12 17:39:39] Local A* planner: Planning detour around LIDAR obstacles
+[2026-02-12 17:39:39] Agent: (np.float64(3.0), np.float64(4.0)), Final goal: (11.0, 4.0)
+[2026-02-12 17:39:39] LIDAR hits: 2, Yellow waypoints: 0
+[2026-02-12 17:39:39] Local A* returned 4 waypoints:
+[2026-02-12 17:39:39]   Waypoint 1: (3.56, 4.00)
+[2026-02-12 17:39:39]   Waypoint 2: (4.12, 4.00)
+[2026-02-12 17:39:39]   Waypoint 3: (4.68, 4.00)
+[2026-02-12 17:39:39]   Waypoint 4: (5.24, 4.00)
+[2026-02-12 17:39:39] A* returned 4 waypoints: [[3.56, 4.0], [4.12, 4.0], [4.68, 4.0], [5.24, 4.0]]
+[2026-02-12 17:39:39] Yellow waypoint validation PASSED: No yellow history to check
+[2026-02-12 17:39:39] Progress validation PASSED: Waypoints make acceptable progress (tolerance=1.0x, retry=0)
+[2026-02-12 17:39:39] Accept WP1: [3.56, 4.0]
+[2026-02-12 17:39:39] Accept WP2: [4.12, 4.0]
+[2026-02-12 17:39:39] Accept WP3: [4.680000000000001, 4.0]
+[2026-02-12 17:39:39] Accept WP4: [5.24, 4.0]
+[2026-02-12 17:39:39] Detour validation result: SUCCESS (4 waypoints accepted)
+[2026-02-12 17:39:39] Added 4 detour waypoints to live heatmap (yellow markers).
+[2026-02-12 17:39:39] ===== DETOUR END =====
+[2026-02-12 17:39:39] Moving to waypoint [3.56, 4.0]
+[2026-02-12 17:39:39] Starting LIDAR scan at position [3.0, 4.0]
+[2026-02-12 17:39:39] Ray 90.0° hit at [3.0, 5.0]
+[2026-02-12 17:39:39] Ray 270.0° hit at [3.0, 3.0]
+[2026-02-12 17:39:39] LIDAR scan completed.
+[2026-02-12 17:39:39] Scan step begin at [3.05, 4.0]
+[2026-02-12 17:39:39] Starting LIDAR scan at position [3.05, 4.0]
+[2026-02-12 17:39:39] LIDAR scan completed.
+[2026-02-12 17:39:39] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:39] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:39] Starting LIDAR scan at position [3.05, 4.0]
+[2026-02-12 17:39:39] LIDAR scan completed.
+[2026-02-12 17:39:39] Scan step begin at [3.0999999999999996, 4.0]
+[2026-02-12 17:39:39] Starting LIDAR scan at position [3.0999999999999996, 4.0]
+[2026-02-12 17:39:39] LIDAR scan completed.
+[2026-02-12 17:39:39] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:39] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.0999999999999996, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] Scan step begin at [3.146, 4.0]
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.146, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:40] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.146, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] Scan step begin at [3.1874, 4.0]
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.1874, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:40] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:40] Reached waypoint [3.56, 4.0]
+[2026-02-12 17:39:40] Moving to waypoint [4.12, 4.0]
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.1874, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] Scan step begin at [3.2373999999999996, 4.0]
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.2373999999999996, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:40] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.2373999999999996, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] Scan step begin at [3.2873999999999994, 4.0]
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.2873999999999994, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:40] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.2873999999999994, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] Scan step begin at [3.3373999999999993, 4.0]
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.3373999999999993, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:40] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.3373999999999993, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] Scan step begin at [3.387399999999999, 4.0]
+[2026-02-12 17:39:40] Starting LIDAR scan at position [3.387399999999999, 4.0]
+[2026-02-12 17:39:40] LIDAR scan completed.
+[2026-02-12 17:39:40] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:40] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.387399999999999, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] Scan step begin at [3.437399999999999, 4.0]
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.437399999999999, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:41] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.437399999999999, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] Scan step begin at [3.4873999999999987, 4.0]
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.4873999999999987, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:41] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.4873999999999987, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] Scan step begin at [3.5373999999999985, 4.0]
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.5373999999999985, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:41] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.5373999999999985, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] Scan step begin at [3.5873999999999984, 4.0]
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.5873999999999984, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:41] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.5873999999999984, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] Scan step begin at [3.637399999999998, 4.0]
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.637399999999998, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:41] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.637399999999998, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] Scan step begin at [3.6856599999999986, 4.0]
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.6856599999999986, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:41] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.6856599999999986, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] Scan step begin at [3.7290939999999986, 4.0]
+[2026-02-12 17:39:41] Starting LIDAR scan at position [3.7290939999999986, 4.0]
+[2026-02-12 17:39:41] LIDAR scan completed.
+[2026-02-12 17:39:41] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:41] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:42] Reached waypoint [4.12, 4.0]
+[2026-02-12 17:39:42] Moving to waypoint [4.680000000000001, 4.0]
+[2026-02-12 17:39:42] Starting LIDAR scan at position [3.7290939999999986, 4.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] Scan step begin at [3.7790939999999984, 4.0]
+[2026-02-12 17:39:42] Starting LIDAR scan at position [3.7790939999999984, 4.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:42] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:42] Starting LIDAR scan at position [3.7790939999999984, 4.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] Scan step begin at [3.829093999999998, 4.0]
+[2026-02-12 17:39:42] Starting LIDAR scan at position [3.829093999999998, 4.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:42] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:42] Starting LIDAR scan at position [3.829093999999998, 4.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] Scan step begin at [3.879093999999998, 4.0]
+[2026-02-12 17:39:42] Starting LIDAR scan at position [3.879093999999998, 4.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:42] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:42] Starting LIDAR scan at position [3.879093999999998, 4.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] Scan step begin at [3.929093999999998, 4.0]
+[2026-02-12 17:39:42] Starting LIDAR scan at position [3.929093999999998, 4.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:42] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:42] Starting LIDAR scan at position [3.929093999999998, 4.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] Scan step begin at [3.9790939999999977, 4.0]
+[2026-02-12 17:39:42] Starting LIDAR scan at position [3.9790939999999977, 4.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] LIDAR detected 0 obstacle hits: []
+[2026-02-12 17:39:42] Scan step end: obstacle_detected=False
+[2026-02-12 17:39:42] Starting LIDAR scan at position [3.9790939999999977, 4.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] Scan step begin at [4.029093999999998, 4.0]
+[2026-02-12 17:39:42] Starting LIDAR scan at position [4.029093999999998, 4.0]
+[2026-02-12 17:39:42] Ray 270.0° hit at [4.029093999999998, 3.0]
+[2026-02-12 17:39:42] LIDAR scan completed.
+[2026-02-12 17:39:42] LIDAR detected 1 obstacle hits: [[4.029, 3.0]]
+[2026-02-12 17:39:42] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:42] Starting LIDAR scan at position [4.029093999999998, 4.0]
+[2026-02-12 17:39:42] Ray 270.0° hit at [4.029093999999998, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] Scan step begin at [4.079093999999998, 4.0]
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.079093999999998, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.079093999999998, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] LIDAR detected 1 obstacle hits: [[4.079, 3.0]]
+[2026-02-12 17:39:43] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.079093999999998, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.079093999999998, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] Scan step begin at [4.129093999999998, 4.0]
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.129093999999998, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.129093999999998, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] LIDAR detected 1 obstacle hits: [[4.129, 3.0]]
+[2026-02-12 17:39:43] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.129093999999998, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.129093999999998, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] Scan step begin at [4.179093999999997, 4.0]
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.179093999999997, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.179093999999997, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] LIDAR detected 1 obstacle hits: [[4.179, 3.0]]
+[2026-02-12 17:39:43] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.179093999999997, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.179093999999997, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] Scan step begin at [4.229093999999997, 4.0]
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.229093999999997, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.229093999999997, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] LIDAR detected 1 obstacle hits: [[4.229, 3.0]]
+[2026-02-12 17:39:43] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.229093999999997, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.229093999999997, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] Scan step begin at [4.274184599999997, 4.0]
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.274184599999997, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.274184599999997, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] LIDAR detected 1 obstacle hits: [[4.274, 3.0]]
+[2026-02-12 17:39:43] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.274184599999997, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.274184599999997, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] Scan step begin at [4.314766139999998, 4.0]
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.314766139999998, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.314766139999998, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] LIDAR detected 1 obstacle hits: [[4.315, 3.0]]
+[2026-02-12 17:39:43] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:43] Reached waypoint [4.680000000000001, 4.0]
+[2026-02-12 17:39:43] Moving to waypoint [5.24, 4.0]
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.314766139999998, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.314766139999998, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] Scan step begin at [4.364766139999998, 4.0]
+[2026-02-12 17:39:43] Starting LIDAR scan at position [4.364766139999998, 4.0]
+[2026-02-12 17:39:43] Ray 270.0° hit at [4.364766139999998, 3.0]
+[2026-02-12 17:39:43] LIDAR scan completed.
+[2026-02-12 17:39:43] LIDAR detected 1 obstacle hits: [[4.365, 3.0]]
+[2026-02-12 17:39:43] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.364766139999998, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.364766139999998, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] Scan step begin at [4.414766139999998, 4.0]
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.414766139999998, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.414766139999998, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] LIDAR detected 1 obstacle hits: [[4.415, 3.0]]
+[2026-02-12 17:39:44] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.414766139999998, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.414766139999998, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] Scan step begin at [4.464766139999997, 4.0]
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.464766139999997, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.464766139999997, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] LIDAR detected 1 obstacle hits: [[4.465, 3.0]]
+[2026-02-12 17:39:44] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.464766139999997, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.464766139999997, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] Scan step begin at [4.514766139999997, 4.0]
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.514766139999997, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.514766139999997, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] LIDAR detected 1 obstacle hits: [[4.515, 3.0]]
+[2026-02-12 17:39:44] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.514766139999997, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.514766139999997, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] Scan step begin at [4.564766139999997, 4.0]
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.564766139999997, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.564766139999997, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] LIDAR detected 1 obstacle hits: [[4.565, 3.0]]
+[2026-02-12 17:39:44] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.564766139999997, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.564766139999997, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] Scan step begin at [4.614766139999997, 4.0]
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.614766139999997, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.614766139999997, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] LIDAR detected 1 obstacle hits: [[4.615, 3.0]]
+[2026-02-12 17:39:44] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.614766139999997, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.614766139999997, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] Scan step begin at [4.664766139999997, 4.0]
+[2026-02-12 17:39:44] Starting LIDAR scan at position [4.664766139999997, 4.0]
+[2026-02-12 17:39:44] Ray 270.0° hit at [4.664766139999997, 3.0]
+[2026-02-12 17:39:44] LIDAR scan completed.
+[2026-02-12 17:39:44] LIDAR detected 1 obstacle hits: [[4.665, 3.0]]
+[2026-02-12 17:39:44] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:45] Starting LIDAR scan at position [4.664766139999997, 4.0]
+[2026-02-12 17:39:45] Ray 270.0° hit at [4.664766139999997, 3.0]
+[2026-02-12 17:39:45] LIDAR scan completed.
+[2026-02-12 17:39:45] Scan step begin at [4.7147661399999965, 4.0]
+[2026-02-12 17:39:45] Starting LIDAR scan at position [4.7147661399999965, 4.0]
+[2026-02-12 17:39:45] Ray 270.0° hit at [4.7147661399999965, 3.0]
+[2026-02-12 17:39:45] LIDAR scan completed.
+[2026-02-12 17:39:45] LIDAR detected 1 obstacle hits: [[4.715, 3.0]]
+[2026-02-12 17:39:45] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:45] Starting LIDAR scan at position [4.7147661399999965, 4.0]
+[2026-02-12 17:39:45] Ray 270.0° hit at [4.7147661399999965, 3.0]
+[2026-02-12 17:39:45] LIDAR scan completed.
+[2026-02-12 17:39:45] Scan step begin at [4.764766139999996, 4.0]
+[2026-02-12 17:39:45] Starting LIDAR scan at position [4.764766139999996, 4.0]
+[2026-02-12 17:39:45] Ray 270.0° hit at [4.764766139999996, 3.0]
+[2026-02-12 17:39:45] LIDAR scan completed.
+[2026-02-12 17:39:45] LIDAR detected 1 obstacle hits: [[4.765, 3.0]]
+[2026-02-12 17:39:45] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:45] Starting LIDAR scan at position [4.764766139999996, 4.0]
+[2026-02-12 17:39:45] Ray 270.0° hit at [4.764766139999996, 3.0]
+[2026-02-12 17:39:45] LIDAR scan completed.
+[2026-02-12 17:39:45] Scan step begin at [4.812289525999997, 4.0]
+[2026-02-12 17:39:45] Starting LIDAR scan at position [4.812289525999997, 4.0]
+[2026-02-12 17:39:45] Ray 270.0° hit at [4.812289525999997, 3.0]
+[2026-02-12 17:39:45] LIDAR scan completed.
+[2026-02-12 17:39:45] LIDAR detected 1 obstacle hits: [[4.812, 3.0]]
+[2026-02-12 17:39:45] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:45] Starting LIDAR scan at position [4.812289525999997, 4.0]
+[2026-02-12 17:39:45] Ray 270.0° hit at [4.812289525999997, 3.0]
+[2026-02-12 17:39:45] LIDAR scan completed.
+[2026-02-12 17:39:45] Scan step begin at [4.855060573399998, 4.0]
+[2026-02-12 17:39:45] Starting LIDAR scan at position [4.855060573399998, 4.0]
+[2026-02-12 17:39:45] Ray 270.0° hit at [4.855060573399998, 3.0]
+[2026-02-12 17:39:45] LIDAR scan completed.
+[2026-02-12 17:39:45] LIDAR detected 1 obstacle hits: [[4.855, 3.0]]
+[2026-02-12 17:39:45] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:45] Reached waypoint [5.24, 4.0]
+[2026-02-12 17:39:45] Scan step begin at [4.855060573399998, 4.0]
+[2026-02-12 17:39:45] Starting LIDAR scan at position [4.855060573399998, 4.0]
+[2026-02-12 17:39:45] Ray 270.0° hit at [4.855060573399998, 3.0]
+[2026-02-12 17:39:45] LIDAR scan completed.
+[2026-02-12 17:39:45] LIDAR detected 1 obstacle hits: [[4.855, 3.0]]
+[2026-02-12 17:39:45] Scan step end: obstacle_detected=True
+[2026-02-12 17:39:45] Obstacle detected near [4.86, 3.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-12 17:39:45] ===== DETOUR TRIGGERED =====
+[2026-02-12 17:39:45] Agent position: [4.855060573399998, 4.0]
+[2026-02-12 17:39:45] Goal position: [11.0, 4.0]
+[2026-02-12 17:39:45] Starting LIDAR scan at position [4.855060573399998, 4.0]
+[2026-02-12 17:39:45] Ray 270.0° hit at [4.855060573399998, 3.0]
+[2026-02-12 17:39:45] LIDAR scan completed.
+[2026-02-12 17:39:45] LIDAR detected 1 obstacle hits: [[4.855, 3.0]]
+[2026-02-12 17:39:45] LIDAR hit count: 1
+[2026-02-12 17:39:45] LIDAR hit points: [[4.855, 3.0]]
+[2026-02-12 17:39:45] Total yellow waypoints in history: 4
+[2026-02-12 17:39:45] Accumulated LIDAR hits: 21
+[2026-02-12 17:39:46] Snapshot saved at: logs/run_17:39:38_12-02/vlm_snapshot_17:39:38_12-02_002.png
+[2026-02-12 17:39:46] Using Local A* planner for detour
+[2026-02-12 17:39:46] Calling VLM for detour (attempt 1)
+[2026-02-12 17:39:46] Local A* planner: Planning detour around LIDAR obstacles
+[2026-02-12 17:39:46] Agent: (np.float64(4.855060573399998), np.float64(4.0)), Final goal: (11.0, 4.0)
+[2026-02-12 17:39:46] LIDAR hits: 1, Yellow waypoints: 4
+[2026-02-12 17:39:46] Local A* found no valid path
+[2026-02-12 17:39:46] A* returned NO waypoints - no valid path found
+[2026-02-12 17:39:46]   produced no usable waypoints after retries — stopping.
+[2026-02-12 17:39:46] Stopped (guard or no   waypoints).
+[2026-02-12 17:39:47] Final obstacle clusters (with LIDAR hit points):
+[2026-02-12 17:39:47] {"id": 2, "n_points": 19, "centroid": [4.465247631072998, 3.0], "bbox": [4.029094219207764, 3.0, 4.855060577392578, 3.0], "points": [[4.029094219207764, 3.0], [4.079093933105469, 3.0], [4.129094123840332, 3.0], [4.179093837738037, 3.0], [4.2290940284729, 3.0], [4.274184703826904, 3.0], [4.314765930175781, 3.0], [4.3647661209106445, 3.0], [4.414766311645508, 3.0], [4.464766025543213, 3.0], [4.514766216278076, 3.0], [4.564765930175781, 3.0], [4.6147661209106445, 3.0], [4.664766311645508, 3.0], [4.714766025543213, 3.0], [4.764766216278076, 3.0], [4.812289714813232, 3.0], [4.855060577392578, 3.0], [4.855060577392578, 3.0]]}
+[2026-02-12 17:39:47] Saved heatmap video to logs/run_17:39:38_12-02/heatmap_17:39:38_12-02.mp4

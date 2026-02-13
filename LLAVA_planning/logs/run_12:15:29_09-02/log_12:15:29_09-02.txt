@@ -1,0 +1,1190 @@
+[2026-02-09 12:15:29] Run directory created at logs/run_12:15:29_09-02
+[2026-02-09 12:15:30] Environment initialized with agent at (6.0, 8.0) and goal at (12.0, 4.0)
+[2026-02-09 12:15:30] Starting navigation from [6.0, 8.0] to goal at [12.0, 4.0]
+[2026-02-09 12:15:30] Scan step begin at [6.0, 8.0]
+[2026-02-09 12:15:30] Starting LIDAR scan at position [6.0, 8.0]
+[2026-02-09 12:15:30] Ray 270.0° hit at [6.0, 7.0]
+[2026-02-09 12:15:30] LIDAR scan completed.
+[2026-02-09 12:15:30] LIDAR detected 1 obstacle hits: [[6.0, 7.0]]
+[2026-02-09 12:15:30] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:30] Obstacle detected near [6.0, 7.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-09 12:15:30] ===== DETOUR TRIGGERED =====
+[2026-02-09 12:15:30] Agent position: [6.0, 8.0]
+[2026-02-09 12:15:30] Goal position: [12.0, 4.0]
+[2026-02-09 12:15:30] Starting LIDAR scan at position [6.0, 8.0]
+[2026-02-09 12:15:30] Ray 270.0° hit at [6.0, 7.0]
+[2026-02-09 12:15:30] LIDAR scan completed.
+[2026-02-09 12:15:30] LIDAR detected 1 obstacle hits: [[6.0, 7.0]]
+[2026-02-09 12:15:30] LIDAR hit count: 1
+[2026-02-09 12:15:30] LIDAR hit points: [[6.0, 7.0]]
+[2026-02-09 12:15:30] Total yellow waypoints in history: 0
+[2026-02-09 12:15:30] VLM snapshot saved at: logs/run_12:15:29_09-02/vlm_snapshot_12:15:29_09-02_001.png
+[2026-02-09 12:15:30] Querying VLM model: gpt-4o
+[2026-02-09 12:15:30] Calling VLM for detour (attempt 1)
+[2026-02-09 12:15:30] ================================================================================
+[2026-02-09 12:15:30] VLM QUERY PROMPT:
+[2026-02-09 12:15:30] ================================================================================
+[2026-02-09 12:15:30] You are assisting a mobile robot navigating in a 2D plane to reach a goal while avoiding obstacles and deadlock situations.
+
+IMAGE DESCRIPTION (also depicted visually):
+- Green dot: agent at (np.float64(6.0), np.float64(8.0))
+- Blue star: goal at (12.0, 4.0)
+- Red dots: obstacle points detected by LIDAR
+- Yellow dots: previous detour waypoints (areas already explored - AVOID THESE!)
+
+TEXT DATA (authoritative):
+- Agent position: (np.float64(6.0), np.float64(8.0))
+- Goal position: (12.0, 4.0)
+- LIDAR hit points: [(np.float64(6.0), np.float64(7.0))]
+- Previous waypoint count: 0
+
+
+
+
+SPATIAL SITUATION ANALYSIS:
+- Obstacles detected: ABOVE=0, BELOW=1, LEFT=0, RIGHT=0
+- Environment type: OPEN SPACE - multiple paths possible
+- Goal direction: RIGHT and DOWN
+- Goal is at: (12.0, 4.0), you are at: (np.float64(6.0), np.float64(8.0))
+- Distance to goal: 7.21 units
+
+
+
+
+
+
+TASK:
+Return a SMALL SET of LOCAL DETOUR WAYPOINTS to move the agent past the obstacle.
+These waypoints should help the agent make progress toward the goal.
+
+RULES (MANDATORY):
+1. Return ONLY JSON with key "waypoints"
+2. Waypoints must be LOCAL (within 3 units of agent, no direct jump to goal)
+3. Give exactly 4 waypoints
+4. Keep waypoints AT LEAST 1.2 units away from red obstacle points (safety margin for path clearance between waypoints)
+5. Keep waypoints AT LEAST 1.0 units away from yellow previous waypoints (critically important!)
+6. Do NOT place waypoints in forbidden zones listed above
+7. Move tangentially around obstacles, not directly into them
+8. After clearing the obstacle, gradually turn toward the goal
+9. Coordinates must be numeric [x, y] within bounds [0, 15]
+10. Think about the spatial situation:
+    - If in a NARROW CORRIDOR/TUNNEL: Place waypoints in the CENTER (midpoint between walls), NOT near the walls
+    - If obstacles are on both sides (left+right or top+bottom): You're in a corridor - stay centered!
+    - If in open space: Go around obstacles with safety margin
+
+⚠️ CORRIDOR/TUNNEL RULE: If you see obstacles on BOTH sides of the agent, calculate the midpoint between them and place waypoints there!
+Example: If obstacles at y=0.3 and y=1.0, place waypoints at y=0.65 (the center), NOT at y=0.5 or y=0.8 (too close to walls).
+
+
+
+OUTPUT FORMAT (JSON only, no explanation):
+{
+  "waypoints": [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+}
+[2026-02-09 12:15:30] ================================================================================
+[2026-02-09 12:15:33] VLM returned 4 waypoints: [[6.5, 8.0], [7.5, 8.0], [8.5, 7.5], [9.5, 7.0]]
+[2026-02-09 12:15:33] Yellow waypoint validation PASSED: No yellow history to check
+[2026-02-09 12:15:33] Progress validation PASSED: Waypoints make acceptable progress (tolerance=1.0x, retry=0)
+[2026-02-09 12:15:33] Accept WP1: [6.5, 8.0]
+[2026-02-09 12:15:33] Accept WP2: [7.5, 8.0]
+[2026-02-09 12:15:33] Reject WP3: segment [7.5, 8.0] -> [8.5, 7.5] intersects original obstacle interior
+[2026-02-09 12:15:33] Reject WP4: segment [7.5, 8.0] -> [9.5, 7.0] intersects original obstacle interior
+[2026-02-09 12:15:33] Detour validation result: SUCCESS (2 waypoints accepted)
+[2026-02-09 12:15:33] Added 2 detour waypoints to live heatmap (yellow markers).
+[2026-02-09 12:15:33] ===== DETOUR END =====
+[2026-02-09 12:15:33] Moving to waypoint [6.5, 8.0]
+[2026-02-09 12:15:33] Starting LIDAR scan at position [6.0, 8.0]
+[2026-02-09 12:15:33] Ray 270.0° hit at [6.0, 7.0]
+[2026-02-09 12:15:33] LIDAR scan completed.
+[2026-02-09 12:15:33] Scan step begin at [6.05, 8.0]
+[2026-02-09 12:15:33] Starting LIDAR scan at position [6.05, 8.0]
+[2026-02-09 12:15:33] LIDAR scan completed.
+[2026-02-09 12:15:33] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:33] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:33] Starting LIDAR scan at position [6.05, 8.0]
+[2026-02-09 12:15:33] LIDAR scan completed.
+[2026-02-09 12:15:33] Scan step begin at [6.095, 8.0]
+[2026-02-09 12:15:33] Starting LIDAR scan at position [6.095, 8.0]
+[2026-02-09 12:15:33] LIDAR scan completed.
+[2026-02-09 12:15:33] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:33] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.095, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] Scan step begin at [6.1354999999999995, 8.0]
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.1354999999999995, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:34] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:34] Reached waypoint [6.5, 8.0]
+[2026-02-09 12:15:34] Moving to waypoint [7.5, 8.0]
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.1354999999999995, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] Scan step begin at [6.185499999999999, 8.0]
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.185499999999999, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:34] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.185499999999999, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] Scan step begin at [6.235499999999999, 8.0]
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.235499999999999, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:34] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.235499999999999, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] Scan step begin at [6.285499999999999, 8.0]
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.285499999999999, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:34] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.285499999999999, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] Scan step begin at [6.335499999999999, 8.0]
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.335499999999999, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:34] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.335499999999999, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] Scan step begin at [6.385499999999999, 8.0]
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.385499999999999, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:34] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.385499999999999, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] Scan step begin at [6.435499999999998, 8.0]
+[2026-02-09 12:15:34] Starting LIDAR scan at position [6.435499999999998, 8.0]
+[2026-02-09 12:15:34] LIDAR scan completed.
+[2026-02-09 12:15:34] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:34] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.435499999999998, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] Scan step begin at [6.485499999999998, 8.0]
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.485499999999998, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:35] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.485499999999998, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] Scan step begin at [6.535499999999998, 8.0]
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.535499999999998, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:35] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.535499999999998, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] Scan step begin at [6.585499999999998, 8.0]
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.585499999999998, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:35] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.585499999999998, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] Scan step begin at [6.635499999999998, 8.0]
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.635499999999998, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:35] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.635499999999998, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] Scan step begin at [6.6854999999999976, 8.0]
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.6854999999999976, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:35] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.6854999999999976, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] Scan step begin at [6.735499999999997, 8.0]
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.735499999999997, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:35] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.735499999999997, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] Scan step begin at [6.785499999999997, 8.0]
+[2026-02-09 12:15:35] Starting LIDAR scan at position [6.785499999999997, 8.0]
+[2026-02-09 12:15:35] LIDAR scan completed.
+[2026-02-09 12:15:35] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:35] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:36] Starting LIDAR scan at position [6.785499999999997, 8.0]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] Scan step begin at [6.835499999999997, 8.0]
+[2026-02-09 12:15:36] Starting LIDAR scan at position [6.835499999999997, 8.0]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:36] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:36] Starting LIDAR scan at position [6.835499999999997, 8.0]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] Scan step begin at [6.885499999999997, 8.0]
+[2026-02-09 12:15:36] Starting LIDAR scan at position [6.885499999999997, 8.0]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:36] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:36] Starting LIDAR scan at position [6.885499999999997, 8.0]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] Scan step begin at [6.935499999999997, 8.0]
+[2026-02-09 12:15:36] Starting LIDAR scan at position [6.935499999999997, 8.0]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:36] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:36] Starting LIDAR scan at position [6.935499999999997, 8.0]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] Scan step begin at [6.9854999999999965, 8.0]
+[2026-02-09 12:15:36] Starting LIDAR scan at position [6.9854999999999965, 8.0]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] LIDAR detected 0 obstacle hits: []
+[2026-02-09 12:15:36] Scan step end: obstacle_detected=False
+[2026-02-09 12:15:36] Starting LIDAR scan at position [6.9854999999999965, 8.0]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] Scan step begin at [7.035499999999996, 8.0]
+[2026-02-09 12:15:36] Starting LIDAR scan at position [7.035499999999996, 8.0]
+[2026-02-09 12:15:36] Ray 0.0° hit at [8.0, 8.0]
+[2026-02-09 12:15:36] Ray 10.0° hit at [8.0, 8.170067372893314]
+[2026-02-09 12:15:36] Ray 90.0° hit at [7.035499999999996, 9.0]
+[2026-02-09 12:15:36] Ray 350.0° hit at [8.0, 7.829932627106685]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] LIDAR detected 4 obstacle hits: [[8.0, 8.0], [8.0, 8.17], [7.035, 9.0], [8.0, 7.83]]
+[2026-02-09 12:15:36] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:36] Starting LIDAR scan at position [7.035499999999996, 8.0]
+[2026-02-09 12:15:36] Ray 0.0° hit at [8.0, 8.0]
+[2026-02-09 12:15:36] Ray 10.0° hit at [8.0, 8.170067372893314]
+[2026-02-09 12:15:36] Ray 90.0° hit at [7.035499999999996, 9.0]
+[2026-02-09 12:15:36] Ray 350.0° hit at [8.0, 7.829932627106685]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] Scan step begin at [7.081949999999996, 8.0]
+[2026-02-09 12:15:36] Starting LIDAR scan at position [7.081949999999996, 8.0]
+[2026-02-09 12:15:36] Ray 0.0° hit at [8.0, 8.0]
+[2026-02-09 12:15:36] Ray 10.0° hit at [8.0, 8.161876984639406]
+[2026-02-09 12:15:36] Ray 20.0° hit at [8.0, 8.334142873568089]
+[2026-02-09 12:15:36] Ray 90.0° hit at [7.081949999999996, 9.0]
+[2026-02-09 12:15:36] Ray 340.0° hit at [8.0, 7.665857126431911]
+[2026-02-09 12:15:36] Ray 350.0° hit at [8.0, 7.838123015360593]
+[2026-02-09 12:15:36] LIDAR scan completed.
+[2026-02-09 12:15:36] LIDAR detected 6 obstacle hits: [[8.0, 8.0], [8.0, 8.162], [8.0, 8.334], [7.082, 9.0], [8.0, 7.666], [8.0, 7.838]]
+[2026-02-09 12:15:36] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:37] Starting LIDAR scan at position [7.081949999999996, 8.0]
+[2026-02-09 12:15:37] Ray 0.0° hit at [8.0, 8.0]
+[2026-02-09 12:15:37] Ray 10.0° hit at [8.0, 8.161876984639406]
+[2026-02-09 12:15:37] Ray 20.0° hit at [8.0, 8.334142873568089]
+[2026-02-09 12:15:37] Ray 90.0° hit at [7.081949999999996, 9.0]
+[2026-02-09 12:15:37] Ray 340.0° hit at [8.0, 7.665857126431911]
+[2026-02-09 12:15:37] Ray 350.0° hit at [8.0, 7.838123015360593]
+[2026-02-09 12:15:37] LIDAR scan completed.
+[2026-02-09 12:15:37] Scan step begin at [7.1237549999999965, 8.0]
+[2026-02-09 12:15:37] Starting LIDAR scan at position [7.1237549999999965, 8.0]
+[2026-02-09 12:15:37] Ray 0.0° hit at [8.0, 8.0]
+[2026-02-09 12:15:37] Ray 10.0° hit at [8.0, 8.154505635210889]
+[2026-02-09 12:15:37] Ray 20.0° hit at [8.0, 8.31892709792459]
+[2026-02-09 12:15:37] Ray 90.0° hit at [7.1237549999999965, 9.0]
+[2026-02-09 12:15:37] Ray 340.0° hit at [8.0, 7.681072902075409]
+[2026-02-09 12:15:37] Ray 350.0° hit at [8.0, 7.84549436478911]
+[2026-02-09 12:15:37] LIDAR scan completed.
+[2026-02-09 12:15:37] LIDAR detected 6 obstacle hits: [[8.0, 8.0], [8.0, 8.155], [8.0, 8.319], [7.124, 9.0], [8.0, 7.681], [8.0, 7.845]]
+[2026-02-09 12:15:37] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:37] Reached waypoint [7.5, 8.0]
+[2026-02-09 12:15:37] Scan step begin at [7.1237549999999965, 8.0]
+[2026-02-09 12:15:37] Starting LIDAR scan at position [7.1237549999999965, 8.0]
+[2026-02-09 12:15:37] Ray 0.0° hit at [8.0, 8.0]
+[2026-02-09 12:15:37] Ray 10.0° hit at [8.0, 8.154505635210889]
+[2026-02-09 12:15:37] Ray 20.0° hit at [8.0, 8.31892709792459]
+[2026-02-09 12:15:37] Ray 90.0° hit at [7.1237549999999965, 9.0]
+[2026-02-09 12:15:37] Ray 340.0° hit at [8.0, 7.681072902075409]
+[2026-02-09 12:15:37] Ray 350.0° hit at [8.0, 7.84549436478911]
+[2026-02-09 12:15:37] LIDAR scan completed.
+[2026-02-09 12:15:37] LIDAR detected 6 obstacle hits: [[8.0, 8.0], [8.0, 8.155], [8.0, 8.319], [7.124, 9.0], [8.0, 7.681], [8.0, 7.845]]
+[2026-02-09 12:15:37] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:37] Obstacle detected near [8.0, 8.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-09 12:15:37] ===== DETOUR TRIGGERED =====
+[2026-02-09 12:15:37] Agent position: [7.1237549999999965, 8.0]
+[2026-02-09 12:15:37] Goal position: [12.0, 4.0]
+[2026-02-09 12:15:37] Starting LIDAR scan at position [7.1237549999999965, 8.0]
+[2026-02-09 12:15:37] Ray 0.0° hit at [8.0, 8.0]
+[2026-02-09 12:15:37] Ray 10.0° hit at [8.0, 8.154505635210889]
+[2026-02-09 12:15:37] Ray 20.0° hit at [8.0, 8.31892709792459]
+[2026-02-09 12:15:37] Ray 90.0° hit at [7.1237549999999965, 9.0]
+[2026-02-09 12:15:37] Ray 340.0° hit at [8.0, 7.681072902075409]
+[2026-02-09 12:15:37] Ray 350.0° hit at [8.0, 7.84549436478911]
+[2026-02-09 12:15:37] LIDAR scan completed.
+[2026-02-09 12:15:37] LIDAR detected 6 obstacle hits: [[8.0, 8.0], [8.0, 8.155], [8.0, 8.319], [7.124, 9.0], [8.0, 7.681], [8.0, 7.845]]
+[2026-02-09 12:15:37] LIDAR hit count: 6
+[2026-02-09 12:15:37] LIDAR hit points: [[8.0, 8.0], [8.0, 8.155], [8.0, 8.319], [7.124, 9.0], [8.0, 7.681], [8.0, 7.845]]
+[2026-02-09 12:15:37] Total yellow waypoints in history: 2
+[2026-02-09 12:15:37] VLM snapshot saved at: logs/run_12:15:29_09-02/vlm_snapshot_12:15:29_09-02_002.png
+[2026-02-09 12:15:37] Querying VLM model: gpt-4o
+[2026-02-09 12:15:37] Calling VLM for detour (attempt 1)
+[2026-02-09 12:15:37] ================================================================================
+[2026-02-09 12:15:37] VLM QUERY PROMPT:
+[2026-02-09 12:15:37] ================================================================================
+[2026-02-09 12:15:37] You are assisting a mobile robot navigating in a 2D plane to reach a goal while avoiding obstacles and deadlock situations.
+
+IMAGE DESCRIPTION (also depicted visually):
+- Green dot: agent at (np.float64(7.1237549999999965), np.float64(8.0))
+- Blue star: goal at (12.0, 4.0)
+- Red dots: obstacle points detected by LIDAR
+- Yellow dots: previous detour waypoints (areas already explored - AVOID THESE!)
+
+TEXT DATA (authoritative):
+- Agent position: (np.float64(7.1237549999999965), np.float64(8.0))
+- Goal position: (12.0, 4.0)
+- LIDAR hit points: [(np.float64(8.0), np.float64(8.0)), (np.float64(8.0), np.float64(8.154505635210889)), (np.float64(8.0), np.float64(8.31892709792459)), (np.float64(7.1237549999999965), np.float64(9.0)), (np.float64(8.0), np.float64(7.681072902075409)), (np.float64(8.0), np.float64(7.84549436478911))]
+- Previous waypoint count: 2
+
+
+
+
+SPATIAL SITUATION ANALYSIS:
+- Obstacles detected: ABOVE=3, BELOW=2, LEFT=0, RIGHT=5
+- Environment type: OPEN SPACE - multiple paths possible
+- Goal direction: RIGHT and DOWN
+- Goal is at: (12.0, 4.0), you are at: (np.float64(7.1237549999999965), np.float64(8.0))
+- Distance to goal: 6.31 units
+
+
+
+
+
+⚠️ CRITICAL: RECENT WAYPOINTS TO AVOID (most recent 2):
+[array([6.5, 8. ]), array([7.5, 8. ])]
+
+MANDATORY RULE: DO NOT place waypoints within 1.5 units of these locations!
+If you place a waypoint near these coordinates, the agent will OSCILLATE ENDLESSLY!
+Example: If recent waypoint is at [5.5, 4.5], do NOT place waypoint at [5.5, 3.0] or [6.0, 4.5].
+You MUST choose COMPLETELY DIFFERENT coordinates at least 1.5 units away.
+
+
+TASK:
+Return a SMALL SET of LOCAL DETOUR WAYPOINTS to move the agent past the obstacle.
+These waypoints should help the agent make progress toward the goal.
+
+RULES (MANDATORY):
+1. Return ONLY JSON with key "waypoints"
+2. Waypoints must be LOCAL (within 3 units of agent, no direct jump to goal)
+3. Give exactly 4 waypoints
+4. Keep waypoints AT LEAST 1.2 units away from red obstacle points (safety margin for path clearance between waypoints)
+5. Keep waypoints AT LEAST 1.0 units away from yellow previous waypoints (critically important!)
+6. Do NOT place waypoints in forbidden zones listed above
+7. Move tangentially around obstacles, not directly into them
+8. After clearing the obstacle, gradually turn toward the goal
+9. Coordinates must be numeric [x, y] within bounds [0, 15]
+10. Think about the spatial situation:
+    - If in a NARROW CORRIDOR/TUNNEL: Place waypoints in the CENTER (midpoint between walls), NOT near the walls
+    - If obstacles are on both sides (left+right or top+bottom): You're in a corridor - stay centered!
+    - If in open space: Go around obstacles with safety margin
+
+⚠️ CORRIDOR/TUNNEL RULE: If you see obstacles on BOTH sides of the agent, calculate the midpoint between them and place waypoints there!
+Example: If obstacles at y=0.3 and y=1.0, place waypoints at y=0.65 (the center), NOT at y=0.5 or y=0.8 (too close to walls).
+
+
+
+OUTPUT FORMAT (JSON only, no explanation):
+{
+  "waypoints": [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+}
+[2026-02-09 12:15:37] ================================================================================
+[2026-02-09 12:15:40] VLM returned 4 waypoints: [[7.5, 7.0], [8.5, 7.0], [9.5, 6.5], [10.5, 6.0]]
+[2026-02-09 12:15:40] Yellow waypoint validation PASSED: All waypoints clear of yellow history
+[2026-02-09 12:15:40] Progress validation PASSED: Waypoints make acceptable progress (tolerance=1.0x, retry=0)
+[2026-02-09 12:15:40] Accept WP1: [7.5, 7.0]
+[2026-02-09 12:15:40] Reject WP2: segment [7.5, 7.0] -> [8.5, 7.0] intersects original obstacle interior
+[2026-02-09 12:15:40] Reject WP3: segment [7.5, 7.0] -> [9.5, 6.5] intersects original obstacle interior
+[2026-02-09 12:15:40] Reject WP4: segment [7.5, 7.0] -> [10.5, 6.0] intersects original obstacle interior
+[2026-02-09 12:15:40] Detour validation result: SUCCESS (1 waypoints accepted)
+[2026-02-09 12:15:40] Added 1 detour waypoints to live heatmap (yellow markers).
+[2026-02-09 12:15:40] ===== DETOUR END =====
+[2026-02-09 12:15:40] Moving to waypoint [7.5, 7.0]
+[2026-02-09 12:15:40] Starting LIDAR scan at position [7.1237549999999965, 8.0]
+[2026-02-09 12:15:40] Ray 0.0° hit at [8.0, 8.0]
+[2026-02-09 12:15:40] Ray 10.0° hit at [8.0, 8.154505635210889]
+[2026-02-09 12:15:40] Ray 20.0° hit at [8.0, 8.31892709792459]
+[2026-02-09 12:15:40] Ray 90.0° hit at [7.1237549999999965, 9.0]
+[2026-02-09 12:15:40] Ray 340.0° hit at [8.0, 7.681072902075409]
+[2026-02-09 12:15:40] Ray 350.0° hit at [8.0, 7.84549436478911]
+[2026-02-09 12:15:40] LIDAR scan completed.
+[2026-02-09 12:15:40] Scan step begin at [7.161379499999997, 7.95]
+[2026-02-09 12:15:40] Starting LIDAR scan at position [7.161379499999997, 7.95]
+[2026-02-09 12:15:40] Ray 0.0° hit at [8.0, 7.95]
+[2026-02-09 12:15:40] Ray 10.0° hit at [8.0, 8.097871420725225]
+[2026-02-09 12:15:40] Ray 20.0° hit at [8.0, 8.25523289984544]
+[2026-02-09 12:15:40] Ray 30.0° hit at [8.0, 8.43417777142294]
+[2026-02-09 12:15:40] Ray 330.0° hit at [8.0, 7.46582222857706]
+[2026-02-09 12:15:40] Ray 340.0° hit at [8.0, 7.644767100154559]
+[2026-02-09 12:15:40] Ray 350.0° hit at [8.0, 7.802128579274776]
+[2026-02-09 12:15:40] LIDAR scan completed.
+[2026-02-09 12:15:40] LIDAR detected 7 obstacle hits: [[8.0, 7.95], [8.0, 8.098], [8.0, 8.255], [8.0, 8.434], [8.0, 7.466], [8.0, 7.645], [8.0, 7.802]]
+[2026-02-09 12:15:40] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:40] Starting LIDAR scan at position [7.161379499999997, 7.95]
+[2026-02-09 12:15:40] Ray 0.0° hit at [8.0, 7.95]
+[2026-02-09 12:15:40] Ray 10.0° hit at [8.0, 8.097871420725225]
+[2026-02-09 12:15:40] Ray 20.0° hit at [8.0, 8.25523289984544]
+[2026-02-09 12:15:40] Ray 30.0° hit at [8.0, 8.43417777142294]
+[2026-02-09 12:15:40] Ray 330.0° hit at [8.0, 7.46582222857706]
+[2026-02-09 12:15:40] Ray 340.0° hit at [8.0, 7.644767100154559]
+[2026-02-09 12:15:40] Ray 350.0° hit at [8.0, 7.802128579274776]
+[2026-02-09 12:15:40] LIDAR scan completed.
+[2026-02-09 12:15:40] Scan step begin at [7.195241549999998, 7.9]
+[2026-02-09 12:15:40] Starting LIDAR scan at position [7.195241549999998, 7.9]
+[2026-02-09 12:15:40] Ray 0.0° hit at [8.0, 7.9]
+[2026-02-09 12:15:40] Ray 10.0° hit at [8.0, 8.041900627688126]
+[2026-02-09 12:15:40] Ray 20.0° hit at [8.0, 8.192908121574208]
+[2026-02-09 12:15:40] Ray 30.0° hit at [8.0, 8.364627507740128]
+[2026-02-09 12:15:40] Ray 330.0° hit at [8.0, 7.435372492259873]
+[2026-02-09 12:15:40] Ray 340.0° hit at [8.0, 7.607091878425793]
+[2026-02-09 12:15:40] Ray 350.0° hit at [8.0, 7.758099372311876]
+[2026-02-09 12:15:40] LIDAR scan completed.
+[2026-02-09 12:15:40] LIDAR detected 7 obstacle hits: [[8.0, 7.9], [8.0, 8.042], [8.0, 8.193], [8.0, 8.365], [8.0, 7.435], [8.0, 7.607], [8.0, 7.758]]
+[2026-02-09 12:15:40] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:40] Starting LIDAR scan at position [7.195241549999998, 7.9]
+[2026-02-09 12:15:40] Ray 0.0° hit at [8.0, 7.9]
+[2026-02-09 12:15:40] Ray 10.0° hit at [8.0, 8.041900627688126]
+[2026-02-09 12:15:40] Ray 20.0° hit at [8.0, 8.192908121574208]
+[2026-02-09 12:15:40] Ray 30.0° hit at [8.0, 8.364627507740128]
+[2026-02-09 12:15:40] Ray 330.0° hit at [8.0, 7.435372492259873]
+[2026-02-09 12:15:40] Ray 340.0° hit at [8.0, 7.607091878425793]
+[2026-02-09 12:15:40] Ray 350.0° hit at [8.0, 7.758099372311876]
+[2026-02-09 12:15:40] LIDAR scan completed.
+[2026-02-09 12:15:40] Scan step begin at [7.225717394999998, 7.8500000000000005]
+[2026-02-09 12:15:40] Starting LIDAR scan at position [7.225717394999998, 7.8500000000000005]
+[2026-02-09 12:15:40] Ray 0.0° hit at [8.0, 7.8500000000000005]
+[2026-02-09 12:15:40] Ray 10.0° hit at [8.0, 7.986526913954736]
+[2026-02-09 12:15:40] Ray 20.0° hit at [8.0, 8.131815821130097]
+[2026-02-09 12:15:40] Ray 30.0° hit at [8.0, 8.297032270425595]
+[2026-02-09 12:15:40] Ray 330.0° hit at [8.0, 7.402967729574405]
+[2026-02-09 12:15:40] Ray 340.0° hit at [8.0, 7.568184178869904]
+[2026-02-09 12:15:40] Ray 350.0° hit at [8.0, 7.713473086045266]
+[2026-02-09 12:15:40] LIDAR scan completed.
+[2026-02-09 12:15:40] LIDAR detected 7 obstacle hits: [[8.0, 7.85], [8.0, 7.987], [8.0, 8.132], [8.0, 8.297], [8.0, 7.403], [8.0, 7.568], [8.0, 7.713]]
+[2026-02-09 12:15:40] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.225717394999998, 7.8500000000000005]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.8500000000000005]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.986526913954736]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 8.131815821130097]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 8.297032270425595]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.402967729574405]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.568184178869904]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.713473086045266]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] Scan step begin at [7.253145655499998, 7.800000000000001]
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.253145655499998, 7.800000000000001]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.800000000000001]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.931690571594686]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 8.071832750730398]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 8.231196556842518]
+[2026-02-09 12:15:41] Ray 40.0° hit at [8.0, 8.426685205013102]
+[2026-02-09 12:15:41] Ray 320.0° hit at [8.0, 7.1733147949869]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.368803443157483]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.528167249269604]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.6683094284053155]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] LIDAR detected 9 obstacle hits: [[8.0, 7.8], [8.0, 7.932], [8.0, 8.072], [8.0, 8.231], [8.0, 8.427], [8.0, 7.173], [8.0, 7.369], [8.0, 7.528], [8.0, 7.668]]
+[2026-02-09 12:15:41] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.253145655499998, 7.800000000000001]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.800000000000001]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.931690571594686]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 8.071832750730398]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 8.231196556842518]
+[2026-02-09 12:15:41] Ray 40.0° hit at [8.0, 8.426685205013102]
+[2026-02-09 12:15:41] Ray 320.0° hit at [8.0, 7.1733147949869]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.368803443157483]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.528167249269604]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.6683094284053155]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] Scan step begin at [7.2778310899499985, 7.750000000000001]
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.2778310899499985, 7.750000000000001]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.750000000000001]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.877337863470641]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 8.012847987370668]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 8.166944414617747]
+[2026-02-09 12:15:41] Ray 40.0° hit at [8.0, 8.355971666070655]
+[2026-02-09 12:15:41] Ray 320.0° hit at [8.0, 7.144028333929345]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.333055585382253]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.487152012629333]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.622662136529361]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] LIDAR detected 9 obstacle hits: [[8.0, 7.75], [8.0, 7.877], [8.0, 8.013], [8.0, 8.167], [8.0, 8.356], [8.0, 7.144], [8.0, 7.333], [8.0, 7.487], [8.0, 7.623]]
+[2026-02-09 12:15:41] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.2778310899499985, 7.750000000000001]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.750000000000001]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.877337863470641]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 8.012847987370668]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 8.166944414617747]
+[2026-02-09 12:15:41] Ray 40.0° hit at [8.0, 8.355971666070655]
+[2026-02-09 12:15:41] Ray 320.0° hit at [8.0, 7.144028333929345]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.333055585382253]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.487152012629333]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.622662136529361]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] Scan step begin at [7.300047980954998, 7.700000000000001]
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.300047980954998, 7.700000000000001]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.700000000000001]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.823420426159]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 7.9547617003469115]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 8.104117486615454]
+[2026-02-09 12:15:41] Ray 40.0° hit at [8.0, 8.287329481022454]
+[2026-02-09 12:15:41] Ray 320.0° hit at [8.0, 7.112670518977547]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.295882513384548]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.445238299653091]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.576579573841002]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] LIDAR detected 9 obstacle hits: [[8.0, 7.7], [8.0, 7.823], [8.0, 7.955], [8.0, 8.104], [8.0, 8.287], [8.0, 7.113], [8.0, 7.296], [8.0, 7.445], [8.0, 7.577]]
+[2026-02-09 12:15:41] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.300047980954998, 7.700000000000001]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.700000000000001]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.823420426159]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 7.9547617003469115]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 8.104117486615454]
+[2026-02-09 12:15:41] Ray 40.0° hit at [8.0, 8.287329481022454]
+[2026-02-09 12:15:41] Ray 320.0° hit at [8.0, 7.112670518977547]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.295882513384548]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.445238299653091]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.576579573841002]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] Scan step begin at [7.320043182859498, 7.650000000000001]
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.320043182859498, 7.650000000000001]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.650000000000001]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.769894732578524]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 7.897484042025531]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 8.04257325141339]
+[2026-02-09 12:15:41] Ray 40.0° hit at [8.0, 8.220551514479073]
+[2026-02-09 12:15:41] Ray 320.0° hit at [8.0, 7.079448485520928]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.257426748586611]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.4025159579744715]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.530105267421479]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] LIDAR detected 9 obstacle hits: [[8.0, 7.65], [8.0, 7.77], [8.0, 7.897], [8.0, 8.043], [8.0, 8.221], [8.0, 7.079], [8.0, 7.257], [8.0, 7.403], [8.0, 7.53]]
+[2026-02-09 12:15:41] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.320043182859498, 7.650000000000001]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.650000000000001]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.769894732578524]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 7.897484042025531]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 8.04257325141339]
+[2026-02-09 12:15:41] Ray 40.0° hit at [8.0, 8.220551514479073]
+[2026-02-09 12:15:41] Ray 320.0° hit at [8.0, 7.079448485520928]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.257426748586611]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.4025159579744715]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.530105267421479]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] Scan step begin at [7.338038864573549, 7.600000000000001]
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.338038864573549, 7.600000000000001]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.600000000000001]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.716721608356095]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 7.840934149536288]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 7.982183439731534]
+[2026-02-09 12:15:41] Ray 40.0° hit at [8.0, 8.15545134459003]
+[2026-02-09 12:15:41] Ray 320.0° hit at [8.0, 7.044548655409972]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.217816560268469]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.359065850463714]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.483278391643908]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] LIDAR detected 9 obstacle hits: [[8.0, 7.6], [8.0, 7.717], [8.0, 7.841], [8.0, 7.982], [8.0, 8.155], [8.0, 7.045], [8.0, 7.218], [8.0, 7.359], [8.0, 7.483]]
+[2026-02-09 12:15:41] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.338038864573549, 7.600000000000001]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.600000000000001]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.716721608356095]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 7.840934149536288]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 7.982183439731534]
+[2026-02-09 12:15:41] Ray 40.0° hit at [8.0, 8.15545134459003]
+[2026-02-09 12:15:41] Ray 320.0° hit at [8.0, 7.044548655409972]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.217816560268469]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.359065850463714]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.483278391643908]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] Scan step begin at [7.354234978116194, 7.550000000000002]
+[2026-02-09 12:15:41] Starting LIDAR scan at position [7.354234978116194, 7.550000000000002]
+[2026-02-09 12:15:41] Ray 0.0° hit at [8.0, 7.550000000000002]
+[2026-02-09 12:15:41] Ray 10.0° hit at [8.0, 7.663865796555909]
+[2026-02-09 12:15:41] Ray 20.0° hit at [8.0, 7.78503924629597]
+[2026-02-09 12:15:41] Ray 30.0° hit at [8.0, 7.922832609217861]
+[2026-02-09 12:15:41] Ray 40.0° hit at [8.0, 8.09186119168989]
+[2026-02-09 12:15:41] Ray 320.0° hit at [8.0, 7.008138808310111]
+[2026-02-09 12:15:41] Ray 330.0° hit at [8.0, 7.177167390782142]
+[2026-02-09 12:15:41] Ray 340.0° hit at [8.0, 7.3149607537040335]
+[2026-02-09 12:15:41] Ray 350.0° hit at [8.0, 7.4361342034440945]
+[2026-02-09 12:15:41] LIDAR scan completed.
+[2026-02-09 12:15:41] LIDAR detected 9 obstacle hits: [[8.0, 7.55], [8.0, 7.664], [8.0, 7.785], [8.0, 7.923], [8.0, 8.092], [8.0, 7.008], [8.0, 7.177], [8.0, 7.315], [8.0, 7.436]]
+[2026-02-09 12:15:41] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:42] Starting LIDAR scan at position [7.354234978116194, 7.550000000000002]
+[2026-02-09 12:15:42] Ray 0.0° hit at [8.0, 7.550000000000002]
+[2026-02-09 12:15:42] Ray 10.0° hit at [8.0, 7.663865796555909]
+[2026-02-09 12:15:42] Ray 20.0° hit at [8.0, 7.78503924629597]
+[2026-02-09 12:15:42] Ray 30.0° hit at [8.0, 7.922832609217861]
+[2026-02-09 12:15:42] Ray 40.0° hit at [8.0, 8.09186119168989]
+[2026-02-09 12:15:42] Ray 320.0° hit at [8.0, 7.008138808310111]
+[2026-02-09 12:15:42] Ray 330.0° hit at [8.0, 7.177167390782142]
+[2026-02-09 12:15:42] Ray 340.0° hit at [8.0, 7.3149607537040335]
+[2026-02-09 12:15:42] Ray 350.0° hit at [8.0, 7.4361342034440945]
+[2026-02-09 12:15:42] LIDAR scan completed.
+[2026-02-09 12:15:42] Scan step begin at [7.368811480304575, 7.500000000000002]
+[2026-02-09 12:15:42] Starting LIDAR scan at position [7.368811480304575, 7.500000000000002]
+[2026-02-09 12:15:42] Ray 0.0° hit at [8.0, 7.500000000000002]
+[2026-02-09 12:15:42] Ray 10.0° hit at [8.0, 7.611295565935741]
+[2026-02-09 12:15:42] Ray 20.0° hit at [8.0, 7.729733833379683]
+[2026-02-09 12:15:42] Ray 30.0° hit at [8.0, 7.864416861755557]
+[2026-02-09 12:15:42] Ray 40.0° hit at [8.0, 8.029630054079767]
+[2026-02-09 12:15:42] Ray 50.0° hit at [8.0, 8.252221185951248]
+[2026-02-09 12:15:42] Ray 310.0° hit at [8.0, 6.747778814048757]
+[2026-02-09 12:15:42] Ray 320.0° hit at [8.0, 6.970369945920237]
+[2026-02-09 12:15:42] Ray 330.0° hit at [8.0, 7.135583138244447]
+[2026-02-09 12:15:42] Ray 340.0° hit at [8.0, 7.27026616662032]
+[2026-02-09 12:15:42] Ray 350.0° hit at [8.0, 7.3887044340642625]
+[2026-02-09 12:15:42] LIDAR scan completed.
+[2026-02-09 12:15:42] LIDAR detected 11 obstacle hits: [[8.0, 7.5], [8.0, 7.611], [8.0, 7.73], [8.0, 7.864], [8.0, 8.03], [8.0, 8.252], [8.0, 6.748], [8.0, 6.97], [8.0, 7.136], [8.0, 7.27], [8.0, 7.389]]
+[2026-02-09 12:15:42] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:42] Starting LIDAR scan at position [7.368811480304575, 7.500000000000002]
+[2026-02-09 12:15:42] Ray 0.0° hit at [8.0, 7.500000000000002]
+[2026-02-09 12:15:42] Ray 10.0° hit at [8.0, 7.611295565935741]
+[2026-02-09 12:15:42] Ray 20.0° hit at [8.0, 7.729733833379683]
+[2026-02-09 12:15:42] Ray 30.0° hit at [8.0, 7.864416861755557]
+[2026-02-09 12:15:42] Ray 40.0° hit at [8.0, 8.029630054079767]
+[2026-02-09 12:15:42] Ray 50.0° hit at [8.0, 8.252221185951248]
+[2026-02-09 12:15:42] Ray 310.0° hit at [8.0, 6.747778814048757]
+[2026-02-09 12:15:42] Ray 320.0° hit at [8.0, 6.970369945920237]
+[2026-02-09 12:15:42] Ray 330.0° hit at [8.0, 7.135583138244447]
+[2026-02-09 12:15:42] Ray 340.0° hit at [8.0, 7.27026616662032]
+[2026-02-09 12:15:42] Ray 350.0° hit at [8.0, 7.3887044340642625]
+[2026-02-09 12:15:42] LIDAR scan completed.
+[2026-02-09 12:15:42] Scan step begin at [7.381930332274117, 7.450000000000002]
+[2026-02-09 12:15:42] Starting LIDAR scan at position [7.381930332274117, 7.450000000000002]
+[2026-02-09 12:15:42] Ray 0.0° hit at [8.0, 7.450000000000002]
+[2026-02-09 12:15:42] Ray 10.0° hit at [8.0, 7.558982358377591]
+[2026-02-09 12:15:42] Ray 20.0° hit at [8.0, 7.674958961755025]
+[2026-02-09 12:15:42] Ray 30.0° hit at [8.0, 7.806842689039483]
+[2026-02-09 12:15:42] Ray 40.0° hit at [8.0, 7.968622030230654]
+[2026-02-09 12:15:42] Ray 50.0° hit at [8.0, 8.186586746985833]
+[2026-02-09 12:15:42] Ray 310.0° hit at [8.0, 6.7134132530141715]
+[2026-02-09 12:15:42] Ray 320.0° hit at [8.0, 6.93137796976935]
+[2026-02-09 12:15:42] Ray 330.0° hit at [8.0, 7.09315731096052]
+[2026-02-09 12:15:42] Ray 340.0° hit at [8.0, 7.225041038244978]
+[2026-02-09 12:15:42] Ray 350.0° hit at [8.0, 7.341017641622413]
+[2026-02-09 12:15:42] LIDAR scan completed.
+[2026-02-09 12:15:42] LIDAR detected 11 obstacle hits: [[8.0, 7.45], [8.0, 7.559], [8.0, 7.675], [8.0, 7.807], [8.0, 7.969], [8.0, 8.187], [8.0, 6.713], [8.0, 6.931], [8.0, 7.093], [8.0, 7.225], [8.0, 7.341]]
+[2026-02-09 12:15:42] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:42] Starting LIDAR scan at position [7.381930332274117, 7.450000000000002]
+[2026-02-09 12:15:42] Ray 0.0° hit at [8.0, 7.450000000000002]
+[2026-02-09 12:15:42] Ray 10.0° hit at [8.0, 7.558982358377591]
+[2026-02-09 12:15:42] Ray 20.0° hit at [8.0, 7.674958961755025]
+[2026-02-09 12:15:42] Ray 30.0° hit at [8.0, 7.806842689039483]
+[2026-02-09 12:15:42] Ray 40.0° hit at [8.0, 7.968622030230654]
+[2026-02-09 12:15:42] Ray 50.0° hit at [8.0, 8.186586746985833]
+[2026-02-09 12:15:42] Ray 310.0° hit at [8.0, 6.7134132530141715]
+[2026-02-09 12:15:42] Ray 320.0° hit at [8.0, 6.93137796976935]
+[2026-02-09 12:15:42] Ray 330.0° hit at [8.0, 7.09315731096052]
+[2026-02-09 12:15:42] Ray 340.0° hit at [8.0, 7.225041038244978]
+[2026-02-09 12:15:42] Ray 350.0° hit at [8.0, 7.341017641622413]
+[2026-02-09 12:15:42] LIDAR scan completed.
+[2026-02-09 12:15:42] Scan step begin at [7.393737299046705, 7.405000000000002]
+[2026-02-09 12:15:42] Starting LIDAR scan at position [7.393737299046705, 7.405000000000002]
+[2026-02-09 12:15:42] Ray 0.0° hit at [8.0, 7.405000000000002]
+[2026-02-09 12:15:42] Ray 10.0° hit at [8.0, 7.511900471575255]
+[2026-02-09 12:15:42] Ray 20.0° hit at [8.0, 7.625661577292833]
+[2026-02-09 12:15:42] Ray 30.0° hit at [8.0, 7.755025933595016]
+[2026-02-09 12:15:42] Ray 40.0° hit at [8.0, 7.913714808766453]
+[2026-02-09 12:15:42] Ray 50.0° hit at [8.0, 8.12751575191696]
+[2026-02-09 12:15:42] Ray 310.0° hit at [8.0, 6.682484248083044]
+[2026-02-09 12:15:42] Ray 320.0° hit at [8.0, 6.89628519123355]
+[2026-02-09 12:15:42] Ray 330.0° hit at [8.0, 7.054974066404987]
+[2026-02-09 12:15:42] Ray 340.0° hit at [8.0, 7.184338422707171]
+[2026-02-09 12:15:42] Ray 350.0° hit at [8.0, 7.298099528424749]
+[2026-02-09 12:15:42] LIDAR scan completed.
+[2026-02-09 12:15:42] LIDAR detected 11 obstacle hits: [[8.0, 7.405], [8.0, 7.512], [8.0, 7.626], [8.0, 7.755], [8.0, 7.914], [8.0, 8.128], [8.0, 6.682], [8.0, 6.896], [8.0, 7.055], [8.0, 7.184], [8.0, 7.298]]
+[2026-02-09 12:15:42] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:42] Starting LIDAR scan at position [7.393737299046705, 7.405000000000002]
+[2026-02-09 12:15:42] Ray 0.0° hit at [8.0, 7.405000000000002]
+[2026-02-09 12:15:42] Ray 10.0° hit at [8.0, 7.511900471575255]
+[2026-02-09 12:15:42] Ray 20.0° hit at [8.0, 7.625661577292833]
+[2026-02-09 12:15:42] Ray 30.0° hit at [8.0, 7.755025933595016]
+[2026-02-09 12:15:42] Ray 40.0° hit at [8.0, 7.913714808766453]
+[2026-02-09 12:15:42] Ray 50.0° hit at [8.0, 8.12751575191696]
+[2026-02-09 12:15:42] Ray 310.0° hit at [8.0, 6.682484248083044]
+[2026-02-09 12:15:42] Ray 320.0° hit at [8.0, 6.89628519123355]
+[2026-02-09 12:15:42] Ray 330.0° hit at [8.0, 7.054974066404987]
+[2026-02-09 12:15:42] Ray 340.0° hit at [8.0, 7.184338422707171]
+[2026-02-09 12:15:42] Ray 350.0° hit at [8.0, 7.298099528424749]
+[2026-02-09 12:15:42] LIDAR scan completed.
+[2026-02-09 12:15:42] Scan step begin at [7.404363569142035, 7.364500000000001]
+[2026-02-09 12:15:42] Starting LIDAR scan at position [7.404363569142035, 7.364500000000001]
+[2026-02-09 12:15:42] Ray 0.0° hit at [8.0, 7.364500000000001]
+[2026-02-09 12:15:42] Ray 10.0° hit at [8.0, 7.469526773453152]
+[2026-02-09 12:15:42] Ray 20.0° hit at [8.0, 7.58129393127686]
+[2026-02-09 12:15:42] Ray 30.0° hit at [8.0, 7.708390853694995]
+[2026-02-09 12:15:42] Ray 40.0° hit at [8.0, 7.864298309448671]
+[2026-02-09 12:15:42] Ray 50.0° hit at [8.0, 8.074351856354975]
+[2026-02-09 12:15:42] Ray 310.0° hit at [8.0, 6.654648143645029]
+[2026-02-09 12:15:42] Ray 320.0° hit at [8.0, 6.86470169055133]
+[2026-02-09 12:15:42] Ray 330.0° hit at [8.0, 7.020609146305007]
+[2026-02-09 12:15:42] Ray 340.0° hit at [8.0, 7.147706068723143]
+[2026-02-09 12:15:42] Ray 350.0° hit at [8.0, 7.2594732265468505]
+[2026-02-09 12:15:42] LIDAR scan completed.
+[2026-02-09 12:15:42] LIDAR detected 11 obstacle hits: [[8.0, 7.365], [8.0, 7.47], [8.0, 7.581], [8.0, 7.708], [8.0, 7.864], [8.0, 8.074], [8.0, 6.655], [8.0, 6.865], [8.0, 7.021], [8.0, 7.148], [8.0, 7.259]]
+[2026-02-09 12:15:42] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:42] Reached waypoint [7.5, 7.0]
+[2026-02-09 12:15:42] Scan step begin at [7.404363569142035, 7.364500000000001]
+[2026-02-09 12:15:42] Starting LIDAR scan at position [7.404363569142035, 7.364500000000001]
+[2026-02-09 12:15:42] Ray 0.0° hit at [8.0, 7.364500000000001]
+[2026-02-09 12:15:42] Ray 10.0° hit at [8.0, 7.469526773453152]
+[2026-02-09 12:15:42] Ray 20.0° hit at [8.0, 7.58129393127686]
+[2026-02-09 12:15:42] Ray 30.0° hit at [8.0, 7.708390853694995]
+[2026-02-09 12:15:42] Ray 40.0° hit at [8.0, 7.864298309448671]
+[2026-02-09 12:15:42] Ray 50.0° hit at [8.0, 8.074351856354975]
+[2026-02-09 12:15:42] Ray 310.0° hit at [8.0, 6.654648143645029]
+[2026-02-09 12:15:42] Ray 320.0° hit at [8.0, 6.86470169055133]
+[2026-02-09 12:15:42] Ray 330.0° hit at [8.0, 7.020609146305007]
+[2026-02-09 12:15:42] Ray 340.0° hit at [8.0, 7.147706068723143]
+[2026-02-09 12:15:42] Ray 350.0° hit at [8.0, 7.2594732265468505]
+[2026-02-09 12:15:42] LIDAR scan completed.
+[2026-02-09 12:15:42] LIDAR detected 11 obstacle hits: [[8.0, 7.365], [8.0, 7.47], [8.0, 7.581], [8.0, 7.708], [8.0, 7.864], [8.0, 8.074], [8.0, 6.655], [8.0, 6.865], [8.0, 7.021], [8.0, 7.148], [8.0, 7.259]]
+[2026-02-09 12:15:42] Scan step end: obstacle_detected=True
+[2026-02-09 12:15:43] Obstacle detected near [8.0, 7.36] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-09 12:15:43] ===== DETOUR TRIGGERED =====
+[2026-02-09 12:15:43] Agent position: [7.404363569142035, 7.364500000000001]
+[2026-02-09 12:15:43] Goal position: [12.0, 4.0]
+[2026-02-09 12:15:43] Starting LIDAR scan at position [7.404363569142035, 7.364500000000001]
+[2026-02-09 12:15:43] Ray 0.0° hit at [8.0, 7.364500000000001]
+[2026-02-09 12:15:43] Ray 10.0° hit at [8.0, 7.469526773453152]
+[2026-02-09 12:15:43] Ray 20.0° hit at [8.0, 7.58129393127686]
+[2026-02-09 12:15:43] Ray 30.0° hit at [8.0, 7.708390853694995]
+[2026-02-09 12:15:43] Ray 40.0° hit at [8.0, 7.864298309448671]
+[2026-02-09 12:15:43] Ray 50.0° hit at [8.0, 8.074351856354975]
+[2026-02-09 12:15:43] Ray 310.0° hit at [8.0, 6.654648143645029]
+[2026-02-09 12:15:43] Ray 320.0° hit at [8.0, 6.86470169055133]
+[2026-02-09 12:15:43] Ray 330.0° hit at [8.0, 7.020609146305007]
+[2026-02-09 12:15:43] Ray 340.0° hit at [8.0, 7.147706068723143]
+[2026-02-09 12:15:43] Ray 350.0° hit at [8.0, 7.2594732265468505]
+[2026-02-09 12:15:43] LIDAR scan completed.
+[2026-02-09 12:15:43] LIDAR detected 11 obstacle hits: [[8.0, 7.365], [8.0, 7.47], [8.0, 7.581], [8.0, 7.708], [8.0, 7.864], [8.0, 8.074], [8.0, 6.655], [8.0, 6.865], [8.0, 7.021], [8.0, 7.148], [8.0, 7.259]]
+[2026-02-09 12:15:43] LIDAR hit count: 11
+[2026-02-09 12:15:43] LIDAR hit points: [[8.0, 7.365], [8.0, 7.47], [8.0, 7.581], [8.0, 7.708], [8.0, 7.864], [8.0, 8.074], [8.0, 6.655], [8.0, 6.865], [8.0, 7.021], [8.0, 7.148], [8.0, 7.259]]
+[2026-02-09 12:15:43] Total yellow waypoints in history: 3
+[2026-02-09 12:15:43] VLM snapshot saved at: logs/run_12:15:29_09-02/vlm_snapshot_12:15:29_09-02_003.png
+[2026-02-09 12:15:43] Querying VLM model: gpt-4o
+[2026-02-09 12:15:43] Calling VLM for detour (attempt 1)
+[2026-02-09 12:15:43] ================================================================================
+[2026-02-09 12:15:43] VLM QUERY PROMPT:
+[2026-02-09 12:15:43] ================================================================================
+[2026-02-09 12:15:43] You are assisting a mobile robot navigating in a 2D plane to reach a goal while avoiding obstacles and deadlock situations.
+
+IMAGE DESCRIPTION (also depicted visually):
+- Green dot: agent at (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Blue star: goal at (12.0, 4.0)
+- Red dots: obstacle points detected by LIDAR
+- Yellow dots: previous detour waypoints (areas already explored - AVOID THESE!)
+
+TEXT DATA (authoritative):
+- Agent position: (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Goal position: (12.0, 4.0)
+- LIDAR hit points: [(np.float64(8.0), np.float64(7.364500000000001)), (np.float64(8.0), np.float64(7.469526773453152)), (np.float64(8.0), np.float64(7.58129393127686)), (np.float64(8.0), np.float64(7.708390853694995)), (np.float64(8.0), np.float64(7.864298309448671)), (np.float64(8.0), np.float64(8.074351856354975)), (np.float64(8.0), np.float64(6.654648143645029)), (np.float64(8.0), np.float64(6.86470169055133)), (np.float64(8.0), np.float64(7.020609146305007)), (np.float64(8.0), np.float64(7.147706068723143)), (np.float64(8.0), np.float64(7.2594732265468505))]
+- Previous waypoint count: 3
+
+
+
+
+SPATIAL SITUATION ANALYSIS:
+- Obstacles detected: ABOVE=5, BELOW=5, LEFT=0, RIGHT=11
+- Environment type: CORRIDOR - limited maneuvering space
+- Goal direction: RIGHT and DOWN
+- Goal is at: (12.0, 4.0), you are at: (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Distance to goal: 5.70 units
+
+
+
+
+
+⚠️ CRITICAL: RECENT WAYPOINTS TO AVOID (most recent 3):
+[array([6.5, 8. ]), array([7.5, 8. ]), array([7.5, 7. ])]
+
+MANDATORY RULE: DO NOT place waypoints within 1.5 units of these locations!
+If you place a waypoint near these coordinates, the agent will OSCILLATE ENDLESSLY!
+Example: If recent waypoint is at [5.5, 4.5], do NOT place waypoint at [5.5, 3.0] or [6.0, 4.5].
+You MUST choose COMPLETELY DIFFERENT coordinates at least 1.5 units away.
+
+
+TASK:
+Return a SMALL SET of LOCAL DETOUR WAYPOINTS to move the agent past the obstacle.
+These waypoints should help the agent make progress toward the goal.
+
+RULES (MANDATORY):
+1. Return ONLY JSON with key "waypoints"
+2. Waypoints must be LOCAL (within 3 units of agent, no direct jump to goal)
+3. Give exactly 4 waypoints
+4. Keep waypoints AT LEAST 1.2 units away from red obstacle points (safety margin for path clearance between waypoints)
+5. Keep waypoints AT LEAST 1.0 units away from yellow previous waypoints (critically important!)
+6. Do NOT place waypoints in forbidden zones listed above
+7. Move tangentially around obstacles, not directly into them
+8. After clearing the obstacle, gradually turn toward the goal
+9. Coordinates must be numeric [x, y] within bounds [0, 15]
+10. Think about the spatial situation:
+    - If in a NARROW CORRIDOR/TUNNEL: Place waypoints in the CENTER (midpoint between walls), NOT near the walls
+    - If obstacles are on both sides (left+right or top+bottom): You're in a corridor - stay centered!
+    - If in open space: Go around obstacles with safety margin
+
+⚠️ CORRIDOR/TUNNEL RULE: If you see obstacles on BOTH sides of the agent, calculate the midpoint between them and place waypoints there!
+Example: If obstacles at y=0.3 and y=1.0, place waypoints at y=0.65 (the center), NOT at y=0.5 or y=0.8 (too close to walls).
+
+
+
+OUTPUT FORMAT (JSON only, no explanation):
+{
+  "waypoints": [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+}
+[2026-02-09 12:15:43] ================================================================================
+[2026-02-09 12:15:46] VLM returned 4 waypoints: [[8.5, 7.5], [9.0, 7.0], [10.0, 6.5], [11.0, 5.5]]
+[2026-02-09 12:15:46] Yellow waypoint validation PASSED: All waypoints clear of yellow history
+[2026-02-09 12:15:46] Progress validation PASSED: Waypoints make acceptable progress (tolerance=1.0x, retry=0)
+[2026-02-09 12:15:46] Reject WP1: segment [7.404363569142035, 7.364500000000001] -> [8.5, 7.5] intersects original obstacle interior
+[2026-02-09 12:15:46] Reject WP2: segment [7.404363569142035, 7.364500000000001] -> [9.0, 7.0] intersects original obstacle interior
+[2026-02-09 12:15:46] Reject WP3: segment [7.404363569142035, 7.364500000000001] -> [10.0, 6.5] intersects original obstacle interior
+[2026-02-09 12:15:46] Reject WP4: segment [7.404363569142035, 7.364500000000001] -> [11.0, 5.5] intersects original obstacle interior
+[2026-02-09 12:15:46] Detour validation result: FAILED — waypoints intersect obstacles or are unreachable
+[2026-02-09 12:15:46] Retrying VLM detour (attempt 2/5) due to invalid or unreachable waypoints
+[2026-02-09 12:15:46] Calling VLM for detour (attempt 2)
+[2026-02-09 12:15:46] ================================================================================
+[2026-02-09 12:15:46] VLM QUERY PROMPT:
+[2026-02-09 12:15:46] ================================================================================
+[2026-02-09 12:15:46] You are assisting a mobile robot navigating in a 2D plane to reach a goal while avoiding obstacles and deadlock situations.
+
+IMAGE DESCRIPTION (also depicted visually):
+- Green dot: agent at (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Blue star: goal at (12.0, 4.0)
+- Red dots: obstacle points detected by LIDAR
+- Yellow dots: previous detour waypoints (areas already explored - AVOID THESE!)
+
+TEXT DATA (authoritative):
+- Agent position: (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Goal position: (12.0, 4.0)
+- LIDAR hit points: [(np.float64(8.0), np.float64(7.364500000000001)), (np.float64(8.0), np.float64(7.469526773453152)), (np.float64(8.0), np.float64(7.58129393127686)), (np.float64(8.0), np.float64(7.708390853694995)), (np.float64(8.0), np.float64(7.864298309448671)), (np.float64(8.0), np.float64(8.074351856354975)), (np.float64(8.0), np.float64(6.654648143645029)), (np.float64(8.0), np.float64(6.86470169055133)), (np.float64(8.0), np.float64(7.020609146305007)), (np.float64(8.0), np.float64(7.147706068723143)), (np.float64(8.0), np.float64(7.2594732265468505))]
+- Previous waypoint count: 3
+
+
+
+
+SPATIAL SITUATION ANALYSIS:
+- Obstacles detected: ABOVE=5, BELOW=5, LEFT=0, RIGHT=11
+- Environment type: CORRIDOR - limited maneuvering space
+- Goal direction: RIGHT and DOWN
+- Goal is at: (12.0, 4.0), you are at: (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Distance to goal: 5.70 units
+
+
+
+
+
+⚠️ CRITICAL: RECENT WAYPOINTS TO AVOID (most recent 3):
+[array([6.5, 8. ]), array([7.5, 8. ]), array([7.5, 7. ])]
+
+MANDATORY RULE: DO NOT place waypoints within 1.5 units of these locations!
+If you place a waypoint near these coordinates, the agent will OSCILLATE ENDLESSLY!
+Example: If recent waypoint is at [5.5, 4.5], do NOT place waypoint at [5.5, 3.0] or [6.0, 4.5].
+You MUST choose COMPLETELY DIFFERENT coordinates at least 1.5 units away.
+
+
+TASK:
+Return a SMALL SET of LOCAL DETOUR WAYPOINTS to move the agent past the obstacle.
+These waypoints should help the agent make progress toward the goal.
+
+RULES (MANDATORY):
+1. Return ONLY JSON with key "waypoints"
+2. Waypoints must be LOCAL (within 3 units of agent, no direct jump to goal)
+3. Give exactly 4 waypoints
+4. Keep waypoints AT LEAST 1.2 units away from red obstacle points (safety margin for path clearance between waypoints)
+5. Keep waypoints AT LEAST 1.0 units away from yellow previous waypoints (critically important!)
+6. Do NOT place waypoints in forbidden zones listed above
+7. Move tangentially around obstacles, not directly into them
+8. After clearing the obstacle, gradually turn toward the goal
+9. Coordinates must be numeric [x, y] within bounds [0, 15]
+10. Think about the spatial situation:
+    - If in a NARROW CORRIDOR/TUNNEL: Place waypoints in the CENTER (midpoint between walls), NOT near the walls
+    - If obstacles are on both sides (left+right or top+bottom): You're in a corridor - stay centered!
+    - If in open space: Go around obstacles with safety margin
+
+⚠️ CORRIDOR/TUNNEL RULE: If you see obstacles on BOTH sides of the agent, calculate the midpoint between them and place waypoints there!
+Example: If obstacles at y=0.3 and y=1.0, place waypoints at y=0.65 (the center), NOT at y=0.5 or y=0.8 (too close to walls).
+
+RETRY FEEDBACK: The following waypoint sets were INVALID and caused collision or deadlock:
+[[(8.5, 7.5), (9.0, 7.0), (10.0, 6.5), (11.0, 5.5)]]
+
+DO NOT repeat or closely approximate these points. Choose a clearly different direction and a different side of the obstacle.
+
+OUTPUT FORMAT (JSON only, no explanation):
+{
+  "waypoints": [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+}
+[2026-02-09 12:15:46] ================================================================================
+[2026-02-09 12:15:48] VLM returned 4 waypoints: [[8.5, 6.5], [9.0, 6.0], [10.0, 5.5], [11.0, 5.0]]
+[2026-02-09 12:15:48] Yellow waypoint validation PASSED: All waypoints clear of yellow history
+[2026-02-09 12:15:48] Progress validation PASSED: Waypoints make acceptable progress (tolerance=1.1x, retry=1)
+[2026-02-09 12:15:48] Reject WP1: segment [7.404363569142035, 7.364500000000001] -> [8.5, 6.5] intersects original obstacle interior
+[2026-02-09 12:15:48] Reject WP2: segment [7.404363569142035, 7.364500000000001] -> [9.0, 6.0] intersects original obstacle interior
+[2026-02-09 12:15:48] Reject WP3: segment [7.404363569142035, 7.364500000000001] -> [10.0, 5.5] intersects original obstacle interior
+[2026-02-09 12:15:48] Reject WP4: segment [7.404363569142035, 7.364500000000001] -> [11.0, 5.0] intersects original obstacle interior
+[2026-02-09 12:15:48] Detour validation result: FAILED — waypoints intersect obstacles or are unreachable
+[2026-02-09 12:15:48] Retrying VLM detour (attempt 3/5) due to invalid or unreachable waypoints
+[2026-02-09 12:15:48] Calling VLM for detour (attempt 3)
+[2026-02-09 12:15:48] ================================================================================
+[2026-02-09 12:15:48] VLM QUERY PROMPT:
+[2026-02-09 12:15:48] ================================================================================
+[2026-02-09 12:15:48] You are assisting a mobile robot navigating in a 2D plane to reach a goal while avoiding obstacles and deadlock situations.
+
+IMAGE DESCRIPTION (also depicted visually):
+- Green dot: agent at (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Blue star: goal at (12.0, 4.0)
+- Red dots: obstacle points detected by LIDAR
+- Yellow dots: previous detour waypoints (areas already explored - AVOID THESE!)
+
+TEXT DATA (authoritative):
+- Agent position: (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Goal position: (12.0, 4.0)
+- LIDAR hit points: [(np.float64(8.0), np.float64(7.364500000000001)), (np.float64(8.0), np.float64(7.469526773453152)), (np.float64(8.0), np.float64(7.58129393127686)), (np.float64(8.0), np.float64(7.708390853694995)), (np.float64(8.0), np.float64(7.864298309448671)), (np.float64(8.0), np.float64(8.074351856354975)), (np.float64(8.0), np.float64(6.654648143645029)), (np.float64(8.0), np.float64(6.86470169055133)), (np.float64(8.0), np.float64(7.020609146305007)), (np.float64(8.0), np.float64(7.147706068723143)), (np.float64(8.0), np.float64(7.2594732265468505))]
+- Previous waypoint count: 3
+
+
+
+
+SPATIAL SITUATION ANALYSIS:
+- Obstacles detected: ABOVE=5, BELOW=5, LEFT=0, RIGHT=11
+- Environment type: CORRIDOR - limited maneuvering space
+- Goal direction: RIGHT and DOWN
+- Goal is at: (12.0, 4.0), you are at: (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Distance to goal: 5.70 units
+
+
+
+
+
+⚠️ CRITICAL: RECENT WAYPOINTS TO AVOID (most recent 3):
+[array([6.5, 8. ]), array([7.5, 8. ]), array([7.5, 7. ])]
+
+MANDATORY RULE: DO NOT place waypoints within 1.5 units of these locations!
+If you place a waypoint near these coordinates, the agent will OSCILLATE ENDLESSLY!
+Example: If recent waypoint is at [5.5, 4.5], do NOT place waypoint at [5.5, 3.0] or [6.0, 4.5].
+You MUST choose COMPLETELY DIFFERENT coordinates at least 1.5 units away.
+
+
+TASK:
+Return a SMALL SET of LOCAL DETOUR WAYPOINTS to move the agent past the obstacle.
+These waypoints should help the agent make progress toward the goal.
+
+RULES (MANDATORY):
+1. Return ONLY JSON with key "waypoints"
+2. Waypoints must be LOCAL (within 3 units of agent, no direct jump to goal)
+3. Give exactly 4 waypoints
+4. Keep waypoints AT LEAST 1.2 units away from red obstacle points (safety margin for path clearance between waypoints)
+5. Keep waypoints AT LEAST 1.0 units away from yellow previous waypoints (critically important!)
+6. Do NOT place waypoints in forbidden zones listed above
+7. Move tangentially around obstacles, not directly into them
+8. After clearing the obstacle, gradually turn toward the goal
+9. Coordinates must be numeric [x, y] within bounds [0, 15]
+10. Think about the spatial situation:
+    - If in a NARROW CORRIDOR/TUNNEL: Place waypoints in the CENTER (midpoint between walls), NOT near the walls
+    - If obstacles are on both sides (left+right or top+bottom): You're in a corridor - stay centered!
+    - If in open space: Go around obstacles with safety margin
+
+⚠️ CORRIDOR/TUNNEL RULE: If you see obstacles on BOTH sides of the agent, calculate the midpoint between them and place waypoints there!
+Example: If obstacles at y=0.3 and y=1.0, place waypoints at y=0.65 (the center), NOT at y=0.5 or y=0.8 (too close to walls).
+
+RETRY FEEDBACK: The following waypoint sets were INVALID and caused collision or deadlock:
+[[(8.5, 7.5), (9.0, 7.0), (10.0, 6.5), (11.0, 5.5)], [(8.5, 6.5), (9.0, 6.0), (10.0, 5.5), (11.0, 5.0)]]
+
+DO NOT repeat or closely approximate these points. Choose a clearly different direction and a different side of the obstacle.
+
+OUTPUT FORMAT (JSON only, no explanation):
+{
+  "waypoints": [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+}
+[2026-02-09 12:15:48] ================================================================================
+[2026-02-09 12:15:51] VLM returned 4 waypoints: [[8.5, 6.5], [9.0, 6.0], [10.0, 5.5], [11.0, 5.0]]
+[2026-02-09 12:15:51] Yellow waypoint validation PASSED: All waypoints clear of yellow history
+[2026-02-09 12:15:51] Progress validation PASSED: Waypoints make acceptable progress (tolerance=1.2x, retry=2)
+[2026-02-09 12:15:51] Reject WP1: segment [7.404363569142035, 7.364500000000001] -> [8.5, 6.5] intersects original obstacle interior
+[2026-02-09 12:15:51] Reject WP2: segment [7.404363569142035, 7.364500000000001] -> [9.0, 6.0] intersects original obstacle interior
+[2026-02-09 12:15:51] Reject WP3: segment [7.404363569142035, 7.364500000000001] -> [10.0, 5.5] intersects original obstacle interior
+[2026-02-09 12:15:51] Reject WP4: segment [7.404363569142035, 7.364500000000001] -> [11.0, 5.0] intersects original obstacle interior
+[2026-02-09 12:15:51] Detour validation result: FAILED — waypoints intersect obstacles or are unreachable
+[2026-02-09 12:15:51] Retrying VLM detour (attempt 4/5) due to invalid or unreachable waypoints
+[2026-02-09 12:15:51] Calling VLM for detour (attempt 4)
+[2026-02-09 12:15:51] ================================================================================
+[2026-02-09 12:15:51] VLM QUERY PROMPT:
+[2026-02-09 12:15:51] ================================================================================
+[2026-02-09 12:15:51] You are assisting a mobile robot navigating in a 2D plane to reach a goal while avoiding obstacles and deadlock situations.
+
+IMAGE DESCRIPTION (also depicted visually):
+- Green dot: agent at (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Blue star: goal at (12.0, 4.0)
+- Red dots: obstacle points detected by LIDAR
+- Yellow dots: previous detour waypoints (areas already explored - AVOID THESE!)
+
+TEXT DATA (authoritative):
+- Agent position: (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Goal position: (12.0, 4.0)
+- LIDAR hit points: [(np.float64(8.0), np.float64(7.364500000000001)), (np.float64(8.0), np.float64(7.469526773453152)), (np.float64(8.0), np.float64(7.58129393127686)), (np.float64(8.0), np.float64(7.708390853694995)), (np.float64(8.0), np.float64(7.864298309448671)), (np.float64(8.0), np.float64(8.074351856354975)), (np.float64(8.0), np.float64(6.654648143645029)), (np.float64(8.0), np.float64(6.86470169055133)), (np.float64(8.0), np.float64(7.020609146305007)), (np.float64(8.0), np.float64(7.147706068723143)), (np.float64(8.0), np.float64(7.2594732265468505))]
+- Previous waypoint count: 3
+
+
+
+
+SPATIAL SITUATION ANALYSIS:
+- Obstacles detected: ABOVE=5, BELOW=5, LEFT=0, RIGHT=11
+- Environment type: CORRIDOR - limited maneuvering space
+- Goal direction: RIGHT and DOWN
+- Goal is at: (12.0, 4.0), you are at: (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Distance to goal: 5.70 units
+
+
+
+
+
+⚠️ CRITICAL: RECENT WAYPOINTS TO AVOID (most recent 3):
+[array([6.5, 8. ]), array([7.5, 8. ]), array([7.5, 7. ])]
+
+MANDATORY RULE: DO NOT place waypoints within 1.5 units of these locations!
+If you place a waypoint near these coordinates, the agent will OSCILLATE ENDLESSLY!
+Example: If recent waypoint is at [5.5, 4.5], do NOT place waypoint at [5.5, 3.0] or [6.0, 4.5].
+You MUST choose COMPLETELY DIFFERENT coordinates at least 1.5 units away.
+
+
+TASK:
+Return a SMALL SET of LOCAL DETOUR WAYPOINTS to move the agent past the obstacle.
+These waypoints should help the agent make progress toward the goal.
+
+RULES (MANDATORY):
+1. Return ONLY JSON with key "waypoints"
+2. Waypoints must be LOCAL (within 3 units of agent, no direct jump to goal)
+3. Give exactly 4 waypoints
+4. Keep waypoints AT LEAST 1.2 units away from red obstacle points (safety margin for path clearance between waypoints)
+5. Keep waypoints AT LEAST 1.0 units away from yellow previous waypoints (critically important!)
+6. Do NOT place waypoints in forbidden zones listed above
+7. Move tangentially around obstacles, not directly into them
+8. After clearing the obstacle, gradually turn toward the goal
+9. Coordinates must be numeric [x, y] within bounds [0, 15]
+10. Think about the spatial situation:
+    - If in a NARROW CORRIDOR/TUNNEL: Place waypoints in the CENTER (midpoint between walls), NOT near the walls
+    - If obstacles are on both sides (left+right or top+bottom): You're in a corridor - stay centered!
+    - If in open space: Go around obstacles with safety margin
+
+⚠️ CORRIDOR/TUNNEL RULE: If you see obstacles on BOTH sides of the agent, calculate the midpoint between them and place waypoints there!
+Example: If obstacles at y=0.3 and y=1.0, place waypoints at y=0.65 (the center), NOT at y=0.5 or y=0.8 (too close to walls).
+
+RETRY FEEDBACK: The following waypoint sets were INVALID and caused collision or deadlock:
+[[(8.5, 7.5), (9.0, 7.0), (10.0, 6.5), (11.0, 5.5)], [(8.5, 6.5), (9.0, 6.0), (10.0, 5.5), (11.0, 5.0)], [(8.5, 6.5), (9.0, 6.0), (10.0, 5.5), (11.0, 5.0)]]
+
+DO NOT repeat or closely approximate these points. Choose a clearly different direction and a different side of the obstacle.
+
+OUTPUT FORMAT (JSON only, no explanation):
+{
+  "waypoints": [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+}
+[2026-02-09 12:15:51] ================================================================================
+[2026-02-09 12:15:53] VLM returned 4 waypoints: [[8.5, 6.5], [9.0, 6.0], [9.5, 5.5], [10.0, 5.0]]
+[2026-02-09 12:15:54] Yellow waypoint validation PASSED: All waypoints clear of yellow history
+[2026-02-09 12:15:54] Progress validation PASSED: Waypoints make acceptable progress (tolerance=1.3x, retry=3)
+[2026-02-09 12:15:54] Reject WP1: segment [7.404363569142035, 7.364500000000001] -> [8.5, 6.5] intersects original obstacle interior
+[2026-02-09 12:15:54] Reject WP2: segment [7.404363569142035, 7.364500000000001] -> [9.0, 6.0] intersects original obstacle interior
+[2026-02-09 12:15:54] Reject WP3: segment [7.404363569142035, 7.364500000000001] -> [9.5, 5.5] intersects original obstacle interior
+[2026-02-09 12:15:54] Reject WP4: segment [7.404363569142035, 7.364500000000001] -> [10.0, 5.0] intersects original obstacle interior
+[2026-02-09 12:15:54] Detour validation result: FAILED — waypoints intersect obstacles or are unreachable
+[2026-02-09 12:15:54] Retrying VLM detour (attempt 5/5) due to invalid or unreachable waypoints
+[2026-02-09 12:15:54] Calling VLM for detour (attempt 5)
+[2026-02-09 12:15:54] ================================================================================
+[2026-02-09 12:15:54] VLM QUERY PROMPT:
+[2026-02-09 12:15:54] ================================================================================
+[2026-02-09 12:15:54] You are assisting a mobile robot navigating in a 2D plane to reach a goal while avoiding obstacles and deadlock situations.
+
+IMAGE DESCRIPTION (also depicted visually):
+- Green dot: agent at (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Blue star: goal at (12.0, 4.0)
+- Red dots: obstacle points detected by LIDAR
+- Yellow dots: previous detour waypoints (areas already explored - AVOID THESE!)
+
+TEXT DATA (authoritative):
+- Agent position: (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Goal position: (12.0, 4.0)
+- LIDAR hit points: [(np.float64(8.0), np.float64(7.364500000000001)), (np.float64(8.0), np.float64(7.469526773453152)), (np.float64(8.0), np.float64(7.58129393127686)), (np.float64(8.0), np.float64(7.708390853694995)), (np.float64(8.0), np.float64(7.864298309448671)), (np.float64(8.0), np.float64(8.074351856354975)), (np.float64(8.0), np.float64(6.654648143645029)), (np.float64(8.0), np.float64(6.86470169055133)), (np.float64(8.0), np.float64(7.020609146305007)), (np.float64(8.0), np.float64(7.147706068723143)), (np.float64(8.0), np.float64(7.2594732265468505))]
+- Previous waypoint count: 3
+
+
+
+
+SPATIAL SITUATION ANALYSIS:
+- Obstacles detected: ABOVE=5, BELOW=5, LEFT=0, RIGHT=11
+- Environment type: CORRIDOR - limited maneuvering space
+- Goal direction: RIGHT and DOWN
+- Goal is at: (12.0, 4.0), you are at: (np.float64(7.404363569142035), np.float64(7.364500000000001))
+- Distance to goal: 5.70 units
+
+
+
+
+
+⚠️ CRITICAL: RECENT WAYPOINTS TO AVOID (most recent 3):
+[array([6.5, 8. ]), array([7.5, 8. ]), array([7.5, 7. ])]
+
+MANDATORY RULE: DO NOT place waypoints within 1.5 units of these locations!
+If you place a waypoint near these coordinates, the agent will OSCILLATE ENDLESSLY!
+Example: If recent waypoint is at [5.5, 4.5], do NOT place waypoint at [5.5, 3.0] or [6.0, 4.5].
+You MUST choose COMPLETELY DIFFERENT coordinates at least 1.5 units away.
+
+
+TASK:
+Return a SMALL SET of LOCAL DETOUR WAYPOINTS to move the agent past the obstacle.
+These waypoints should help the agent make progress toward the goal.
+
+RULES (MANDATORY):
+1. Return ONLY JSON with key "waypoints"
+2. Waypoints must be LOCAL (within 3 units of agent, no direct jump to goal)
+3. Give exactly 4 waypoints
+4. Keep waypoints AT LEAST 1.2 units away from red obstacle points (safety margin for path clearance between waypoints)
+5. Keep waypoints AT LEAST 1.0 units away from yellow previous waypoints (critically important!)
+6. Do NOT place waypoints in forbidden zones listed above
+7. Move tangentially around obstacles, not directly into them
+8. After clearing the obstacle, gradually turn toward the goal
+9. Coordinates must be numeric [x, y] within bounds [0, 15]
+10. Think about the spatial situation:
+    - If in a NARROW CORRIDOR/TUNNEL: Place waypoints in the CENTER (midpoint between walls), NOT near the walls
+    - If obstacles are on both sides (left+right or top+bottom): You're in a corridor - stay centered!
+    - If in open space: Go around obstacles with safety margin
+
+⚠️ CORRIDOR/TUNNEL RULE: If you see obstacles on BOTH sides of the agent, calculate the midpoint between them and place waypoints there!
+Example: If obstacles at y=0.3 and y=1.0, place waypoints at y=0.65 (the center), NOT at y=0.5 or y=0.8 (too close to walls).
+
+RETRY FEEDBACK: The following waypoint sets were INVALID and caused collision or deadlock:
+[[(8.5, 7.5), (9.0, 7.0), (10.0, 6.5), (11.0, 5.5)], [(8.5, 6.5), (9.0, 6.0), (10.0, 5.5), (11.0, 5.0)], [(8.5, 6.5), (9.0, 6.0), (10.0, 5.5), (11.0, 5.0)], [(8.5, 6.5), (9.0, 6.0), (9.5, 5.5), (10.0, 5.0)]]
+
+DO NOT repeat or closely approximate these points. Choose a clearly different direction and a different side of the obstacle.
+
+OUTPUT FORMAT (JSON only, no explanation):
+{
+  "waypoints": [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+}
+[2026-02-09 12:15:54] ================================================================================
+[2026-02-09 12:15:56] VLM returned 4 waypoints: [[8.5, 7.0], [9.0, 6.5], [10.0, 6.0], [11.0, 5.5]]
+[2026-02-09 12:15:56] Yellow waypoint validation PASSED: All waypoints clear of yellow history
+[2026-02-09 12:15:56] Progress validation PASSED: Waypoints make acceptable progress (tolerance=1.4x, retry=4)
+[2026-02-09 12:15:56] Reject WP1: segment [7.404363569142035, 7.364500000000001] -> [8.5, 7.0] intersects original obstacle interior
+[2026-02-09 12:15:56] Reject WP2: segment [7.404363569142035, 7.364500000000001] -> [9.0, 6.5] intersects original obstacle interior
+[2026-02-09 12:15:56] Reject WP3: segment [7.404363569142035, 7.364500000000001] -> [10.0, 6.0] intersects original obstacle interior
+[2026-02-09 12:15:56] Reject WP4: segment [7.404363569142035, 7.364500000000001] -> [11.0, 5.5] intersects original obstacle interior
+[2026-02-09 12:15:56] Detour validation result: FAILED — waypoints intersect obstacles or are unreachable
+[2026-02-09 12:15:56] VLM detour FAILED after maximum retries. Attempting GEOMETRIC ESCAPE HEURISTIC as last resort.
+[2026-02-09 12:15:56] ESCAPE HEURISTIC: VLM failed - using geometric waypoint generation
+[2026-02-09 12:15:56] Tunnel check: x_var=0.000, y_var=0.169
+[2026-02-09 12:15:56] TUNNEL DETECTED: Horizontal tunnel at y=7.36
+[2026-02-09 12:15:56] TUNNEL ESCAPE: Generating exit waypoints for horizontal tunnel
+[2026-02-09 12:15:56] Tunnel center at y=7.36
+[2026-02-09 12:15:56] Agent at y=7.36
+[2026-02-09 12:15:56] Goal is to the right - exiting tunnel in that direction
+[2026-02-09 12:15:56] Using tunnel center y=7.36 instead of agent y=7.36
+[2026-02-09 12:15:56] Tunnel escape waypoints: [[9.404363569142035, np.float64(7.3645000000000005)], [11.904363569142035, np.float64(7.3645000000000005)], [14.404363569142035, np.float64(7.3645000000000005)], [12.0, np.float64(7.3645000000000005)]]
+[2026-02-09 12:15:56] Validating 4 escape heuristic waypoints...
+[2026-02-09 12:15:56] Reject WP1: segment [7.404363569142035, 7.364500000000001] -> [9.404363569142035, 7.3645000000000005] intersects original obstacle interior
+[2026-02-09 12:15:56] Reject WP2: segment [7.404363569142035, 7.364500000000001] -> [11.904363569142035, 7.3645000000000005] intersects original obstacle interior
+[2026-02-09 12:15:56] Reject WP3: segment [7.404363569142035, 7.364500000000001] -> [14.404363569142035, 7.3645000000000005] intersects original obstacle interior
+[2026-02-09 12:15:56] Reject WP4: segment [7.404363569142035, 7.364500000000001] -> [12.0, 7.3645000000000005] intersects original obstacle interior
+[2026-02-09 12:15:56] Escape heuristic waypoints also blocked by obstacles
+[2026-02-09 12:15:56] VLM detour AND escape heuristic FAILED. Stopping navigation safely.
+[2026-02-09 12:15:56] ===== DETOUR END =====
+[2026-02-09 12:15:56]   produced no usable waypoints after retries — stopping.
+[2026-02-09 12:15:56] Stopped (guard or no   waypoints).
+[2026-02-09 12:15:57] Final obstacle clusters (with LIDAR hit points):
+[2026-02-09 12:15:57] {"id": 1, "n_points": 148, "centroid": [8.0, 7.6505022048950195], "bbox": [8.0, 6.654648303985596, 8.0, 8.43417739868164], "points": [[8.0, 8.0], [8.0, 8.17006778717041], [8.0, 7.829932689666748], [8.0, 8.0], [8.0, 8.161876678466797], [8.0, 8.334142684936523], [8.0, 7.665857315063477], [8.0, 7.838122844696045], [8.0, 8.0], [8.0, 8.154505729675293], [8.0, 8.318926811218262], [8.0, 7.68107271194458], [8.0, 7.845494270324707], [8.0, 8.0], [8.0, 8.154505729675293], [8.0, 8.318926811218262], [8.0, 7.68107271194458], [8.0, 7.845494270324707], [8.0, 7.949999809265137], [8.0, 8.097871780395508], [8.0, 8.255232810974121], [8.0, 8.43417739868164], [8.0, 7.465822219848633], [8.0, 7.6447672843933105], [8.0, 7.802128791809082], [8.0, 7.900000095367432], [8.0, 8.041900634765625], [8.0, 8.19290828704834], [8.0, 8.364627838134766], [8.0, 7.435372352600098], [8.0, 7.607091903686523], [8.0, 7.758099555969238], [8.0, 7.849999904632568], [8.0, 7.986526966094971], [8.0, 8.131815910339355], [8.0, 8.297032356262207], [8.0, 7.402967929840088], [8.0, 7.5681843757629395], [8.0, 7.713473320007324], [8.0, 7.800000190734863], [8.0, 7.931690692901611], [8.0, 8.071832656860352], [8.0, 8.231196403503418], [8.0, 8.426685333251953], [8.0, 7.173314571380615], [8.0, 7.36880350112915], [8.0, 7.528167247772217], [8.0, 7.668309211730957], [8.0, 7.75], [8.0, 7.87733793258667], [8.0, 8.012847900390625], [8.0, 8.16694450378418], [8.0, 8.355971336364746], [8.0, 7.144028186798096], [8.0, 7.33305549621582], [8.0, 7.487152099609375], [8.0, 7.62266206741333], [8.0, 7.699999809265137], [8.0, 7.823420524597168], [8.0, 7.954761505126953], [8.0, 8.104117393493652], [8.0, 8.28732967376709], [8.0, 7.112670421600342], [8.0, 7.295882701873779], [8.0, 7.44523811340332], [8.0, 7.576579570770264], [8.0, 7.650000095367432], [8.0, 7.769894599914551], [8.0, 7.897483825683594], [8.0, 8.042572975158691], [8.0, 8.220551490783691], [8.0, 7.079448699951172], [8.0, 7.257426738739014], [8.0, 7.402515888214111], [8.0, 7.530105113983154], [8.0, 7.599999904632568], [8.0, 7.716721534729004], [8.0, 7.8409342765808105], [8.0, 7.982183456420898], [8.0, 8.155451774597168], [8.0, 7.044548511505127], [8.0, 7.217816352844238], [8.0, 7.359066009521484], [8.0, 7.483278274536133], [8.0, 7.550000190734863], [8.0, 7.663865566253662], [8.0, 7.78503942489624], [8.0, 7.922832489013672], [8.0, 8.0918607711792], [8.0, 7.008138656616211], [8.0, 7.1771674156188965], [8.0, 7.314960956573486], [8.0, 7.436134338378906], [8.0, 7.5], [8.0, 7.611295700073242], [8.0, 7.729733943939209], [8.0, 7.86441707611084], [8.0, 8.029629707336426], [8.0, 8.25222110748291], [8.0, 6.74777889251709], [8.0, 6.970369815826416], [8.0, 7.13558292388916], [8.0, 7.270266056060791], [8.0, 7.388704299926758], [8.0, 7.449999809265137], [8.0, 7.5589823722839355], [8.0, 7.674959182739258], [8.0, 7.806842803955078], [8.0, 7.968622207641602], [8.0, 8.186586380004883], [8.0, 6.713413238525391], [8.0, 6.93137788772583], [8.0, 7.0931572914123535], [8.0, 7.225040912628174], [8.0, 7.341017723083496], [8.0, 7.40500020980835], [8.0, 7.511900424957275], [8.0, 7.625661373138428], [8.0, 7.755025863647461], [8.0, 7.91371488571167], [8.0, 8.12751579284668], [8.0, 6.682484149932861], [8.0, 6.896285057067871], [8.0, 7.05497407913208], [8.0, 7.184338569641113], [8.0, 7.298099517822266], [8.0, 7.364500045776367], [8.0, 7.469526767730713], [8.0, 7.581294059753418], [8.0, 7.708390712738037], [8.0, 7.864298343658447], [8.0, 8.074352264404297], [8.0, 6.654648303985596], [8.0, 6.864701747894287], [8.0, 7.020609378814697], [8.0, 7.147706031799316], [8.0, 7.2594733238220215], [8.0, 7.364500045776367], [8.0, 7.469526767730713], [8.0, 7.581294059753418], [8.0, 7.708390712738037], [8.0, 7.864298343658447], [8.0, 8.074352264404297], [8.0, 6.654648303985596], [8.0, 6.864701747894287], [8.0, 7.020609378814697], [8.0, 7.147706031799316], [8.0, 7.2594733238220215]]}
+[2026-02-09 12:15:57] {"id": 2, "n_points": 4, "centroid": [7.091239929199219, 9.0], "bbox": [7.0355000495910645, 9.0, 7.123754978179932, 9.0], "points": [[7.0355000495910645, 9.0], [7.0819501876831055, 9.0], [7.123754978179932, 9.0], [7.123754978179932, 9.0]]}
+[2026-02-09 12:15:57] Saved heatmap video to logs/run_12:15:29_09-02/heatmap_12:15:29_09-02.mp4

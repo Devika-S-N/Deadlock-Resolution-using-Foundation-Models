@@ -1,0 +1,272 @@
+[2026-02-08 10:37:15] Run directory created at logs/run_10:37:15_08-02
+[2026-02-08 10:37:16] Environment initialized with agent at (5.0, 9.0) and goal at (4.0, 2.0)
+[2026-02-08 10:37:16] Starting navigation from [5.0, 9.0] to goal at [4.0, 2.0]
+[2026-02-08 10:37:16] Scan step begin at [5.0, 9.0]
+[2026-02-08 10:37:16] Starting LIDAR scan at position [5.0, 9.0]
+[2026-02-08 10:37:16] Ray 270.0° hit at [5.0, 8.0]
+[2026-02-08 10:37:16] LIDAR scan completed.
+[2026-02-08 10:37:16] LIDAR detected 1 obstacle hits: [[5.0, 8.0]]
+[2026-02-08 10:37:16] Scan step end: obstacle_detected=True
+[2026-02-08 10:37:16] Obstacle detected near [5.0, 8.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-08 10:37:16] ===== DETOUR TRIGGERED =====
+[2026-02-08 10:37:16] Agent position: [5.0, 9.0]
+[2026-02-08 10:37:16] Goal position: [4.0, 2.0]
+[2026-02-08 10:37:16] Starting LIDAR scan at position [5.0, 9.0]
+[2026-02-08 10:37:16] Ray 270.0° hit at [5.0, 8.0]
+[2026-02-08 10:37:16] LIDAR scan completed.
+[2026-02-08 10:37:16] LIDAR detected 1 obstacle hits: [[5.0, 8.0]]
+[2026-02-08 10:37:16] LIDAR hit count: 1
+[2026-02-08 10:37:16] LIDAR hit points: [[5.0, 8.0]]
+[2026-02-08 10:37:17] VLM snapshot saved at: logs/run_10:37:15_08-02/vlm_snapshot_10:37:15_08-02_001.png
+[2026-02-08 10:37:17] Querying VLM model: gpt-4o
+[2026-02-08 10:37:17] Calling VLM for detour (attempt 1)
+[2026-02-08 10:37:19] VLM returned 4 waypoints: [[4.5, 9.5], [4.0, 9.0], [3.5, 8.5], [3.5, 8.0]]
+[2026-02-08 10:37:19] Accept WP1: [4.5, 9.5]
+[2026-02-08 10:37:19] Accept WP2: [4.0, 9.0]
+[2026-02-08 10:37:19] Accept WP3: [3.5, 8.5]
+[2026-02-08 10:37:19] Accept WP4: [3.5, 8.0]
+[2026-02-08 10:37:19] Detour validation result: SUCCESS (4 waypoints accepted)
+[2026-02-08 10:37:19] Added 4 detour waypoints to live heatmap (yellow markers).
+[2026-02-08 10:37:19] ===== DETOUR END =====
+[2026-02-08 10:37:19] Moving to waypoint [4.5, 9.5]
+[2026-02-08 10:37:19] Starting LIDAR scan at position [5.0, 9.0]
+[2026-02-08 10:37:19] Ray 270.0° hit at [5.0, 8.0]
+[2026-02-08 10:37:19] LIDAR scan completed.
+[2026-02-08 10:37:19] Scan step begin at [4.95, 9.05]
+[2026-02-08 10:37:19] Starting LIDAR scan at position [4.95, 9.05]
+[2026-02-08 10:37:19] LIDAR scan completed.
+[2026-02-08 10:37:19] LIDAR detected 0 obstacle hits: []
+[2026-02-08 10:37:19] Scan step end: obstacle_detected=False
+[2026-02-08 10:37:19] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:19] Could not reach waypoint [4.5, 9.5] — controller stop.
+[2026-02-08 10:37:19] Moving to waypoint [4.0, 9.0]
+[2026-02-08 10:37:19] Starting LIDAR scan at position [4.95, 9.05]
+[2026-02-08 10:37:19] LIDAR scan completed.
+[2026-02-08 10:37:19] Scan step begin at [4.9, 9.045]
+[2026-02-08 10:37:19] Starting LIDAR scan at position [4.9, 9.045]
+[2026-02-08 10:37:19] LIDAR scan completed.
+[2026-02-08 10:37:19] LIDAR detected 0 obstacle hits: []
+[2026-02-08 10:37:19] Scan step end: obstacle_detected=False
+[2026-02-08 10:37:19] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:19] Could not reach waypoint [4.0, 9.0] — controller stop.
+[2026-02-08 10:37:19] Moving to waypoint [3.5, 8.5]
+[2026-02-08 10:37:19] Starting LIDAR scan at position [4.9, 9.045]
+[2026-02-08 10:37:19] LIDAR scan completed.
+[2026-02-08 10:37:19] Scan step begin at [4.8500000000000005, 8.995]
+[2026-02-08 10:37:19] Starting LIDAR scan at position [4.8500000000000005, 8.995]
+[2026-02-08 10:37:19] LIDAR scan completed.
+[2026-02-08 10:37:19] LIDAR detected 0 obstacle hits: []
+[2026-02-08 10:37:19] Scan step end: obstacle_detected=False
+[2026-02-08 10:37:19] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:19] Could not reach waypoint [3.5, 8.5] — controller stop.
+[2026-02-08 10:37:19] Moving to waypoint [3.5, 8.0]
+[2026-02-08 10:37:19] Starting LIDAR scan at position [4.8500000000000005, 8.995]
+[2026-02-08 10:37:19] LIDAR scan completed.
+[2026-02-08 10:37:19] Scan step begin at [4.800000000000001, 8.944999999999999]
+[2026-02-08 10:37:19] Starting LIDAR scan at position [4.800000000000001, 8.944999999999999]
+[2026-02-08 10:37:19] LIDAR scan completed.
+[2026-02-08 10:37:19] LIDAR detected 0 obstacle hits: []
+[2026-02-08 10:37:19] Scan step end: obstacle_detected=False
+[2026-02-08 10:37:20] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:20] Could not reach waypoint [3.5, 8.0] — controller stop.
+[2026-02-08 10:37:20] Scan step begin at [4.800000000000001, 8.944999999999999]
+[2026-02-08 10:37:20] Starting LIDAR scan at position [4.800000000000001, 8.944999999999999]
+[2026-02-08 10:37:20] LIDAR scan completed.
+[2026-02-08 10:37:20] LIDAR detected 0 obstacle hits: []
+[2026-02-08 10:37:20] Scan step end: obstacle_detected=False
+[2026-02-08 10:37:20] Scan step begin at [4.750000000000001, 8.894999999999998]
+[2026-02-08 10:37:20] Starting LIDAR scan at position [4.750000000000001, 8.894999999999998]
+[2026-02-08 10:37:20] Ray 290.0° hit at [5.0757533596682505, 8.0]
+[2026-02-08 10:37:20] LIDAR scan completed.
+[2026-02-08 10:37:20] LIDAR detected 1 obstacle hits: [[5.076, 8.0]]
+[2026-02-08 10:37:20] Scan step end: obstacle_detected=True
+[2026-02-08 10:37:20] Obstacle detected near [5.08, 8.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-08 10:37:20] ===== DETOUR TRIGGERED =====
+[2026-02-08 10:37:20] Agent position: [4.750000000000001, 8.894999999999998]
+[2026-02-08 10:37:20] Goal position: [4.0, 2.0]
+[2026-02-08 10:37:20] Starting LIDAR scan at position [4.750000000000001, 8.894999999999998]
+[2026-02-08 10:37:20] Ray 290.0° hit at [5.0757533596682505, 8.0]
+[2026-02-08 10:37:20] LIDAR scan completed.
+[2026-02-08 10:37:20] LIDAR detected 1 obstacle hits: [[5.076, 8.0]]
+[2026-02-08 10:37:20] LIDAR hit count: 1
+[2026-02-08 10:37:20] LIDAR hit points: [[5.076, 8.0]]
+[2026-02-08 10:37:20] VLM snapshot saved at: logs/run_10:37:15_08-02/vlm_snapshot_10:37:15_08-02_002.png
+[2026-02-08 10:37:20] Querying VLM model: gpt-4o
+[2026-02-08 10:37:20] Calling VLM for detour (attempt 1)
+[2026-02-08 10:37:22] VLM returned 4 waypoints: [[5.0, 9.5], [5.5, 9.0], [5.5, 8.0], [5.0, 7.5]]
+[2026-02-08 10:37:22] Accept WP1: [5.0, 9.5]
+[2026-02-08 10:37:22] Accept WP2: [5.5, 9.0]
+[2026-02-08 10:37:22] Reject WP3: segment [5.5, 9.0] -> [5.5, 8.0] intersects original obstacle interior
+[2026-02-08 10:37:22] Reject WP4: segment [5.5, 9.0] -> [5.0, 7.5] intersects original obstacle interior
+[2026-02-08 10:37:22] Detour validation result: SUCCESS (2 waypoints accepted)
+[2026-02-08 10:37:22] Added 2 detour waypoints to live heatmap (yellow markers).
+[2026-02-08 10:37:22] ===== DETOUR END =====
+[2026-02-08 10:37:22] Moving to waypoint [5.0, 9.5]
+[2026-02-08 10:37:22] Starting LIDAR scan at position [4.750000000000001, 8.894999999999998]
+[2026-02-08 10:37:22] Ray 290.0° hit at [5.0757533596682505, 8.0]
+[2026-02-08 10:37:22] LIDAR scan completed.
+[2026-02-08 10:37:22] Scan step begin at [4.775, 8.944999999999999]
+[2026-02-08 10:37:22] Starting LIDAR scan at position [4.775, 8.944999999999999]
+[2026-02-08 10:37:22] LIDAR scan completed.
+[2026-02-08 10:37:22] LIDAR detected 0 obstacle hits: []
+[2026-02-08 10:37:22] Scan step end: obstacle_detected=False
+[2026-02-08 10:37:22] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:22] Could not reach waypoint [5.0, 9.5] — controller stop.
+[2026-02-08 10:37:22] Moving to waypoint [5.5, 9.0]
+[2026-02-08 10:37:22] Starting LIDAR scan at position [4.775, 8.944999999999999]
+[2026-02-08 10:37:22] LIDAR scan completed.
+[2026-02-08 10:37:22] Scan step begin at [4.825, 8.950499999999998]
+[2026-02-08 10:37:22] Starting LIDAR scan at position [4.825, 8.950499999999998]
+[2026-02-08 10:37:22] LIDAR scan completed.
+[2026-02-08 10:37:22] LIDAR detected 0 obstacle hits: []
+[2026-02-08 10:37:22] Scan step end: obstacle_detected=False
+[2026-02-08 10:37:22] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:22] Could not reach waypoint [5.5, 9.0] — controller stop.
+[2026-02-08 10:37:22] Scan step begin at [4.825, 8.950499999999998]
+[2026-02-08 10:37:22] Starting LIDAR scan at position [4.825, 8.950499999999998]
+[2026-02-08 10:37:22] LIDAR scan completed.
+[2026-02-08 10:37:22] LIDAR detected 0 obstacle hits: []
+[2026-02-08 10:37:22] Scan step end: obstacle_detected=False
+[2026-02-08 10:37:22] Scan step begin at [4.775, 8.900499999999997]
+[2026-02-08 10:37:22] Starting LIDAR scan at position [4.775, 8.900499999999997]
+[2026-02-08 10:37:22] Ray 290.0° hit at [5.102755195956714, 8.0]
+[2026-02-08 10:37:22] LIDAR scan completed.
+[2026-02-08 10:37:22] LIDAR detected 1 obstacle hits: [[5.103, 8.0]]
+[2026-02-08 10:37:22] Scan step end: obstacle_detected=True
+[2026-02-08 10:37:23] Obstacle detected near [5.1, 8.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-08 10:37:23] ===== DETOUR TRIGGERED =====
+[2026-02-08 10:37:23] Agent position: [4.775, 8.900499999999997]
+[2026-02-08 10:37:23] Goal position: [4.0, 2.0]
+[2026-02-08 10:37:23] Starting LIDAR scan at position [4.775, 8.900499999999997]
+[2026-02-08 10:37:23] Ray 290.0° hit at [5.102755195956714, 8.0]
+[2026-02-08 10:37:23] LIDAR scan completed.
+[2026-02-08 10:37:23] LIDAR detected 1 obstacle hits: [[5.103, 8.0]]
+[2026-02-08 10:37:23] LIDAR hit count: 1
+[2026-02-08 10:37:23] LIDAR hit points: [[5.103, 8.0]]
+[2026-02-08 10:37:23] VLM snapshot saved at: logs/run_10:37:15_08-02/vlm_snapshot_10:37:15_08-02_003.png
+[2026-02-08 10:37:23] Querying VLM model: gpt-4o
+[2026-02-08 10:37:23] Calling VLM for detour (attempt 1)
+[2026-02-08 10:37:25] VLM returned 4 waypoints: [[4.5, 9.5], [4.0, 9.0], [3.5, 8.5], [3.5, 8.0]]
+[2026-02-08 10:37:25] Accept WP1: [4.5, 9.5]
+[2026-02-08 10:37:25] Accept WP2: [4.0, 9.0]
+[2026-02-08 10:37:25] Accept WP3: [3.5, 8.5]
+[2026-02-08 10:37:25] Accept WP4: [3.5, 8.0]
+[2026-02-08 10:37:25] Detour validation result: SUCCESS (4 waypoints accepted)
+[2026-02-08 10:37:25] Added 4 detour waypoints to live heatmap (yellow markers).
+[2026-02-08 10:37:25] ===== DETOUR END =====
+[2026-02-08 10:37:25] Moving to waypoint [4.5, 9.5]
+[2026-02-08 10:37:25] Starting LIDAR scan at position [4.775, 8.900499999999997]
+[2026-02-08 10:37:25] Ray 290.0° hit at [5.102755195956714, 8.0]
+[2026-02-08 10:37:25] LIDAR scan completed.
+[2026-02-08 10:37:25] Scan step begin at [4.7475000000000005, 8.950499999999998]
+[2026-02-08 10:37:25] Starting LIDAR scan at position [4.7475000000000005, 8.950499999999998]
+[2026-02-08 10:37:25] LIDAR scan completed.
+[2026-02-08 10:37:25] LIDAR detected 0 obstacle hits: []
+[2026-02-08 10:37:25] Scan step end: obstacle_detected=False
+[2026-02-08 10:37:26] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:26] Could not reach waypoint [4.5, 9.5] — controller stop.
+[2026-02-08 10:37:26] Moving to waypoint [4.0, 9.0]
+[2026-02-08 10:37:26] Starting LIDAR scan at position [4.7475000000000005, 8.950499999999998]
+[2026-02-08 10:37:26] LIDAR scan completed.
+[2026-02-08 10:37:26] Scan step begin at [4.697500000000001, 8.955449999999999]
+[2026-02-08 10:37:26] Starting LIDAR scan at position [4.697500000000001, 8.955449999999999]
+[2026-02-08 10:37:26] LIDAR scan completed.
+[2026-02-08 10:37:26] LIDAR detected 0 obstacle hits: []
+[2026-02-08 10:37:26] Scan step end: obstacle_detected=False
+[2026-02-08 10:37:26] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:26] Could not reach waypoint [4.0, 9.0] — controller stop.
+[2026-02-08 10:37:26] Moving to waypoint [3.5, 8.5]
+[2026-02-08 10:37:26] Starting LIDAR scan at position [4.697500000000001, 8.955449999999999]
+[2026-02-08 10:37:26] LIDAR scan completed.
+[2026-02-08 10:37:26] Scan step begin at [4.647500000000001, 8.909904999999998]
+[2026-02-08 10:37:26] Starting LIDAR scan at position [4.647500000000001, 8.909904999999998]
+[2026-02-08 10:37:26] LIDAR scan completed.
+[2026-02-08 10:37:26] LIDAR detected 0 obstacle hits: []
+[2026-02-08 10:37:26] Scan step end: obstacle_detected=False
+[2026-02-08 10:37:26] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:26] Could not reach waypoint [3.5, 8.5] — controller stop.
+[2026-02-08 10:37:26] Moving to waypoint [3.5, 8.0]
+[2026-02-08 10:37:26] Starting LIDAR scan at position [4.647500000000001, 8.909904999999998]
+[2026-02-08 10:37:26] LIDAR scan completed.
+[2026-02-08 10:37:26] Scan step begin at [4.597500000000001, 8.859904999999998]
+[2026-02-08 10:37:26] Starting LIDAR scan at position [4.597500000000001, 8.859904999999998]
+[2026-02-08 10:37:26] Ray 300.0° hit at [5.093966383227505, 8.0]
+[2026-02-08 10:37:26] LIDAR scan completed.
+[2026-02-08 10:37:26] LIDAR detected 1 obstacle hits: [[5.094, 8.0]]
+[2026-02-08 10:37:26] Scan step end: obstacle_detected=True
+[2026-02-08 10:37:26] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:26] Could not reach waypoint [3.5, 8.0] — blocked by nearby obstacle (LIDAR hit).
+[2026-02-08 10:37:26] Scan step begin at [4.597500000000001, 8.859904999999998]
+[2026-02-08 10:37:26] Starting LIDAR scan at position [4.597500000000001, 8.859904999999998]
+[2026-02-08 10:37:26] Ray 300.0° hit at [5.093966383227505, 8.0]
+[2026-02-08 10:37:26] LIDAR scan completed.
+[2026-02-08 10:37:26] LIDAR detected 1 obstacle hits: [[5.094, 8.0]]
+[2026-02-08 10:37:26] Scan step end: obstacle_detected=True
+[2026-02-08 10:37:26] Obstacle detected near [5.09, 8.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-08 10:37:26] ===== DETOUR TRIGGERED =====
+[2026-02-08 10:37:26] Agent position: [4.597500000000001, 8.859904999999998]
+[2026-02-08 10:37:26] Goal position: [4.0, 2.0]
+[2026-02-08 10:37:26] Starting LIDAR scan at position [4.597500000000001, 8.859904999999998]
+[2026-02-08 10:37:26] Ray 300.0° hit at [5.093966383227505, 8.0]
+[2026-02-08 10:37:26] LIDAR scan completed.
+[2026-02-08 10:37:26] LIDAR detected 1 obstacle hits: [[5.094, 8.0]]
+[2026-02-08 10:37:26] LIDAR hit count: 1
+[2026-02-08 10:37:26] LIDAR hit points: [[5.094, 8.0]]
+[2026-02-08 10:37:27] VLM snapshot saved at: logs/run_10:37:15_08-02/vlm_snapshot_10:37:15_08-02_004.png
+[2026-02-08 10:37:27] Querying VLM model: gpt-4o
+[2026-02-08 10:37:27] Calling VLM for detour (attempt 1)
+[2026-02-08 10:37:29] VLM returned 4 waypoints: [[4.0, 8.0], [3.5, 7.5], [3.5, 6.5], [4.0, 5.5]]
+[2026-02-08 10:37:29] Accept WP1: [4.0, 8.0]
+[2026-02-08 10:37:29] Accept WP2: [3.5, 7.5]
+[2026-02-08 10:37:29] Accept WP3: [3.5, 6.5]
+[2026-02-08 10:37:29] Reject WP4: segment [3.5, 6.5] -> [4.0, 5.5] intersects original obstacle interior
+[2026-02-08 10:37:29] Detour validation result: SUCCESS (3 waypoints accepted)
+[2026-02-08 10:37:29] Added 3 detour waypoints to live heatmap (yellow markers).
+[2026-02-08 10:37:29] ===== DETOUR END =====
+[2026-02-08 10:37:29] Moving to waypoint [4.0, 8.0]
+[2026-02-08 10:37:29] Starting LIDAR scan at position [4.597500000000001, 8.859904999999998]
+[2026-02-08 10:37:29] Ray 300.0° hit at [5.093966383227505, 8.0]
+[2026-02-08 10:37:29] LIDAR scan completed.
+[2026-02-08 10:37:29] Scan step begin at [4.547500000000001, 8.809904999999997]
+[2026-02-08 10:37:29] Starting LIDAR scan at position [4.547500000000001, 8.809904999999997]
+[2026-02-08 10:37:29] Ray 300.0° hit at [5.015098869768024, 8.0]
+[2026-02-08 10:37:29] LIDAR scan completed.
+[2026-02-08 10:37:29] LIDAR detected 1 obstacle hits: [[5.015, 8.0]]
+[2026-02-08 10:37:29] Scan step end: obstacle_detected=True
+[2026-02-08 10:37:29] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:29] Could not reach waypoint [4.0, 8.0] — blocked by nearby obstacle (LIDAR hit).
+[2026-02-08 10:37:29] Moving to waypoint [3.5, 7.5]
+[2026-02-08 10:37:29] Starting LIDAR scan at position [4.547500000000001, 8.809904999999997]
+[2026-02-08 10:37:29] Ray 300.0° hit at [5.015098869768024, 8.0]
+[2026-02-08 10:37:29] LIDAR scan completed.
+[2026-02-08 10:37:29] Scan step begin at [4.497500000000001, 8.759904999999996]
+[2026-02-08 10:37:29] Starting LIDAR scan at position [4.497500000000001, 8.759904999999996]
+[2026-02-08 10:37:29] Ray 310.0° hit at [5.135136005229769, 8.0]
+[2026-02-08 10:37:29] LIDAR scan completed.
+[2026-02-08 10:37:29] LIDAR detected 1 obstacle hits: [[5.135, 8.0]]
+[2026-02-08 10:37:29] Scan step end: obstacle_detected=True
+[2026-02-08 10:37:29] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:29] Could not reach waypoint [3.5, 7.5] — blocked by nearby obstacle (LIDAR hit).
+[2026-02-08 10:37:29] Moving to waypoint [3.5, 6.5]
+[2026-02-08 10:37:29] Starting LIDAR scan at position [4.497500000000001, 8.759904999999996]
+[2026-02-08 10:37:29] Ray 310.0° hit at [5.135136005229769, 8.0]
+[2026-02-08 10:37:29] LIDAR scan completed.
+[2026-02-08 10:37:29] Scan step begin at [4.447500000000002, 8.709904999999996]
+[2026-02-08 10:37:29] Starting LIDAR scan at position [4.447500000000002, 8.709904999999996]
+[2026-02-08 10:37:29] Ray 310.0° hit at [5.043181023670905, 8.0]
+[2026-02-08 10:37:29] LIDAR scan completed.
+[2026-02-08 10:37:29] LIDAR detected 1 obstacle hits: [[5.043, 8.0]]
+[2026-02-08 10:37:29] Scan step end: obstacle_detected=True
+[2026-02-08 10:37:29] Goal visible during detour step; switching to straight navigation
+[2026-02-08 10:37:29] Could not reach waypoint [3.5, 6.5] — blocked by nearby obstacle (LIDAR hit).
+[2026-02-08 10:37:29] Scan step begin at [4.447500000000002, 8.709904999999996]
+[2026-02-08 10:37:29] Starting LIDAR scan at position [4.447500000000002, 8.709904999999996]
+[2026-02-08 10:37:29] Ray 310.0° hit at [5.043181023670905, 8.0]
+[2026-02-08 10:37:29] LIDAR scan completed.
+[2026-02-08 10:37:29] LIDAR detected 1 obstacle hits: [[5.043, 8.0]]
+[2026-02-08 10:37:29] Scan step end: obstacle_detected=True
+[2026-02-08 10:37:29] Obstacle detected near [5.04, 8.0] (from LIDAR hits) — querying for batch detour waypoints
+[2026-02-08 10:37:29] ===== DETOUR TRIGGERED =====
+[2026-02-08 10:37:29] Agent position: [4.447500000000002, 8.709904999999996]
+[2026-02-08 10:37:29] Goal position: [4.0, 2.0]
+[2026-02-08 10:37:29] Starting LIDAR scan at position [4.447500000000002, 8.709904999999996]

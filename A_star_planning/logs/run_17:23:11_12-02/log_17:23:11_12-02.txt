@@ -1,0 +1,2 @@
+[2026-02-12 17:23:11] Run directory created at logs/run_17:23:11_12-02
+[2026-02-12 17:23:11] Environment initialized with agent at (3.0, 4.0) and goal at (11.0, 4.0)
