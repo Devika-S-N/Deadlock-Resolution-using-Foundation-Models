@@ -1,8 +1,0 @@
-[2026-01-30 14:03:10] Run directory created at logs/run_14:03:10_30-01
-[2026-01-30 14:03:10] Environment initialized with agent at (10.5, 12.5) and goal at (5.5, 5.5)
-[2026-01-30 14:03:11] Starting navigation from [10.5, 12.5] to goal at [5.5, 5.5]
-[2026-01-30 14:03:11] Scan step begin at [10.5, 12.5]
-[2026-01-30 14:03:11] Starting LIDAR scan at position [10.5, 12.5]
-[2026-01-30 14:03:11] LIDAR scan completed.
-[2026-01-30 14:03:11] LIDAR red hits (obstacles): []
-[2026-01-30 14:03:11] Scan step end: obstacle_detected=False
