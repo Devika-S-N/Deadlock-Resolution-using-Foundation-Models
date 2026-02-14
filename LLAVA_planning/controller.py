@@ -299,7 +299,7 @@ class NavigationController:
         )
         self.logger.log(f"VLM snapshot saved at: {image_path}")
 
-        model_used = "gpt-5.2"
+        model_used = "LLAVA"
         self.logger.log(f"Querying VLM model: {model_used}")
 
         from VLM import query_detour_waypoints
@@ -330,7 +330,6 @@ class NavigationController:
                 goal=tuple(self.goal),
                 lidar_hits=[tuple(p) for p in red_hits],
                 yellow_waypoints=all_yellow_waypoints,  # NEW: pass yellow waypoint history
-                model=model_used,
                 retry_note=retry_note,
                 logger=self.logger  # NEW: Pass logger for prompt logging
             )
